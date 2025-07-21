@@ -119,7 +119,7 @@ predictive-search[loading] .predictive-search__search-for-button {
 }
 
 predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predictive-search__loading-state {
-  display: none;
+  display: none !important;
 }
 
 predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predictive-search__search-for-button {
