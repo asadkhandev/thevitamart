@@ -2400,9 +2400,12 @@ input[type='checkbox'] {
   }
 
   .header--top-center {
-    grid-template-areas:
+    /* grid-template-areas:
       'left-icons heading icons'
-      'navigation navigation navigation';
+      'navigation navigation navigation'; */
+    grid-template-areas:
+      "heading left-icons icons"
+      "navigation navigation navigation"
   }
 
   .header--top-center.drawer-menu {
