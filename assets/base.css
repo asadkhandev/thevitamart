@@ -2073,7 +2073,7 @@ input[type='checkbox'] {
   display: none;
 }
 
-.cart-count-bubble {
+/* .cart-count-bubble {
   position: absolute;
   background-color: rgb(var(--color-button));
   color: rgb(var(--color-button-text));
@@ -2087,7 +2087,7 @@ input[type='checkbox'] {
   bottom: 0.8rem;
   left: 2.2rem;
   line-height: calc(1 + 0.1 / var(--font-body-scale));
-}
+} */
 
 /* utility-bar */
 .utility-bar {
