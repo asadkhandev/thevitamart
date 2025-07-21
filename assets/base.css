@@ -2494,14 +2494,14 @@ input[type='checkbox'] {
 
   .header--middle-center .header__heading-link,
   .header--middle-center .header__heading {
-    /* justify-self: center; */
-    justify-self: left;
+    justify-self: center;
     text-align: center;
   }
 
   .header--top-center .header__heading-link,
   .header--top-center .header__heading {
-    justify-self: center;
+    /* justify-self: center; */
+    justify-self: left;
     text-align: center;
   }
 }
