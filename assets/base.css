@@ -2564,9 +2564,14 @@ input[type='checkbox'] {
 }
 
 .header__icon--account {
-  height: 4.4rem;
-  width: 4.4rem;
+  /* height: 4.4rem;
+  width: 4.4rem; */
   padding: 0;
+}
+
+.header__icon--account account-icon{
+  display: flex;
+  align-items: center;
 }
 
 .header__icon--cart .icon{
