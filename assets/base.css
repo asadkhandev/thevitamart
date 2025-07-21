@@ -2089,10 +2089,11 @@ input[type='checkbox'] {
   line-height: calc(1 + 0.1 / var(--font-body-scale));
 } */
 
-.cart-count-bubble span{
+.cart-count-bubble span:first-of-type{
   background: #3c3c3c;
   color: #fff;
   border-radius: 10px;
+  font-size: 10px;
 }
 
 /* utility-bar */
