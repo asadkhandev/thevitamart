@@ -112,6 +112,7 @@ predictive-search[loading] .predictive-search__loading-state {
   display: flex;
   justify-content: center;
   padding: 1rem;
+  display: none !important;
 }
 
 predictive-search[loading] .predictive-search__search-for-button {
