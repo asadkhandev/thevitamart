@@ -2089,6 +2089,10 @@ input[type='checkbox'] {
   line-height: calc(1 + 0.1 / var(--font-body-scale));
 } */
 
+.header__icon--cart svg{
+  fill: #000;
+}
+
 /* utility-bar */
 .utility-bar {
   height: 100%;
