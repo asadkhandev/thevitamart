@@ -2089,6 +2089,12 @@ input[type='checkbox'] {
   line-height: calc(1 + 0.1 / var(--font-body-scale));
 } */
 
+.cart-count-bubble span{
+  background: #3c3c3c;
+  color: #fff;
+  border-radius: 10px;
+}
+
 /* utility-bar */
 .utility-bar {
   height: 100%;
@@ -2571,6 +2577,7 @@ input[type='checkbox'] {
 
 .header__icon--cart {
   position: relative;
+  text-decoration: none;
   /* margin-right: -1.2rem; */
 }
 
