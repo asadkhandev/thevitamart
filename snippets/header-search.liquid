@@ -9,11 +9,11 @@
 {% endcomment %}
 
 <div class="header__search">
-  {%- if settings.predictive_search_enabled -%}
+  {% comment %} {%- if settings.predictive_search_enabled -%}
           <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
-        {%- else -%}
+        {%- else -%} {% endcomment %}
           <search-form class="search-modal__form">
-        {%- endif -%}
+        {% comment %} {%- endif -%} {% endcomment %}
         <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
           <div class="field">
             <input
@@ -62,11 +62,11 @@
             <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
           {%- endif -%}
         </form>
-        {%- if settings.predictive_search_enabled -%}
+        {% comment %} {%- if settings.predictive_search_enabled -%}
           </predictive-search>
-        {%- else -%}
+        {%- else -%} {% endcomment %}
           </search-form>
-        {%- endif -%}
+        {% comment %} {%- endif -%} {% endcomment %}
 </div>
 {% comment %} 
 <details-modal class="header__search">
