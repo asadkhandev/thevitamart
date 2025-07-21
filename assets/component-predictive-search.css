@@ -105,7 +105,7 @@ predictive-search .spinner {
 
 predictive-search:not([loading]) .predictive-search__loading-state,
 predictive-search:not([loading]) .predictive-search-status__loading {
-  display: none;
+  display: none !important;
 }
 
 predictive-search[loading] .predictive-search__loading-state {
