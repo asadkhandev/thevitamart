@@ -297,7 +297,7 @@
             {%- if customer -%}
               {{ 'customer.account_fallback' | t }}
             {%- else -%}
-              {{ 'customer.log_in' | t }} / {{ 'customer.register' | t }}
+              {{ 'customer.log_in' | t }} / <a href="/account/register">Register</a>
             {%- endif -%}
           </strong>
           <span class="visually-hidden">
