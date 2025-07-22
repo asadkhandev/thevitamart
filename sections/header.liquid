@@ -259,7 +259,7 @@
             <account-icon>
               {%- if customer and customer.has_avatar? -%}
                 {{ customer | avatar }}
-                <strong>ABC
+                {% comment %} <strong>ABC
                   {%- liquid
                     if customer
                       echo 'customer.account_fallback' | t
@@ -267,10 +267,10 @@
                       echo 'customer.log_in' | t
                     endif
                   -%}
-                </strong>
+                </strong> {% endcomment %}
               {%- else -%}
                 <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
-                <strong>123
+                {% comment %} <strong>123
                   {%- liquid
                     if customer
                       echo 'customer.account_fallback' | t
@@ -278,12 +278,12 @@
                       echo 'customer.log_in' | t
                     endif
                   -%}
-                </strong>
+                </strong> {% endcomment %}
               {%- endif -%}
             </account-icon>
           {%- else -%}
             <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
-            <strong>XYZ
+            {% comment %} <strong>XYZ
               {%- liquid
                 if customer
                   echo 'customer.account_fallback' | t
@@ -291,8 +291,15 @@
                   echo 'customer.log_in' | t
                 endif
               -%}
-            </strong>
+            </strong> {% endcomment %}
           {%- endif -%}
+          <strong>
+            {%- if customer -%}
+              {{ 'customer.account_fallback' | t }}
+            {%- else -%}
+              {{ 'customer.log_in' | t }} / {{ 'customer.register' | t }}
+            {%- endif -%}
+          </strong>
           <span class="visually-hidden">
             {%- liquid
               if customer
