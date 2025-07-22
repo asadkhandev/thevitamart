@@ -2355,6 +2355,7 @@ input[type='checkbox'] {
 
 .header-wrapper--border-bottom {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  overflow: hidden;
 }
 
 .header {
@@ -2422,6 +2423,7 @@ input[type='checkbox'] {
 
   .header:not(.header--middle-left, .header--middle-center) .header__inline-menu {
     margin-top: 1.05rem;
+    padding-top: 1.6rem;
   }
 }
 
