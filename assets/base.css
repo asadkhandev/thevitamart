@@ -2564,10 +2564,17 @@ input[type='checkbox'] {
 }
 
 .header__icon--account {
-  /* height: 4.4rem;
-  width: 4.4rem; */
   padding: 0;
-  margin-right: 10px;
+  margin-right: 1rem;
+  font-size: 1.4rem;
+}
+
+.header__icon--account a{
+  color: #000;
+}
+
+.header__icon--account a:hover{
+  text-decoration: underline;
 }
 
 .header__icon--account account-icon{
