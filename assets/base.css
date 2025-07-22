@@ -2929,12 +2929,15 @@ details-disclosure > details {
   }
 }
 
+nav.header__inline-menu{
+  position: relative;
+}
 nav.header__inline-menu::before {
   content: '';
   position: absolute;
   left: 50%;
   top: 0;
-  border-top: 1px solid #000;
+  border-top: 1px solid #0000001a;
   width: 100vw;
   transform: translateX(-50%);
 }
