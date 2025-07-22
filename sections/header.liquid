@@ -259,7 +259,7 @@
             <account-icon>
               {%- if customer and customer.has_avatar? -%}
                 {{ customer | avatar }}
-                <strong>abc
+                <strong>ABC
                   {%- liquid
                     if customer
                       echo 'customer.account_fallback' | t
@@ -283,7 +283,7 @@
             </account-icon>
           {%- else -%}
             <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
-            <strong>
+            <strong>XYZ
               {%- liquid
                 if customer
                   echo 'customer.account_fallback' | t
