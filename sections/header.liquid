@@ -259,11 +259,9 @@
             <account-icon>
               {%- if customer and customer.has_avatar? -%}
                 {{ customer | avatar }}
-                {% assign gravatar_hash = customer.email | strip | downcase | md5 %}
-                <img src="https://www.gravatar.com/avatar/{{ gravatar_hash }}?s=100" alt="Customer Avatar" />
               {%- else -%}
                 <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
-                <strong>Login</strong>
+                <strong>{{ 'customer.account_fallback' | t }}</strong>
               {%- endif -%}
             </account-icon>
           {%- else -%}
