@@ -268,7 +268,7 @@
                     endif
                   -%}
                 </strong>
-              {% comment %} {%- else -%}
+              {%- else -%}
                 <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
                 <strong>123
                   {%- liquid
@@ -278,7 +278,7 @@
                       echo 'customer.log_in' | t
                     endif
                   -%}
-                </strong> {% endcomment %}
+                </strong>
               {%- endif -%}
             </account-icon>
           {%- else -%}
