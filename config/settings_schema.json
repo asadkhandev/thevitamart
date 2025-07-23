@@ -1279,7 +1279,7 @@
         "label": "t:settings_schema.brand_information.settings.brand_headline.label"
       },
       {
-        "type": "richtext",
+        "type": "textarea",
         "id": "brand_description",
         "label": "t:settings_schema.brand_information.settings.brand_description.label"
       },
