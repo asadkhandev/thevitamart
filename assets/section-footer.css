@@ -126,10 +126,10 @@
 }
 
 .footer-block--newsletter {
-  display: flex;
+  /* display: flex;
   align-items: flex-end;
   margin-top: 3rem;
-  gap: 1rem;
+  gap: 1rem; */
 }
 
 .footer-block--newsletter:only-child {
@@ -175,10 +175,10 @@
   justify-content: center;
 }
 
-.footer-block__newsletter {
+/* .footer-block__newsletter {
   text-align: center;
   flex-grow: 1;
-}
+} */
 
 .newsletter-form__field-wrapper {
   max-width: 36rem;

@@ -3645,3 +3645,12 @@ nav.header__inline-menu::before {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+.footer__content-top{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footer__content-top .grid--3-col-tablet .grid__item{
+  width: calc(16.59% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+}
