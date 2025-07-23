@@ -160,6 +160,16 @@
   font-size: 1.4rem;
 }
 
+.footer-block__brand-info .footer-block__heading{
+  font-size: calc(var(--font-heading-scale) * 1.4rem);
+}
+
+.footer-block__brand-info p a{
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 990px) {
   .footer-block__newsletter-content h2,
   .footer-block__heading {
