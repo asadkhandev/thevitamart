@@ -31,21 +31,21 @@
           "type": "link_list",
           "settings": {
             "heading": "SHOP",
-            "menu": "footer"
+            "menu": "footer-menu-shop"
           }
         },
         "link_list_98e3LA": {
           "type": "link_list",
           "settings": {
             "heading": "BUSINESS",
-            "menu": "footer"
+            "menu": "footer-menu-business"
           }
         },
         "link_list_3g9kce": {
           "type": "link_list",
           "settings": {
             "heading": "Help & Terms",
-            "menu": "footer"
+            "menu": "footer-menu-help-terms"
           }
         }
       },
