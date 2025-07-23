@@ -3652,5 +3652,8 @@ nav.header__inline-menu::before {
 }
 
 .footer__content-top .grid--3-col-tablet .grid__item{
-  width: calc(16.59% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+  width: calc(19% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+}
+.footer__content-top .grid--3-col-tablet .grid__item.footer-block--menu {
+    width: calc(15% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
 }
