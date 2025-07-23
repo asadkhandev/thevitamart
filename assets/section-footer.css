@@ -170,6 +170,14 @@
   text-decoration: none;
 }
 
+.footer-block__brand-info p a:hover{
+  text-decoration: underline;
+}
+
+.footer-block__brand-info p img{
+  margin-left: 10px;
+}
+
 @media screen and (min-width: 990px) {
   .footer-block__newsletter-content h2,
   .footer-block__heading {
