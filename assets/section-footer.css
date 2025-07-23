@@ -175,7 +175,8 @@
 }
 
 .footer-block__brand-info p img{
-  margin-left: 10px;
+  margin: 0;
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 990px) {
