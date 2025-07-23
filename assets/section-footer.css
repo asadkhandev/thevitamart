@@ -185,6 +185,9 @@
   .footer-block__heading {
     font-size: calc(var(--font-heading-scale) * 1.8rem);
   }
+  .footer-block__brand-info .footer-block__heading{
+    max-width: 85%;
+  }
 }
 
 .footer__list-social:empty,
