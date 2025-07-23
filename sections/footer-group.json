@@ -59,7 +59,7 @@
       "settings": {
         "color_scheme": "scheme-3",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "<h2>Subscribe to our emails</h2><p>Receive the latest updates about our products and promotions.</p>",
         "enable_follow_on_shop": false,
         "show_social": false,
         "enable_country_selector": false,
