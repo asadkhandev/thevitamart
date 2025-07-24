@@ -3691,7 +3691,7 @@ nav.header__inline-menu::before {
   width: 10px;
   height: 10px;
   border-radius: 10px;
-  background: #ABCC01;
+  background: rgba(171, 204, 1, 0.5);
 }
 
 .slick-dots li.slick-active button{
