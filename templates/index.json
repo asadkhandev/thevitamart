@@ -48,6 +48,55 @@
         "show_text_below": false
       }
     },
+    "banner_slider_KWGVAx": {
+      "type": "banner-slider",
+      "blocks": {
+        "banner_w8gKkM": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/banner-img1.jpg",
+            "link": "#"
+          }
+        },
+        "banner_CWB4yi": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/banner-img2.png",
+            "link": "#"
+          }
+        },
+        "banner_mWiMt6": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/banner-img3.jpg",
+            "link": "#"
+          }
+        },
+        "banner_aJhann": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/banner-img4.png",
+            "link": "#"
+          }
+        },
+        "banner_WM9UYb": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/banner-img5.jpg",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "banner_w8gKkM",
+        "banner_CWB4yi",
+        "banner_mWiMt6",
+        "banner_aJhann",
+        "banner_WM9UYb"
+      ],
+      "name": "Banner Slider",
+      "settings": {}
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -79,6 +128,7 @@
   },
   "order": [
     "image_banner",
+    "banner_slider_KWGVAx",
     "featured_collection"
   ]
 }
