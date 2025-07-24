@@ -2851,11 +2851,11 @@ details[open] > .header__submenu {
   text-underline-offset: 0.3rem;
 } */
 
-.header__menu-item{
+.header__menu-item span{
   position: relative;
 }
 
-.header__menu-item::after {
+.header__menu-item span::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -2869,7 +2869,7 @@ details[open] > .header__submenu {
   transition: transform 0.25s ease-out;
 }
 
-.header__menu-item:hover::after {
+.header__menu-item:hover span::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
