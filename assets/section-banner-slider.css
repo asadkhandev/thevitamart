@@ -1,0 +1,23 @@
+.banner-slide img{
+    width: 100%;
+}
+
+.banner-slider .slick-dots{
+    bottom: 0;
+}
+
+.banner-slider .slick-dots li button{
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.banner-slider .slick-dots li.slick-active button{
+    background: #00563D;
+}
+
+.banner-slider .slick-dots li button:before{
+    display: none;
+}
