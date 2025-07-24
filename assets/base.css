@@ -3701,7 +3701,23 @@ nav.header__inline-menu::before {
 .slick-dots li button:before{
   display: none;
 }
+
 .slick-prev:before,
 .slick-next:before{
   display: none;
+}
+
+.slick-prev,
+.slick-next{
+  width: 35px;
+  height: 35px;
+  border: 1px solid #00563D;
+  border-radius: 35px;
+  background: #fff url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/chev-left.svg?v=1753352569') no-repeat;
+  background-size: 40% auto;
+  background-position: center center;
+}
+
+.slick-next{
+  background-image: url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/chev-right.svg?v=1753352355');
 }
