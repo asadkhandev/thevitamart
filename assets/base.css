@@ -3713,7 +3713,7 @@ nav.header__inline-menu::before {
   height: 35px;
   border: 1px solid #00563D;
   border-radius: 35px;
-  background: #fff url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/chev-left.svg?v=1753352569') no-repeat;
+  background-repeat: no-repeat;
   background-size: 40% auto;
   background-position: center center;
   z-index: 1;
@@ -3721,12 +3721,14 @@ nav.header__inline-menu::before {
 
 .slick-prev:hover, .slick-prev:focus,
 .slick-prev{
-  background: #fff url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/chev-left.svg?v=1753352569')
+  background-color: #fff;
+  background-image: ('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/chev-left.svg?v=1753352569')
 }
 
 .slick-next:hover, .slick-next:focus,
 .slick-next{
-  background: #fff url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/chev-right.svg?v=1753352355');
+  background-color: #fff;
+  background-image: url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/chev-right.svg?v=1753352355');
 }
 
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus{
