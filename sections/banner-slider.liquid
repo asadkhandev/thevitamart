@@ -1,26 +1,43 @@
 {{ 'section-banner-slider.css' | asset_url | stylesheet_tag }}
 
-<div class="banner-slider">
-  {% for block in section.blocks %}
-    <div class="banner-slide">
-      {% if block.settings.link != blank %}
-        <a href="{{ block.settings.link }}">
-      {% endif %}
+<div class="banner-slider-wrapper">
+    <div class="banner-slider">
+        {% for block in section.blocks %}
+            <div class="banner-slide">
+            {% if block.settings.link != blank %}
+                <a href="{{ block.settings.link }}">
+            {% endif %}
 
-      {% if block.settings.image %}
-        <img
-          src="{{ block.settings.image | img_url: 'master' }}"
-          alt="{{ block.settings.image.alt | escape }}"
-          loading="lazy"
-        />
-      {% endif %}
+            {% if block.settings.image %}
+                <img
+                src="{{ block.settings.image | img_url: 'master' }}"
+                alt="{{ block.settings.image.alt | escape }}"
+                loading="lazy"
+                />
+            {% endif %}
 
-      {% if block.settings.link != blank %}
-        </a>
-      {% endif %}
+            {% if block.settings.link != blank %}
+                </a>
+            {% endif %}
+            </div>
+        {% endfor %}
     </div>
-  {% endfor %}
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    $('.banner-slider').slick({
+      dots: true,
+      arrows: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      fade: false
+    });
+  });
+</script>
 
 {% schema %}
 {
