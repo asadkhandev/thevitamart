@@ -3691,11 +3691,12 @@ nav.header__inline-menu::before {
   width: 10px;
   height: 10px;
   border-radius: 10px;
-  border: 1px solid #00563D;
+  border: 1px solid #abcc01;
 }
 
 .slick-dots li.slick-active button{
   background: #00563D;
+  border-color: #00563D;
 }
 
 .slick-dots li button:before{
