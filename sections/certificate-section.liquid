@@ -46,6 +46,51 @@
   </div>
 </div>
 
+<script>
+  $(document).ready(function() {
+    $('.brandsCarousel').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      infinite: true,
+      arrows: false,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      autoplaySpeed: 0,
+      swipe: false,
+      touchMove: false,
+      cssEase: 'linear',
+      speed: 2000,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            arrows: false,
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            dots: false,
+            autoplay: true,
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            dots: false,
+            autoplay: true,
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
+  });
+</script>
+
 {% schema %}
 {
   "name": "Certificate Slider",
