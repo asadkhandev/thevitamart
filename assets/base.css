@@ -2527,6 +2527,10 @@ input[type='checkbox'] {
   padding-right: 0.8rem;
 }
 
+.header__icons strong{
+  font-weight: 500;
+}
+
 .header__icons .shopify-app-block {
   max-width: 4.4rem;
   max-height: 4.4rem;
