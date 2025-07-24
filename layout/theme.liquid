@@ -50,6 +50,39 @@
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
     %}
+    {% style %}
+      #page-loader {
+        position: fixed;
+        inset: 0;
+        background: #ffffff; /* Change if you want a different background */
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .pulse-logo {
+        width: 64px; /* You can adjust the size */
+        height: 64px;
+        animation: pulse 1.2s ease-in-out infinite;
+      }
+
+      /* Pulse Animation */
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.15);
+          opacity: 0.7;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    {% endstyle %}
 
     {% style %}
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
@@ -306,6 +339,11 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+
+    <div id="page-loader">
+      <img src="https://cdn.shopify.com/s/files/1/0707/8104/2880/files/32x32.svg?v=1752840155" alt="Loading" class="pulse-logo">
+    </div>
+    
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -379,6 +417,17 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script>
+      window.addEventListener('load', function () {
+        const loader = document.getElementById('page-loader');
+        if (loader) {
+          loader.style.opacity = '0';
+          loader.style.pointerEvents = 'none';
+          setTimeout(() => loader.remove(), 500); // smoother removal
+        }
+      });
+    </script>
 
   </body>
 </html>
