@@ -2842,13 +2842,36 @@ details[open] > .header__submenu {
   color: rgb(var(--color-foreground));
 }
 
-.header__menu-item span {
+/* .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
 }
 
 .header__menu-item:hover span {
   text-decoration: underline;
   text-underline-offset: 0.3rem;
+} */
+
+.header__menu-item:hover span{
+  position: relative;
+}
+
+.header__menu-item:hover span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 0.05em;
+  bottom: 0;
+  left: 0;
+  background: currentcolor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.header__menu-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 details[open] > .header__menu-item {
