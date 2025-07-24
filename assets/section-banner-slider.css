@@ -5,3 +5,10 @@
 .banner-slider .slick-dots{
     bottom: 0;
 }
+
+.banner-slider .slick-next{
+    right: 10px;
+}
+.banner-slider .slick-prev{
+    left: 10px;
+}
