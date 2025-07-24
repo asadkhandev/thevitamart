@@ -1,0 +1,63 @@
+{{ 'section-banner-slider.css' | asset_url | stylesheet_tag }}
+
+<div class="banner-slider">
+  {% for block in section.blocks %}
+    <div class="banner-slide">
+      {% if block.settings.link != blank %}
+        <a href="{{ block.settings.link }}">
+      {% endif %}
+
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | img_url: 'master' }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          loading="lazy"
+        />
+      {% endif %}
+
+      {% if block.settings.link != blank %}
+        </a>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Banner Slider",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Banner Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Banner Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link URL"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Banner Slider",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "banner"
+        },
+        {
+          "type": "banner"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
