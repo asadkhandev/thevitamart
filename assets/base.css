@@ -3722,7 +3722,7 @@ nav.header__inline-menu::before {
 .slick-prev:hover, .slick-prev:focus,
 .slick-prev{
   background-color: #fff;
-  background-image: ('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/chev-left.svg?v=1753352569')
+  background-image: url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/chev-left.svg?v=1753352569');
 }
 
 .slick-next:hover, .slick-next:focus,
