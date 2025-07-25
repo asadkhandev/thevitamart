@@ -80,6 +80,7 @@
 
 .brandsCarousel::after{
     right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .certificate-brandLogo{
@@ -90,5 +91,5 @@
 
 .certificate-brandLogo img{
     max-width: 90px;
-    margin: 0 auto;
+    margin: 0 auto 10px;
 }
