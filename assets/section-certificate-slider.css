@@ -13,9 +13,6 @@
     max-width: 35%;
 }
 
-.certificate-slider-wrap{
-    max-width: 65%;
-}
 
 .certificate-content-inner{
     background: #946fd6;
@@ -32,7 +29,7 @@
     font-size: 2.4rem;
 }
 
-.certificate-content-inner p b{
+.certificate-content-inner p strong{
     font-size: 3.4rem;
 }
 
@@ -58,11 +55,40 @@
     height: 49px;
 }
 
+.certificate-slider-wrap{
+    max-width: 65%;
+}
+
+.brandsCarousel{
+    position: relative;
+}
+
+.brandsCarousel::before,
+.brandsCarousel::after {
+    content: "";
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.brandsCarousel::before{
+    left: 0;
+}
+
+.brandsCarousel::after{
+    right: 0;
+}
+
 .certificate-brandLogo{
     text-align: center;
     font-size: 1.2rem;
+    width: 100px;
 }
 
 .certificate-brandLogo img{
     max-width: 90px;
+    margin: 0 auto;
 }
