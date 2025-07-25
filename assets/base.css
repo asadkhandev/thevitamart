@@ -3789,3 +3789,7 @@ nav.header__inline-menu::before {
   width: auto;
   max-width: 100%;
 }
+
+.btn-content{
+  text-align: center;
+}
