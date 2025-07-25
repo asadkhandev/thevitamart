@@ -65,70 +65,70 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/CDDRA-Sri_Lanka.png",
-            "title": ""
+            "title": "Sri Lanka"
           }
         },
         "column_mKW6q8": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/FDA-Ghana.png",
-            "title": ""
+            "title": "Ghana"
           }
         },
         "column_W8i4mm": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Ministry_of_Health_Public_Hygiene-Togo.png",
-            "title": ""
+            "title": "Togo"
           }
         },
         "column_9bGajg": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Ministry_of_Health_Social_Protection-Tajikistan.png",
-            "title": ""
+            "title": "Tajikistan"
           }
         },
         "column_3XcLcN": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Mauritius_Ministry_of_Health_Wellness.png",
-            "title": ""
+            "title": "Mauritius"
           }
         },
         "column_RkaU8M": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/KMA-Kosovo.png",
-            "title": ""
+            "title": "Kosovo"
           }
         },
         "column_U8n9PT": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/JFDA-Jordan.png",
-            "title": ""
+            "title": "Jordan"
           }
         },
         "column_VGdTbw": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Iraqi_Ministry_of_Health-Iraq.png",
-            "title": ""
+            "title": "Iraq"
           }
         },
         "column_a6M88K": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Estonian_Health_Board.png",
-            "title": ""
+            "title": "Estonia"
           }
         },
         "column_QifHbN": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/FDA-Philppines.png",
-            "title": ""
+            "title": "Philippines"
           }
         }
       },
