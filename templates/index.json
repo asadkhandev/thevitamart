@@ -160,30 +160,155 @@
         "column_67zWNc": {
           "type": "column",
           "settings": {
-            "title": ""
+            "image": "shopify://shop_images/Men_s_health_100x_crop_center_51d02abf-2e47-4636-bd1c-62c306af5cbb.svg",
+            "title": "Men's Health",
+            "url": ""
           }
         },
         "column_E6thPk": {
           "type": "column",
           "settings": {
-            "title": ""
+            "image": "shopify://shop_images/Women_s_Health_100x_crop_center_e9ee54de-c5ec-4e71-812c-fdd3196bac07.svg",
+            "title": "Women's Health",
+            "url": ""
           }
         },
         "column_t3YRnR": {
           "type": "column",
           "settings": {
-            "title": ""
+            "image": "shopify://shop_images/Kids_Health_100x_crop_center_4f3f9780-28be-47ab-932c-62cf97a98083.svg",
+            "title": "Kids' Health",
+            "url": ""
+          }
+        },
+        "column_tAbejR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Beauty_100x_crop_center_5ddd28a1-f7c6-496a-9d78-b805ff978008.svg",
+            "title": "Beauty",
+            "url": ""
+          }
+        },
+        "column_aqqYtE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Hair_Care_100x_crop_center_85f6b3c7-cf4d-4cba-b79c-0ae9afa9278b.svg",
+            "title": "Hair Care",
+            "url": ""
+          }
+        },
+        "column_TxUc7a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Herbal_Health_100x_crop_center_dcafffdd-3d67-4f86-ac13-86318813253e.svg",
+            "title": "Herbal Health",
+            "url": ""
+          }
+        },
+        "column_jU37qL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gummies_100x_crop_center_6b2cd0c3-1d6b-422c-9a71-16dac2bb505d.svg",
+            "title": "Gummies",
+            "url": ""
+          }
+        },
+        "column_wKPkrY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Wright_Management_100x_crop_center_7cd6f4d4-a179-405d-8c8f-c1eb55f0c147.svg",
+            "title": "Weight Management",
+            "url": ""
+          }
+        },
+        "column_h6CX7G": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sleep_Stress_100x_crop_center_3b337876-a8fc-44d2-9dc5-3f7a6d6d7ecf.svg",
+            "title": "Stress & Sleep",
+            "url": ""
+          }
+        },
+        "column_9eKz7B": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Bones_Joints_100x_crop_center_200b5f83-fbfb-443b-adc8-a39dcf4a6758.svg",
+            "title": "Bones & Joints",
+            "url": ""
+          }
+        },
+        "column_TMpnaH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Immune_Support_100x_crop_center_889f2790-7eb5-4b0b-a990-1d71f58280cc.svg",
+            "title": "Immune Support",
+            "url": ""
+          }
+        },
+        "column_hPJq3i": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Softgels_100x_crop_center_11704e43-4a69-49e3-8c40-6d624e587e76.svg",
+            "title": "Softgels",
+            "url": ""
+          }
+        },
+        "column_pbDCYy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Blood_Sugar_Support_100x_crop_center_f565181c-7797-4b23-a720-1d1edb76a53c.svg",
+            "title": "Blood Sugar Support",
+            "url": ""
+          }
+        },
+        "column_8kgHCc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Heart_Health_100x_crop_center_ddc9aa85-81b8-4d8d-bbe2-cae4ef5bf9a4.svg",
+            "title": "Heart Health",
+            "url": ""
+          }
+        },
+        "column_JcwxEJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Vision_Support_100x_crop_center_f3aef81e-4ce3-4d57-8442-92f049bae3ba.svg",
+            "title": "Vision Support",
+            "url": ""
+          }
+        },
+        "column_DRB6hK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Fertility_Support_100x_crop_center_34dc454f-008a-4dfd-8255-054e97504739.svg",
+            "title": "Fertility Support",
+            "url": ""
           }
         }
       },
       "block_order": [
         "column_67zWNc",
         "column_E6thPk",
-        "column_t3YRnR"
+        "column_t3YRnR",
+        "column_tAbejR",
+        "column_aqqYtE",
+        "column_TxUc7a",
+        "column_jU37qL",
+        "column_wKPkrY",
+        "column_h6CX7G",
+        "column_9eKz7B",
+        "column_TMpnaH",
+        "column_hPJq3i",
+        "column_pbDCYy",
+        "column_8kgHCc",
+        "column_JcwxEJ",
+        "column_DRB6hK"
       ],
       "name": "CategoriesBox",
       "settings": {
         "title": "NATURAL CHOICE FOR YOUR HEALTH",
+        "view_all_url": "shopify://collections/all",
+        "view_all_text": "View All Products",
         "color_scheme": "",
         "padding_top": 52,
         "padding_bottom": 52
