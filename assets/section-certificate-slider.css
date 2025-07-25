@@ -1,8 +1,20 @@
 .certificate-wrap{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
     gap: 20px;
     align-items: center;
+}
+
+.certificate-content,
+.certificate-slider-wrap{
+    width: 100%;
+}
+
+.certificate-content{
+    max-width: 35%;
+}
+
+.certificate-slider-wrap{
+    max-width: 65%;
 }
 
 .certificate-content-inner{
