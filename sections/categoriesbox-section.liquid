@@ -49,28 +49,28 @@
   
   if (window.innerWidth < 768) {
     if(categoryCard.length > 9){
-      document.getElementById('categoryViewMore').style.display='inline-flex'
+      document.getElementById('categoryViewMore').style.setProperty('display', 'inline-flex', 'important');
       document.getElementById('categoryViewAll').style.display='none'
       for(let i=0; i<9; i++){
         categoryCard[i].style.display = "flex";
       }
     }else {
         document.getElementById('categoryViewMore').style.display='none'
-        document.getElementById('categoryViewAll').style.display='inline-flex'
+        document.getElementById('categoryViewAll').style.setProperty('display', 'inline-flex', 'important');
         for(let i=0; i<9;i++ ){
           categoryCard[i].style.display = "flex";
         }
     }
   }else if(window.innerWidth < 992){
     if(categoryCard.length > 8){
-      document.getElementById('categoryViewMore').style.display='inline-flex'
+      document.getElementById('categoryViewMore').style.setProperty('display', 'inline-flex', 'important');
       document.getElementById('categoryViewAll').style.display='none'
       for(let i=0; i < 8 ;i++ ){
        categoryCard[i].style.display = "flex";
       }  
     }else {
        document.getElementById('categoryViewMore').style.display='none'
-       document.getElementById('categoryViewAll').style.display='inline-flex'
+       document.getElementById('categoryViewAll').style.setProperty('display', 'inline-flex', 'important');
        for(let i=0; i < categoryCard.length ;i++ ){
          categoryCard[i].style.display = "flex";
        } 
