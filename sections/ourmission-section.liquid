@@ -1,6 +1,125 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  /*styles from here*/
+  
+{%- endstyle -%}
+
+<div class="our_mission-section color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+  <div
+    class="section-{{ section.id }}-padding page-width isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+    {% endif %}
+  >
+
+    {% comment %}
+    {% if section.settings.title != blank %}
+      <div class="halo-block-header text-center">
+        <h3 class="title">
+          <span class="text">{{ section.settings.title }}</span>
+        </h3>
+      </div>
+    {% endif %}
+    {% endcomment %}
+
+    {% comment %}
+    html
+    {% endcomment %}
+    
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Our Mission",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tag",
+      "name": "Collection Tag",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Select Collection"
+        },
+        {
+          "type": "checkbox",
+          "id": "important",
+          "label": "Mark as Important",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Our Mission",
+      "blocks": [
+        {
+          "type": "tag"
+        },
+        {
+          "type": "tag"
+        },
+        {
+          "type": "tag"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
