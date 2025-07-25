@@ -62,9 +62,48 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "ourmission_section_GTAb7r": {
+      "type": "ourmission-section",
+      "blocks": {
+        "tag_PyELgi": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        },
+        "tag_JpkBp7": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        },
+        "tag_FXzKB6": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        }
+      },
+      "block_order": [
+        "tag_PyELgi",
+        "tag_JpkBp7",
+        "tag_FXzKB6"
+      ],
+      "name": "Our Mission",
+      "settings": {
+        "title": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "multicolumn_MVEfx8"
+    "multicolumn_MVEfx8",
+    "ourmission_section_GTAb7r"
   ]
 }
