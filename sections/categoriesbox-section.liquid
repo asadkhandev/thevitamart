@@ -21,25 +21,47 @@
       data-cascade
     {% endif %}
   >
-    <div class="halo-block-header text-center">
+    
+    {% if section.settings.title != blank %}
+      <div class="halo-block-header text-center">
         <h3 class="title">
-            <span class="text">NATURAL CHOICE FOR YOUR HEALTH</span>
+          <span class="text">{{ section.settings.title }}</span>
         </h3>
-    </div>
+      </div>
+    {% endif %}
+    
     <div class="halo-row categoriesBoxOuter">
+        {% for block in section.blocks %}
         <div class="categoryBox">
-            <a href="/collections/mens-health">link</a>
-            <div class="categoryIcon"><img src="//www.nutrifactor.com.pk/cdn/shop/files/Men_s_health_100x_crop_center.svg?v=1695377692" height="100" width="100"></div>
-            <div class="categoryTxt">Men's Health</div>
+            {% if block.settings.url != blank %}
+                <a href="{{ block.settings.url }}">
+            {% else %}
+                <a href="#">
+            {% endif %}
+            link</a>
+            <div class="categoryIcon">
+                {% if block.settings.image %}
+                <img
+                  src="{{ block.settings.image | image_url: width: 100 }}"
+                  alt="{{ block.settings.title | escape }}"
+                  width="100"
+                  height="100"
+                >
+              {% endif %}
+            </div>
+            <div class="categoryTxt">{{ block.settings.title }}</div>
         </div>
+        {% endfor %}
     </div>
     <div class="btn-content">
         <button class="button" id="categoryViewMore" onclick="handleViewMoreClick()">
         <span>View More</span>
       </button>
-      <a class="button" id="categoryViewAll" href="https://www.nutrifactor.com.pk/collections/all-products">
-        <span>View All Products</span>
-      </a>
+      {% if section.settings.view_all_url %}
+        <a class="button" id="categoryViewAll" href="{{ section.settings.view_all_url }}">
+          <span>{{ section.settings.view_all_text }}</span>
+        </a>
+      {% endif %}
     </div>
   </div>
 </div>
@@ -117,6 +139,21 @@
       "label": "Heading"
     },
     {
+      "type": "header",
+      "content": "Section Button"
+    },
+    {
+      "type": "url",
+      "id": "view_all_url",
+      "label": "View All Products URL"
+    },
+    {
+      "type": "text",
+      "id": "view_all_text",
+      "label": "View All Button Text",
+      "default": "View All Products"
+    },
+    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
@@ -161,6 +198,11 @@
           "type": "inline_richtext",
           "id": "title",
           "label": "Category box Text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Category URL"
         }
       ]
     }
