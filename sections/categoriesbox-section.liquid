@@ -78,14 +78,14 @@
 }
  else{
       if(categoryCard.length > 12){
-         document.getElementById('categoryViewMore').style.display='unset'
+         document.getElementById('categoryViewMore').style.setProperty('display', 'inline-flex', 'important');
          document.getElementById('categoryViewAll').style.display='none'
          for(let i=0; i <12 ;i++ ){
            categoryCard[i].style.display = "flex";
           }
       }else {
         document.getElementById('categoryViewMore').style.display='none'
-        document.getElementById('categoryViewAll').style.display='unset'
+        document.getElementById('categoryViewAll').style.setProperty('display', 'inline-flex', 'important');
         for(let i=0; i <12 ;i++ ){
            categoryCard[i].style.display = "flex";
           }
@@ -98,7 +98,7 @@
          categoryCard[j].style.display = "flex";
       }
       document.getElementById('categoryViewMore').style.display='none'
-      document.getElementById('categoryViewAll').style.display='unset'
+      document.getElementById('categoryViewAll').style.display='inline-flex'
     }
 </script>
 
