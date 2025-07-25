@@ -19,11 +19,21 @@
 
 .certificate-content-inner{
     background: #946fd6;
+    color: #fff;
     padding: 22px 14px;
     position: relative;
     margin: 0px 20px;
     border-radius: 12px;
     text-align: center;
+}
+
+.certificate-content-inner p{
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+.certificate-content-inner p b{
+    font-size: 3.4rem;
 }
 
 .certificate-content-inner::before,
@@ -46,4 +56,13 @@
     top: 0;
     width: 49px;
     height: 49px;
+}
+
+.certificate-brandLogo{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.certificate-brandLogo img{
+    max-width: 90px;
 }
