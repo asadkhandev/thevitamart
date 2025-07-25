@@ -595,6 +595,18 @@ details > * {
   --animation-fade-in: fadeIn var(--duration-extra-long) var(--ease-out-slow);
 }
 
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
 .underlined-link,
 .customer a,
 .inline-richtext a {
@@ -3763,7 +3775,7 @@ nav.header__inline-menu::before {
   top: calc(50% - 1px);
   left: 0;
   width: 100%;
-  height: var(--heading-border-height);
+  height: 2px;
   background-color: #232323;
 }
 
@@ -3773,7 +3785,7 @@ nav.header__inline-menu::before {
   padding: 0 20px;
   position: relative;
   z-index: 1;
-  background: var(--color-background);
+  background: #fff;
   width: auto;
   max-width: 100%;
 }
