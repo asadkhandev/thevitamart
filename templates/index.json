@@ -342,12 +342,51 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "exploretags_section_LywxPh": {
+      "type": "exploretags-section",
+      "blocks": {
+        "tag_h4mdAi": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        },
+        "tag_hgNN3T": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        },
+        "tag_EKyghX": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        }
+      },
+      "block_order": [
+        "tag_h4mdAi",
+        "tag_hgNN3T",
+        "tag_EKyghX"
+      ],
+      "name": "ExploreTags",
+      "settings": {
+        "title": "We’re Here to Help You With",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "banner_slider_KWGVAx",
     "certificate_section_f6UWUA",
     "categoriesbox_section_NmC88i",
-    "featured_collection"
+    "featured_collection",
+    "exploretags_section_LywxPh"
   ]
 }
