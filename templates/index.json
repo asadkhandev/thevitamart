@@ -152,6 +152,41 @@
         "padding_bottom": 36
       }
     },
+    "categoriesbox_section_NmC88i": {
+      "type": "categoriesbox-section",
+      "blocks": {
+        "column_67zWNc": {
+          "type": "column",
+          "settings": {
+            "title": ""
+          }
+        },
+        "column_E6thPk": {
+          "type": "column",
+          "settings": {
+            "title": ""
+          }
+        },
+        "column_t3YRnR": {
+          "type": "column",
+          "settings": {
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_67zWNc",
+        "column_E6thPk",
+        "column_t3YRnR"
+      ],
+      "name": "CategoriesBox",
+      "settings": {
+        "title": "NATURAL CHOICE FOR YOUR HEALTH",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -184,6 +219,7 @@
   "order": [
     "banner_slider_KWGVAx",
     "certificate_section_f6UWUA",
+    "categoriesbox_section_NmC88i",
     "featured_collection"
   ]
 }
