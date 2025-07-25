@@ -1,0 +1,38 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "slideshow",
+      "settings": {}
+    },
+    "featured-products": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "frontpage",
+        "title": "Popular Products"
+      }
+    },
+    "image-banner": {
+      "type": "image-banner",
+      "settings": {}
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "featured-products",
+    "image-banner",
+    "rich-text"
+  ]
+}
