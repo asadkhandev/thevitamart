@@ -55,7 +55,6 @@
         "banner_aJhann",
         "banner_WM9UYb"
       ],
-      "disabled": true,
       "name": "Banner Slider",
       "settings": {}
     },
@@ -145,7 +144,6 @@
         "column_a6M88K",
         "column_QifHbN"
       ],
-      "disabled": true,
       "name": "Certificate Slider",
       "settings": {
         "content": "<h2>20+ Certificates</h2><p>From Global Regulatory Authorities</p>",
@@ -316,7 +314,6 @@
     },
     "featured_collection": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "collection": "all",
         "products_to_show": 8,
@@ -349,7 +346,7 @@
         "tag_h4mdAi": {
           "type": "tag",
           "settings": {
-            "collection": "",
+            "collection": "acidity",
             "important": false
           }
         },
