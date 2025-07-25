@@ -3744,3 +3744,36 @@ nav.header__inline-menu::before {
 .slick-next:hover{
   border-width: 2px;
 }
+
+.halo-block-header{
+  position: relative;
+  margin: 0 0 35px;
+}
+
+.halo-block-header .title {
+  color: #232323;
+  font-size: 18px;
+  margin: 0;
+}
+
+.halo-block-header .title:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: var(--heading-border-height);
+  background-color: #232323;
+}
+
+.halo-block-header .text {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+  background: var(--color-background);
+  width: auto;
+  max-width: 100%;
+}
