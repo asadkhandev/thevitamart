@@ -1,0 +1,37 @@
+.certificate-wrap{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.certificate-content-inner{
+    background: #946fd6;
+    padding: 22px 14px;
+    position: relative;
+    margin: 0px 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.certificate-content-inner::before,
+.certificate-content-inner::after{
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.certificate-content-inner::before{
+    left: 0;
+    bottom: 0;
+    width: 43px;
+    height: 43px;
+}
+
+.certificate-content-inner::after{
+    right: 0;
+    top: 0;
+    width: 49px;
+    height: 49px;
+}

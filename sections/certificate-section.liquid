@@ -6,6 +6,13 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .certificate-content-inner::before{
+    background-image: url({{ 'left-layer-stamp.png' | asset_url }});
+  }
+  .certificate-content-inner::after{
+    background-image: url({{ 'right-layer-stamp.png' | asset_url }});
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -25,7 +32,9 @@
     <div class="certificate-wrap">
       {% if section.settings.content != blank %}
         <div class="certificate-content">
-          {{ section.settings.content }}
+          <div class="certificate-content-inner">
+            {{ section.settings.content }}
+          </div>
         </div>
       {% endif %}
       <div class="certificate-slider-wrap">
