@@ -34,10 +34,10 @@
         </div>
     </div>
     <div class="content">
-        <button class="button button button-1" id="categoryViewMore" onclick="handleViewMoreClick()" style="display: unset;">
+        <button class="button button button-1" id="categoryViewMore" onclick="handleViewMoreClick()">
         <span>View More</span>
       </button>
-      <a class="button button button-1" id="categoryViewAll" href="https://www.nutrifactor.com.pk/collections/all-products" style="display: none;">
+      <a class="button button button-1" id="categoryViewAll" href="https://www.nutrifactor.com.pk/collections/all-products">
         <span>View All Products</span>
       </a>
     </div>
@@ -49,28 +49,28 @@
   
   if (window.innerWidth < 768) {
     if(categoryCard.length > 9){
-      document.getElementById('categoryViewMore').style.display='unset'
+      document.getElementById('categoryViewMore').style.display='inline-flex'
       document.getElementById('categoryViewAll').style.display='none'
       for(let i=0; i<9; i++){
         categoryCard[i].style.display = "flex";
       }
     }else {
         document.getElementById('categoryViewMore').style.display='none'
-        document.getElementById('categoryViewAll').style.display='unset'
+        document.getElementById('categoryViewAll').style.display='inline-flex'
         for(let i=0; i<9;i++ ){
           categoryCard[i].style.display = "flex";
         }
     }
   }else if(window.innerWidth < 992){
     if(categoryCard.length > 8){
-      document.getElementById('categoryViewMore').style.display='unset'
+      document.getElementById('categoryViewMore').style.display='inline-flex'
       document.getElementById('categoryViewAll').style.display='none'
       for(let i=0; i < 8 ;i++ ){
        categoryCard[i].style.display = "flex";
       }  
     }else {
        document.getElementById('categoryViewMore').style.display='none'
-       document.getElementById('categoryViewAll').style.display='unset'
+       document.getElementById('categoryViewAll').style.display='inline-flex'
        for(let i=0; i < categoryCard.length ;i++ ){
          categoryCard[i].style.display = "flex";
        } 
