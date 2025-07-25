@@ -1,0 +1,185 @@
+{{ 'section-categoriesbox.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="categoriesbox-section color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+  <div
+    class="section-{{ section.id }}-padding page-width isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+    {% endif %}
+  >
+    <div class="halo-block-header text-center">
+        <h3 class="title">
+            <span class="text">NATURAL CHOICE FOR YOUR HEALTH</span>
+        </h3>
+    </div>
+    <div class="halo-row categoriesBoxOuter">
+        <div class="categoryBox">
+            <a href="/collections/mens-health">link</a>
+            <div class="categoryIcon"><img src="//www.nutrifactor.com.pk/cdn/shop/files/Men_s_health_100x_crop_center.svg?v=1695377692" height="100" width="100"></div>
+            <div class="categoryTxt">Men's Health</div>
+        </div>
+    </div>
+    <div class="content">
+        <button class="button button button-1" id="categoryViewMore" onclick="handleViewMoreClick()" style="display: unset;">
+        <span>View More</span>
+      </button>
+      <a class="button button button-1" id="categoryViewAll" href="https://www.nutrifactor.com.pk/collections/all-products" style="display: none;">
+        <span>View All Products</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  var categoryCard = document.getElementsByClassName("categoryBox");
+  
+  if (window.innerWidth < 768) {
+    if(categoryCard.length > 9){
+      document.getElementById('categoryViewMore').style.display='unset'
+      document.getElementById('categoryViewAll').style.display='none'
+      for(let i=0; i<9; i++){
+        categoryCard[i].style.display = "flex";
+      }
+    }else {
+        document.getElementById('categoryViewMore').style.display='none'
+        document.getElementById('categoryViewAll').style.display='unset'
+        for(let i=0; i<9;i++ ){
+          categoryCard[i].style.display = "flex";
+        }
+    }
+  }else if(window.innerWidth < 992){
+    if(categoryCard.length > 8){
+      document.getElementById('categoryViewMore').style.display='unset'
+      document.getElementById('categoryViewAll').style.display='none'
+      for(let i=0; i < 8 ;i++ ){
+       categoryCard[i].style.display = "flex";
+      }  
+    }else {
+       document.getElementById('categoryViewMore').style.display='none'
+       document.getElementById('categoryViewAll').style.display='unset'
+       for(let i=0; i < categoryCard.length ;i++ ){
+         categoryCard[i].style.display = "flex";
+       } 
+    }
+}
+ else{
+      if(categoryCard.length > 12){
+         document.getElementById('categoryViewMore').style.display='unset'
+         document.getElementById('categoryViewAll').style.display='none'
+         for(let i=0; i <12 ;i++ ){
+           categoryCard[i].style.display = "flex";
+          }
+      }else {
+        document.getElementById('categoryViewMore').style.display='none'
+        document.getElementById('categoryViewAll').style.display='unset'
+        for(let i=0; i <12 ;i++ ){
+           categoryCard[i].style.display = "flex";
+          }
+      }
+   
+    
+    }
+    function handleViewMoreClick() {
+      for(let j=0;j<categoryCard.length;j++){
+         categoryCard[j].style.display = "flex";
+      }
+      document.getElementById('categoryViewMore').style.display='none'
+      document.getElementById('categoryViewAll').style.display='unset'
+    }
+</script>
+
+{% schema %}
+{
+  "name": "CategoriesBox",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Category box",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Category box Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Category box Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "CategoriesBox",
+      "blocks": [
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
