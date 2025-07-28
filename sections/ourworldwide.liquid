@@ -1,6 +1,307 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  /*styles*/
+
+
+.global-presence {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.global-presence .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.presence-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countries-box {
+  background-color: #c59fff;
+  border-radius: 20px;
+  padding: 40px 90px;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.countries-count {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.countries-label {
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+
+.stats {
+  text-align: center;
+}
+
+.stats-title {
+  font-size: 16px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.highlight {
+  color: #c59fff;
+  font-weight: bold;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #666;
+}
+
+.stat-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.stat-text strong {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.stat-text span {
+  font-size: 14px;
+}
+
+
+.btn-show-more {
+  background-color: #c59fff;
+  color: #fff;
+  text-decoration: none;
+  padding: 16px 60px;
+  font-weight: bold;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-show-more:hover {
+  background-color: #a47de0;
+}
+
+
+.presence-right {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presence-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 992px) {
+  .global-presence .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .presence-left,
+  .presence-right {
+    width: 100%;
+  }
+
+  .stats-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .presence-left {
+    margin-bottom: 40px;
+  }
+
+  .countries-box {
+    width: 80%;
+  }
+}
+
+
+  
+{%- endstyle -%}
+
+<div class="our_world_wide-section color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+  <div
+    class="section-{{ section.id }}-padding page-width isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+    {% endif %}
+  >
+
+    {% comment %}
+    {% if section.settings.title != blank %}
+      <div class="halo-block-header text-center">
+        <h3 class="title">
+          <span class="text">{{ section.settings.title }}</span>
+        </h3>
+      </div>
+    {% endif %}
+    {% endcomment %}
+
+    
+    
+<section class="global-presence">
+    <div class="container">
+      <div class="presence-left">
+        <div class="countries-box">
+          <h1 class="countries-count">60+</h1>
+          <p class="countries-label">Countries</p>
+        </div>
+
+        <div class="stats">
+          <p class="stats-title">
+            OUR <span class="highlight">WORLDWIDE</span> FOOTPRINT!
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <img src="https://cdn-icons-png.flaticon.com/512/3176/3176294.png" alt="Continents Icon" />
+              <div class="stat-text">
+                <strong>6</strong>
+                <span class="highlight">Continents</span>
+              </div>
+            </div>
+            <div class="stat-item">
+              <img src="https://cdn-icons-png.flaticon.com/512/1670/1670302.png" alt="Centers Icon" />
+              <div class="stat-text">
+                <strong>100+</strong>
+                <span class="highlight">Distribution Centers</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btn-show-more">SHOW MORE</a>
+        </div>
+      </div>
+
+      <div class="presence-right">
+        <img src="map vitamart.svg" alt="World Map" />
+      </div>
+    </div>
+  </section>
+
+{% schema %}
+{
+  "name": "Our WorldWide",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tag",
+      "name": "Collection Tag",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Select Collection"
+        },
+        {
+          "type": "checkbox",
+          "id": "important",
+          "label": "Mark as Important",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Our WorldWide",
+      "blocks": [
+        {
+          "type": "tag"
+        },
+        {
+          "type": "tag"
+        },
+        {
+          "type": "tag"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
