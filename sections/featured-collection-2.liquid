@@ -153,6 +153,24 @@
             {%- endfor -%}
           {%- endif -%}
         </ul>
+        {%- if show_mobile_slider or show_desktop_slider -%}
+          <div class="slider-buttons">
+            <button
+              type="button"
+              class="slider-button slider-button--prev"
+              name="previous"
+              aria-label="{{ 'general.slider.previous_slide' | t }}"
+              aria-controls="Slider-{{ section.id }}"
+            ></button>
+            <button
+              type="button"
+              class="slider-button slider-button--next"
+              name="next"
+              aria-label="{{ 'general.slider.next_slide' | t }}"
+              aria-controls="Slider-{{ section.id }}"
+            ></button>
+          </div>
+        {%- endif -%}
       </slider-component>
     </div>
 
