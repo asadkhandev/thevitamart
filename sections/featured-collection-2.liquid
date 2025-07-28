@@ -69,17 +69,11 @@
     <div class="collection__title">
       <div class="page-width">
         {%- if section.settings.title != blank -%}
-          {%- if section.settings.text_alignment == 'center' -%}
-            <div class="halo-block-header text-center">
-              <h3 class="title">
-                <span class="text">{{ section.settings.title }}</span>
-              </h3>
-            </div>
-          {%- else -%}
-            <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-              {{ section.settings.title }}
-            </h2>
-          {%- endif -%}
+          <div class="halo-block-header{%- if section.settings.text_alignment == 'center' -%} text-center{%- endif -%}{%- if section.settings.text_alignment == 'left' -%} text-left{%- endif -%}{%- if section.settings.text_alignment == 'right' -%} text-right{%- endif -%}">
+            <h3 class="title">
+              <span class="text">{{ section.settings.title }}</span>
+            </h3>
+          </div>
         {%- endif -%}
       </div>
     </div>
@@ -185,17 +179,6 @@
     </slider-component>
     </div>
 
-    {%- if section.settings.show_view_all and more_in_collection -%}
-      <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-        <a
-          href="{{ section.settings.collection.url }}"
-          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
-          aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
-        >
-          {{ 'sections.featured_collection.view_all' | t }}
-        </a>
-      </div>
-    {%- endif -%}
     {% if section.settings.image_shape == 'arch' %}
       {{ 'mask-arch.svg' | inline_asset_content }}
     {%- endif -%}
@@ -270,13 +253,6 @@
       "id": "full_width",
       "label": "t:sections.featured-collection.settings.full_width.label",
       "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "show_view_all",
-      "default": true,
-      "label": "t:sections.featured-collection.settings.show_view_all.label",
-      "info": "t:sections.featured-collection.settings.show_view_all.info"
     },
     {
       "type": "select",
