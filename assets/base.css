@@ -3768,6 +3768,7 @@ nav.header__inline-menu::before {
   color: #232323;
   font-size: 18px;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .halo-block-header .title:before {
