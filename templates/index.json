@@ -456,6 +456,44 @@
         "padding_bottom": 52
       }
     },
+    "backedbyscience_BrYmNd": {
+      "type": "backedbyscience",
+      "blocks": {
+        "tag_3mqqpP": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        },
+        "tag_AbbQYt": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        },
+        "tag_ewRyGB": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        }
+      },
+      "block_order": [
+        "tag_3mqqpP",
+        "tag_AbbQYt",
+        "tag_ewRyGB"
+      ],
+      "name": "Backed by Science",
+      "settings": {
+        "title": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -514,6 +552,7 @@
     "categoriesbox_section_NmC88i",
     "exploretags_section_LywxPh",
     "ourmission_section_MApADG",
+    "backedbyscience_BrYmNd",
     "featured_collection",
     "featured_collection_2_cAnfrR"
   ]
