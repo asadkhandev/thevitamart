@@ -14,47 +14,48 @@
   /*styles*/
 
 
-.row {
+
+.science-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.col {
+.science-col {
   flex: 1;
   padding: 10px;
 }
 
-.col-left {
+.science-col-left {
   max-width: 60%;
 }
 
-.col-right {
+.science-col-right {
   max-width: 40%;
   text-align: left;
 }
 
-.by-science-image img {
+.science-image-box img {
   max-width: 100%;
   height: auto;
 }
 
-.section-title {
+.science-title {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #333;
 }
 
-.by-science-description {
+.science-description {
   font-size: 13px;
   color: #555;
   margin-bottom: 25px;
   line-height: 1.7;
 }
 
-/* .btn {
+/* .science-btn {
   display: inline-block;
   padding: 10px 22px;
   font-size: 12px;
@@ -66,11 +67,11 @@
   transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.science-btn:hover {
   background-color: #333;
 } */
 
-.certification-logos {
+.science-certifications {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -79,34 +80,32 @@
   justify-content: center;
 }
 
-.certification-logos img {
-  height: 100px;
-  object-fit: contain;
+.science-certifications img {
   height: 170px;
+  object-fit: contain;
 }
 
 
 @media (max-width: 768px) {
-  .row {
+  .science-row {
     flex-direction: column;
     text-align: center;
   }
 
-  .col-left,
-  .col-right {
+  .science-col-left,
+  .science-col-right {
     max-width: 100%;
   }
 
-  .col-right {
+  .science-col-right {
     text-align: center;
     margin-top: 30px;
   }
 
-  .certification-logos {
+  .science-certifications {
     justify-content: center;
   }
 }
-
   
 
   
@@ -133,34 +132,30 @@
     
     
 
-    <div class="row align-center">
+     <div class="science-row align-center">
 
-      
-      <div class="col col-left">
-        <div class="by-science-image">
+      <div class="science-col science-col-left">
+        <div class="science-image-box">
           <img src="https://cdn.shopify.com/s/files/1/0707/8104/2880/files/Backed_by_Science.png?v=1753688959" alt="Science Illustration" />
         </div>
       </div>
 
-
-      <div class="col col-right">
-        <div class="by-science-content">
-          <h2 class="section-title">WE ARE BACKED BY SCIENCE</h2>
-          <p class="by-science-description">
+      <div class="science-col science-col-right">
+        <div class="science-content-box">
+          <h2 class="science-title">WE ARE BACKED BY SCIENCE</h2>
+          <p class="science-description">
             Our carefully curated formulations are prepared in controlled
             environment under strict supervision of our healthcare experts.
           </p>
-          <a href="#" class="button">KNOW MORE</a>
+          <a href="#" class="science-btn">KNOW MORE</a>
         </div>
 
-    
-        <div class="certification-logos">
-          <img src="https://cdn.shopify.com/s/files/1/0707/8104/2880/files/company_icons.webp?v=1753687813" alt="Company ions">
-          
+        <div class="science-certifications">
+          <img src="https://cdn.shopify.com/s/files/1/0707/8104/2880/files/company_icons.webp?v=1753687813" alt="Company Certifications">
         </div>
       </div>
 
-    
+    </div>
   </div>
 </div>
 
