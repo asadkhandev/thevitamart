@@ -12,6 +12,93 @@
   }
 
   /*styles from here*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.col {
+  flex: 1;
+  padding: 15px;
+}
+
+
+.col-left {
+  max-width: 400px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.mission-description {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+/* 
+.btn {
+    border: solid 1px #000000;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #111111fc;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #17171775;
+}
+ */
+
+.col-right {
+  text-align: right;
+}
+
+.mission-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .col-left,
+  .col-right {
+    max-width: 100%;
+  }
+
+  .col-right {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+
+  
+
   
 {%- endstyle -%}
 
@@ -38,6 +125,36 @@
     {% endcomment %}
     Our Mission
 
+<div class="row align-center">
+        
+     
+        <div class="col col-left">
+          <div class="mission-content">
+            <h2 class="section-title">OUR MISSION  WELLNESS FOR LIFE!</h2>
+            <p class="mission-description">
+              At Nutrifactor we aim to explore the goodness of nature<br>
+              with innovation. We are dedicated to play our role in<br>
+              building a happy & healthy community.
+            </p>
+            <a href="#" class="btn btn-primary">LEARN MORE</a>
+          </div>
+        </div>
+
+     
+        <div class="col col-right">
+          <div class="mission-image">
+            <img src="download.svg" alt="Wellness Illustration" />
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+    
   </div>
 </div>
 
