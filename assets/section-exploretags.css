@@ -18,6 +18,15 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    text-decoration: none;
+}
+
+.important-v2 .explore-span-v2 {
+    padding: 5px 34px 5px 14px;
+}
+
+.explore-span-v2:hover {
+    background-image: linear-gradient(to bottom, #7B5FB3, #a98ee1);
 }
 
 .explore-span-v2::before,
@@ -37,4 +46,18 @@
     bottom: 0px;
     right: 0px;
     transform: rotate(180deg);
+}
+
+.explore-span-v2:hover::before,
+.explore-span-v2:hover::after{
+    opacity: 1;
+}
+
+.explore-tag-v2.important-v2::after {
+    position: absolute;
+    top: -5px;
+    right: 14px;
+    z-index: 100;
+    height: 16px;
+    width: 12px;
 }

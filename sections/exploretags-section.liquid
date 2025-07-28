@@ -18,6 +18,10 @@
     content: url({{ 'right_spiral.svg' | asset_url }});
   }
 
+  .explore-tag-v2.important-v2::after {
+    content: url({{ 'white_no_radius.svg' | asset_url }});
+  }
+
 {%- endstyle -%}
 
 <div class="exploretags-section color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
