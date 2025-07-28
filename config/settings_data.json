@@ -105,7 +105,7 @@
     "drawer_shadow_blur": 5,
     "badge_position": "bottom left",
     "badge_corner_radius": 40,
-    "sale_badge_color_scheme": "scheme-4",
+    "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "No.1 Vitamin Brand, Empowering Wellness Globally.",
     "brand_description": "<p><a href=\"#\"><img border=\"0\" width=\"15\" src=\"https://cdn.shopify.com/s/files/1/0707/8104/2880/files/phone-call-white-icon.svg?v=1753263007\" alt=\"icon\">PHONE</a><br><a href=\"mailto:info@thevitamart.com\" title=\"mailto:info@thevitamart.com\"><img width=\"15\" src=\"https://cdn.shopify.com/s/files/1/0707/8104/2880/files/email-envelope-white-icon.svg?v=1753263007\" alt=\"icon\">info@thevitamart.com</a></p>",
@@ -191,13 +191,13 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#00563d",
+          "background": "#e95144",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
-          "button_label": "#00563d",
+          "button_label": "#e95144",
           "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "shadow": "#e95144"
         }
       }
     }
