@@ -1,0 +1,40 @@
+.explore-tag-wrapper-v2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 9px;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-span-v2 {
+    position: relative;
+    background-image: linear-gradient(to bottom, #7B5FB3, #9982C5);
+    color: #fffcf3;
+    padding: 5px 20px 5px 17px;
+    border-radius: 6px;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.explore-span-v2::before,
+.explore-span-v2::after{
+    position: absolute;
+    width: 12px;
+    opacity: 0.2;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.explore-span-v2::before {
+    top: 0px;
+    left: 0px;
+}
+
+.explore-span-v2::after {
+    bottom: 0px;
+    right: 0px;
+    transform: rotate(180deg);
+}
