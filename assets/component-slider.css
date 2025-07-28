@@ -375,3 +375,36 @@ slider-component.slider-component-full-width {
 .slider-button--prev:not([disabled]):hover .icon {
   transform: rotate(90deg) scale(1.1);
 }
+
+
+.slider-button{
+  width: 35px;
+  height: 35px;
+  border: 1px solid #00563D;
+  border-radius: 35px;
+  z-index: 1;
+}
+
+.slider-button:hover{
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 15px auto;
+  background-position: center center;
+}
+
+.slider-button.slider-button--prev{
+  background-image: url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/chev-left.svg?v=1753352569');
+}
+
+.slider-button.slider-button--next{
+  background-color: #fff;
+  background-image: url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/chev-right.svg?v=1753352355');
+}
+
+.slider-button:hover{
+  border-width: 2px;
+}
+
+.slider-button span{
+  display: none;
+}
