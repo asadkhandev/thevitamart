@@ -533,6 +533,7 @@
         "text_alignment": "center",
         "columns_desktop": 4,
         "enable_desktop_slider": true,
+        "full_width": true,
         "color_scheme": "",
         "image_ratio": "square",
         "show_secondary_image": true,
