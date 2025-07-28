@@ -405,6 +405,48 @@
             "collection": "workout",
             "important": false
           }
+        },
+        "tag_nbLatj": {
+          "type": "tag",
+          "settings": {
+            "collection": "dandruff",
+            "important": false
+          }
+        },
+        "tag_KJezUG": {
+          "type": "tag",
+          "settings": {
+            "collection": "iron-deficiency",
+            "important": false
+          }
+        },
+        "tag_KTNN8D": {
+          "type": "tag",
+          "settings": {
+            "collection": "joint-pain",
+            "important": false
+          }
+        },
+        "tag_xx6Vgr": {
+          "type": "tag",
+          "settings": {
+            "collection": "migraine",
+            "important": true
+          }
+        },
+        "tag_a6ktFg": {
+          "type": "tag",
+          "settings": {
+            "collection": "muscle-pain",
+            "important": false
+          }
+        },
+        "tag_fTtLWg": {
+          "type": "tag",
+          "settings": {
+            "collection": "weak-bones",
+            "important": true
+          }
         }
       },
       "block_order": [
@@ -416,7 +458,13 @@
         "tag_FiKKLg",
         "tag_q6HzCb",
         "tag_t8pamt",
-        "tag_zq6EYG"
+        "tag_zq6EYG",
+        "tag_nbLatj",
+        "tag_KJezUG",
+        "tag_KTNN8D",
+        "tag_xx6Vgr",
+        "tag_a6ktFg",
+        "tag_fTtLWg"
       ],
       "name": "ExploreTags",
       "settings": {
