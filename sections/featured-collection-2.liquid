@@ -41,6 +41,10 @@
     width: 24.17%;
   }
 
+  .text-center .card-information{
+    text-align: center;
+  }
+
 {%- endstyle -%}
 
 {%- liquid
@@ -113,7 +117,6 @@
                   show_rating: section.settings.show_rating,
                   skip_styles: skip_card_product_styles,
                   section_id: section.id,
-                  custom_class: section.settings.text_alignment == 'center' ? 'text-center' : '',
                   quick_add: section.settings.quick_add
                 %}
               </li>
