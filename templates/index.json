@@ -534,7 +534,6 @@
         "columns_desktop": 4,
         "enable_desktop_slider": true,
         "full_width": true,
-        "show_view_all": false,
         "view_all_style": "solid",
         "color_scheme": "",
         "image_ratio": "square",
@@ -548,6 +547,16 @@
         "padding_top": 52,
         "padding_bottom": 52
       }
+    },
+    "ourworldwide_CEKxQY": {
+      "type": "ourworldwide",
+      "name": "Our WorldWide",
+      "settings": {
+        "title": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -558,6 +567,7 @@
     "ourmission_section_MApADG",
     "backedbyscience_BrYmNd",
     "featured_collection",
-    "featured_collection_2_cAnfrR"
+    "featured_collection_2_cAnfrR",
+    "ourworldwide_CEKxQY"
   ]
 }
