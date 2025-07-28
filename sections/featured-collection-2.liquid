@@ -69,7 +69,7 @@
     <div class="collection__title">
       <div class="page-width">
         {%- if section.settings.title != blank -%}
-          <div class="halo-block-header{%- if section.settings.text_alignment == 'center' -%} text-center{%- endif -%}{%- if section.settings.text_alignment == 'left' -%} text-left{%- endif -%}{%- if section.settings.text_alignment == 'right' -%} text-right{%- endif -%}">
+          <div class="halo-block-header{% if section.settings.text_alignment == 'center' %} text-center{% endif %}{% if section.settings.text_alignment == 'left' %} text-left{% endif %}{% if section.settings.text_alignment == 'right' %} text-right{% endif %}">
             <h3 class="title">
               <span class="text">{{ section.settings.title }}</span>
             </h3>
