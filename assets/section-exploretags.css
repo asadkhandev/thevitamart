@@ -6,6 +6,10 @@
     justify-content: center;
 }
 
+.explore-tag-v2{
+    position: relative;
+}
+
 .explore-span-v2 {
     position: relative;
     background-image: linear-gradient(to bottom, #7B5FB3, #9982C5);
