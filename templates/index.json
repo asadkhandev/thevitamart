@@ -368,7 +368,7 @@
           "type": "tag",
           "settings": {
             "collection": "eyesight",
-            "important": false
+            "important": true
           }
         },
         "tag_MGzkjE": {
