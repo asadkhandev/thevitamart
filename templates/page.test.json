@@ -138,11 +138,50 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "ourworldwide_PYL39N": {
+      "type": "ourworldwide",
+      "blocks": {
+        "tag_hbRtDA": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        },
+        "tag_VGRnWb": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        },
+        "tag_TiRgkd": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        }
+      },
+      "block_order": [
+        "tag_hbRtDA",
+        "tag_VGRnWb",
+        "tag_TiRgkd"
+      ],
+      "name": "Our WorldWide",
+      "settings": {
+        "title": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "multicolumn_MVEfx8",
     "ourmission_section_KLjPL9",
-    "backedbyscience_XjbcJd"
+    "backedbyscience_XjbcJd",
+    "ourworldwide_PYL39N"
   ]
 }
