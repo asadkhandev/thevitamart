@@ -353,14 +353,56 @@
         "tag_hgNN3T": {
           "type": "tag",
           "settings": {
-            "collection": "",
+            "collection": "anxiety",
             "important": false
           }
         },
         "tag_EKyghX": {
           "type": "tag",
           "settings": {
-            "collection": "",
+            "collection": "energy-boost-in-men",
+            "important": false
+          }
+        },
+        "tag_dKjXUV": {
+          "type": "tag",
+          "settings": {
+            "collection": "eyesight",
+            "important": false
+          }
+        },
+        "tag_MGzkjE": {
+          "type": "tag",
+          "settings": {
+            "collection": "female-fertility",
+            "important": false
+          }
+        },
+        "tag_FiKKLg": {
+          "type": "tag",
+          "settings": {
+            "collection": "hairfall",
+            "important": false
+          }
+        },
+        "tag_q6HzCb": {
+          "type": "tag",
+          "settings": {
+            "collection": "muscle-pain",
+            "important": false
+          }
+        },
+        "tag_t8pamt": {
+          "type": "tag",
+          "settings": {
+            "collection": "uti",
+            "important": false
+          }
+        },
+        "tag_zq6EYG": {
+          "type": "tag",
+          "settings": {
+            "collection": "workout",
             "important": false
           }
         }
@@ -368,7 +410,13 @@
       "block_order": [
         "tag_h4mdAi",
         "tag_hgNN3T",
-        "tag_EKyghX"
+        "tag_EKyghX",
+        "tag_dKjXUV",
+        "tag_MGzkjE",
+        "tag_FiKKLg",
+        "tag_q6HzCb",
+        "tag_t8pamt",
+        "tag_zq6EYG"
       ],
       "name": "ExploreTags",
       "settings": {
