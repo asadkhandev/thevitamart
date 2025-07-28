@@ -63,24 +63,24 @@
         "padding_bottom": 36
       }
     },
-    "ourmission_section_GTAb7r": {
+    "ourmission_section_KLjPL9": {
       "type": "ourmission-section",
       "blocks": {
-        "tag_PyELgi": {
+        "tag_zWrfBT": {
           "type": "tag",
           "settings": {
             "collection": "",
             "important": false
           }
         },
-        "tag_JpkBp7": {
+        "tag_kqqd7b": {
           "type": "tag",
           "settings": {
             "collection": "",
             "important": false
           }
         },
-        "tag_FXzKB6": {
+        "tag_4mErba": {
           "type": "tag",
           "settings": {
             "collection": "",
@@ -89,11 +89,49 @@
         }
       },
       "block_order": [
-        "tag_PyELgi",
-        "tag_JpkBp7",
-        "tag_FXzKB6"
+        "tag_zWrfBT",
+        "tag_kqqd7b",
+        "tag_4mErba"
       ],
       "name": "Our Mission",
+      "settings": {
+        "title": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "backedbyscience_XjbcJd": {
+      "type": "backedbyscience",
+      "blocks": {
+        "tag_9GQ6Xz": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        },
+        "tag_FfLppr": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        },
+        "tag_8jtamk": {
+          "type": "tag",
+          "settings": {
+            "collection": "",
+            "important": false
+          }
+        }
+      },
+      "block_order": [
+        "tag_9GQ6Xz",
+        "tag_FfLppr",
+        "tag_8jtamk"
+      ],
+      "name": "Backed by Science",
       "settings": {
         "title": "",
         "color_scheme": "",
@@ -104,6 +142,7 @@
   },
   "order": [
     "multicolumn_MVEfx8",
-    "ourmission_section_GTAb7r"
+    "ourmission_section_KLjPL9",
+    "backedbyscience_XjbcJd"
   ]
 }
