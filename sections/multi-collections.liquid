@@ -1,4 +1,5 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'multi_collections-section.css' | asset_url | stylesheet_tag }}
 
 <div class="collection-tabs-section page-width">
   
@@ -10,8 +11,9 @@
     </div>
   {%- endif -%}
 
-  <ul class="tabs-menu flex justify-center gap-4 mb-6">
+  <ul class="tabs-menu">
     <li class="tab-link active" data-tab="tab1">{{ collections[section.settings.collection_1].title }}</li>
+    <li>/</li>
     <li class="tab-link" data-tab="tab2">{{ collections[section.settings.collection_2].title }}</li>
   </ul>
 

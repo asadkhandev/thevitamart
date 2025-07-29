@@ -1,0 +1,24 @@
+.tabs-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-link{
+    padding: 6px 15px;
+    display: block;
+    transition: none;
+    color: #232323;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    border-radius: 3px;
+    background: #ffffff;
+    text-transform: uppercase;
+}
+
+.tab-link.active{
+    color: #232323;
+    background: #f8f8f8;
+    font-weight: 700;
+}
