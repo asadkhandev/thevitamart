@@ -26,3 +26,6 @@
     background: #f8f8f8;
     font-weight: 700;
 }
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
