@@ -26,7 +26,7 @@
         </div>
       {%- endif -%}
 
-      <div class="tab-content{% if section.settings.text_alignment == 'center' %} text-center{% endif %}">
+      <div class="collections-slider{% if section.settings.text_alignment == 'center' %} text-center{% endif %}">
         <!-- Collection -->
         <div class="slider-collection-1">
           {% for product in section.settings.collection.products limit: section.settings.products_to_show %}
