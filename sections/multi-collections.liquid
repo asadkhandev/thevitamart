@@ -73,8 +73,8 @@
     $('.slider-collection-1, .slider-collection-2').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
-      autoplay: false,
-      dots: false,
+      autoplay: true,
+      dots: true,
       arrows: true,
       responsive: [
         { breakpoint: 1200, settings: { slidesToShow: 3 } },
@@ -91,9 +91,9 @@
     border-bottom: 2px solid black;
   }
 
-  .tab-panel.hidden {
+  {% comment %} .tab-panel.hidden {
     display: none;
-  }
+  } {% endcomment %}
 </style>
 
 {% schema %}
