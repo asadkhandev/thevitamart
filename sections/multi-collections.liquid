@@ -39,7 +39,7 @@
     </div>
 
     <!-- Collection 2 -->
-    <div id="tab2" class="tab-panel">
+    <div id="tab2" class="tab-panel hidden">
       <div class="product-slider slider-collection-2">
         {% for product in collections[section.settings.collection_2].products limit: section.settings.products_to_show %}
           <div class="multi_slide">
@@ -63,7 +63,7 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     // Tab switcher logic
-    {% comment %} document.querySelectorAll('.tab-link').forEach(link => {
+    document.querySelectorAll('.tab-link').forEach(link => {
       link.addEventListener('click', function() {
         document.querySelectorAll('.tab-link').forEach(l => l.classList.remove('active'));
         this.classList.add('active');
@@ -71,7 +71,7 @@
         document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.add('hidden'));
         document.getElementById(tab).classList.remove('hidden');
       });
-    }); {% endcomment %}
+    });
 
     // Initialize slick sliders
     function initSlickSlider(selector) {
@@ -80,7 +80,7 @@
           slidesToShow: 4,
           slidesToScroll: 1,
           autoplay: false,
-          dots: false,
+          dots: true,
           arrows: true,
           responsive: [
             { breakpoint: 1200, settings: { slidesToShow: 3 } },
