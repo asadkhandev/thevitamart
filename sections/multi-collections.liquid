@@ -32,13 +32,13 @@
         </div>
       {%- endif -%}
 
-      <ul class="tabs-menu{% if section.settings.text_alignment == 'center' %} text-center{% endif %}">
+      <ul class="tabs-menu">
         <li class="tab-link active" data-tab="tab1">{{ collections[section.settings.collection_1].title }}</li>
         <li>/</li>
         <li class="tab-link" data-tab="tab2">{{ collections[section.settings.collection_2].title }}</li>
       </ul>
 
-      <div class="tab-content">
+      <div class="tab-content{% if section.settings.text_alignment == 'center' %} text-center{% endif %}">
         <!-- Collection 1 -->
         <div id="tab1" class="tab-panel active">
           <div class="product-slider slider-collection-1">
