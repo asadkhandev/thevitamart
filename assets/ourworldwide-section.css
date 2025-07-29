@@ -1,0 +1,292 @@
+/* mapSection */
+.internationalBoxInnerLg {
+  display: flex;
+}
+
+.mapBoxContent {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapCountryBoxHeadTxt {
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+.mapCountryBoxbodyTxt {
+  font-size: 115px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.mapCountryBoxSubTxt {
+  letter-spacing: 9px;
+  padding-left: 5px;
+  font-size: 24px;
+}
+
+.mapBoxContentHead {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-block: 20px;
+  font-size: 16px;
+}
+
+.mapBoxContentHead span {
+  color: #b497ed;
+}
+
+.mapBoxContentStats {
+  display: flex;
+  gap: 25px;
+}
+
+.mapStatHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+.mapStatSubTxt {
+  color: #b497ed;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.mapStatIcon {
+  color: #b497ed;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapStatTxt {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.mapContentBtn {
+  margin-block: 20px;
+  width: 250px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background-color: #b497ed;
+  transition: all 0.2s ease;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 9px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mapContentBtn:hover {
+  background-color: #ffffff;
+  color: #b497ed;
+  border: 2px solid #b497ed;
+}
+
+.mapBoxCountryBox {
+  position: relative;
+  background-color: #b497ed;
+  border-radius: 20px;
+  height: 250px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clrBoxTxt {
+  color: #ffffff;
+}
+
+.mapBoxMapArea {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.mapBoxContentHeadingSm {
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 18px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.mapBoxContentHeadingSm span {
+  color: #b497ed;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.mapBoxContentHeadSm {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+  margin-block: 20px;
+}
+
+.mapBoxContentHeadSm span {
+  color: #b497ed;
+}
+
+.mapBoxContentStatsSm {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.mapStatHeadSm {
+  display: flex;
+  justify-content: center;
+  line-height: 1;
+}
+
+.mapStatSubTxtSm {
+  color: #b497ed;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mapStatIconSm {
+  color: #b497ed;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapStatTxtSm {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.mapContentBtnSmOuter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mapContentBtnSm {
+  margin-block: 20px;
+  cursor: pointer;
+  width: 250px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: #b497ed;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 9px;
+}
+
+.mapContentBtnSm:hover {
+  background-color: #ffffff;
+  color: #b497ed;
+  border-color: #b497ed;
+}
+
+.mapBoxContentFooterSm {
+  width: 50%;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .mapBoxContent {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .mapBoxCountryBox {
+    height: 200px;
+    width: 250px;
+  }
+
+  .mapCountryBoxHeadTxt {
+    font-size: 16px;
+  }
+
+  .mapCountryBoxbodyTxt {
+    font-size: 100px;
+  }
+
+  .mapCountryBoxSubTxt {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .internationalBoxInnerLg {
+    display: block;
+  }
+
+  .mapBoxContent {
+    display: none;
+  }
+
+  .mapContentBtnSm {
+    width: 215px;
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  .mapStatTxtSm {
+    font-size: 30px;
+  }
+
+  .mapStatIconSm {
+    font-size: 30px;
+  }
+
+  .mapStatSubTxtSm {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .mapBoxContentHeadingSm,
+  .mapBoxContentFooterSm {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mapBoxContentFooterSm {
+    width: 100%;
+  }
+
+  .mapBoxContentStatsSm {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mapBoxContentHeadingSm {
+    font-size: 20px;
+  }
+
+  .mapBoxContentHeadSm {
+    font-size: 20px;
+  }
+}
