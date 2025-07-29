@@ -59,7 +59,7 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     // Tab switcher logic
-    document.querySelectorAll('.tab-link').forEach(link => {
+    {% comment %} document.querySelectorAll('.tab-link').forEach(link => {
       link.addEventListener('click', function() {
         document.querySelectorAll('.tab-link').forEach(l => l.classList.remove('active'));
         this.classList.add('active');
@@ -67,13 +67,13 @@
         document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.add('hidden'));
         document.getElementById(tab).classList.remove('hidden');
       });
-    });
+    }); {% endcomment %}
 
     // Initialize slick sliders
     $('.slider-collection-1, .slider-collection-2').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       dots: true,
       arrows: true,
       responsive: [
@@ -84,17 +84,6 @@
     });
   });
 </script>
-
-<style>
-  .tab-link.active {
-    font-weight: bold;
-    border-bottom: 2px solid black;
-  }
-
-  {% comment %} .tab-panel.hidden {
-    display: none;
-  } {% endcomment %}
-</style>
 
 {% schema %}
 {
