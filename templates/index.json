@@ -312,6 +312,26 @@
         "padding_bottom": 52
       }
     },
+    "multi_collections_CwHw9Q": {
+      "type": "multi-collections",
+      "name": "Multi Collections",
+      "settings": {
+        "title": "Trending Now",
+        "text_alignment": "center",
+        "collection_1": "best-sellings",
+        "collection_2": "new-arrivals",
+        "products_to_show": 8,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": false,
+        "color_scheme": "",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
     "exploretags_section_LywxPh": {
       "type": "exploretags-section",
       "blocks": {
@@ -528,37 +548,17 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "multi_collections_CwHw9Q": {
-      "type": "multi-collections",
-      "name": "Multi Collections",
-      "settings": {
-        "title": "Trending Now",
-        "text_alignment": "center",
-        "collection_1": "best-sellings",
-        "collection_2": "new-arrivals",
-        "products_to_show": 8,
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "quick_add": false,
-        "color_scheme": "",
-        "padding_top": 52,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "banner_slider_KWGVAx",
     "certificate_section_f6UWUA",
     "categoriesbox_section_NmC88i",
+    "multi_collections_CwHw9Q",
     "exploretags_section_LywxPh",
     "ourmission_section_MApADG",
     "backedbyscience_BrYmNd",
     "featured_collection_2_cAnfrR",
-    "ourworldwide_CEKxQY",
-    "multi_collections_CwHw9Q"
+    "ourworldwide_CEKxQY"
   ]
 }
