@@ -533,7 +533,8 @@
       "type": "multi-collections",
       "name": "Multi Collections",
       "settings": {
-        "heading": "Featured Collections",
+        "title": "Trending Now",
+        "text_alignment": "center",
         "collection_1": "best-sellings",
         "collection_2": "new-arrivals",
         "products_to_show": 8,
@@ -542,7 +543,10 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": true,
-        "quick_add": false
+        "quick_add": false,
+        "color_scheme": "",
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     }
   },
