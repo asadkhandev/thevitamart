@@ -1,60 +1,82 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'multi_collections-section.css' | asset_url | stylesheet_tag }}
 
-<div class="collection-tabs-section page-width">
-  
-  {%- if section.settings.title != blank -%}
-    <div class="halo-block-header{% if section.settings.text_alignment == 'center' %} text-center{% endif %}{% if section.settings.text_alignment == 'left' %} text-left{% endif %}{% if section.settings.text_alignment == 'right' %} text-right{% endif %}">
-      <h3 class="title">
-        <span class="text">{{ section.settings.title }}</span>
-      </h3>
-    </div>
-  {%- endif -%}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
 
-  <ul class="tabs-menu">
-    <li class="tab-link active" data-tab="tab1">{{ collections[section.settings.collection_1].title }}</li>
-    <li>/</li>
-    <li class="tab-link" data-tab="tab2">{{ collections[section.settings.collection_2].title }}</li>
-  </ul>
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
 
-  <div class="tab-content">
-    <!-- Collection 1 -->
-    <div id="tab1" class="tab-panel active">
-      <div class="product-slider slider-collection-1">
-        {% for product in collections[section.settings.collection_1].products limit: section.settings.products_to_show %}
-          <div class="multi_slide">
-            {% render 'card-product',
-              card_product: product,
-              media_aspect_ratio: section.settings.image_ratio,
-              image_shape: section.settings.image_shape,
-              show_secondary_image: section.settings.show_secondary_image,
-              show_vendor: section.settings.show_vendor,
-              show_rating: section.settings.show_rating,
-              section_id: section.id,
-              quick_add: section.settings.quick_add
-            %}
-          </div>
-        {% endfor %}
+  .text-center .card-information,
+  .text-center .card__information{
+    text-align: center;
+  }
+
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} isolate gradient">
+  <div class="collection-tabs-section page-width">
+    
+    {%- if section.settings.title != blank -%}
+      <div class="halo-block-header{% if section.settings.text_alignment == 'center' %} text-center{% endif %}{% if section.settings.text_alignment == 'left' %} text-left{% endif %}{% if section.settings.text_alignment == 'right' %} text-right{% endif %}">
+        <h3 class="title">
+          <span class="text">{{ section.settings.title }}</span>
+        </h3>
       </div>
-    </div>
+    {%- endif -%}
 
-    <!-- Collection 2 -->
-    <div id="tab2" class="tab-panel">
-      <div class="product-slider slider-collection-2">
-        {% for product in collections[section.settings.collection_2].products limit: section.settings.products_to_show %}
-          <div class="multi_slide">
-            {% render 'card-product',
-              card_product: product,
-              media_aspect_ratio: section.settings.image_ratio,
-              image_shape: section.settings.image_shape,
-              show_secondary_image: section.settings.show_secondary_image,
-              show_vendor: section.settings.show_vendor,
-              show_rating: section.settings.show_rating,
-              section_id: section.id,
-              quick_add: section.settings.quick_add
-            %}
-          </div>
-        {% endfor %}
+    <ul class="tabs-menu">
+      <li class="tab-link active" data-tab="tab1">{{ collections[section.settings.collection_1].title }}</li>
+      <li>/</li>
+      <li class="tab-link" data-tab="tab2">{{ collections[section.settings.collection_2].title }}</li>
+    </ul>
+
+    <div class="tab-content">
+      <!-- Collection 1 -->
+      <div id="tab1" class="tab-panel active">
+        <div class="product-slider slider-collection-1">
+          {% for product in collections[section.settings.collection_1].products limit: section.settings.products_to_show %}
+            <div class="multi_slide">
+              {% render 'card-product',
+                card_product: product,
+                media_aspect_ratio: section.settings.image_ratio,
+                image_shape: section.settings.image_shape,
+                show_secondary_image: section.settings.show_secondary_image,
+                show_vendor: section.settings.show_vendor,
+                show_rating: section.settings.show_rating,
+                section_id: section.id,
+                quick_add: section.settings.quick_add
+              %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Collection 2 -->
+      <div id="tab2" class="tab-panel">
+        <div class="product-slider slider-collection-2">
+          {% for product in collections[section.settings.collection_2].products limit: section.settings.products_to_show %}
+            <div class="multi_slide">
+              {% render 'card-product',
+                card_product: product,
+                media_aspect_ratio: section.settings.image_ratio,
+                image_shape: section.settings.image_shape,
+                show_secondary_image: section.settings.show_secondary_image,
+                show_vendor: section.settings.show_vendor,
+                show_rating: section.settings.show_rating,
+                section_id: section.id,
+                quick_add: section.settings.quick_add
+              %}
+            </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
@@ -128,7 +150,7 @@
   "disabled_on": {
     "groups": ["header", "footer"]
   },
-  "settings": [ 
+  "settings": [
     {
       "type": "text",
       "id": "title",
@@ -208,6 +230,37 @@
       "id": "quick_add",
       "label": "Enable quick add",
       "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "info": "t:sections.all.colors.has_cards_info",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
     }
   ],
   "presets": [
