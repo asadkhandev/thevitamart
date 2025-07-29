@@ -22,16 +22,18 @@
     <div id="tab1" class="tab-panel active">
       <div class="product-slider slider-collection-1">
         {% for product in collections[section.settings.collection_1].products limit: section.settings.products_to_show %}
-          {% render 'card-product',
-            card_product: product,
-            media_aspect_ratio: section.settings.image_ratio,
-            image_shape: section.settings.image_shape,
-            show_secondary_image: section.settings.show_secondary_image,
-            show_vendor: section.settings.show_vendor,
-            show_rating: section.settings.show_rating,
-            section_id: section.id,
-            quick_add: section.settings.quick_add
-          %}
+          <div class="multi_slide">
+            {% render 'card-product',
+              card_product: product,
+              media_aspect_ratio: section.settings.image_ratio,
+              image_shape: section.settings.image_shape,
+              show_secondary_image: section.settings.show_secondary_image,
+              show_vendor: section.settings.show_vendor,
+              show_rating: section.settings.show_rating,
+              section_id: section.id,
+              quick_add: section.settings.quick_add
+            %}
+          </div>
         {% endfor %}
       </div>
     </div>
@@ -40,16 +42,18 @@
     <div id="tab2" class="tab-panel">
       <div class="product-slider slider-collection-2">
         {% for product in collections[section.settings.collection_2].products limit: section.settings.products_to_show %}
-          {% render 'card-product',
-            card_product: product,
-            media_aspect_ratio: section.settings.image_ratio,
-            image_shape: section.settings.image_shape,
-            show_secondary_image: section.settings.show_secondary_image,
-            show_vendor: section.settings.show_vendor,
-            show_rating: section.settings.show_rating,
-            section_id: section.id,
-            quick_add: section.settings.quick_add
-          %}
+          <div class="multi_slide">
+            {% render 'card-product',
+              card_product: product,
+              media_aspect_ratio: section.settings.image_ratio,
+              image_shape: section.settings.image_shape,
+              show_secondary_image: section.settings.show_secondary_image,
+              show_vendor: section.settings.show_vendor,
+              show_rating: section.settings.show_rating,
+              section_id: section.id,
+              quick_add: section.settings.quick_add
+            %}
+          </div>
         {% endfor %}
       </div>
     </div>
