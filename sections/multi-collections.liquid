@@ -34,7 +34,7 @@
 
       <ul class="tabs-menu">
         <li class="tab-link active" data-tab="tab1">{{ collections[section.settings.collection_1].title }}</li>
-        <li>/</li>
+        <li class="tab-space">/</li>
         <li class="tab-link" data-tab="tab2">{{ collections[section.settings.collection_2].title }}</li>
       </ul>
 
@@ -91,7 +91,7 @@
       if (!$(selector).hasClass('slick-initialized')) {
         $(selector).slick({
           slidesToShow: 4,
-          slidesToScroll: 1,
+          slidesToScroll: 4,
           autoplay: true,
           autoplaySpeed: 10000, // Set to 10 seconds
           dots: true,

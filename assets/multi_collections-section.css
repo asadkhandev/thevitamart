@@ -27,5 +27,9 @@
     font-weight: 700;
 }
 
+.tab-space{
+    margin: 0 10px;
+}
+
 .tab-panel { display: none; }
 .tab-panel.active { display: block; }
