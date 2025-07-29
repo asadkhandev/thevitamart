@@ -1,11 +1,14 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 <div class="collection-tabs-section page-width">
-  {% if section.settings.heading != blank %}
-    <div class="section-header text-center">
-      <h2>{{ section.settings.heading }}</h2>
+  
+  {%- if section.settings.title != blank -%}
+    <div class="halo-block-header{% if section.settings.text_alignment == 'center' %} text-center{% endif %}{% if section.settings.text_alignment == 'left' %} text-left{% endif %}{% if section.settings.text_alignment == 'right' %} text-right{% endif %}">
+      <h3 class="title">
+        <span class="text">{{ section.settings.title }}</span>
+      </h3>
     </div>
-  {% endif %}
+  {%- endif -%}
 
   <ul class="tabs-menu flex justify-center gap-4 mb-6">
     <li class="tab-link active" data-tab="tab1">{{ collections[section.settings.collection_1].title }}</li>
@@ -102,9 +105,20 @@
   "settings": [ 
     {
       "type": "text",
-      "id": "heading",
+      "id": "title",
       "label": "Heading",
       "default": "Featured Collections"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
     },
     {
       "type": "collection",
