@@ -3796,3 +3796,8 @@ nav.header__inline-menu::before {
 .btn-content{
   text-align: center;
 }
+
+.text-center .card-information,
+.text-center .card__information{
+  text-align: center;
+}
