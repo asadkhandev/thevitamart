@@ -530,6 +530,16 @@
         "padding_top": 52,
         "padding_bottom": 52
       }
+    },
+    "blog_slider_hqeHjp": {
+      "type": "blog-slider",
+      "name": "Home Blog Slider",
+      "settings": {
+        "title": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -541,6 +551,7 @@
     "ourmission_C7eMEq",
     "backedbyscience_BrYmNd",
     "featured_collections_slider_NWM3wA",
-    "ourworldwide_CEKxQY"
+    "ourworldwide_CEKxQY",
+    "blog_slider_hqeHjp"
   ]
 }
