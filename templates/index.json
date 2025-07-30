@@ -466,6 +466,18 @@
         "padding_bottom": 52
       }
     },
+    "ourmission_C7eMEq": {
+      "type": "ourmission",
+      "name": "Our Mission",
+      "settings": {
+        "title": "OUR MISSION – WELLNESS FOR LIFE!",
+        "countries_text": "At The VitaMart we aim to explore the goodness of nature with innovation. We are dedicated to play our role in building a happy & healthy community.",
+        "image": "shopify://shop_images/our-mission-img_81c79d59-6cb2-49de-a138-c4901e991d17.svg",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "backedbyscience_BrYmNd": {
       "type": "backedbyscience",
       "blocks": {
@@ -546,6 +558,7 @@
     "categoriesbox_section_NmC88i",
     "multi_collections_CwHw9Q",
     "exploretags_section_LywxPh",
+    "ourmission_C7eMEq",
     "backedbyscience_BrYmNd",
     "featured_collections_slider_NWM3wA",
     "ourworldwide_CEKxQY"
