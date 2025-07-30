@@ -168,7 +168,7 @@
   position: absolute;
   background-color: #f8f8f8;
   width: 0%;
-  transition: all 3.5s linear;
+  transition: all 5s linear;
 }
 .BlogSmallCard.slick-current::before {
   width: 115%;
