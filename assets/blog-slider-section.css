@@ -1,9 +1,17 @@
+.blog_slider-section{
+    font-size: 12px;
+}
+
 .nutriRow {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+}
+
+.blog-slider-nav{
+    min-height: 100%;
 }
 
 @media screen and (min-width: 768px) {
