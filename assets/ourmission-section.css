@@ -1,0 +1,58 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.col {
+  flex: 1;
+  padding: 10px;
+}
+
+.col-left {
+  max-width: 400px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.mission-description {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+.col-right {
+  text-align: right;
+}
+
+.mission-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .col-left,
+  .col-right {
+    max-width: 100%;
+  }
+
+  .col-right {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
