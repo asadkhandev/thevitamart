@@ -471,8 +471,10 @@
       "name": "Our Mission",
       "settings": {
         "title": "OUR MISSION – WELLNESS FOR LIFE!",
-        "countries_text": "At The VitaMart we aim to explore the goodness of nature with innovation. We are dedicated to play our role in building a happy & healthy community.",
+        "content": "At TheVitaMart we aim to explore the goodness of nature with innovation. We are dedicated to play our role in building a happy & healthy community.",
         "image": "shopify://shop_images/our-mission-img_81c79d59-6cb2-49de-a138-c4901e991d17.svg",
+        "link_url": "#",
+        "link_text": "LEARN MORE",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
