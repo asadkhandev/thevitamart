@@ -538,6 +538,12 @@
       "name": "Our WorldWide",
       "settings": {
         "title": "",
+        "image": "shopify://shop_images/pin-map.svg",
+        "countries_text": "100+",
+        "continents_text": "6",
+        "distribution_centers_text": "20+",
+        "link_url": "#",
+        "link_text": "Show More",
         "color_scheme": "",
         "padding_top": 52,
         "padding_bottom": 52
