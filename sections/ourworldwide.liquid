@@ -70,10 +70,10 @@
       </div>
       <div class="mapBoxMapArea">
         <div id="regions_div" style="width: 100%; height: auto">
-          {% if block.settings.image %}
+          {% if section.settings.image %}
             <img
-            src="{{ block.settings.image | img_url: 'master' }}"
-            alt="{{ block.settings.image.alt | escape }}"
+            src="{{ section.settings.image | img_url: 'master' }}"
+            alt="{{ section.settings.image.alt | escape }}"
             loading="lazy"
             />
           {% endif %}
@@ -145,19 +145,19 @@
       "type": "text",
       "id": "countries_text",
       "label": "Number of Countries",
-      "default": "100+ countries"
+      "default": "100+"
     },
     {
       "type": "text",
       "id": "continents_text",
       "label": "Continents",
-      "default": "6 continents"
+      "default": "6"
     },
     {
       "type": "text",
       "id": "distribution_centers_text",
       "label": "Distribution Centers",
-      "default": "20+ distribution centers"
+      "default": "20+"
     },
     {
       "type": "url",
