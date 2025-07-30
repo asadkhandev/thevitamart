@@ -36,7 +36,9 @@
 
       <div class="col col-right">
         <div class="mission-image">
-          {% if section.settings.image %}
+          {% if section.settings.image_svg != blank %}
+            {{ section.settings.image_svg }}
+          {% elsif section.settings.image %}
             <img
             src="{{ section.settings.image | img_url: 'master' }}"
             alt="{{ section.settings.image.alt | escape }}"
@@ -72,6 +74,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_svg",
+      "label": "Image SVG"
     },
     {
       "type": "url",
