@@ -466,16 +466,6 @@
         "padding_bottom": 52
       }
     },
-    "ourmission_section_MApADG": {
-      "type": "ourmission-section",
-      "name": "Our Mission",
-      "settings": {
-        "title": "",
-        "color_scheme": "",
-        "padding_top": 52,
-        "padding_bottom": 52
-      }
-    },
     "backedbyscience_BrYmNd": {
       "type": "backedbyscience",
       "blocks": {
@@ -556,7 +546,6 @@
     "categoriesbox_section_NmC88i",
     "multi_collections_CwHw9Q",
     "exploretags_section_LywxPh",
-    "ourmission_section_MApADG",
     "backedbyscience_BrYmNd",
     "featured_collections_slider_NWM3wA",
     "ourworldwide_CEKxQY"
