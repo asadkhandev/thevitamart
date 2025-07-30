@@ -21,11 +21,11 @@
       data-cascade
     {% endif %}
   >
-    <div class="row align-center">
-      <div class="col col-left">
+    <div class="our_mission-row align-center">
+      <div class="our_mission-col our_mission-col-left">
         <div class="mission-content">
-          <h2 class="section-title">{{ section.settings.title }}</h2>
-          <p class="mission-description">
+          <h2 class="our_mission-title">{{ section.settings.title }}</h2>
+          <p class="our_mission-description">
             {{ section.settings.content }}
           </p>
           {% if section.settings.link_url %}
@@ -34,7 +34,7 @@
         </div>
       </div>
 
-      <div class="col col-right">
+      <div class="our_mission-col our_mission-col-right">
         <div class="mission-image">
           {% if section.settings.image_svg != blank %}
             {{ section.settings.image_svg }}

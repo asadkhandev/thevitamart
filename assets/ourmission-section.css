@@ -1,4 +1,4 @@
-.row {
+.our_mission-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -8,22 +8,22 @@
   align-items: center;
 }
 
-.col {
+.our_mission-col {
   flex: 1;
   padding: 10px;
 }
 
-.col-left {
+.our_mission-col-left {
   max-width: 400px;
 }
 
-.section-title {
+.our_mission-title {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.mission-description {
+.our_mission-description {
   font-size: 12px;
   font-weight: 400;
   color: #333333;
@@ -31,7 +31,7 @@
   line-height: 1.8;
 }
 
-.col-right {
+.our_mission-col-right {
   text-align: right;
 }
 
@@ -41,17 +41,17 @@
 }
 
 @media (max-width: 768px) {
-  .row {
+  .our_mission-row {
     flex-direction: column;
     text-align: center;
   }
 
-  .col-left,
-  .col-right {
+  .our_mission-col-left,
+  .our_mission-col-right {
     max-width: 100%;
   }
 
-  .col-right {
+  .our_mission-col-right {
     text-align: center;
     margin-top: 30px;
   }
