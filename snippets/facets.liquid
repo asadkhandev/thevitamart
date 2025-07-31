@@ -30,6 +30,15 @@
 
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
+    <ul class="all-collections-list">
+      {% for collection in collections %}
+        {% unless collection.handle == 'all' %}
+          <li>
+            <a href="{{ collection.url }}">{{ collection.title }}</a>
+          </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
     <facet-filters-form class="facets small-hide">
       <form
         id="FacetFiltersForm"
