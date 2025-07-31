@@ -189,6 +189,10 @@ h5.article-title.m-0{
   width: 100%;
   aspect-ratio: 1;
 }
+.blogSmallCardHead img{
+  width: 100%;
+  object-fit: cover;
+}
 .blogSmallCardImg {
   height: 100%;
   width: 100%;
