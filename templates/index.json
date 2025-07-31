@@ -15,45 +15,21 @@
         "banner_w8gKkM": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/banner-img1.jpg",
+            "image": "shopify://shop_images/Vitamart_Banner_1.jpg",
             "link": "#"
           }
         },
         "banner_CWB4yi": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/banner-img2.png",
-            "link": "#"
-          }
-        },
-        "banner_mWiMt6": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/banner-img3.jpg",
-            "link": "#"
-          }
-        },
-        "banner_aJhann": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/banner-img4.png",
-            "link": "#"
-          }
-        },
-        "banner_WM9UYb": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/banner-img5.jpg",
+            "image": "shopify://shop_images/Vitamart_Banner_2.jpg",
             "link": "#"
           }
         }
       },
       "block_order": [
         "banner_w8gKkM",
-        "banner_CWB4yi",
-        "banner_mWiMt6",
-        "banner_aJhann",
-        "banner_WM9UYb"
+        "banner_CWB4yi"
       ],
       "name": "Banner Slider",
       "settings": {}
