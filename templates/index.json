@@ -536,7 +536,7 @@
       "name": "Home Blog Slider",
       "settings": {
         "blog": "health",
-        "post_limit": 4,
+        "post_limit": 8,
         "title": "Wellness Blog",
         "text_alignment": "center",
         "color_scheme": "",
