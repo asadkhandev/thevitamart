@@ -52,17 +52,6 @@
               <h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
                 {{ 'products.facets.filter_by_label' | t }}
               </h2>
-
-              <ul class="all-collections-list">
-                {% for collection in collections %}
-                  {% unless collection.handle == 'all' %}
-                    <li>
-                      <a href="{{ collection.url }}">{{ collection.title }}</a>
-                    </li>
-                  {% endunless %}
-                {% endfor %}
-              </ul>
-
             {%- endif -%}
             {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
             {%- if filter_type == 'vertical' -%}
@@ -76,6 +65,17 @@
                     >
                       {{ 'products.facets.filter_by_label' | t }}
                     </h2>
+
+                    <ul class="all-collections-list">
+                      {% for collection in collections %}
+                        {% unless collection.handle == 'all' %}
+                          <li>
+                            <a href="{{ collection.url }}">{{ collection.title }}</a>
+                          </li>
+                        {% endunless %}
+                      {% endfor %}
+                    </ul>
+
                   {%- endunless -%}
                   <facet-remove class="active-facets__button-wrapper">
                     <a href="{{ results_url }}" class="active-facets__button-remove underlined-link">
