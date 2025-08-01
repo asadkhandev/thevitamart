@@ -56,6 +56,12 @@
 }
 
 
+@media (min-width: 768px) {
+  .image-mobile{
+    display: none;
+  }
+}
+
 @media (min-width: 1025px) {
 	.collection-sub-list .item a:hover {
 		background: #ffffff !important;
@@ -83,6 +89,10 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+
+  .image-desktop{
+    display: none;
+  }
 }
 
 {%- endstyle -%}
@@ -91,7 +101,7 @@
   <div class="collection-content collection-content-1">
     
     <div class="collection-banner">
-      <div class="image image-adapt">
+      <div class="image image-desktop image-adapt">
         {% if collection.image %}
           <img 
             src="{{ collection.image | img_url: '1920x' }}" 
@@ -109,7 +119,7 @@
         {% endif %}
       </div>
 
-      <div class="image image-mobile image-adapt from-desktop">
+      <div class="image image-mobile image-adapt">
         {% if collection.image %}
           <img 
             src="{{ collection.image | img_url: '800x' }}" 
