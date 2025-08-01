@@ -12,8 +12,9 @@
     "banner": {
       "type": "main-collection-banner",
       "settings": {
+        "image": "shopify://shop_images/All_Products_Banner_1920x_d0572ace-3e0d-492a-96ae-99ea64d9ce47.jpg",
         "show_collection_description": true,
-        "show_collection_image": false,
+        "show_collection_image": true,
         "color_scheme": "scheme-1"
       }
     },
