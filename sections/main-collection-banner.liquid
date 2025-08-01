@@ -117,6 +117,13 @@
             alt="{{ collection.title | escape }}"
             loading="lazy"
           >
+        {% else %}
+          <img 
+            src="{{ section.settings.image | img_url: '800x' }}" 
+            srcset="{{ section.settings.image | img_url: '800x' }} 1x, {{ section.settings.image | img_url: '800x', scale: 2 }} 2x"
+            alt="{{ collection.title | escape }}"
+            loading="lazy"
+          >
         {% endif %}
       </div>
     </div>
