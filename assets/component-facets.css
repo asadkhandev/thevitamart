@@ -731,7 +731,7 @@ a.active-facets__button.focused .active-facets__button-inner {
 .facets-vertical .active-facets-vertical-filter ul{
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 40px;
 }
 
 .facets-vertical .active-facets-vertical-filter a{
@@ -740,6 +740,8 @@ a.active-facets__button.focused .active-facets__button-inner {
   padding: 6px 0;
   position: relative;
   font-size: 12px;
+  display: inline-flex;
+  transition: all 0.3s;
 }
 .facets-vertical .active-facets-vertical-filter a:before {
   content: "";
@@ -748,7 +750,7 @@ a.active-facets__button.focused .active-facets__button-inner {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-image: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' style='fill: %23adadad'%3E%3Cpath d='M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z'/%3E%3C/svg%3E);
+  background-image: url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/download.svg?v=1754036167');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
