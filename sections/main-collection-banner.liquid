@@ -132,11 +132,19 @@
       <h1 class="collection-title page-header text-left">
         {{ collection.title }}
       </h1>
-      <div class="collection-info-item">
+      {% if collection.image %}
+        <div class="collection-info-item">
+          <div class="collection-description halo-text-format text-left" style="margin: 0;">
+            {{ collection.description }}
+          </div>
+        </div>
+      {% else %}
+        <div class="collection-info-item">
         <div class="collection-description halo-text-format text-left" style="margin: 0;">
-          {{ collection.description }}
+          {{ section.settings.description }}
         </div>
       </div>
+      {% endif %}
     </div>
 
   </div>
@@ -188,6 +196,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "Fallback Image"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Fallback Description"
     },
     {
       "type": "paragraph",
