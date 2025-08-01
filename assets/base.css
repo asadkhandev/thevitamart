@@ -80,6 +80,12 @@ body{
 
 /* base */
 
+.full-width{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
@@ -115,6 +121,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     padding-right: 3.2rem;
   }
 
+  .full-width,
   .page-width--narrow {
     padding: 0 2rem;
   }
@@ -142,6 +149,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   .page-width-desktop {
     max-width: var(--page-width);
     padding: 0 1.5rem;
+  }
+
+  .full-width{
+    padding: 0 5rem;
   }
 }
 
