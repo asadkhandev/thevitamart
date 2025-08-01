@@ -99,6 +99,13 @@
             alt="{{ collection.title | escape }}"
             loading="lazy"
           >
+        {% else %}
+          <img 
+            src="{{ section.settings.image | img_url: '1920x' }}" 
+            srcset="{{ section.settings.image | img_url: '1920x' }} 1x, {{ section.settings.image | img_url: '1920x', scale: 2 }} 2x"
+            alt="{{ collection.title | escape }}"
+            loading="lazy"
+          >
         {% endif %}
       </div>
 
@@ -170,6 +177,11 @@
   "name": "t:sections.main-collection-banner.name",
   "class": "section",
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Fallback Image"
+    },
     {
       "type": "paragraph",
       "content": "t:sections.main-collection-banner.settings.paragraph.content"
