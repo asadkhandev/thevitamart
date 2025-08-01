@@ -58,23 +58,27 @@
               <div class="active-facets active-facets-desktop">
                 <div class="active-facets-vertical-filter">
                   {%- unless results.filters == empty -%}
-                    <h2
+                    {% comment %} <h2
                       class="facets__heading facets__heading--vertical caption-large text-body"
                       id="verticalTitle"
                       tabindex="-1"
                     >
                       {{ 'products.facets.filter_by_label' | t }}
-                    </h2>
+                    </h2> {% endcomment %}
 
-                    <ul class="all-collections-list">
-                      {% for collection in collections %}
-                        {% unless collection.handle == 'all' %}
-                          <li>
-                            <a href="{{ collection.url }}">{{ collection.title }}</a>
-                          </li>
-                        {% endunless %}
-                      {% endfor %}
-                    </ul>
+                    {% if collections.size > 0 %}
+                      <h2>Categories</h2>
+                      <a href="/collections/all">All Products</a>
+                      <ul class="all-collections-list">
+                        {% for collection in collections %}
+                          {% unless collection.handle == 'all' %}
+                            <li>
+                              <a href="{{ collection.url }}">{{ collection.title }}</a>
+                            </li>
+                          {% endunless %}
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
 
                   {%- endunless -%}
                   <facet-remove class="active-facets__button-wrapper">
