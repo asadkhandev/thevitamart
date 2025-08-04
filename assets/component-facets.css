@@ -1179,7 +1179,8 @@ input.mobile-facets__checkbox {
   .facets__form-vertical {
     display: flex;
     flex-direction: column;
-    width: 26rem;
+    width: 100%;
+    /* width: 26rem; */
   }
 
   .facets__disclosure-vertical {
@@ -1209,6 +1210,8 @@ input.mobile-facets__checkbox {
 
   .facets-vertical .facets-wrapper {
     padding-right: 3rem;
+    width: 100%;
+    max-width: 20%;
   }
 
   .facets-vertical .facets-wrapper--no-filters {
