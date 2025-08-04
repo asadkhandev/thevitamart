@@ -39,11 +39,14 @@
   text-decoration: none;
   min-height: 4rem;
   border-radius: 1rem;
+  padding: 0;
+  width: 100%;
+  border: 1px solid rgb(var(--color-button-text));
 }
 
 .button--view_product:hover{
   background: rgb(var(--color-button-text));
-  color: var(--color-button);
+  color: rgb(var(--color-button));
 }
 
 .button--view_product::before,
