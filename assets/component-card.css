@@ -22,6 +22,11 @@
   min-width: 40px;
 }
 
+.is-collection .quick-add__submit > span,
+.is-collection .quick-add__submit > span > img{
+  display: block;
+}
+
 .card {
   text-decoration: none;
   text-align: var(--text-alignment);
