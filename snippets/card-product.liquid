@@ -578,7 +578,7 @@
       assign ratio = 0.8
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper underline-links-hover">
+  <div class="card-wrapper product-card-wrapper{% if template.name != 'collection' %} underline-links-hover{% endif %}">
     <div
       class="
         card card--{{ settings.card_style }}
