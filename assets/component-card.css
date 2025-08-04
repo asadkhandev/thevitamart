@@ -15,6 +15,13 @@
   background: #f2f2f2;
 }
 
+.is-collection .quick-add__submit{
+  background: linear-gradient(45deg, #454545, #1e1e1e) !important;
+  padding: 9px 7px !important;
+  border-radius: 4px !important;
+  min-width: 40px;
+}
+
 .card {
   text-decoration: none;
   text-align: var(--text-alignment);
