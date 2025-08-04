@@ -21,6 +21,7 @@
   border-radius: 4px !important;
   min-width: 40px;
   border: none;
+  cursor: pointer;
 }
 
 .is-collection .quick-add__submit > span,
