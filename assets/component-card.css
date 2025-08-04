@@ -29,6 +29,17 @@
   display: block;
 }
 
+.is-collection product-form{
+  display: flex;
+  align-items: center;
+}
+
+.button--view_product{
+  text-decoration: none;
+  min-height: 4rem;
+  border-radius: 1rem;
+}
+
 .card {
   text-decoration: none;
   text-align: var(--text-alignment);
