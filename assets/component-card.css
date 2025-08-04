@@ -11,6 +11,10 @@
   padding: 0.5rem;
 }
 
+.is-collection .card__inner.ratio{
+  background: #f2f2f2;
+}
+
 .card {
   text-decoration: none;
   text-align: var(--text-alignment);
