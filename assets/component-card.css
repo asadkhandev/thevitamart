@@ -3,6 +3,9 @@
   height: 100%;
   position: relative;
   text-decoration: none;
+}
+
+.is-collection .card-wrapper{
   border: 1px solid #f2f2f2;
   border-radius: 0.5rem;
   padding: 0.5rem;
