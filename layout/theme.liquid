@@ -338,10 +338,12 @@
     </script>
   </head>
 
-  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} {{ body_class }}
+  {% if template contains 'product' %} is-product{% endif %}
+  {% if template contains 'collection' %} is-collection{% endif %}">
 
     <div id="page-loader">
-      <img src="https://cdn.shopify.com/s/files/1/0707/8104/2880/files/32x32.svg?v=1752840155" alt="Loading" class="pulse-logo">
+      <img src="{{ settings.favicon | image_url: width: 32, height: 32 }}" alt="Loading" class="pulse-logo">
     </div>
     
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
