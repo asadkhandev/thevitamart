@@ -160,10 +160,10 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
-          <div class="product-short-description">
-            {{ card_product.metafields.custom.product_short_description.value | default: 'Coming soon' }}
-          </div>
-          {% if card_product.metafields.custom.product_short_description %}
+          {% if card_product.metafields.custom.product_short_description.value %}
+            <div class="product-short-description">
+              {{ card_product.metafields.custom.product_short_description.value }}
+            </div>
           {% endif %}
           <div class="card-information">
             {%- if show_vendor -%}
