@@ -160,9 +160,9 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
-          {% if product.metafields.custom.product_short_description %}
+          {% if card_product.metafields.custom.product_short_description %}
             <div class="product-short-description">
-              {{ product.metafields.custom.product_short_description.value }}
+              {{ card_product.metafields.custom.product_short_description.value }}
             </div>
           {% endif %}
           <div class="card-information">
