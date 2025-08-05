@@ -28,9 +28,16 @@
     data-product-id="{{ product.id }}"
   >
     {% if recommendations.performed and recommendations.products_count > 0 %}
-      <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">
+      {%- if section.settings.heading != blank -%}
+        <div class="halo-block-header{% if section.settings.text_alignment == 'center' %} text-center{% endif %}{% if section.settings.text_alignment == 'left' %} text-left{% endif %}{% if section.settings.text_alignment == 'right' %} text-right{% endif %}">
+          <h3 class="title">
+            <span class="text">{{ section.settings.heading }}</span>
+          </h3>
+        </div>
+      {%- endif -%}
+      {% comment %} <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">
         {{ section.settings.heading }}
-      </h2>
+      </h2> {% endcomment %}
       <ul
         class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
         role="list"
@@ -101,6 +108,17 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
     },
     {
       "type": "range",
