@@ -24,6 +24,11 @@
   cursor: pointer;
 }
 
+.is-collection .quick-add__submit[data-sold-out-message="true"]{
+  opacity: .6;
+  pointer-events: none;
+}
+
 .is-collection .quick-add__submit > span,
 .is-collection .quick-add__submit > span > img{
   display: block;
