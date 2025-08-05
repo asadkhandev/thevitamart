@@ -24,9 +24,19 @@
   cursor: pointer;
 }
 
-.is-collection .quick-add__submit[data-sold-out-message="true"]{
+.is-collection .quick-add__submit[disabled]{
   opacity: .6;
   pointer-events: none;
+}
+
+.product-short-description{
+  display: none;
+}
+
+.is-collection .product-short-description{
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
 }
 
 .is-collection .quick-add__submit > span,
