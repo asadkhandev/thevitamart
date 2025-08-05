@@ -161,7 +161,7 @@
             </a>
           </h3>
           <div class="product-short-description">
-            {{ card_product.metafields.custom.product_short_description.value }}
+            {{ card_product.metafields.custom.product_short_description.value | default: 'Coming soon' }}
           </div>
           {% if card_product.metafields.custom.product_short_description %}
           {% endif %}
