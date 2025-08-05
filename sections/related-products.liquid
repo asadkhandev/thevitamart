@@ -90,19 +90,31 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    $('.slider-collection-1').slick({
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      autoplay: true,
-      autoplaySpeed: 10000, // Set to 10 seconds
-      dots: true,
-      arrows: true,
-      responsive: [
-        { breakpoint: 1200, settings: { slidesToShow: 3 } },
-        { breakpoint: 768, settings: { slidesToShow: 2 } },
-        { breakpoint: 480, settings: { slidesToShow: 1 } }
-      ]
-    });
+    if (typeof jQuery !== 'undefined') {
+      initSlider();
+    } else {
+      // Fallback in case jQuery doesn't load
+      setTimeout(initSlider, 500);
+    }
+    
+    function initSlider() {
+      var $slider = $('.slider-collection-1');
+      if ($slider.length) {
+        $slider.slick({
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          autoplay: true,
+          autoplaySpeed: 10000,
+          dots: true,
+          arrows: true,
+          responsive: [
+            { breakpoint: 1200, settings: { slidesToShow: 3 } },
+            { breakpoint: 768, settings: { slidesToShow: 2 } },
+            { breakpoint: 480, settings: { slidesToShow: 1 } }
+          ]
+        });
+      }
+    }
   });
 </script>
 
