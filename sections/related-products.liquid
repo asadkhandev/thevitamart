@@ -92,11 +92,12 @@
   document.addEventListener('DOMContentLoaded', function() {
     console.log('Related Product Slider');
 
+    setTimeout(initSlider, 3000);
     if (typeof jQuery !== 'undefined') {
       initSlider();
     } else {
-      // Fallback in case jQuery doesn't load
       setTimeout(initSlider, 500);
+      // Fallback in case jQuery doesn't load
     }
     
     function initSlider() {
