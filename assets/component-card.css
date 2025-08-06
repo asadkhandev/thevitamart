@@ -44,7 +44,8 @@
   display: block;
 }
 
-.is-collection product-form{
+.is-collection .quick-add product-form,
+.is-collection .quick-add modal-opener{
   display: flex;
   align-items: center;
   column-gap: 10px;
