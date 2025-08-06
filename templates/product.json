@@ -20,6 +20,13 @@
           "type": "rating",
           "settings": {}
         },
+        "text_6H4Lxa": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Helps to: </strong>{{ product.metafields.custom.product_short_description.value }}",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -103,6 +110,7 @@
       "block_order": [
         "title",
         "rating_p4agDF",
+        "text_6H4Lxa",
         "price",
         "variant_picker",
         "quantity_selector",
