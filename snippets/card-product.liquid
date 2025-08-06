@@ -431,6 +431,7 @@
                   assign qty_rules = true
                 endif
               -%}
+              <a href="{{ card_product.url }}" class="button button--secondary button--view_product" target="_blank">View Product</a>
               <modal-opener
                 id="QuickBulk-{{ card_product.id }}-{{ section_id }}"
                 data-modal="#QuickAddBulk-{{ card_product.id }}-{{ section.id }}"
@@ -444,7 +445,8 @@
                   aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
                   data-product-url="{{ card_product.url }}"
                 >
-                  {{ 'products.product.choose_options' | t }}
+                  <img src="{{ 'shopping-cart_1.svg' | asset_url }}" alt="Shopping Cart" loading="lazy" />
+                  {% comment %} {{ 'products.product.choose_options' | t }} {% endcomment %}
                   {%- render 'loading-spinner' -%}
                 </button>
               </modal-opener>
