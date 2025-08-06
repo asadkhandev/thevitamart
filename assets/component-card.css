@@ -40,7 +40,8 @@
 }
 
 .is-collection .quick-add__submit > span,
-.is-collection .quick-add__submit > span > img{
+.is-collection .quick-add__submit > span > img,
+.is-collection .quick-add__submit > img{
   display: block;
 }
 
