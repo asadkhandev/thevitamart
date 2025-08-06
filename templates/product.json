@@ -16,6 +16,10 @@
           "type": "title",
           "settings": {}
         },
+        "rating_p4agDF": {
+          "type": "rating",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -40,23 +44,76 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {}
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
+          }
+        },
+        "collapsible_tab_fBDdQ4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product Details",
+            "icon": "none",
+            "content": "{{ block.settings.page.content }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_VyELJA": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_R3Wb6G": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Instructions",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_biHPma": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "FAQs",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_awCA6h": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Our Quality Promise",
+            "icon": "none",
+            "content": "<p>TheVitamart customer trust is built on our efforts to create and formulate high quality products and to manufacture with same consistent quality standards. Our People in quality assurance, manufacturing, packaging, distribution and facility management are all required to meet standards for Current Good Manufacturing Practices (cGMPs).</p>",
+            "page": ""
           }
         }
       },
       "block_order": [
         "title",
+        "rating_p4agDF",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "collapsible_tab_fBDdQ4",
+        "collapsible_tab_VyELJA",
+        "collapsible_tab_R3Wb6G",
+        "collapsible_tab_biHPma",
+        "collapsible_tab_awCA6h"
       ],
       "settings": {
         "enable_sticky_info": true,
