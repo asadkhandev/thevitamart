@@ -68,7 +68,7 @@
           "settings": {
             "heading": "Ingredients",
             "icon": "none",
-            "content": "",
+            "content": "{{ product.metafields.custom.product_ingredients | metafield_tag }}",
             "page": ""
           }
         },
@@ -77,7 +77,7 @@
           "settings": {
             "heading": "Instructions",
             "icon": "none",
-            "content": "",
+            "content": "{{ product.metafields.custom.product_instructions | metafield_tag }}",
             "page": ""
           }
         },
