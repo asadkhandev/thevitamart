@@ -86,7 +86,7 @@
           "settings": {
             "heading": "FAQs",
             "icon": "none",
-            "content": "",
+            "content": "{{ product.metafields.custom.product_faqs | metafield_tag }}",
             "page": ""
           }
         },
