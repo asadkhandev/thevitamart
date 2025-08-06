@@ -302,9 +302,9 @@
                 assign qty_rules = true
               endif
             -%}
-            <a href="{{ card_product.url }}" class="button button--secondary button--view_product" target="_blank">View Product</a>
             {%- if card_product.variants_count > 1 or qty_rules -%}
               <modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
+                <a href="{{ card_product.url }}" class="button button--secondary button--view_product" target="_blank">View Product</a>
                 <button
                   id="{{ product_form_id }}-submit"
                   type="submit"
@@ -433,11 +433,11 @@
                   assign qty_rules = true
                 endif
               -%}
-              <a href="{{ card_product.url }}" class="button button--secondary button--view_product" target="_blank">View Product</a>
               <modal-opener
-                id="QuickBulk-{{ card_product.id }}-{{ section_id }}"
-                data-modal="#QuickAddBulk-{{ card_product.id }}-{{ section.id }}"
+              id="QuickBulk-{{ card_product.id }}-{{ section_id }}"
+              data-modal="#QuickAddBulk-{{ card_product.id }}-{{ section.id }}"
               >
+              <a href="{{ card_product.url }}" class="button button--secondary button--view_product" target="_blank">View Product</a>
                 <button
                   id="{{ product_form_id }}-submit"
                   type="submit"
