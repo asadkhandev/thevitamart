@@ -23,7 +23,7 @@
         "text_6H4Lxa": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Helps to: </strong></p>{{ product.metafields.custom.product_key_details | metafield_tag }}",
+            "text": "<p><strong>Helps to: </strong></p><p>{{ product.metafields.custom.product_key_details | metafield_tag }}</p>",
             "text_style": "body"
           }
         },
@@ -75,7 +75,7 @@
           "settings": {
             "heading": "Ingredients",
             "icon": "none",
-            "content": "{{ product.metafields.custom.product_ingredients | metafield_tag }}",
+            "content": "<p>{{ product.metafields.custom.product_ingredients_table | metafield_tag }}</p>{{ product.metafields.custom.product_ingredients | metafield_tag }}",
             "page": ""
           }
         },
