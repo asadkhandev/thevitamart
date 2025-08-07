@@ -75,7 +75,7 @@
           "settings": {
             "heading": "Ingredients",
             "icon": "none",
-            "content": "<p>{{ product.metafields.custom.product_ingredients_table | metafield_tag }}</p>{{ product.metafields.custom.product_ingredients | metafield_tag }}<p></p>",
+            "content": "",
             "page": ""
           }
         },
