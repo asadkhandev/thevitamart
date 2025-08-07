@@ -65,6 +65,8 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Product Details",
+            "metafield_namespace": "custom",
+            "metafield_key": "",
             "icon": "none",
             "content": "<p>{{ product.description }}</p>",
             "page": ""
@@ -74,6 +76,8 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Ingredients",
+            "metafield_namespace": "custom",
+            "metafield_key": "product_ingredients_table",
             "icon": "none",
             "content": "",
             "page": ""
@@ -83,6 +87,8 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Instructions",
+            "metafield_namespace": "custom",
+            "metafield_key": "",
             "icon": "none",
             "content": "{{ product.metafields.custom.product_instructions | metafield_tag }}",
             "page": ""
@@ -92,6 +98,8 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "FAQs",
+            "metafield_namespace": "custom",
+            "metafield_key": "",
             "icon": "none",
             "content": "{{ product.metafields.custom.product_faqs | metafield_tag }}",
             "page": ""
@@ -101,6 +109,8 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Our Quality Promise",
+            "metafield_namespace": "custom",
+            "metafield_key": "",
             "icon": "none",
             "content": "<p>TheVitamart customer trust is built on our efforts to create and formulate high quality products and to manufacture with same consistent quality standards. Our People in quality assurance, manufacturing, packaging, distribution and facility management are all required to meet standards for Current Good Manufacturing Practices (cGMPs).</p>",
             "page": ""
