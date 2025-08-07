@@ -23,7 +23,7 @@
         "text_6H4Lxa": {
           "type": "text",
           "settings": {
-            "text": "<strong>Helps to: </strong>{{ product.metafields.custom.product_short_description.value }}",
+            "text": "<p><strong>Helps to: </strong></p>{{ product.metafields.custom.product_key_details | metafield_tag }}",
             "text_style": "body"
           }
         },
