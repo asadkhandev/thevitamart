@@ -228,7 +228,7 @@
                       {%- elsif block.settings.page != blank -%}
                         {{ block.settings.page.content }}
                       {%- elsif block.settings.metafield_key != blank and product.metafields[block.settings.metafield_namespace][block.settings.metafield_key] -%}
-                        {{ product.metafields[block.settings.metafield_namespace][block.settings.metafield_key] | metafield_tag }}
+                        {{ product.metafields[block.settings.metafield_namespace][block.settings.metafield_key] | raw }}
                       {%- endif -%}
                     </div>
                   </details>
