@@ -210,20 +210,31 @@
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
-                {% if product.metafields.custom.product_ingredients_table %}
-                  <div class="product__accordion accordion">
-                    <details>
-                      <summary>
-                        <h2 class="accordion__title h5">Ingredients</h2>
-                        <span class="icon-accordion">{% render 'icon-caret' %}</span>
-                      </summary>
-                      <div class="accordion__content rte">
-                        {{ product.metafields.custom.product_ingredients_table | metafield_tag }}
-                      </div>
-                    </details>
-                  </div>
-                {% endif %}
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+                  <details id="Details-{{ block.id }}-{{ section.id }}">
+                    <summary>
+                      <div class="summary__title">
+                        {% render 'icon-accordion', icon: block.settings.icon %}
+                        <h2 class="h4 accordion__title inline-richtext">
+                          {{ block.settings.heading | default: block.settings.page.title | escape }}
+                        </h2>
+                      </div>
+                      {{- 'icon-caret.svg' | inline_asset_content -}}
+                    </summary>
+                    <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+
+                      {%- if block.settings.content != blank -%}
+                        {{ block.settings.content }}
+                      {%- elsif block.settings.page != blank -%}
+                        {{ block.settings.page.content }}
+                      {%- elsif block.settings.metafield != blank and product.metafields[block.settings.metafield_namespace][block.settings.metafield_key] -%}
+                        {{ product.metafields[block.settings.metafield_namespace][block.settings.metafield_key] | metafield_tag }}
+                      {%- endif -%}
+
+                    </div>
+                  </details>
+                </div>
+                {% comment %} <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                   <details id="Details-{{ block.id }}-{{ section.id }}">
                     <summary>
                       <div class="summary__title">
@@ -239,7 +250,7 @@
                       {{ block.settings.page.content }}
                     </div>
                   </details>
-                </div>
+                </div> {% endcomment %}
               {%- when 'quantity_selector' -%}
                 <div
                   id="Quantity-Form-{{ section.id }}"
@@ -1211,6 +1222,17 @@
           "id": "make_collapsible_row",
           "default": false,
           "label": "t:sections.main-product.blocks.complementary_products.settings.make_collapsible_row.label"
+        },
+        {
+          "type": "text",
+          "id": "metafield_namespace",
+          "label": "Metafield Namespace",
+          "default": "custom"
+        },
+        {
+          "type": "text",
+          "id": "metafield_key",
+          "label": "Metafield Key (e.g. product_ingredients_table)"
         },
         {
           "type": "select",
