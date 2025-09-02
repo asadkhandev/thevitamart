@@ -48,11 +48,33 @@
         "business_label": "BUSINESS INQUIRIES",
         "business_email": "BUSINESS@NUTRIFACTOR.COM"
       }
+    },
+    "address_info_cFYPEJ": {
+      "type": "address-info",
+      "name": "Contact Info Columns",
+      "settings": {
+        "main_heading": "CORPORATE OFFICE",
+        "corporate_heading": "Corporate Office",
+        "corporate_address": "P-130, Kohinoor City, Faisalabad.",
+        "corporate_phone": "Call us: 080077722",
+        "corporate_email": "business@nutrifactor.com",
+        "customer_heading": "Customer Care",
+        "customer_phone": "Call us: 080077722",
+        "customer_mobile": "+92-303-7772257",
+        "customer_email": "cs@nutrifactor.com",
+        "international_heading": "International Inquiries",
+        "international_mobile": "+92-303-7776382",
+        "international_email": "export@nutrifactor.com",
+        "toll_heading": "Toll Manufacturing Inquiries",
+        "toll_mobile": "+92-303-7776382",
+        "toll_email": "export@nutrifactor.com"
+      }
     }
   },
   "order": [
     "main",
     "form",
-    "contact_us_CaEWVh"
+    "contact_us_CaEWVh",
+    "address_info_cFYPEJ"
   ]
 }
