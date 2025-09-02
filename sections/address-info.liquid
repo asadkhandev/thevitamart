@@ -1,0 +1,143 @@
+<div class="columns-main">
+  <div class="container">
+    <p class="column-heading">{{ section.settings.main_heading }}</p>
+    <hr>
+    <div class="column-banners">
+
+      <div class="address-1">
+        <p class="address-heading">{{ section.settings.corporate_heading }}</p>
+        <p>{{ section.settings.corporate_address }}</p>
+        <p>{{ section.settings.corporate_phone }}</p>
+        <p>{{ section.settings.corporate_email }}</p>
+      </div>
+
+      <div class="address-1">
+        <p class="address-heading">{{ section.settings.customer_heading }}</p>
+        <p>{{ section.settings.customer_phone }}</p>
+        <p>{{ section.settings.customer_mobile }}</p>
+        <p>{{ section.settings.customer_email }}</p>
+      </div>
+
+      <div class="address-1">
+        <p class="address-heading">{{ section.settings.international_heading }}</p>
+        <p>{{ section.settings.international_mobile }}</p>
+        <p>{{ section.settings.international_email }}</p>
+      </div>
+
+      <div class="address-1">
+        <p class="address-heading">{{ section.settings.toll_heading }}</p>
+        <p>{{ section.settings.toll_mobile }}</p>
+        <p>{{ section.settings.toll_email }}</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Contact Info Columns",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main Heading",
+      "default": "CORPORATE OFFICE"
+    },
+
+    {
+      "type": "text",
+      "id": "corporate_heading",
+      "label": "Corporate Office Heading",
+      "default": "Corporate Office"
+    },
+    {
+      "type": "text",
+      "id": "corporate_address",
+      "label": "Corporate Address",
+      "default": "P-130, Kohinoor City, Faisalabad."
+    },
+    {
+      "type": "text",
+      "id": "corporate_phone",
+      "label": "Corporate Phone",
+      "default": "Call us: 080077722"
+    },
+    {
+      "type": "text",
+      "id": "corporate_email",
+      "label": "Corporate Email",
+      "default": "business@nutrifactor.com"
+    },
+
+    {
+      "type": "text",
+      "id": "customer_heading",
+      "label": "Customer Care Heading",
+      "default": "Customer Care"
+    },
+    {
+      "type": "text",
+      "id": "customer_phone",
+      "label": "Customer Care Phone",
+      "default": "Call us: 080077722"
+    },
+    {
+      "type": "text",
+      "id": "customer_mobile",
+      "label": "Customer Care Mobile",
+      "default": "+92-303-7772257"
+    },
+    {
+      "type": "text",
+      "id": "customer_email",
+      "label": "Customer Care Email",
+      "default": "cs@nutrifactor.com"
+    },
+
+    {
+      "type": "text",
+      "id": "international_heading",
+      "label": "International Inquiries Heading",
+      "default": "International Inquiries"
+    },
+    {
+      "type": "text",
+      "id": "international_mobile",
+      "label": "International Mobile",
+      "default": "+92-303-7776382"
+    },
+    {
+      "type": "text",
+      "id": "international_email",
+      "label": "International Email",
+      "default": "export@nutrifactor.com"
+    },
+
+    {
+      "type": "text",
+      "id": "toll_heading",
+      "label": "Toll Manufacturing Heading",
+      "default": "Toll Manufacturing Inquiries"
+    },
+    {
+      "type": "text",
+      "id": "toll_mobile",
+      "label": "Toll Manufacturing Mobile",
+      "default": "+92-303-7776382"
+    },
+    {
+      "type": "text",
+      "id": "toll_email",
+      "label": "Toll Manufacturing Email",
+      "default": "export@nutrifactor.com"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact Info Columns",
+      "category": "Sections"
+    }
+  ]
+}
+{% endschema %}
