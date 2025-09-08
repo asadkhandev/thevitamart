@@ -79,61 +79,34 @@
 }
 {% endschema %}
 
-<script>
-      const slides = document.querySelectorAll(".carousel-slide");
-      let currentSlide = 0;
 
-      // Function to show a slide by index
-      function showSlide(index) {
-        slides.forEach((slide, i) => {
-          slide.classList.toggle("active", i === index);
-        });
-      }
 
-      // Next button
-      document.querySelector(".next").addEventListener("click", () => {
-        currentSlide = (currentSlide + 1) % slides.length; // loop back to first
-        showSlide(currentSlide);
-      });
-
-      // Prev button
-      document.querySelector(".prev").addEventListener("click", () => {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length; // loop to last
-        showSlide(currentSlide);
-      });
-
-      // Optional: auto-slide every 3 seconds
-      setInterval(() => {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-      }, 3000);
-    </script>
-
-    <script>
+ <script>
   $(document).ready(function(){
     $('.carousel').slick({
       slidesToShow: 3,         // Number of slides visible
-      slidesToScroll: 1,       // Slides to scroll per swipe
-      autoplay: true,          // Enable autoplay
-      autoplaySpeed: 3000,     // Autoplay speed in ms
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,     // 3 seconds per slide
       dots: true,              // Show navigation dots
       arrows: true,            // Show prev/next arrows
       prevArrow: '<button class="carousel-btn prev">&#10094;</button>',
       nextArrow: '<button class="carousel-btn next">&#10095;</button>',
       responsive: [
         {
-          breakpoint: 768,    // Mobile breakpoint
-          settings: {
-            slidesToShow: 1
-          }
-        },
-        {
           breakpoint: 1024,
           settings: {
             slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
           }
         }
       ]
     });
   });
 </script>
+
