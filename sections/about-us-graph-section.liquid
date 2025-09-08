@@ -108,3 +108,32 @@
         showSlide(currentSlide);
       }, 3000);
     </script>
+
+    <script>
+  $(document).ready(function(){
+    $('.carousel').slick({
+      slidesToShow: 3,         // Number of slides visible
+      slidesToScroll: 1,       // Slides to scroll per swipe
+      autoplay: true,          // Enable autoplay
+      autoplaySpeed: 3000,     // Autoplay speed in ms
+      dots: true,              // Show navigation dots
+      arrows: true,            // Show prev/next arrows
+      prevArrow: '<button class="carousel-btn prev">&#10094;</button>',
+      nextArrow: '<button class="carousel-btn next">&#10095;</button>',
+      responsive: [
+        {
+          breakpoint: 768,    // Mobile breakpoint
+          settings: {
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
+  });
+</script>
