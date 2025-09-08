@@ -1,0 +1,65 @@
+{{ 'accordian.css' | asset_url | stylesheet_tag }}
+
+<div class="faq">
+        <div class="container">
+            <div class="left-section">
+                <p>FREQUENTLY ASKED QUESTIONS</p>
+            </div>
+
+            <div class="accordion-section">
+                {% for block in section.blocks %}
+                <div class="accordion-box">
+                {% if block.settings.question != blank %}<span>{{ block.settings.question }}<i class="fa-solid fa-angle-right fa-lg"></i></span>{% endif %}
+
+                    {% if block.settings.answer != blank %}<strong>{{ block.settings.answer }}</strong>{% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    {% schema %}
+{
+  "name": "Accordion",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "accordion",
+      "name": "faq",
+      "limit": 7,
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question" },
+        { "type": "text", "id": "answer", "label": "Answer" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Accordion" }]
+}
+{% endschema %}
+
+
+     <script>
+        document.querySelectorAll('.accordion-box span').forEach(span => {
+            const box = span.parentElement;
+            const content = span.nextElementSibling;
+            span.style.cursor = 'pointer';
+
+            span.addEventListener('click', () => {
+                if (content.style.height && content.style.height !== '0px') {
+                    // Closing
+                    content.style.height = content.scrollHeight + 'px';
+                    requestAnimationFrame(() => {
+                        content.style.height = '0px';
+                    });
+                    box.classList.remove('active');
+                } else {
+                    // Opening
+                    content.style.height = content.scrollHeight + 'px';
+                    content.addEventListener('transitionend', () => {
+                        content.style.height = 'auto';
+                    }, { once: true });
+                    box.classList.add('active');
+                }
+            });
+        });
+    </script>
