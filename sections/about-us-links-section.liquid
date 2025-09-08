@@ -1,0 +1,63 @@
+{{ 'about-us.css' | asset_url | stylesheet_tag }}
+
+<div class="about-links">
+  <div class="container">
+    <div class="links-text">
+      <p class="links-heading">{{ section.settings.links_heading }}</p>
+      <hr>
+      <p>{{ section.settings.links_text }}</p>
+    </div>
+    <div class="about-btns">
+      <a href="{{ section.settings.link_btn_url }}" class="link-btn">{{ section.settings.link_btn_text }}</a>
+      <a href="{{ section.settings.link_btn2_url }}" class="link-btn2"><i class="fa-brands fa-whatsapp fa-xl"></i> {{ section.settings.link_btn2_text }}</a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "About Links Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "links_heading",
+      "label": "Section Heading",
+      "default": "Add The factor of Nutrition to your life"
+    },
+    {
+      "type": "textarea",
+      "id": "links_text",
+      "label": "Section Text",
+      "default": "Where Quality, Safety, and Efficacy Meet; Your Most Trusted Vitamin Brand."
+    },
+    {
+      "type": "text",
+      "id": "link_btn_text",
+      "label": "Button 1 Text",
+      "default": "SEE OUR PRODUCT RANGE"
+    },
+    {
+      "type": "url",
+      "id": "link_btn_url",
+      "label": "Button 1 URL",
+    },
+    {
+      "type": "text",
+      "id": "link_btn2_text",
+      "label": "Button 2 Text",
+      "default": "HELP US CHOOSE"
+    },
+    {
+      "type": "url",
+      "id": "link_btn2_url",
+      "label": "Button 2 URL",
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Links Section",
+      "category": "About Us"
+    }
+  ]
+}
+{% endschema %}
