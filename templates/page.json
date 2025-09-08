@@ -30,6 +30,10 @@
       "type": "about-us-grid-images",
       "name": "Grid Images Banner",
       "settings": {
+        "grid_img_1": "shopify://shop_images/Gummies.webp",
+        "grid_img_2": "shopify://shop_images/server.webp",
+        "grid_img_3": "shopify://shop_images/Manufacturing.webp",
+        "grid_img_4": "shopify://shop_images/tablets.webp",
         "grid_banner_heading": "PAKISTAN’S LARGEST NUTRACEUTICAL MANUFACTURING FACILITY",
         "grid_banner_text": "With over a decade of experience, Nutrifactor specializes in manufacturing nutraceutical and natural healthcare products. Leveraging our 30+ years of expertise in the family-owned pharmaceutical business, we identify industry trends far ahead of the competition. Nutrifactor invests heavily in extensive manufacturing, well-equipped laboratories, cutting-edge instrumentation, and warehousing capacities that position us as the largest nutraceutical manufacturing facility in Pakistan."
       }
@@ -39,7 +43,8 @@
       "name": "Medicine Section",
       "settings": {
         "medicine_heading": "WHY NUTRIFACTOR!",
-        "medicine_text": "Nutrifactor stands out from other nutraceutical brands due to our values of transparency and traceability in delivering high-quality natural healthcare products. Our commitment to excellence encompasses sustainable sourcing, integrity across all levels, and rigorous testing methods exceeding usual standard practices. We strive to bridge the gap between consumers and nutraceuticals science by being transparent in our labels. All the health benefits listed on our products are strictly in accordance with the scientific research."
+        "medicine_text": "Nutrifactor stands out from other nutraceutical brands due to our values of transparency and traceability in delivering high-quality natural healthcare products. Our commitment to excellence encompasses sustainable sourcing, integrity across all levels, and rigorous testing methods exceeding usual standard practices. We strive to bridge the gap between consumers and nutraceuticals science by being transparent in our labels. All the health benefits listed on our products are strictly in accordance with the scientific research.",
+        "medicine_image": "shopify://shop_images/Bottles_0abe3c7c-75a3-4436-83d5-e0d430b691a5.webp"
       }
     },
     "about_us_graph_section_gmEEam": {
@@ -51,9 +56,41 @@
     },
     "about_us_grid_rightside_images_RheUwi": {
       "type": "about-us-grid-rightside-images",
+      "blocks": {
+        "text_block_gJ8at8": {
+          "type": "text_block",
+          "settings": {
+            "text_title": "Superior Manufacturing",
+            "text_content": "Nutrifactor establishes high-quality manufacturing standards for nutraceutical products, maintaining control over the entire production process with stringent adherence to cGMPs. Our commitment extends to thorough documentation to ensure the traceability of every step."
+          }
+        },
+        "text_block_9nnRYJ": {
+          "type": "text_block",
+          "settings": {
+            "text_title": "Superior Manufacturing",
+            "text_content": "Nutrifactor establishes high-quality manufacturing standards for nutraceutical products, maintaining control over the entire production process with stringent adherence to cGMPs. Our commitment extends to thorough documentation to ensure the traceability of every step."
+          }
+        },
+        "text_block_i9HVJj": {
+          "type": "text_block",
+          "settings": {
+            "text_title": "Superior Manufacturing",
+            "text_content": "Nutrifactor establishes high-quality manufacturing standards for nutraceutical products, maintaining control over the entire production process with stringent adherence to cGMPs. Our commitment extends to thorough documentation to ensure the traceability of every step."
+          }
+        }
+      },
+      "block_order": [
+        "text_block_gJ8at8",
+        "text_block_9nnRYJ",
+        "text_block_i9HVJj"
+      ],
       "name": "Right Side Grid Images Banner",
       "settings": {
-        "grid2_heading": "YOUR HEALTH, OUR PRIORITY"
+        "grid2_heading": "YOUR HEALTH, OUR PRIORITY",
+        "grid2_img_1": "shopify://shop_images/manufacturing_process_1.webp",
+        "grid2_img_2": "shopify://shop_images/manufacturing_process_2.webp",
+        "grid2_img_3": "shopify://shop_images/manufacturing_process_3.webp",
+        "grid2_img_4": "shopify://shop_images/manufacturing_process_4.webp"
       }
     },
     "about_us_head_office_section_ECPnd9": {
@@ -61,7 +98,9 @@
       "name": "Head Office Section",
       "settings": {
         "office_heading": "Nutrifactor’s corporate office",
-        "office_text": "By 2026, as part of our “Go Green” initiative, Nutrifactor aims to create a space where eco-friendliness is embedded in every brick. Forest One will be more than just a place where we weave wellness; it will be a thoughtfully designed space with sustainability and efficiency in mind. Nutrifactor believes that today's choices shape the world for future generations, and we are committed to making a positive impact."
+        "office_text": "By 2026, as part of our “Go Green” initiative, Nutrifactor aims to create a space where eco-friendliness is embedded in every brick. Forest One will be more than just a place where we weave wellness; it will be a thoughtfully designed space with sustainability and efficiency in mind. Nutrifactor believes that today's choices shape the world for future generations, and we are committed to making a positive impact.",
+        "office_icon": "shopify://shop_images/Forest_One_icon_b9e7fb05-f34f-434e-9911-8413b30a43da.webp",
+        "office_image": "shopify://shop_images/Head_Office_Banner.webp"
       }
     },
     "about_us_links_section_Lq6fKD": {
