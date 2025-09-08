@@ -531,6 +531,10 @@ hr {
     display: none;
   }
 
+  .phone-graph {
+    display: flex;
+  }
+
   .carousel {
     position: relative;
     width: 100%;
