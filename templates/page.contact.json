@@ -51,6 +51,54 @@
     },
     "address_info_cFYPEJ": {
       "type": "address-info",
+      "blocks": {
+        "contact_z9ieyP": {
+          "type": "contact",
+          "settings": {
+            "heading": "heading",
+            "address": "xyz",
+            "phone": "xyz",
+            "mobile": "xyz",
+            "email": "xyz"
+          }
+        },
+        "contact_CUWeVN": {
+          "type": "contact",
+          "settings": {
+            "heading": "heading",
+            "address": "xyz",
+            "phone": "xyz",
+            "mobile": "xyz",
+            "email": "xyz"
+          }
+        },
+        "contact_NCBppG": {
+          "type": "contact",
+          "settings": {
+            "heading": "heading",
+            "address": "xyz",
+            "phone": "xyz",
+            "mobile": "xyz",
+            "email": "xyz"
+          }
+        },
+        "contact_bDBzCX": {
+          "type": "contact",
+          "settings": {
+            "heading": "heading",
+            "address": "xyz",
+            "phone": "xyz",
+            "mobile": "xyz",
+            "email": "xyz"
+          }
+        }
+      },
+      "block_order": [
+        "contact_z9ieyP",
+        "contact_CUWeVN",
+        "contact_NCBppG",
+        "contact_bDBzCX"
+      ],
       "name": "Contact Info Columns",
       "settings": {
         "main_heading": "CORPORATE OFFICE"
