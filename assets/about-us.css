@@ -1,0 +1,894 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+hr {
+  width: 150px;
+  height: 3px;
+  margin: 15px 0px;
+  background-color: #4e327c;
+  border-radius: 10px;
+}
+
+.phone-graph {
+  display: none;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+}
+
+.video-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-section .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-headings {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  margin: 0px 0px 10px;
+}
+
+.video-headings h1 {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1;
+  color: #4e327c;
+}
+
+.video-headings h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  color: #5b625d;
+}
+
+#about-us-video {
+  width: 100%;
+  max-width: 984px;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.grid-banner-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.grid-banner-main .container {
+  display: flex;
+  width: 1170px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-banner-imgs {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 575px;
+  gap: 15px;
+}
+
+.grid-banner-imgs img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.grid-banner-imgs img:nth-child(1) {
+  grid-column: span 8;
+  border-radius: 15px;
+}
+
+.grid-banner-imgs img:nth-child(2) {
+  grid-column: span 4;
+  border-radius: 15px;
+}
+
+.grid-banner-imgs img:nth-child(3) {
+  grid-column: span 4;
+  border-radius: 15px;
+}
+
+.grid-banner-imgs img:nth-child(4) {
+  grid-column: span 8;
+  border-radius: 15px;
+}
+
+.grid-banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 575px;
+}
+
+.grid-banner-text .banner-heading {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.grid-banner-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.medicine-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.medicine-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 1170px;
+  gap: 100px;
+}
+
+.medicine-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.medicine-text .med-heading {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.medicine-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.medicine-image {
+  max-width: 900px;
+}
+
+.medicine-image img {
+  display: block;
+  width: 100%;
+  transition: transform 0.1s ease;
+}
+
+.medicine-image img.animate-up {
+  transform: translateY(-80px);
+}
+
+.graph-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfcfc;
+  padding: 50px 0px;
+}
+
+.graph-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1170px;
+}
+
+.graph-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.graph-text p {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.grid-banner-section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.grid-banner-section-2 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+}
+
+.grid-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 20px;
+}
+
+.grid-heading p {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.grid-content-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.grid-text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 575px;
+}
+
+.grid-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px;
+  background-color: #fafafa;
+  border-radius: 15px;
+}
+
+.grid-text .grid-text-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 8px;
+  width: 525px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.grid-text p {
+  font-size: 14px;
+  line-height: 1.5;
+  width: 525px;
+  text-align: justify;
+}
+
+.head-office-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.head-office-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.head-office-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.head-office-text .office-heading {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.head-office-text p {
+  font-size: 14px;
+  line-height: 1.5;
+  width: 1172px;
+}
+
+.head-office-text span {
+  width: 170px;
+  height: 57.8px;
+}
+
+.head-office-text span img {
+  width: 100%;
+  height: 100%;
+}
+
+.head-office-img {
+  width: 99vw;
+}
+
+.head-office-img img {
+  width: 100%;
+}
+
+.about-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.about-links .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1170px;
+  gap: 30px;
+}
+
+.links-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.links-text .links-heading {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.links-text p {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.about-btns {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 233.5px;
+  height: 43.6px;
+  border-radius: 10px;
+  background-color: #4e327c;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.link-btn:hover {
+  background-color: white;
+  border: #4e327c 1px solid;
+  color: #4e327c;
+}
+
+.link-btn2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 197.11px;
+  height: 43.6px;
+  border: #4e327c 1px solid;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #54327c;
+  font-size: 14px;
+  gap: 5px;
+  transition: 0.3s ease;
+}
+
+.link-btn2:hover {
+  background-color: #f0ebff;
+  border: white 1px solid;
+}
+
+
+
+
+
+
+@media (max-width: 426px) {
+  .container {
+    display: flex;
+    max-width: 426px;
+  }
+
+  .video-headings h1 {
+    font-size: 32px;
+  }
+
+  .video-headings h2 {
+    font-size: 20px;
+  }
+
+  #about-us-video {
+    width: 95%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+  }
+
+  .grid-banner-main .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .grid-banner-text {
+    width: 95%;
+    order: 1;
+  }
+
+  .grid-banner-text .banner-heading {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .grid-banner-text hr {
+    align-self: center;
+  }
+
+  .grid-banner-text p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .grid-banner-imgs {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 95%;
+    gap: 3px;
+  }
+
+  .grid-banner-imgs img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+
+  .medicine-section .container {
+    width: 100%;
+  }
+
+  .medicine-text {
+    width: 95%;
+    text-align: center;
+  }
+
+  .medicine-text .med-heading {
+    font-size: 26px;
+  }
+
+  .medicine-text p {
+    font-size: 15px;
+  }
+
+  .medicine-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .medicine-image img {
+    display: block;
+    width: 95%;
+    transition: transform 0.1s ease;
+  }
+
+  .graph-section .container {
+    width: 100%;
+  }
+
+  .graph {
+    display: none;
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-slide {
+    display: none;
+    text-align: center;
+  }
+
+  .carousel-slide.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-slide img {
+    width: 40%;
+    height: auto;
+    display: block;
+  }
+
+  .carousel-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    user-select: none;
+    transition: background 0.3s;
+    width: 12%;
+  }
+
+  .carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+  
+  
+  .grid-banner-section-2 .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .grid-content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.grid-text-section {
+  order: 2;
+}
+
+.grid-text {
+  background-color: #f5f2f2;
+}
+
+.grid-text-section {
+  width: 95%;
+}
+
+.grid-text .grid-text-heading {
+  width: 100%;
+  text-align: center;
+}
+
+.grid-text p {
+  width: 100%;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.grid-banner-section-2 .grid-banner-imgs {
+  order: 1;
+}
+
+
+.head-office-text p {
+  width: 95%;
+}
+
+
+.about-links .container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-btns {
+  width: 95%;
+  gap: 5px;
+}
+
+.link-btn {
+  width: 60%;
+}
+
+.link-btn2 {
+  width: 40%;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+   .container {
+    display: flex;
+    max-width: 1020px;
+  }
+
+  .video-headings h1 {
+    font-size: 32px;
+  }
+
+  .video-headings h2 {
+    font-size: 20px;
+  }
+
+  #about-us-video {
+    width: 95%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+  }
+
+  .grid-banner-main .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .grid-banner-text {
+    width: 95%;
+    order: 1;
+  }
+
+  .grid-banner-text .banner-heading {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .grid-banner-text hr {
+    align-self: center;
+  }
+
+  .grid-banner-text p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .grid-banner-imgs {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 95%;
+    gap: 10px;
+  }
+
+  .grid-banner-imgs img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .medicine-section .container {
+    width: 100%;
+  }
+
+  .medicine-text {
+    width: 95%;
+    text-align: center;
+  }
+
+  .medicine-text .med-heading {
+    font-size: 26px;
+  }
+
+  .medicine-text p {
+    font-size: 15px;
+  }
+
+  .medicine-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .medicine-image img {
+    display: block;
+    width: 95%;
+    transition: transform 0.1s ease;
+  }
+
+  .graph-section .container {
+    width: 100%;
+  }
+
+  .graph {
+    display: none;
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-slide {
+    display: none;
+    text-align: center;
+  }
+
+  .carousel-slide.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-slide img {
+    width: 40%;
+    height: auto;
+    display: block;
+  }
+
+  .carousel-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    user-select: none;
+    transition: background 0.3s;
+    width: 12%;
+  }
+
+  .carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+  
+  
+  .grid-banner-section-2 .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .grid-content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.grid-text-section {
+  order: 2;
+}
+
+.grid-text {
+  background-color: #f5f2f2;
+}
+
+.grid-text-section {
+  width: 95%;
+}
+
+.grid-text .grid-text-heading {
+  width: 100%;
+  text-align: center;
+}
+
+.grid-text p {
+  width: 100%;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.grid-banner-section-2 .grid-banner-imgs {
+  order: 1;
+}
+
+
+.head-office-text p {
+  width: 95%;
+}
+
+
+.about-links .container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-btns {
+  width: 95%;
+  gap: 5px;
+}
+
+.link-btn {
+  width: 60%;
+}
+
+.link-btn2 {
+  width: 40%;
+}
+}
