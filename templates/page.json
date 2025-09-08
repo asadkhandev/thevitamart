@@ -47,14 +47,6 @@
         "medicine_image": "shopify://shop_images/Bottles_0abe3c7c-75a3-4436-83d5-e0d430b691a5.webp"
       }
     },
-    "about_us_graph_section_gmEEam": {
-      "type": "about-us-graph-section",
-      "name": "Graph Section",
-      "settings": {
-        "graph_heading": "From Nature to you",
-        "graph_image": "shopify://shop_images/imgi_14_From_Nature_To_You_New.png"
-      }
-    },
     "about_us_grid_rightside_images_RheUwi": {
       "type": "about-us-grid-rightside-images",
       "blocks": {
@@ -115,6 +107,36 @@
         "link_btn2_text": "HELP US CHOOSE",
         "link_btn2_url": ""
       }
+    },
+    "about_us_graph_section_m7yFBf": {
+      "type": "about-us-graph-section",
+      "blocks": {
+        "carousel_image_YKigmg": {
+          "type": "carousel_image",
+          "settings": {
+            "image": "shopify://shop_images/safety_icon_d9fa2e65-793a-42b3-b768-ca6a6418d7e5.png",
+            "alt_text": "",
+            "caption": ""
+          }
+        },
+        "carousel_image_Kgz4yg": {
+          "type": "carousel_image",
+          "settings": {
+            "image": "shopify://shop_images/quality_check_icon_ebef4d94-b20d-4007-90ef-1c5a5c484a5b.png",
+            "alt_text": "",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "carousel_image_YKigmg",
+        "carousel_image_Kgz4yg"
+      ],
+      "name": "Custom Carousel",
+      "settings": {
+        "graph_heading": "From Nature to you",
+        "graph_image": "shopify://shop_images/imgi_14_From_Nature_To_You_New.png"
+      }
     }
   },
   "order": [
@@ -122,9 +144,9 @@
     "about_us_video_section_9mE4eC",
     "about_us_grid_images_iyLJt4",
     "about_us_medicine_section_DKy4qy",
-    "about_us_graph_section_gmEEam",
     "about_us_grid_rightside_images_RheUwi",
     "about_us_head_office_section_ECPnd9",
-    "about_us_links_section_Lq6fKD"
+    "about_us_links_section_Lq6fKD",
+    "about_us_graph_section_m7yFBf"
   ]
 }
