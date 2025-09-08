@@ -53,28 +53,56 @@
       "type": "address-info",
       "name": "Contact Info Columns",
       "settings": {
-        "main_heading": "CORPORATE OFFICE",
-        "corporate_heading": "Corporate Office",
-        "corporate_address": "P-130, Kohinoor City, Faisalabad.",
-        "corporate_phone": "Call us: 080077722",
-        "corporate_email": "business@nutrifactor.com",
-        "customer_heading": "Customer Care",
-        "customer_phone": "Call us: 080077722",
-        "customer_mobile": "+92-303-7772257",
-        "customer_email": "cs@nutrifactor.com",
-        "international_heading": "International Inquiries",
-        "international_mobile": "+92-303-7776382",
-        "international_email": "export@nutrifactor.com",
-        "toll_heading": "Toll Manufacturing Inquiries",
-        "toll_mobile": "+92-303-7776382",
-        "toll_email": "export@nutrifactor.com"
+        "main_heading": "CORPORATE OFFICE"
       }
+    },
+    "accordion_pcQgXT": {
+      "type": "accordion",
+      "blocks": {
+        "accordion_JWJBNd": {
+          "type": "accordion",
+          "settings": {
+            "question": "question",
+            "answer": "answer"
+          }
+        },
+        "accordion_UbbawR": {
+          "type": "accordion",
+          "settings": {
+            "question": "question",
+            "answer": "answer"
+          }
+        },
+        "accordion_TAq7ty": {
+          "type": "accordion",
+          "settings": {
+            "question": "question",
+            "answer": "answer"
+          }
+        },
+        "accordion_yE8WJe": {
+          "type": "accordion",
+          "settings": {
+            "question": "question",
+            "answer": "answer"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_JWJBNd",
+        "accordion_UbbawR",
+        "accordion_TAq7ty",
+        "accordion_yE8WJe"
+      ],
+      "name": "Accordion",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "form",
     "contact_us_CaEWVh",
-    "address_info_cFYPEJ"
+    "address_info_cFYPEJ",
+    "accordion_pcQgXT"
   ]
 }
