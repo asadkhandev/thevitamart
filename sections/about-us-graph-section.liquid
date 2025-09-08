@@ -4,13 +4,31 @@
   <div class="container">
     <div class="graph-text">
       <p>{{ section.settings.graph_heading }}</p>
-      <hr>
+      <hr />
     </div>
     <div class="graph">
-      <img src="{{ section.settings.graph_image | image_url }}" alt="graph animation">
+      {% if section.settings.graph_image %}
+        <img src="{{ section.settings.graph_image | image_url }}" alt="graph animation" />
+      {% endif %}
+    </div>
+
+    <div class="phone-graph">
+      <div class="carousel">
+        {% for block in section.blocks %}
+          <div class="carousel-slide {% if forloop.first %}active{% endif %}">
+            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.alt_text }}" />
+            <p class="carousel-caption">{{ block.settings.caption }}</p>
+          </div>
+        {% endfor %}
+
+        <!-- Navigation buttons -->
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
     </div>
   </div>
 </div>
+
 
 {% schema %}
 {
