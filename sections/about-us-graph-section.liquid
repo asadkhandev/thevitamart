@@ -8,21 +8,6 @@
     </div>
     <div class="graph">
       <img src="{{ section.settings.graph_image | image_url }}" alt="graph animation">
-
-      <div class="phone-graph">
-  <div class="carousel">
-    {% for block in section.blocks %}
-      <div class="carousel-slide {% if forloop.first %}active{% endif %}">
-        <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.alt_text }}" />
-        <p class="carousel-caption">{{ block.settings.caption }}</p>
-      </div>
-    {% endfor %}
-
-    <!-- Navigation buttons -->
-    <button class="carousel-btn prev">&#10094;</button>
-    <button class="carousel-btn next">&#10095;</button>
-  </div>
-</div>
     </div>
   </div>
 </div>
@@ -75,4 +60,3 @@
   ]
 }
 {% endschema %}
-
