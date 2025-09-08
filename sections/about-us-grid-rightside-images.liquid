@@ -1,0 +1,86 @@
+{{ 'about-us.css' | asset_url | stylesheet_tag }}
+
+<div class="grid-banner-section-2">
+  <div class="container">
+    <div class="grid-heading">
+      <p>{{ section.settings.grid2_heading }}</p>
+      <hr>
+    </div>
+    <div class="grid-content-section">
+      <div class="grid-text-section">
+        {% for block in section.blocks %}
+          <div class="grid-text">
+            <p class="grid-text-heading">{{ block.settings.text_title }}</p>
+            <p>{{ block.settings.text_content }}</p>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="grid-banner-imgs">
+        <img src="{{ section.settings.grid2_img_1 | image_url }}">
+        <img src="{{ section.settings.grid2_img_2 | image_url }}">
+        <img src="{{ section.settings.grid2_img_3 | image_url }}">
+        <img src="{{ section.settings.grid2_img_4 | image_url }}">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Right Side Grid Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "grid2_heading",
+      "label": "Section Heading",
+      "default": "YOUR HEALTH, OUR PRIORITY"
+    },
+    {
+      "type": "image_picker",
+      "id": "grid2_img_1",
+      "label": "Grid Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "grid2_img_2",
+      "label": "Grid Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "grid2_img_3",
+      "label": "Grid Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "grid2_img_4",
+      "label": "Grid Image 4"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Text Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text_title",
+          "label": "Text Heading",
+          "default": "Superior Manufacturing"
+        },
+        {
+          "type": "textarea",
+          "id": "text_content",
+          "label": "Text Content",
+          "default": "Nutrifactor establishes high-quality manufacturing standards for nutraceutical products, maintaining control over the entire production process with stringent adherence to cGMPs. Our commitment extends to thorough documentation to ensure the traceability of every step."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Right Side Grid Images Banner",
+      "category": "About Us"
+    }
+  ]
+}
+{% endschema %}
