@@ -1,0 +1,38 @@
+{{ 'about-us.css' | asset_url | stylesheet_tag }}
+
+<div class="graph-section">
+  <div class="container">
+    <div class="graph-text">
+      <p>{{ section.settings.graph_heading }}</p>
+      <hr>
+    </div>
+    <div class="graph">
+      <img src="{{ section.settings.graph_image | image_url }}" alt="graph animation">
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Graph Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "graph_heading",
+      "label": "Graph Heading",
+      "default": "From Nature to you"
+    },
+    {
+      "type": "image_picker",
+      "id": "graph_image",
+      "label": "Graph Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Graph Section",
+      "category": "About Us"
+    }
+  ]
+}
+{% endschema %}
