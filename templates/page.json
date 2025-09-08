@@ -54,16 +54,16 @@
           "type": "carousel_image",
           "settings": {
             "image": "shopify://shop_images/safety_icon_d9fa2e65-793a-42b3-b768-ca6a6418d7e5.png",
-            "alt_text": "",
-            "caption": ""
+            "alt_text": "abc",
+            "caption": "xyz"
           }
         },
         "carousel_image_Kgz4yg": {
           "type": "carousel_image",
           "settings": {
             "image": "shopify://shop_images/quality_check_icon_ebef4d94-b20d-4007-90ef-1c5a5c484a5b.png",
-            "alt_text": "",
-            "caption": ""
+            "alt_text": "abc",
+            "caption": "xyz"
           }
         }
       },
