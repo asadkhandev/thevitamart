@@ -29,7 +29,7 @@
 
 {% schema %}
 {
-  "name": "Graph Section",
+  "name": "Custom Carousel",
   "settings": [
     {
       "type": "text",
@@ -43,11 +43,36 @@
       "label": "Graph Image"
     }
   ],
+  "blocks": [
+    {
+      "type": "carousel_image",
+      "name": "Carousel Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
   "presets": [
     {
-      "name": "Graph Section",
-      "category": "About Us"
+      "name": "Custom Carousel",
+      "category": "Custom"
     }
   ]
 }
 {% endschema %}
+
