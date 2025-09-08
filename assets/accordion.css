@@ -1,65 +1,156 @@
-{{ 'accordian.css' | asset_url | stylesheet_tag }}
-
-<div class="faq">
-        <div class="container">
-            <div class="left-section">
-                <p>FREQUENTLY ASKED QUESTIONS</p>
-            </div>
-
-            <div class="accordion-section">
-                {% for block in section.blocks %}
-                <div class="accordion-box">
-                {% if block.settings.question != blank %}<span>{{ block.settings.question }}<i class="fa-solid fa-angle-right fa-lg"></i></span>{% endif %}
-
-                    {% if block.settings.answer != blank %}<strong>{{ block.settings.answer }}</strong>{% endif %}
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-
-    {% schema %}
-{
-  "name": "Accordion",
-  "settings": [],
-  "blocks": [
-    {
-      "type": "accordion",
-      "name": "faq",
-      "limit": 7,
-      "settings": [
-        { "type": "text", "id": "question", "label": "Question" },
-        { "type": "text", "id": "answer", "label": "Answer" }
-      ]
-    }
-  ],
-  "presets": [{ "name": "Accordion" }]
+body, h1, h2, h3, h4, h5, h6, p, div, section {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
-{% endschema %}
+
+body {
+  line-height: 1;
+}
 
 
-     <script>
-        document.querySelectorAll('.accordion-box span').forEach(span => {
-            const box = span.parentElement;
-            const content = span.nextElementSibling;
-            span.style.cursor = 'pointer';
+.container {
+    display: flex;
+    max-width: 1370px;
+}
 
-            span.addEventListener('click', () => {
-                if (content.style.height && content.style.height !== '0px') {
-                    // Closing
-                    content.style.height = content.scrollHeight + 'px';
-                    requestAnimationFrame(() => {
-                        content.style.height = '0px';
-                    });
-                    box.classList.remove('active');
-                } else {
-                    // Opening
-                    content.style.height = content.scrollHeight + 'px';
-                    content.addEventListener('transitionend', () => {
-                        content.style.height = 'auto';
-                    }, { once: true });
-                    box.classList.add('active');
-                }
-            });
-        });
-    </script>
+
+
+.faq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0
+}
+
+.faq .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0px 137.5px;
+}
+
+
+
+.accordion-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 675px;
+}
+
+.accordion-box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    gap: 15px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.accordion-box span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    transition: 0.3s;
+    width: 675px;
+}
+
+.accordion-box strong {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    line-height: 1.5;
+}
+
+.accordion-box.active strong {
+    max-height: 1000px;
+}
+
+.accordion-box.active span {
+    color: #b497ed;
+}
+
+.accordion-box strong ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.accordion-box strong ol {
+    list-style: decimal;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.accordion-box strong li {
+    margin-bottom: 15px;
+}
+
+.accordion-box span i {
+    transition: transform 0.3s ease;
+}
+
+.accordion-box.active span i {
+    transform: rotate(90deg);
+}
+
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+     .faq .container {
+    max-width: 1400px;
+    flex-direction: column;
+ }
+
+ .accordion-section {
+    width: 100%;
+ }
+
+
+
+ 
+}
+
+
+
+@media (max-width: 426px) {
+ .faq .container {
+    max-width: 426px;
+    flex-direction: column;
+ }
+
+ .accordion-section {
+    width: 100%;
+ }
+
+ .left-section {
+    font-size: 26px;
+    text-align: center;
+ }
+
+ .accordion-box {
+    width: 90%;
+ }
+
+.accordion-box span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+}[]
