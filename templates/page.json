@@ -16,9 +16,75 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_us_video_section_9mE4eC": {
+      "type": "about-us-video-section",
+      "name": "Video Section",
+      "settings": {
+        "video_heading_1": "NUTRIFACTOR",
+        "video_heading_2": "PAKISTAN'S NO.1 VITAMIN BRAND",
+        "video_url": ""
+      }
+    },
+    "about_us_grid_images_iyLJt4": {
+      "type": "about-us-grid-images",
+      "name": "Grid Images Banner",
+      "settings": {
+        "grid_banner_heading": "PAKISTAN’S LARGEST NUTRACEUTICAL MANUFACTURING FACILITY",
+        "grid_banner_text": "With over a decade of experience, Nutrifactor specializes in manufacturing nutraceutical and natural healthcare products. Leveraging our 30+ years of expertise in the family-owned pharmaceutical business, we identify industry trends far ahead of the competition. Nutrifactor invests heavily in extensive manufacturing, well-equipped laboratories, cutting-edge instrumentation, and warehousing capacities that position us as the largest nutraceutical manufacturing facility in Pakistan."
+      }
+    },
+    "about_us_medicine_section_DKy4qy": {
+      "type": "about-us-medicine-section",
+      "name": "Medicine Section",
+      "settings": {
+        "medicine_heading": "WHY NUTRIFACTOR!",
+        "medicine_text": "Nutrifactor stands out from other nutraceutical brands due to our values of transparency and traceability in delivering high-quality natural healthcare products. Our commitment to excellence encompasses sustainable sourcing, integrity across all levels, and rigorous testing methods exceeding usual standard practices. We strive to bridge the gap between consumers and nutraceuticals science by being transparent in our labels. All the health benefits listed on our products are strictly in accordance with the scientific research."
+      }
+    },
+    "about_us_graph_section_gmEEam": {
+      "type": "about-us-graph-section",
+      "name": "Graph Section",
+      "settings": {
+        "graph_heading": "From Nature to you"
+      }
+    },
+    "about_us_grid_rightside_images_RheUwi": {
+      "type": "about-us-grid-rightside-images",
+      "name": "Right Side Grid Images Banner",
+      "settings": {
+        "grid2_heading": "YOUR HEALTH, OUR PRIORITY"
+      }
+    },
+    "about_us_head_office_section_ECPnd9": {
+      "type": "about-us-head-office-section",
+      "name": "Head Office Section",
+      "settings": {
+        "office_heading": "Nutrifactor’s corporate office",
+        "office_text": "By 2026, as part of our “Go Green” initiative, Nutrifactor aims to create a space where eco-friendliness is embedded in every brick. Forest One will be more than just a place where we weave wellness; it will be a thoughtfully designed space with sustainability and efficiency in mind. Nutrifactor believes that today's choices shape the world for future generations, and we are committed to making a positive impact."
+      }
+    },
+    "about_us_links_section_Lq6fKD": {
+      "type": "about-us-links-section",
+      "name": "About Links Section",
+      "settings": {
+        "links_heading": "Add The factor of Nutrition to your life",
+        "links_text": "Where Quality, Safety, and Efficacy Meet; Your Most Trusted Vitamin Brand.",
+        "link_btn_text": "SEE OUR PRODUCT RANGE",
+        "link_btn_url": "",
+        "link_btn2_text": "HELP US CHOOSE",
+        "link_btn2_url": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_us_video_section_9mE4eC",
+    "about_us_grid_images_iyLJt4",
+    "about_us_medicine_section_DKy4qy",
+    "about_us_graph_section_gmEEam",
+    "about_us_grid_rightside_images_RheUwi",
+    "about_us_head_office_section_ECPnd9",
+    "about_us_links_section_Lq6fKD"
   ]
 }
