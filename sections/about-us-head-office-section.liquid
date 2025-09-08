@@ -1,0 +1,51 @@
+{{ 'about-us.css' | asset_url | stylesheet_tag }}
+
+<div class="head-office-section">
+  <div class="container">
+    <div class="head-office-text">
+      <p class="office-heading">{{ section.settings.office_heading }}</p>
+      <hr>
+      <span><img src="{{ section.settings.office_icon | image_url }}" alt="forest button image"></span>
+      <p>{{ section.settings.office_text }}</p>
+    </div>
+    <div class="head-office-img">
+      <img src="{{ section.settings.office_image | image_url }}" alt="head office image">
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Head Office Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "office_heading",
+      "label": "Office Heading",
+      "default": "Nutrifactor’s corporate office"
+    },
+    {
+      "type": "textarea",
+      "id": "office_text",
+      "label": "Office Text",
+      "default": "By 2026, as part of our “Go Green” initiative, Nutrifactor aims to create a space where eco-friendliness is embedded in every brick. Forest One will be more than just a place where we weave wellness; it will be a thoughtfully designed space with sustainability and efficiency in mind. Nutrifactor believes that today's choices shape the world for future generations, and we are committed to making a positive impact."
+    },
+    {
+      "type": "image_picker",
+      "id": "office_icon",
+      "label": "Office Icon"
+    },
+    {
+      "type": "image_picker",
+      "id": "office_image",
+      "label": "Office Main Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Head Office Section",
+      "category": "About Us"
+    }
+  ]
+}
+{% endschema %}
