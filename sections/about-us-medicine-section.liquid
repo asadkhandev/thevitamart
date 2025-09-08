@@ -1,0 +1,94 @@
+{{ 'about-us.css' | asset_url | stylesheet_tag }}
+
+<div class="medicine-section">
+  <div class="container">
+    <div class="medicine-text">
+      <p class="med-heading">{{ section.settings.medicine_heading }}</p>
+      <hr>
+      <p>{{ section.settings.medicine_text }}</p>
+    </div>
+    <div class="medicine-image">
+      <img src="{{ section.settings.medicine_image | image_url }}" alt="medicine picture">
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Medicine Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "medicine_heading",
+      "label": "Medicine Heading",
+      "default": "WHY NUTRIFACTOR!"
+    },
+    {
+      "type": "textarea",
+      "id": "medicine_text",
+      "label": "Medicine Text",
+      "default": "Nutrifactor stands out from other nutraceutical brands due to our values of transparency and traceability in delivering high-quality natural healthcare products. Our commitment to excellence encompasses sustainable sourcing, integrity across all levels, and rigorous testing methods exceeding usual standard practices. We strive to bridge the gap between consumers and nutraceuticals science by being transparent in our labels. All the health benefits listed on our products are strictly in accordance with the scientific research."
+    },
+    {
+      "type": "image_picker",
+      "id": "medicine_image",
+      "label": "Medicine Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Medicine Section",
+      "category": "About Us"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+        (() => {
+            const SELECTOR = ".medicine-image img";
+            const TOLERANCE_PX = 150;
+            const STICKY = false;
+
+            function init() {
+                const img = document.querySelector(SELECTOR);
+                if (!img) return;
+
+                img.style.willChange = "transform";
+
+                const check = () => {
+                    const rect = img.getBoundingClientRect();
+                    const vpH = window.innerHeight || document.documentElement.clientHeight;
+                    const imgCenter = rect.top + rect.height / 2;
+                    const vpCenter = vpH / 2;
+
+                    if (Math.abs(imgCenter - vpCenter) <= TOLERANCE_PX) {
+                        img.classList.add("animate-up");
+                    } else {
+                        img.classList.remove("animate-up");
+                    }
+                };
+
+                let ticking = false;
+                const onScroll = () => {
+                    if (!ticking) {
+                        ticking = true;
+                        requestAnimationFrame(() => { check(); ticking = false; });
+                    }
+                };
+
+                const passive = { passive: true };
+                window.addEventListener("scroll", onScroll, passive);
+                window.addEventListener("resize", onScroll);
+
+                if (img.complete) check();
+                else img.addEventListener("load", () => check(), { once: true });
+            }
+
+            if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", init, { once: true });
+            } else {
+                init();
+            }
+        })();
+    </script>
