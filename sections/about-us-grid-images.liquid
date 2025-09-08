@@ -1,0 +1,63 @@
+{{ 'about-us.css' | asset_url | stylesheet_tag }}
+
+<div class="grid-banner-main">
+  <div class="container">
+    <div class="grid-banner-imgs">
+      <img src="{{ section.settings.grid_img_1 | image_url }}">
+      <img src="{{ section.settings.grid_img_2 | image_url }}">
+      <img src="{{ section.settings.grid_img_3 | image_url }}">
+      <img src="{{ section.settings.grid_img_4 | image_url }}">
+    </div>
+    <div class="grid-banner-text">
+      <p class="banner-heading">{{ section.settings.grid_banner_heading }}</p>
+      <hr>
+      <p>{{ section.settings.grid_banner_text }}</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Grid Images Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "grid_img_1",
+      "label": "Grid Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "grid_img_2",
+      "label": "Grid Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "grid_img_3",
+      "label": "Grid Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "grid_img_4",
+      "label": "Grid Image 4"
+    },
+    {
+      "type": "text",
+      "id": "grid_banner_heading",
+      "label": "Banner Heading",
+      "default": "PAKISTAN’S LARGEST NUTRACEUTICAL MANUFACTURING FACILITY"
+    },
+    {
+      "type": "textarea",
+      "id": "grid_banner_text",
+      "label": "Banner Text",
+      "default": "With over a decade of experience, Nutrifactor specializes in manufacturing nutraceutical and natural healthcare products. Leveraging our 30+ years of expertise in the family-owned pharmaceutical business, we identify industry trends far ahead of the competition. Nutrifactor invests heavily in extensive manufacturing, well-equipped laboratories, cutting-edge instrumentation, and warehousing capacities that position us as the largest nutraceutical manufacturing facility in Pakistan."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Grid Images Banner",
+      "category": "About Us"
+    }
+  ]
+}
+{% endschema %}
