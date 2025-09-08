@@ -51,7 +51,8 @@
       "type": "about-us-graph-section",
       "name": "Graph Section",
       "settings": {
-        "graph_heading": "From Nature to you"
+        "graph_heading": "From Nature to you",
+        "graph_image": "shopify://shop_images/imgi_14_From_Nature_To_You_New.png"
       }
     },
     "about_us_grid_rightside_images_RheUwi": {
