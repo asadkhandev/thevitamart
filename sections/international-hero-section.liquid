@@ -51,3 +51,17 @@
   ]
 }
 {% endschema %}
+
+<script>
+        const banner = document.querySelector(".international-banner-img");
+        let x = 0;
+        const speed = 1.5;
+
+        function animate() {
+            x += speed;
+            banner.style.backgroundPosition = `${x}px 0`;
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
