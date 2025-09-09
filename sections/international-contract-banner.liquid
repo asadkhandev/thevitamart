@@ -1,0 +1,66 @@
+{{ 'international.css' | asset_url | stylesheet_tag }}
+
+<div class="contract-banner">
+  <div class="container">
+    <div class="contract-image">
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image_alt }}">
+      {% endif %}
+    </div>
+
+    <div class="contract-text">
+      <p class="contract-heading">{{ section.settings.heading | default: "ONE-STOP SOLUTION FOR NUTRACEUTICAL MANUFACTURING" }}</p>
+      <hr>
+      <p>{{ section.settings.description | default: "The contract manufacturing service we offer is a fully comprehensive process. Starting from an innovative idea of development and manufacture, it ends with finalizing the product and providing the necessary documentation for product authorization." }}</p>
+      <a href="{{ section.settings.button_link | default: '#' }}">{{ section.settings.button_text | default: "Become A Distributor" }}</a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Contract Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Banner image"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Image alt text",
+      "default": "contract image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "ONE-STOP SOLUTION FOR NUTRACEUTICAL MANUFACTURING"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "The contract manufacturing service we offer is a fully comprehensive process. Starting from an innovative idea of development and manufacture, it ends with finalizing the product and providing the necessary documentation for product authorization."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Become A Distributor"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contract Banner",
+      "category": "International Section"
+    }
+  ]
+}
+{% endschema %}
