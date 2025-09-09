@@ -1,0 +1,1242 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+}
+
+hr {
+    width: 190px;
+    height: 2px;
+    background-color: #b497ed;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.international-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.international-banner .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.international-banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.international-banner-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1;
+    color: black;
+    width: 978.34px;
+    height: 90px;
+}
+
+.international-banner-text h1 span {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+    width: 454.53px;
+    height: 90px;
+    background: linear-gradient(135deg, #ccb8f3, #bba0ee);
+    border-radius: 50px;
+    padding: 10px 30px;
+     text-shadow: 
+    -1px 2px 0 rgba(0, 0, 0, 0.25),
+    -2px 4px 0 rgba(0, 0, 0, 0.20),
+    -3px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.international-banner-text h2 {
+    font-size: 26px;
+    line-height: 1;
+}
+
+.international-banner-text h2 strong {
+    color: #b497ed;
+}
+
+.footprint-pill {
+    display: flex;
+    width: 270.9px;
+    height: 67.05px;
+    align-items: center;
+    justify-content: center;
+    border: #b598ee 1px solid;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    z-index: 10;
+}
+
+.footprint-pill .continents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 107.78px;
+    height: 65.59px;
+    font-size: 12px;
+    line-height: 1;
+    border-right: #b598ee 1px solid;
+}
+
+.footprint-pill .continents span {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.footprint-pill .distributions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 161.66px;
+    height: 65.59px;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.footprint-pill .distributions strong {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+
+
+.international-banner-img {
+  width: 100%;
+  height: 400px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0372/5675/7381/files/internationalBuildings.png?v=1701873430");
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-position: bottom;
+  margin-top: -20px;
+}
+
+
+
+
+
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.section2 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.section2 .section2-heading {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0px 305px;
+}
+
+.section2 p {
+    font-size: 17px;
+    line-height: 2;
+}
+
+
+
+
+
+
+.international-network {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #b497ed;
+    padding: 50px 0px;
+}
+
+.international-network .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.network-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 15px;
+}
+
+.network-text .network-heading {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0px 305px;
+}
+
+.network-text hr {
+    background-color: white;
+}
+
+.network-text p {
+    font-size: 17px;
+    line-height: 2;
+}
+
+.network-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1170px;
+    height: 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+    background-color: #f9f9f9;
+    border-radius: 45px;
+    margin: 35px 0px -100px;
+}
+
+.network-banner img {
+    width: 130px;
+    height: 48.75px;
+}
+
+
+
+
+
+
+.contract-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0px 50px 0px;
+}
+
+.contract-banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+}
+
+.contract-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 575px;
+}
+
+.contract-image img {
+    width: 524px;
+    height: 546px;
+}
+
+.contract-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 575px;
+    gap: 15px;
+}
+
+.contract-text .contract-heading {
+    width: 380px;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.contract-text p {
+    width: 380px;
+    font-size: 17px;
+    line-height: 2;
+}
+
+.contract-text hr {
+    margin-left: 100px;
+}
+
+.contract-text a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: #b497ed;
+    padding: 5px 20px;
+    width: 170.67px;
+    height: 42px;
+    border-radius: 5px;
+    margin-left: -170px;
+    transition: 0.3s ease;
+}
+
+.contract-text a:hover {
+    background-color: #bba1ef;
+}
+
+
+
+
+
+
+.promise-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.promise-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.promise-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.promise-text .promise-heading {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.2;
+    width: 560px;
+    text-align: center;
+}
+
+.promise-banners {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 50px;
+}
+
+.promise-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 500px;
+    border: #e9e9e9 1px solid;
+    border-radius: 10px;
+    gap: 25px;
+    transition: all 0.3s ease;
+}
+
+.banner-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 190px;
+    background-color: #b497ed;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.banner-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 10px;
+}
+
+.banner-bottom hr {
+    margin-left: 0px;
+}
+
+.banner-bottom .banner-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #b497ed;
+}
+
+.banner-bottom .banner-title2 {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #b497ed;
+}
+
+.banner-bottom p {
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.promise-banner:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+}
+
+
+
+
+
+
+
+.contact-us-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+    background-color: #f6f6f6;
+}
+
+.contact-us-text-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.contact-us-text-section .contact-us-heading {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0px 305px;
+}
+
+.contact-us-text-section p {
+    font-size: 17px;
+    line-height: 2;
+}
+
+
+
+
+.contactus-form-section {
+    display: flex;
+}
+
+.contact-img {
+    display: flex;
+    width: 50%;
+    background-image: url(https://www.nutrifactor.com.pk/cdn/shop/files/nutrifactorBuilding.webp?v=1704114507);
+    background-size: cover;
+}
+
+.contact-us-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 760px;
+    padding: 200px 0px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 30px;
+    gap: 20px;
+}
+
+.form-wrapper p {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.form-wrapper hr {
+    margin-left: 0px;
+}
+
+.input-info {
+    padding: 20px 20px;
+    border: #afafaf 1px solid;
+    border-radius: 25px;
+}
+
+.input-text {
+    padding: 20px 20px 60px 20px;
+    border: #afafaf 1px solid;
+    border-radius: 25px;
+}
+
+.form-wrapper a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px 0px;
+    background-color: #b497ed;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.form-wrapper a:hover {
+    background-color: #bba1ef;
+}
+
+
+
+
+.contactus-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.contactus-info .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.contactus-info p {
+    font-size: 34px;
+    font-weight: bold;
+    width: 560px;
+    text-align: center;
+}
+
+.email-btn {
+    display: flex;
+    align-items: center;
+    width: 610.19px;
+    border: 1px solid #c5c5c5;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.email-btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 20px 30px;
+    border-right: 1px solid #c5c5c5;
+    z-index: 1;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.email-btn span::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: #b497ed;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.3s ease;
+    z-index: -1;
+}
+
+.email-btn span:hover {
+    color: white;
+}
+
+.email-btn span:hover::before {
+    width: 100%;
+}
+
+
+
+
+.email-btn strong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 20px 30px;
+    z-index: 1;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.email-btn strong::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: #b497ed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+    z-index: -1;
+}
+
+.email-btn strong:hover {
+    color: white;
+}
+
+.email-btn strong:hover::before {
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .international-banner-text {
+        gap: 40px;
+    }
+
+    .international-banner-text h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .international-banner-text h1 span {
+        display: flex;
+        justify-content: center;
+        font-size: 55px;
+        width: 75%;
+    }
+
+    .international-banner-text h2 {
+        font-size: 22px;
+    }
+
+
+
+
+    .section2 .section2-heading {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0px 0px;
+}
+
+.section2 p {
+    font-size: 18px;
+    line-height: 2;
+    width: 95%;
+}
+
+
+
+.network-text .network-heading {
+    font-size: 36px;
+    margin: 0px 0px;
+}
+
+.network-text p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.network-banner {
+    width: 90%;
+    height: 120px;
+    gap: 60px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+
+.contract-banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.contract-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contract-image img {
+    width: 550px;
+    height: 550px;
+}
+
+.contract-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+}
+
+.contract-text hr {
+    margin-left: 180px;
+}
+
+.contract-text .contract-heading {
+    width: 100%;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.contract-text p {
+    width: 95%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contract-text a {
+    margin-left: 0px;
+}
+
+
+
+
+.promise-section .container {
+    gap: 20px;
+}
+
+.promise-text {
+    gap: 0px;
+}
+
+.promise-text .promise-heading {
+    font-size: 28px;
+    width: 100%;
+}
+
+.promise-banners {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.promise-banner {
+    width: 47%;
+}
+
+.banner-bottom {
+    width: 90%;
+}
+
+
+
+
+.contact-us-text-section .container {
+    width: 100%;
+}
+
+.contact-us-text-section .contact-us-heading {
+    font-size: 36px;
+    width: 100%;
+}
+
+.contact-us-text-section p {
+    font-size: 18px;
+    width: 95%;
+}
+
+
+.contactus-form-section {
+    display: flex;
+    width: 100%;
+}
+
+.contact-img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-us-form {
+    width: 100%;
+    padding: 40px 0px;
+}
+
+
+
+
+.contactus-info p {
+    width: 100%;
+    font-size: 28px;
+}
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .international-banner-text {
+        gap: 40px;
+    }
+
+    .international-banner-text h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .international-banner-text h1 span {
+        display: flex;
+        justify-content: center;
+        font-size: 45px;
+        width: 75%;
+    }
+
+    .international-banner-text h2 {
+        font-size: 16px;
+    }
+
+
+
+
+    .section2 .section2-heading {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0px 0px;
+}
+
+.section2 p {
+    font-size: 14px;
+    line-height: 2;
+    width: 95%;
+}
+
+
+
+.network-text .network-heading {
+    font-size: 20px;
+    margin: 0px 0px;
+}
+
+.network-text p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.network-banner {
+    width: 90%;
+    height: 120px;
+    gap: 60px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+
+.contract-banner .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.contract-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contract-image img {
+    width: 404.98px;
+    height: 422px;
+}
+
+.contract-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0px;
+    text-align: center;
+}
+
+.contract-text .contract-heading {
+    width: 95%;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.contract-text p {
+    width: 95%;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contract-text a {
+    margin-left: 0px;
+}
+
+
+
+
+.promise-section .container {
+    gap: 20px;
+}
+
+.promise-text {
+    gap: 0px;
+}
+
+.promise-text .promise-heading {
+    font-size: 28px;
+    width: 100%;
+}
+
+.promise-banners {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.promise-banner {
+    width: 47%;
+}
+
+.banner-bottom {
+    width: 90%;
+}
+
+
+
+
+.contact-us-text-section .container {
+    width: 100%;
+}
+
+.contact-us-text-section .contact-us-heading {
+    font-size: 28px;
+    width: 100%;
+}
+
+.contact-us-text-section p {
+    font-size: 14px;
+    width: 95%;
+}
+
+
+.contactus-form-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-img {
+    width: 100%;
+    height: 400px;
+}
+
+.contact-us-form {
+    width: 100%;
+    padding: 40px 0px;
+}
+
+
+
+
+.contactus-info p {
+    width: 100%;
+    font-size: 28px;
+}
+
+.email-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.email-btn span {
+    border-right: none;
+    border: 1px solid #c5c5c5;
+    border-radius: 50px;
+}
+
+.email-btn strong {
+    border-right: none;
+    border: 1px solid #c5c5c5;
+    border-radius: 50px;
+}
+}
+
+
+
+
+
+
+
+@media (max-width: 426px) {
+    .international-banner-text h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 34px;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .international-banner-text h1 span {
+        font-size: 32px;
+        width: 75%;
+    }
+
+    .international-banner-text h2 {
+        font-size: 16px;
+    }
+
+
+
+
+    .section2 .section2-heading {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0px 0px;
+}
+
+.section2 p {
+    font-size: 14px;
+    line-height: 2;
+    width: 95%;
+}
+
+
+
+.network-text .network-heading {
+    font-size: 20px;
+    margin: 0px 0px;
+}
+
+.network-text p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.network-banner {
+    width: 90%;
+    height: 120px;
+    gap: 60px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+
+.contract-banner .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.contract-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contract-image img {
+    width: 404.98px;
+    height: 422px;
+}
+
+.contract-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0px;
+    text-align: center;
+}
+
+.contract-text .contract-heading {
+    width: 95%;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.contract-text p {
+    width: 95%;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contract-text a {
+    margin-left: 0px;
+}
+
+
+
+
+.promise-section .container {
+    gap: 20px;
+}
+
+.promise-text {
+    gap: 0px;
+}
+
+.promise-text .promise-heading {
+    font-size: 28px;
+    width: 100%;
+}
+.promise-banners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+
+
+
+.contact-us-text-section .container {
+    width: 100%;
+}
+
+.contact-us-text-section .contact-us-heading {
+    font-size: 28px;
+    width: 100%;
+}
+
+.contact-us-text-section p {
+    font-size: 14px;
+    width: 95%;
+}
+
+
+.contactus-form-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-img {
+    width: 100%;
+    height: 400px;
+}
+
+.contact-us-form {
+    width: 100%;
+    padding: 40px 0px;
+}
+
+
+
+
+.contactus-info p {
+    width: 100%;
+    font-size: 28px;
+}
+
+.email-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.email-btn span {
+    border-right: none;
+    border: 1px solid #c5c5c5;
+    border-radius: 50px;
+}
+
+.email-btn strong {
+    border-right: none;
+    border: 1px solid #c5c5c5;
+    border-radius: 50px;
+}
+}
