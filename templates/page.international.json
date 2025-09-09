@@ -11,10 +11,28 @@
   "sections": {
     "main": {
       "type": "page",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "page": "",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "international_hero_section_LXVNeE": {
+      "type": "international-hero-section",
+      "name": "International Banner",
+      "settings": {
+        "heading_1": "GLOBALLY ACTIVE IN <span>60+ COUNTRIES</span>",
+        "heading_2": "OUR <strong>WORLDWIDE</strong> FOOTPRINT!",
+        "continents_text": "<span>6</span> Continents",
+        "distributions_text": "<strong>100+</strong> Distribution centers"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "international_hero_section_LXVNeE"
   ]
 }
