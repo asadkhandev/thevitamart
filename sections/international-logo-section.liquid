@@ -1,0 +1,73 @@
+{{ 'international.css' | asset_url | stylesheet_tag }}
+
+<div class="international-network">
+  <div class="container">
+    <div class="network-text">
+      <p class="network-heading">{{ section.settings.heading | default: "NUTRIFACTOR CAN BE FOUND ON THESE LARGEST NETWORKS" }}</p>
+      <hr>
+      <p>{{ section.settings.description | default: "Through sheer determination and constant hard work, Nutrifactor has been featured by some of the largest networks & business journals. Expanding its business to over 60 countries across the globe in 6 different continents, Nutrifactor is on its way to becoming a globally renowned brand." }}</p>
+    </div>
+
+    <div class="network-banner logos-per-{{ section.settings.logos_per_row }}">
+      {% for block in section.blocks %}
+        {% if block.type == 'logo' %}
+          <img src="{{ block.settings.logo | image_url }}" alt="{{ block.settings.alt_text }}">
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "International Network",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "NUTRIFACTOR CAN BE FOUND ON THESE LARGEST NETWORKS"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Through sheer determination and constant hard work, Nutrifactor has been featured by some of the largest networks & business journals. Expanding its business to over 60 countries across the globe in 6 different continents, Nutrifactor is on its way to becoming a globally renowned brand."
+    },
+    {
+      "type": "range",
+      "id": "logos_per_row",
+      "label": "Logos per row",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 5
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt text",
+          "default": "Network logo"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "International Network",
+      "category": "International Section"
+    }
+  ]
+}
+{% endschema %}
