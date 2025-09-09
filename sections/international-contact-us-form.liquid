@@ -1,0 +1,59 @@
+{{ 'international.css' | asset_url | stylesheet_tag }}
+
+<div class="contactus-form-section">
+  <div class="contact-img">
+    {% if section.settings.image != blank %}
+      <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image_alt }}">
+    {% endif %}
+  </div>
+
+  <div class="contact-us-form">
+    <div class="form-wrapper">
+      <p>{{ section.settings.heading | default: "Contact Us" }}</p>
+      <hr>
+
+      {% form 'contact' %}
+        <input type="text" placeholder="Enter Username..." name="contact[name]" class="input-info" required>
+
+        <input type="tel" placeholder="Enter Phone Number..." name="contact[phone]" class="input-info">
+
+        <input type="email" placeholder="Enter Email..." name="contact[email]" class="input-info" required>
+
+        <textarea name="contact[body]" placeholder="Enter Comment..." class="input-text" required></textarea>
+
+        <button type="submit" class="submit-button">SUBMIT</button>
+      {% endform %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Contact Us Form Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Form heading",
+      "default": "Contact Us"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Background image alt text",
+      "default": "contact background"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact Us Form Section",
+      "category": "International Section"
+    }
+  ]
+}
+{% endschema %}
