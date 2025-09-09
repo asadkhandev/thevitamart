@@ -1,0 +1,44 @@
+{{ 'international.css' | asset_url | stylesheet_tag }}
+
+<div class="contactus-info">
+  <div class="container">
+    <p>{{ section.settings.heading | default: "IF YOU HAVE QUESTIONS, CONTACT US AT" }}</p>
+
+    <div class="email-btn">
+      <a href="mailto:{{ section.settings.email_primary }}">{{ section.settings.email_primary | default: "business@nutrifactor.com.pk" }}</a>
+      <a href="mailto:{{ section.settings.email_secondary }}"><strong>{{ section.settings.email_secondary | default: "export@nutrifactor.com" }}</strong></a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Contact Us Info",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "IF YOU HAVE QUESTIONS, CONTACT US AT"
+    },
+    {
+      "type": "text",
+      "id": "email_primary",
+      "label": "Primary email",
+      "default": "business@nutrifactor.com.pk"
+    },
+    {
+      "type": "text",
+      "id": "email_secondary",
+      "label": "Secondary email",
+      "default": "export@nutrifactor.com"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact Us Info",
+      "category": "International Section"
+    }
+  ]
+}
+{% endschema %}
