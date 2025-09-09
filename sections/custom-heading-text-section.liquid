@@ -1,0 +1,35 @@
+{{ 'international.css' | asset_url | stylesheet_tag }}
+
+<div class="section2">
+  <div class="container">
+    <p class="section2-heading">{{ section.settings.heading | default: "BETTER CHOICE, BETTER HEALTH, BETTER LIVES" }}</p>
+    <hr>
+    <p>{{ section.settings.description | default: "Starting from Pakistan, Nutrifactor has globally expanded its presence in more than 60 countries & regions to impact and improve the wellbeing of its consumers. We are committed to growth and new opportunities for distribution, and acquisition by leading, innovating, and creating diversity in this sector of nutraceuticals and other healthcare products. With a considerable experience of many years in the international market, we are familiar with the documentation needed for international product registrations and exports." }}</p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "International Section 2",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "BETTER CHOICE, BETTER HEALTH, BETTER LIVES"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Starting from Pakistan, Nutrifactor has globally expanded its presence in more than 60 countries & regions to impact and improve the wellbeing of its consumers. We are committed to growth and new opportunities for distribution, and acquisition by leading, innovating, and creating diversity in this sector of nutraceuticals and other healthcare products. With a considerable experience of many years in the international market, we are familiar with the documentation needed for international product registrations and exports."
+    }
+  ],
+  "presets": [
+    {
+      "name": "International Section 2",
+      "category": "International Section"
+    }
+  ]
+}
+{% endschema %}
