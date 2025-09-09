@@ -1,0 +1,80 @@
+{{ 'international.css' | asset_url | stylesheet_tag }}
+
+<div class="promise-section">
+  <div class="container">
+    <div class="promise-text">
+      <p class="promise-heading">{{ section.settings.heading | default: "WE PROMISE YOU: QUALITY, SAFETY & EFFICACY" }}</p>
+      <hr>
+    </div>
+
+    <div class="promise-banners">
+      {% for block in section.blocks %}
+        {% if block.type == 'promise' %}
+          <div class="promise-banner">
+            <div class="banner-top">
+              {% if block.settings.image != blank %}
+                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt_text }}">
+              {% endif %}
+            </div>
+            <div class="banner-bottom">
+              <p class="banner-title">{{ block.settings.title }}</p>
+              <hr>
+              <p>{{ block.settings.description }}</p>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Promise Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section heading",
+      "default": "WE PROMISE YOU: QUALITY, SAFETY & EFFICACY"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "promise",
+      "name": "Promise Banner",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Banner image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Image alt text",
+          "default": "promise image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Banner title",
+          "default": "Promise Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Banner description",
+          "default": "Promise description text goes here."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Promise Section",
+      "category": "International Section"
+    }
+  ]
+}
+{% endschema %}
