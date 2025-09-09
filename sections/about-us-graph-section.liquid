@@ -4,35 +4,17 @@
   <div class="container">
     <div class="graph-text">
       <p>{{ section.settings.graph_heading }}</p>
-      <hr />
+      <hr>
     </div>
     <div class="graph">
-      {% if section.settings.graph_image %}
-        <img src="{{ section.settings.graph_image | image_url }}" alt="graph animation" />
-      {% endif %}
-    </div>
-
-    <div class="phone-graph">
-      <div class="carousel">
-        {% for block in section.blocks %}
-          <div class="carousel-slide {% if forloop.first %}active{% endif %}">
-            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.alt_text }}" />
-            <p class="carousel-caption">{{ block.settings.caption }}</p>
-          </div>
-        {% endfor %}
-
-        <!-- Navigation buttons -->
-        <button class="carousel-btn prev">&#10094;</button>
-        <button class="carousel-btn next">&#10095;</button>
-      </div>
+      <img src="{{ section.settings.graph_image | image_url }}" alt="graph animation">
     </div>
   </div>
 </div>
 
-
 {% schema %}
 {
-  "name": "Custom Carousel",
+  "name": "Graph Section",
   "settings": [
     {
       "type": "text",
@@ -46,66 +28,11 @@
       "label": "Graph Image"
     }
   ],
-  "blocks": [
-    {
-      "type": "carousel_image",
-      "name": "Carousel Image",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "alt_text",
-          "label": "Alt Text"
-        },
-        {
-          "type": "text",
-          "id": "caption",
-          "label": "Caption"
-        }
-      ]
-    }
-  ],
-  "max_blocks": 10,
   "presets": [
     {
-      "name": "Custom Carousel",
-      "category": "Custom"
+      "name": "Graph Section",
+      "category": "About Us"
     }
   ]
 }
 {% endschema %}
-
-<script>
-      const slides = document.querySelectorAll(".carousel-slide");
-      let currentSlide = 0;
-
-      // Function to show a slide by index
-      function showSlide(index) {
-        slides.forEach((slide, i) => {
-          slide.classList.toggle("active", i === index);
-        });
-      }
-
-      // Next button
-      document.querySelector(".next").addEventListener("click", () => {
-        currentSlide = (currentSlide + 1) % slides.length; // loop back to first
-        showSlide(currentSlide);
-      });
-
-      // Prev button
-      document.querySelector(".prev").addEventListener("click", () => {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length; // loop to last
-        showSlide(currentSlide);
-      });
-
-      // Optional: auto-slide every 3 seconds
-      setInterval(() => {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-      }, 3000);
-    </script>
-    
