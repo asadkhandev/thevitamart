@@ -1,0 +1,36 @@
+.contact-us-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+    background-color: #f6f6f6;
+}
+
+.contact-us-text-section hr {
+    width: 190px;
+    height: 2px;
+    background-color: #b497ed;
+    border-radius: 10px;
+}
+
+.contact-us-text-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.contact-us-text-section .contact-us-heading {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0px 305px;
+}
+
+.contact-us-text-section p {
+    font-size: 17px;
+    line-height: 2;
+}
