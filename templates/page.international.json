@@ -29,10 +29,19 @@
         "continents_text": "<strong>6</strong> Continents",
         "distributions_text": "<strong>100+</strong> Distribution centers"
       }
+    },
+    "custom_heading_text_section_brhir4": {
+      "type": "custom-heading-text-section",
+      "name": "Custom Heading Text",
+      "settings": {
+        "heading": "BETTER CHOICE, BETTER HEALTH, BETTER LIVES",
+        "description": "Starting from Pakistan, Nutrifactor has globally expanded its presence in more than 60 countries & regions to impact and improve the wellbeing of its consumers. We are committed to growth and new opportunities for distribution, and acquisition by leading, innovating, and creating diversity in this sector of nutraceuticals and other healthcare products. With a considerable experience of many years in the international market, we are familiar with the documentation needed for international product registrations and exports."
+      }
     }
   },
   "order": [
     "main",
-    "international_hero_section_LXVNeE"
+    "international_hero_section_LXVNeE",
+    "custom_heading_text_section_brhir4"
   ]
 }
