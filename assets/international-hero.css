@@ -70,6 +70,8 @@
 
 .footprint-pill p {
     text-align: center;
+    margin: 0;
+    padding: 15px;
 }
 
 .footprint-pill p + p {
