@@ -1,7 +1,14 @@
 {{ 'international-contract-banner.css' | asset_url | stylesheet_tag }}
 {{ 'international-responsive.css' | asset_url | stylesheet_tag }}
 
-<div class="contract-banner">
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+{%- endstyle -%}
+
+<div class="contract-banner section-{{ section.id }}-padding">
   <div class="container">
     <div class="contract-image">
       {% if section.settings.image != blank %}
@@ -17,6 +24,7 @@
     </div>
   </div>
 </div>
+
 
 {% schema %}
 {
