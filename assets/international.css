@@ -104,6 +104,13 @@ hr {
     gap: 15px;
 }
 
+.contract-text hr {
+    width: 190px;
+    height: 2px;
+    background-color: #b497ed;
+    border-radius: 10px;
+}
+
 .contract-text .contract-heading {
     width: 380px;
     font-size: 34px;
