@@ -444,13 +444,12 @@
         align-items: center;
         justify-content: center;
         font-size: 34px;
-        width: 100%;
+        
         gap: 10px;
     }
 
  .international-banner-text h1 strong {
         font-size: 30px;
-        width: 5%;
     }
 
     .international-banner-text h2 {
