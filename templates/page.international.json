@@ -25,7 +25,7 @@
       "name": "International Banner",
       "settings": {
         "heading_1": "<h1>GLOBALLY ACTIVE IN <strong>60+ COUNTRIES</strong></h1>",
-        "heading_2": "OUR WORLDWIDE FOOTPRINT!",
+        "heading_2": "<h2>OUR <strong>WORLDWIDE</strong> FOOTPRINT!</h2>",
         "continents_text": "<p><strong>6</strong> Continents</p>",
         "distributions_text": "<p><strong>100+</strong> Distribution centers</p>"
       }
