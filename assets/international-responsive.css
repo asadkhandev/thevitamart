@@ -448,9 +448,8 @@
         gap: 10px;
     }
 
-    .international-banner-text h1 span {
-        font-size: 32px;
-        width: 75%;
+ .international-banner-text h1 strong {
+        font-size: 30px;
     }
 
     .international-banner-text h2 {
