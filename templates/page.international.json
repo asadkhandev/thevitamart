@@ -24,7 +24,7 @@
       "type": "international-hero-section",
       "name": "International Banner",
       "settings": {
-        "heading_1": "GLOBALLY ACTIVE IN 60+ COUNTRIES",
+        "heading_1": "<h1>GLOBALLY ACTIVE IN <strong>60+ COUNTRIES</strong></h1>",
         "heading_2": "OUR WORLDWIDE FOOTPRINT!",
         "continents_text": "<p><strong>6</strong> Continents</p>",
         "distributions_text": "<p><strong>100+</strong> Distribution centers</p>"
