@@ -7,8 +7,8 @@
       <h1>{{ section.settings.heading_1 }}</h1>
       <h2>{{ section.settings.heading_2 }}</h2>
       <div class="footprint-pill">
-        <p class="continents">{{ section.settings.continents_text }}</p>
-        <p class="distributions">{{ section.settings.distributions_text }}</p>
+        {{ section.settings.continents_text }}
+        {{ section.settings.distributions_text }}
       </div>
     </div>
   </div>
@@ -41,7 +41,7 @@
       "label": "Continents Text",
     },
     {
-      "type": "text",
+      "type": "richtext",
       "id": "distributions_text",
       "label": "Distributions Text",
     },
