@@ -365,6 +365,12 @@
     gap: 0px;
 }
 
+.promise-text hr {
+    padding: 0px;
+    margin: 20px;
+    margin-right: 20px;
+}
+
 .promise-text .promise-heading {
     font-size: 28px;
     width: 100%;
