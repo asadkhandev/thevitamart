@@ -1,0 +1,43 @@
+.phone-graph {
+  display: none;
+}
+
+.graph-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfcfc;
+  padding: 50px 0px;
+}
+
+.graph-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1170px;
+}
+
+.graph-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.graph-text hr {
+  width: 150px;
+  height: 3px;
+  margin: 15px 0px;
+  background-color: #4e327c;
+  border-radius: 10px;
+}
+
+.graph-text p {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 2px;
+}
