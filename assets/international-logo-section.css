@@ -30,6 +30,8 @@
     height: 2px;
     background-color: #b497ed;
     border-radius: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 .network-text .network-heading {
