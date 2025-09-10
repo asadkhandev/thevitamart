@@ -106,6 +106,23 @@
         "heading": "Join us at Global Level by Becoming a Distributor",
         "description": "Contact us today to find out how, together, we can provide high-quality nutritional products to consumers worldwide and help people live healthier lives."
       }
+    },
+    "international_contact_us_form_EFgdYE": {
+      "type": "international-contact-us-form",
+      "name": "Contact Us Form Section",
+      "settings": {
+        "heading": "Contact Us",
+        "image_alt": "contact background"
+      }
+    },
+    "international_info_section_cjnipb": {
+      "type": "international-info-section",
+      "name": "Contact Us Info",
+      "settings": {
+        "heading": "IF YOU HAVE QUESTIONS, CONTACT US AT",
+        "email_primary": "business@nutrifactor.com.pk",
+        "email_secondary": "export@nutrifactor.com"
+      }
     }
   },
   "order": [
@@ -115,6 +132,8 @@
     "international_logo_section_fjkLzQ",
     "international_contract_banner_yHygKb",
     "international_card_section_btfTJ6",
-    "international_contactus_text_section_bF6r6d"
+    "international_contactus_text_section_bF6r6d",
+    "international_contact_us_form_EFgdYE",
+    "international_info_section_cjnipb"
   ]
 }
