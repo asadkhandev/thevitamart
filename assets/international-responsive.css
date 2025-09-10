@@ -533,6 +533,16 @@
     text-align: center;
 }
 
+.contract-text hr {
+    width: 190px;
+    height: 2px;
+    background-color: #b497ed;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 20px;
+    margin-right: 0px;
+}
+
 .contract-text .contract-heading {
     width: 95%;
     font-size: 28px;
