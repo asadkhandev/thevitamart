@@ -1,0 +1,118 @@
+.international-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.international-banner .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.international-banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.international-banner-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1;
+    color: black;
+    width: 978.34px;
+    height: 90px;
+}
+
+.international-banner-text h1 span {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+    width: 454.53px;
+    height: 90px;
+    background: linear-gradient(135deg, #ccb8f3, #bba0ee);
+    border-radius: 50px;
+    padding: 10px 30px;
+     text-shadow: 
+    -1px 2px 0 rgba(0, 0, 0, 0.25),
+    -2px 4px 0 rgba(0, 0, 0, 0.20),
+    -3px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.international-banner-text h2 {
+    font-size: 26px;
+    line-height: 1;
+}
+
+.international-banner-text h2 strong {
+    color: #b497ed;
+}
+
+.footprint-pill {
+    display: flex;
+    width: 270.9px;
+    height: 67.05px;
+    align-items: center;
+    justify-content: center;
+    border: #b598ee 1px solid;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    z-index: 10;
+}
+
+.footprint-pill .continents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 107.78px;
+    height: 65.59px;
+    font-size: 12px;
+    line-height: 1;
+    border-right: #b598ee 1px solid;
+}
+
+.footprint-pill .continents span {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.footprint-pill .distributions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 161.66px;
+    height: 65.59px;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.footprint-pill .distributions strong {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+
+
+.international-banner-img {
+  width: 100%;
+  height: 400px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0372/5675/7381/files/internationalBuildings.png?v=1701873430");
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-position: bottom;
+  margin-top: -20px;
+}
