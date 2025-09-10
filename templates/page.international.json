@@ -24,10 +24,11 @@
       "type": "international-hero-section",
       "name": "International Banner",
       "settings": {
-        "heading_1": "GLOBALLY ACTIVE IN <span>60+ COUNTRIES</span>",
-        "heading_2": "OUR <strong>WORLDWIDE</strong> FOOTPRINT!",
-        "continents_text": "<span>6</span> Continents",
-        "distributions_text": "<strong>100+</strong> Distribution centers"
+        "heading_1": "GLOBALLY ACTIVE IN 60+ COUNTRIES",
+        "heading_2": "OUR WORLDWIDE FOOTPRINT!",
+        "continents_text": "6 Continents",
+        "distributions_text": "100+ Distribution centers",
+        "background_image": "shopify://shop_images/tablets.webp"
       }
     }
   },
