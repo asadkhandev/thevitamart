@@ -449,6 +449,7 @@
 
  .international-banner-text h1 strong {
         font-size: 30px;
+        width: auto;
     }
 
     .international-banner-text h2 {
