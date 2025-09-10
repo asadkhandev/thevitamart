@@ -76,29 +76,6 @@
     line-height: 1;
 }
 
-.footprint-pill .continents {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 107.78px;
-    height: 65.59px;
-    font-size: 12px;
-    line-height: 1;
-    border-right: #b598ee 1px solid;
-}
-
-.footprint-pill .distributions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 161.66px;
-    height: 65.59px;
-    font-size: 12px;
-    line-height: 1;
-}
-
 
 .international-banner-img {
   width: 100%;
