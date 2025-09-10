@@ -35,6 +35,14 @@ hr {
   margin: 0px 0px 20px;
 }
 
+.grid-heading hr {
+  width: 150px;
+  height: 3px;
+  margin: 15px 0px;
+  background-color: #4e327c;
+  border-radius: 10px;
+}
+
 .grid-heading p {
   font-size: 24px;
   font-weight: bold;
