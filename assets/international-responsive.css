@@ -586,12 +586,8 @@
     gap: 0px;
 }
 .promise-text hr {
-    width: 190px;
-    height: 2px;
-    background-color: #b497ed;
-    border-radius: 10px;
     padding: 0px;
-    margin: 5px;
+    margin: 20px;
     margin-right: 20px;
 }
 
