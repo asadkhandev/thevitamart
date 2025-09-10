@@ -46,12 +46,24 @@
         "description": "Through sheer determination and constant hard work, Nutrifactor has been featured by some of the largest networks & business journals. Expanding its business to over 60 countries across the globe in 6 different continents, Nutrifactor is on its way to becoming a globally renowned brand.",
         "logos_per_row": 5
       }
+    },
+    "international_contract_banner_hViM8n": {
+      "type": "international-contract-banner",
+      "name": "Contract Banner",
+      "settings": {
+        "image_alt": "contract image",
+        "heading": "ONE-STOP SOLUTION FOR NUTRACEUTICAL MANUFACTURING",
+        "description": "The contract manufacturing service we offer is a fully comprehensive process. Starting from an innovative idea of development and manufacture, it ends with finalizing the product and providing the necessary documentation for product authorization.",
+        "button_text": "Become A Distributor",
+        "button_link": ""
+      }
     }
   },
   "order": [
     "main",
     "international_hero_section_LXVNeE",
     "custom_heading_text_section_brhir4",
-    "international_logo_section_fjkLzQ"
+    "international_logo_section_fjkLzQ",
+    "international_contract_banner_hViM8n"
   ]
 }
