@@ -98,6 +98,14 @@
       "settings": {
         "heading": "WE PROMISE YOU: QUALITY, SAFETY & EFFICACY"
       }
+    },
+    "international_contactus_text_section_bF6r6d": {
+      "type": "international-contactus-text-section",
+      "name": "Contact Us Text Section",
+      "settings": {
+        "heading": "Join us at Global Level by Becoming a Distributor",
+        "description": "Contact us today to find out how, together, we can provide high-quality nutritional products to consumers worldwide and help people live healthier lives."
+      }
     }
   },
   "order": [
@@ -106,6 +114,7 @@
     "custom_heading_text_section_brhir4",
     "international_logo_section_fjkLzQ",
     "international_contract_banner_yHygKb",
-    "international_card_section_btfTJ6"
+    "international_card_section_btfTJ6",
+    "international_contactus_text_section_bF6r6d"
   ]
 }
