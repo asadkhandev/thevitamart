@@ -70,6 +70,12 @@
     z-index: 10;
 }
 
+.footprint-pill p strong {
+        font-size: 26px;
+    font-weight: bold;
+    line-height: 1;
+}
+
 .footprint-pill .continents {
     display: flex;
     flex-direction: column;
@@ -83,9 +89,7 @@
 }
 
 .footprint-pill .continents span {
-    font-size: 26px;
-    font-weight: bold;
-    line-height: 1;
+
 }
 
 .footprint-pill .distributions {
