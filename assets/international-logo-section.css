@@ -25,20 +25,20 @@
     gap: 15px;
 }
 
-.network-text hr {
-    width: 190px;
-    height: 2px;
-    background-color: #b497ed;
-    border-radius: 10px;
-    margin: 0;
-    padding: 0;
-}
-
 .network-text .network-heading {
     font-size: 34px;
     font-weight: bold;
     line-height: 1.2;
     margin: 0px 305px;
+}
+
+.network-text hr {
+    background-color: white;
+    width: 190px;
+    height: 2px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 30px 0px;
 }
 
 .network-text p {
