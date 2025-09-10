@@ -26,8 +26,8 @@
       "settings": {
         "heading_1": "GLOBALLY ACTIVE IN 60+ COUNTRIES",
         "heading_2": "OUR WORLDWIDE FOOTPRINT!",
-        "continents_text": "6 Continents",
-        "distributions_text": "100+ Distribution centers"
+        "continents_text": "<p><strong>6</strong> Continents</p>",
+        "distributions_text": "<p><strong>100+</strong> Distribution centers</p>"
       }
     }
   },
