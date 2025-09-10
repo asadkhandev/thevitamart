@@ -25,9 +25,9 @@
     gap: 15px;
 }
 
-.international-network hr {
+.network-text hr {
     width: 190px;
-    height: 200px;
+    height: 2px;
     background-color: #b497ed;
     border-radius: 10px;
     margin: 0;
