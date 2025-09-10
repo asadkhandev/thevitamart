@@ -11,6 +11,13 @@
     padding: 50px 0px;
 }
 
+.section2 hr {
+    background-color: white;
+    width: 190px;
+    height: 2px;
+    border-radius: 10px;
+}
+
 .section2 .container {
     display: flex;
     flex-direction: column;
