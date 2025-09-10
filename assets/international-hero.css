@@ -72,6 +72,10 @@
     text-align: center;
 }
 
+.footprint-pill p + p {
+    border-left: 1px solid #b598ee;
+}
+
 .footprint-pill p strong {
     display: block;
     font-size: 26px;
