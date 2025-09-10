@@ -38,7 +38,7 @@
     background-color: #b497ed;
     border-radius: 10px;
     padding: 0px;
-    margin: 0px 500px 0px 0px;
+    margin-left: -100px;
 }
 
 .contract-text .contract-heading {
