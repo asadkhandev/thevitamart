@@ -450,6 +450,7 @@
 
  .international-banner-text h1 strong {
         font-size: 30px;
+        self-align: center;
     }
 
     .international-banner-text h2 {
