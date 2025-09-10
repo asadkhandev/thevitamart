@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  max-width: 1200px;
+}
+
+.video-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-section .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-headings {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  margin: 0px 0px 10px;
+}
+
+.video-headings h1 {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1;
+  color: #4e327c;
+}
+
+.video-headings h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  color: #5b625d;
+}
+
+#about-us-video {
+  width: 100%;
+  max-width: 984px;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
