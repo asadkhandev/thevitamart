@@ -1,0 +1,58 @@
+.medicine-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.medicine-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 1170px;
+  gap: 100px;
+}
+
+.medicine-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.medicine-text hr {
+   width: 150px;
+  height: 3px;
+  margin: 15px 0px;
+  background-color: #4e327c;
+  border-radius: 10px;
+}
+
+.medicine-text .med-heading {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.medicine-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.medicine-image {
+  max-width: 900px;
+}
+
+.medicine-image img {
+  display: block;
+  width: 100%;
+  transition: transform 0.1s ease;
+}
+
+.medicine-image img.animate-up {
+  transform: translateY(-80px);
+}
