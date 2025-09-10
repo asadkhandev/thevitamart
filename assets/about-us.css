@@ -12,72 +12,7 @@ hr {
 
 
 
-.grid-banner-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 0px;
-}
 
-.grid-banner-main .container {
-  display: flex;
-  width: 1170px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.grid-banner-imgs {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  width: 575px;
-  gap: 15px;
-}
-
-.grid-banner-imgs img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.grid-banner-imgs img:nth-child(1) {
-  grid-column: span 8;
-  border-radius: 15px;
-}
-
-.grid-banner-imgs img:nth-child(2) {
-  grid-column: span 4;
-  border-radius: 15px;
-}
-
-.grid-banner-imgs img:nth-child(3) {
-  grid-column: span 4;
-  border-radius: 15px;
-}
-
-.grid-banner-imgs img:nth-child(4) {
-  grid-column: span 8;
-  border-radius: 15px;
-}
-
-.grid-banner-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 575px;
-}
-
-.grid-banner-text .banner-heading {
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 1.5;
-  letter-spacing: 2px;
-}
-
-.grid-banner-text p {
-  font-size: 16px;
-  line-height: 1.5;
-}
 
 .medicine-section {
   display: flex;
