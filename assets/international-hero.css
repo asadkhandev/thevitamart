@@ -71,7 +71,7 @@
 }
 
 .footprint-pill p strong {
-        font-size: 26px;
+    font-size: 26px;
     font-weight: bold;
     line-height: 1;
 }
@@ -88,10 +88,6 @@
     border-right: #b598ee 1px solid;
 }
 
-.footprint-pill .continents span {
-
-}
-
 .footprint-pill .distributions {
     display: flex;
     flex-direction: column;
@@ -102,13 +98,6 @@
     font-size: 12px;
     line-height: 1;
 }
-
-.footprint-pill .distributions strong {
-    font-size: 26px;
-    font-weight: bold;
-    line-height: 1;
-}
-
 
 
 .international-banner-img {
