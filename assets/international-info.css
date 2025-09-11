@@ -62,7 +62,7 @@
 
 /* Left half: fill right → left */
 .email-btn a:first-child::before {
-    right: 0;
+    left: 0;
 }
 
 /* Right half: fill left → right */
