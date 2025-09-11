@@ -5,7 +5,7 @@
   padding: 50px 0px;
 }
 
-.grid-banner-main .container {
+.grid-banner-main .page-width {
   display: flex;
   width: 1170px;
   align-items: center;
@@ -81,7 +81,7 @@
   padding: 50px 0px;
 }
 
-.grid-banner-section-2 .container {
+.grid-banner-section-2 .page-width {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
