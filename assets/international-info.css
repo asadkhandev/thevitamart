@@ -19,6 +19,8 @@
     font-weight: bold;
     width: 560px;
     text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 .email-btn {
