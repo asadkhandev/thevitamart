@@ -61,7 +61,8 @@
 .form-wrapper textarea,
 .form-wrapper button {
   width: 100%;
-  display: block; /* ensures they take the full row */
+  display: block;
+  margin-bottom: 20px;
 }
 
 .submit-button {
