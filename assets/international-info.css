@@ -48,7 +48,7 @@
     border-right: 1px solid #c5c5c5;
 }
 
-/* background hover effect */
+/* common before element */
 .email-btn a::before {
     content: '';
     width: 0%;
@@ -56,9 +56,18 @@
     background-color: #b497ed;
     position: absolute;
     top: 0;
-    left: 0;
     transition: 0.3s ease;
     z-index: -1;
+}
+
+/* Left half: fill right → left */
+.email-btn a:first-child::before {
+    right: 0;
+}
+
+/* Right half: fill left → right */
+.email-btn a:last-child::before {
+    left: 0;
 }
 
 .email-btn a:hover {
