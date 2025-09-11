@@ -11,7 +11,7 @@
   padding: 50px 0px;
 }
 
-.graph-section .container {
+.graph-section .page-wdith {
   display: flex;
   flex-direction: column;
   justify-content: center;
