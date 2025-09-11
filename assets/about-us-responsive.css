@@ -1,5 +1,5 @@
 @media (max-width: 426px) {
-  .container {
+  .page-width {
     display: flex;
     max-width: 426px;
   }
@@ -19,7 +19,7 @@
     border-radius: 15px;
   }
 
-  .grid-banner-main .container {
+  .grid-banner-main .page-width {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -89,7 +89,7 @@
     transition: transform 0.1s ease;
   }
 
-  .graph-section .container {
+  .graph-section .page-width {
     width: 100%;
   }
 
@@ -163,7 +163,7 @@
   }
   
   
-  .grid-banner-section-2 .container {
+  .grid-banner-section-2 .page-width {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -211,7 +211,7 @@
 }
 
 
-.about-links .container {
+.about-links .page-width {
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -234,7 +234,7 @@
 
 
 @media (min-width: 768px) and (max-width: 1023px) {
-   .container {
+   .page-width {
     display: flex;
     max-width: 1020px;
   }
@@ -254,7 +254,7 @@
     border-radius: 15px;
   }
 
-  .grid-banner-main .container {
+  .grid-banner-main .page-width {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -324,7 +324,7 @@
     transition: transform 0.1s ease;
   }
 
-  .graph-section .container {
+  .graph-section .page-width {
     width: 100%;
   }
 
@@ -394,7 +394,7 @@
   }
   
   
-  .grid-banner-section-2 .container {
+  .grid-banner-section-2 .page-width {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -442,7 +442,7 @@
 }
 
 
-.about-links .container {
+.about-links .page-width {
   width: 100%;
   justify-content: center;
   align-items: center;
