@@ -96,7 +96,6 @@
   .graph-text {
     width: 100%;
     text-align: center;
-    background-color: red;
   }
 
   .graph {
@@ -335,6 +334,7 @@
   }
 
   .graph-text {
+    width: 100%;
     text-align: center;
   }
 
