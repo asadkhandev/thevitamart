@@ -91,7 +91,6 @@
 
   .graph-section .page-width {
     width: 100%;
-    text-align: center;
   }
 
   .graph {
@@ -327,6 +326,9 @@
 
   .graph-section .page-width {
     width: 100%;
+  }
+
+  .graph-text {
     text-align: center;
   }
 
