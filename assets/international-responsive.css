@@ -455,31 +455,22 @@
     font-size: 28px;
 }
 
-.email-btn {
-    display: flex;
+  .email-btn {
     flex-direction: column;
-    align-items: center;
-    width: 100%;
     border: none;
-    border-radius: 50px;
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    overflow: hidden;
     gap: 10px;
-}
+  }
 
-.email-btn span {
-    border-right: none;
+  .email-btn a {
+    width: 700px;
     border: 1px solid #c5c5c5;
     border-radius: 50px;
-}
+    padding: 15px 20px;
+  }
 
-.email-btn strong {
-    border-right: none;
-    border: 1px solid #c5c5c5;
-    border-radius: 50px;
-}
+  .email-btn a:first-child {
+    border-right: none; /* remove middle divider */
+  }
 }
 
 
