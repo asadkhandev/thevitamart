@@ -58,7 +58,7 @@
     border-radius: 25px;
 }
 
-.form-wrapper a {
+.submit-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,6 +70,6 @@
     transition: 0.3s ease;
 }
 
-.form-wrapper a:hover {
+.submit-button:hover {
     background-color: #bba1ef;
 }
