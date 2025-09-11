@@ -40,7 +40,7 @@
     text-decoration: none;
     color: black;
     position: relative;
-    transition: 0.3s ease;
+    transition: color 0.3s ease;
     z-index: 1;
 }
 
@@ -48,26 +48,29 @@
     border-right: 1px solid #c5c5c5;
 }
 
-/* common before element */
+/* common background */
 .email-btn a::before {
     content: '';
-    width: 0%;
-    height: 100%;
-    background-color: #b497ed;
     position: absolute;
     top: 0;
-    transition: 0.3s ease;
+    left: 0;   /* we’ll handle direction with transform-origin */
+    width: 100%;
+    height: 100%;
+    background-color: #b497ed;
+    transform: scaleX(0);        /* start invisible */
+    transform-origin: left;      /* default direction */
+    transition: transform 0.3s ease;
     z-index: -1;
 }
 
-/* Left half: fill right → left */
+/* left half → animate right → left */
 .email-btn a:first-child::before {
-    left: 0;
+    transform-origin: right;
 }
 
-/* Right half: fill left → right */
+/* right half → animate left → right (default) */
 .email-btn a:last-child::before {
-    left: 0;
+    transform-origin: left;
 }
 
 .email-btn a:hover {
@@ -75,5 +78,5 @@
 }
 
 .email-btn a:hover::before {
-    width: 100%;
+    transform: scaleX(1);  /* expand fully */
 }
