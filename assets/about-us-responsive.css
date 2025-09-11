@@ -95,6 +95,7 @@
 
   .graph-text {
     text-align: center;
+    background-color: red;
   }
 
   .graph {
