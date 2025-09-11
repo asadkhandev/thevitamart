@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: center;
     padding: 50px 0;
+    gap: 20px;
+    background-color: red;
 }
 
 .contactus-info .container {
