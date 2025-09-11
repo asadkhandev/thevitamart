@@ -58,6 +58,13 @@
     border-radius: 25px;
 }
 
+.form-wrapper input,
+.form-wrapper textarea,
+.form-wrapper button {
+  width: 100%;
+  display: block; /* ensures they take the full row */
+}
+
 .submit-button {
     display: flex;
     align-items: center;
