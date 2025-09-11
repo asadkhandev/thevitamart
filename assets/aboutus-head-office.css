@@ -6,7 +6,7 @@
   padding: 50px 0px;
 }
 
-.head-office-section .container {
+.head-office-section .page-wdith {
   display: flex;
   flex-direction: column;
   justify-content: center;
