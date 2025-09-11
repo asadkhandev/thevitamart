@@ -19,7 +19,6 @@
     font-weight: bold;
     width: 560px;
     text-align: center;
-    color: #b497ed;
 }
 
 .email-btn {
@@ -39,7 +38,7 @@
     width: 50%;
     padding: 20px 30px;
     text-decoration: none;
-    color: black;
+    color: #b497ed;
     position: relative;
     transition: color 0.3s ease;
     z-index: 1;
