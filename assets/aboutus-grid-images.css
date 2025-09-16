@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: space-between;
   background: blue;
+  padding: 0px;
 }
 
 .grid-banner-main .page-width .wrapper {
