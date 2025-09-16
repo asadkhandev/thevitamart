@@ -546,4 +546,9 @@
 .grid-text-section {
   width: 100%;
 }
+
+.grid-text {
+  width: 100%;
+  background-color: red;
+}
 }
