@@ -547,7 +547,7 @@
   width: 100%;
 }
 
-.grid-text {
-  width: 100%;
+.grid-text p {
+  width: 80%;
 }
 }
