@@ -1,0 +1,51 @@
+<div class="phone-graph">
+  <div class="carousel">
+    {% for block in section.blocks %}
+      <div class="carousel-slide {% if forloop.first %}active{% endif %}">
+        <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.alt_text }}" />
+        <p class="carousel-caption">{{ block.settings.caption }}</p>
+      </div>
+    {% endfor %}
+
+    <!-- Navigation buttons -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Carousel",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "carousel_image",
+      "name": "Carousel Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Custom Carousel",
+      "category": "Carousel"
+    }
+  ]
+}
+{% endschema %}
