@@ -46,7 +46,7 @@
 
 .promise-banners {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-evenly;
     width: 100%;
     gap: 50px;
