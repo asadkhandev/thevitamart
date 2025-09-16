@@ -8,6 +8,7 @@
 .grid-banner-main .page-width {
   display: flex;
   align-items: center;
+  width: 100%;
   padding: 0px;
 }
 
