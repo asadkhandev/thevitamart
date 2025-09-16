@@ -496,7 +496,7 @@
    .grid-banner-main .page-width{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 95%;
 }
 
    .grid-banner-main .page-width .wrapper {
