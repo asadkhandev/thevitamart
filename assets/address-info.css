@@ -1,3 +1,9 @@
+.page-width {
+    display: flex;
+    max-width: 1370px;
+}
+
+
 .columns-main {
     display: flex;
     align-items: center;
@@ -29,6 +35,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .address-1 {
@@ -40,7 +47,6 @@
     gap: 15px;
     border-right: #cccccc 1px solid;
     width: 342.5px;
-    height: 115px;
     align-items: center;
     justify-content: center;
 }
@@ -55,4 +61,120 @@
     font-size: 14px;
     margin: 0px 0px 5px;
     color: #282828;
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1248px) {
+    .container {
+    display: flex;
+    max-width: 1248px;
+}
+
+.columns-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #fcfcfc;
+}
+
+.columns-main .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.columns-main .column-heading {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.columns-main hr {
+    width: 280px;
+    margin: 15px 545px;
+}
+
+.column-banners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.address-1 {
+    flex: 0 0 calc(30% - 20px);
+    box-sizing: border-box;
+}
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .container {
+    display: flex;
+    max-width: 1024px;
+}
+
+.columns-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #fcfcfc;
+}
+
+.columns-main .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.columns-main .column-heading {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.columns-main hr {
+    width: 280px;
+    margin: 15px 545px;
+}
+
+.column-banners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.address-1 {
+    flex: 0 0 calc(30% - 20px);
+    box-sizing: border-box;
+}
+}
+
+@media (max-width: 426px) {
+    .container {
+        display: flex;
+        max-width: 426px;
+    }
+
+    .column-banners {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .address-1 {
+        flex: 0 0 calc(80% - 20px);
+        border-right: 0px;
+    }
+
+
+
+
 }
