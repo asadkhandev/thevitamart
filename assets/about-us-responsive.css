@@ -540,6 +540,6 @@
 .grid-content-section {
   display: flex;
   flex-direction: column-reverse;
-  gap: 2px
+  gap: 15px
 }
 }
