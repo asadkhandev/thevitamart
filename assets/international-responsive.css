@@ -668,6 +668,8 @@
     flex-direction: column;
     border: none;
     gap: 10px;
+    border-radius: 0px;
+    overflow: visible;
   }
 
   .email-btn a {
