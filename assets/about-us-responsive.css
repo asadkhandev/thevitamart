@@ -487,6 +487,12 @@
 
 
 @media (min-width: 1024px) and (max-width: 1380px) {
+   .grid-banner-main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+  
    .grid-banner-main .page-width{
   display: flex;
   flex-direction: column;
