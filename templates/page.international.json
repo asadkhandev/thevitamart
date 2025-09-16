@@ -40,6 +40,45 @@
     },
     "international_logo_section_fjkLzQ": {
       "type": "international-logo-section",
+      "blocks": {
+        "logo_EhNnP9": {
+          "type": "logo",
+          "settings": {
+            "alt_text": "Network logo"
+          }
+        },
+        "logo_BMWwxL": {
+          "type": "logo",
+          "settings": {
+            "alt_text": "Network logo"
+          }
+        },
+        "logo_Ykipnz": {
+          "type": "logo",
+          "settings": {
+            "alt_text": "Network logo"
+          }
+        },
+        "logo_kxkMLU": {
+          "type": "logo",
+          "settings": {
+            "alt_text": "Network logo"
+          }
+        },
+        "logo_UDU9FN": {
+          "type": "logo",
+          "settings": {
+            "alt_text": "Network logo"
+          }
+        }
+      },
+      "block_order": [
+        "logo_EhNnP9",
+        "logo_BMWwxL",
+        "logo_Ykipnz",
+        "logo_kxkMLU",
+        "logo_UDU9FN"
+      ],
       "name": "Logo Section",
       "settings": {
         "heading": "NUTRIFACTOR CAN BE FOUND ON THESE LARGEST NETWORKS",
