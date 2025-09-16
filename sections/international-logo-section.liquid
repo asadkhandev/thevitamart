@@ -77,8 +77,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const banner = document.querySelector('.network-banner');
-
-  if (!banner) return; // safety check
+  if (!banner) return;
 
   if (window.innerWidth <= 767) {
     banner.style.overflowX = 'auto';
@@ -87,33 +86,38 @@ document.addEventListener('DOMContentLoaded', function () {
     banner.style.gap = '20px';
     banner.style.justifyContent = 'flex-start';
     banner.style.padding = '10px 15px';
+    banner.style.scrollBehavior = 'smooth';
 
     // Apply scroll-snap to children
-    banner.querySelectorAll('img').forEach(img => {
+    const slides = banner.querySelectorAll('img');
+    slides.forEach(img => {
       img.style.flex = '0 0 auto';
       img.style.scrollSnapAlign = 'center';
     });
 
-    // Optional: smooth drag scroll for touch devices
-    let isDown = false;
-    let startX;
-    let scrollLeft;
+    // --- ✅ AUTO SLIDE LOGIC ---
+    let currentIndex = 0;
+    const slideWidth = slides[0]?.offsetWidth + 20 || 140; // logo width + gap fallback
 
-    banner.addEventListener('mousedown', e => {
-      isDown = true;
-      startX = e.pageX - banner.offsetLeft;
-      scrollLeft = banner.scrollLeft;
-    });
+    function autoSlide() {
+      currentIndex++;
+      if (currentIndex >= slides.length) {
+        currentIndex = 0; // go back to start
+      }
+      banner.scrollTo({
+        left: currentIndex * slideWidth,
+        behavior: 'smooth'
+      });
+    }
 
-    banner.addEventListener('mouseleave', () => isDown = false);
-    banner.addEventListener('mouseup', () => isDown = false);
-    banner.addEventListener('mousemove', e => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - banner.offsetLeft;
-      const walk = (x - startX) * 1.5; // scroll-fast factor
-      banner.scrollLeft = scrollLeft - walk;
+    let autoSlideInterval = setInterval(autoSlide, 2500); // every 2.5s
+
+    // --- Optional: Pause when user interacts ---
+    banner.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+    banner.addEventListener('mouseleave', () => {
+      autoSlideInterval = setInterval(autoSlide, 2500);
     });
   }
 });
 </script>
+
