@@ -2515,8 +2515,13 @@ input[type='checkbox'] {
   }
 
   .header--mobile-left {
-    grid-template-columns: auto 2fr 1fr;
+    grid-template-columns: auto 1fr 2fr;
   }
+
+  .header__icons .header__search{
+    display: none !important;
+  }
+
 }
 
 @media screen and (min-width: 990px) {
