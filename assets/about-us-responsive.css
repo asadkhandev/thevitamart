@@ -538,6 +538,6 @@
 }
 
 .grid-content-section {
-  flex-direction: coilumn;
+  flex-direction: column-reverse;
 }
 }
