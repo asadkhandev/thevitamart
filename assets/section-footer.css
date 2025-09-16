@@ -22,10 +22,6 @@
     width: 100%;
   }
 
-  .footer-block__details-content{
-    margin-bottom: 0;
-  }
-
   .footer-block.grid__item:first-child {
     margin-top: 0;
   }
@@ -537,5 +533,11 @@
     .footer__content-top .grid__item {
       padding-left: 3rem;
     }
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .footer-block__details-content{
+    margin-bottom: 0;
   }
 }
