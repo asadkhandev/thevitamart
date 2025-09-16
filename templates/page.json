@@ -23,7 +23,7 @@
       "settings": {
         "video_heading_1": "NUTRIFACTOR",
         "video_heading_2": "PAKISTAN'S NO.1 VITAMIN BRAND",
-        "video_url": ""
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/ee1893ae4c69467ea0f64f2b01b3049e.mp4"
       }
     },
     "about_us_grid_images_iyLJt4": {
@@ -49,28 +49,6 @@
     },
     "about_us_graph_section_m7yFBf": {
       "type": "about-us-graph-section",
-      "blocks": {
-        "carousel_image_YKigmg": {
-          "type": "carousel_image",
-          "settings": {
-            "image": "shopify://shop_images/safety_icon_d9fa2e65-793a-42b3-b768-ca6a6418d7e5.png",
-            "alt_text": "abc",
-            "caption": "xyz"
-          }
-        },
-        "carousel_image_Kgz4yg": {
-          "type": "carousel_image",
-          "settings": {
-            "image": "shopify://shop_images/quality_check_icon_ebef4d94-b20d-4007-90ef-1c5a5c484a5b.png",
-            "alt_text": "abc",
-            "caption": "xyz"
-          }
-        }
-      },
-      "block_order": [
-        "carousel_image_YKigmg",
-        "carousel_image_Kgz4yg"
-      ],
       "name": "Custom Carousel",
       "settings": {
         "graph_heading": "From Nature to you",
