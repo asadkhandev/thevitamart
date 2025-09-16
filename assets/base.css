@@ -3815,3 +3815,12 @@ nav.header__inline-menu::before {
 .text-center .card__information{
   text-align: center;
 }
+
+@media screen and (max-width: 1280px) {
+  .slick-next{
+    right: 0;
+  }
+  .slick-next{
+    left: 0;
+  }
+}
