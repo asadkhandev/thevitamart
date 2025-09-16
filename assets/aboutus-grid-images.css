@@ -7,7 +7,6 @@
 
 .grid-banner-main .page-width {
   display: flex;
-  width: 1170px;
   align-items: center;
   justify-content: space-between;
 }
