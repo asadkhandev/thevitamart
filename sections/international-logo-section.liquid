@@ -4,26 +4,17 @@
 <div class="international-network">
   <div class="page-width">
     <div class="network-text">
-      <p class="network-heading">
-        {{ section.settings.heading | default: "NUTRIFACTOR CAN BE FOUND ON THESE LARGEST NETWORKS" }}
-      </p>
+      <p class="network-heading">{{ section.settings.heading | default: "NUTRIFACTOR CAN BE FOUND ON THESE LARGEST NETWORKS" }}</p>
       <hr>
-      <p>
-        {{ section.settings.description | default: "Through sheer determination and constant hard work, Nutrifactor has been featured by some of the largest networks & business journals. Expanding its business to over 60 countries across the globe in 6 different continents, Nutrifactor is on its way to becoming a globally renowned brand." }}
-      </p>
+      <p>{{ section.settings.description | default: "Through sheer determination and constant hard work, Nutrifactor has been featured by some of the largest networks & business journals. Expanding its business to over 60 countries across the globe in 6 different continents, Nutrifactor is on its way to becoming a globally renowned brand." }}</p>
     </div>
 
-    <!-- ✅ Clean wrapper for carousel -->
     <div class="network-banner logos-per-{{ section.settings.logos_per_row }}">
-      <div class="network-track">
-        {% for block in section.blocks %}
-          {% if block.type == 'logo' %}
-            <div class="network-slide">
-              <img src="{{ block.settings.logo | image_url }}" alt="{{ block.settings.alt_text }}">
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
+      {% for block in section.blocks %}
+        {% if block.type == 'logo' %}
+          <img src="{{ block.settings.logo | image_url }}" alt="{{ block.settings.alt_text }}">
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </div>
@@ -83,42 +74,3 @@
 }
 {% endschema %}
 
-<script>
-function initLogoCarousel(banner) {
-  if (!banner) return;
-  const track = banner.querySelector('.network-track');
-  if (!track) return;
-
-  if (window.innerWidth <= 767) {
-    track.style.display = 'flex';
-    track.style.overflowX = 'auto';
-    track.style.scrollSnapType = 'x mandatory';
-    track.style.gap = '20px';
-    track.style.padding = '10px 15px';
-    track.style.justifyContent = 'flex-start';
-    track.style.webkitOverflowScrolling = 'touch';
-
-    track.querySelectorAll('.network-slide').forEach(slide => {
-      slide.style.flex = '0 0 auto';
-      slide.style.scrollSnapAlign = 'center';
-    });
-  } else {
-    // Reset styles for desktop
-    track.removeAttribute('style');
-    track.querySelectorAll('.network-slide').forEach(slide => {
-      slide.removeAttribute('style');
-    });
-  }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.network-banner').forEach(banner => initLogoCarousel(banner));
-  window.addEventListener('resize', () => {
-    document.querySelectorAll('.network-banner').forEach(banner => initLogoCarousel(banner));
-  });
-});
-
-document.addEventListener('shopify:section:load', e => {
-  e.target.querySelectorAll('.network-banner').forEach(banner => initLogoCarousel(banner));
-});
-</script>
