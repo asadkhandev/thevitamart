@@ -101,4 +101,12 @@
     .certificate-wrap{
         flex-direction: column;
 }
+
+.certificate-content{
+    max-width: 100%;
+}
+
+
+
+
 }
