@@ -540,4 +540,16 @@
   .footer-block__details-content{
     margin-bottom: 0;
   }
+
+  .footer-block__newsletter-content h2, .footer-block__heading{
+    margin-bottom: 0;
+  }
+
+  .footer-block__details-content .list-menu__item--link{
+    padding-bottom: 0;
+  }
+
+  .newsletter-form__field-wrapper{
+    max-width: none;
+  }
 }
