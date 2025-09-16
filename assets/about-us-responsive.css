@@ -484,3 +484,12 @@
   width: 40%;
 }
 }
+
+
+@media (min-width: 1024px) and (max-width: 1380px) {
+   .grid-banner-main .page-width .wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+}
