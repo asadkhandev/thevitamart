@@ -31,6 +31,7 @@
   margin: 15px 0px;
   background-color: #4e327c;
   border-radius: 10px;
+  padding: 0px;
 }
 
 .medicine-text .med-heading {
@@ -38,11 +39,15 @@
   font-weight: bold;
   line-height: 1;
   letter-spacing: 2px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .medicine-text p {
   font-size: 16px;
   line-height: 1.5;
+  padding: 0px;
+  margin: 0px;
 }
 
 .medicine-image {
