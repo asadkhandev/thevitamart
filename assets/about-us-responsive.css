@@ -542,4 +542,8 @@
   flex-direction: column-reverse;
   gap: 15px
 }
+
+.grid-text-section {
+  width: 100%;
+}
 }
