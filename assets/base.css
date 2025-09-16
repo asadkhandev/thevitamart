@@ -154,6 +154,11 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   .full-width{
     padding: 0 5rem;
   }
+
+  .is-collection .full-width{
+    padding: 0 3rem;
+  }
+
 }
 
 .isolate {
