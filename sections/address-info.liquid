@@ -1,7 +1,7 @@
 {{ 'address-info.css' | asset_url | stylesheet_tag }}
 
 <div class="columns-main">
-  <div class="container">
+  <div class="page-width">
     {% unless section.settings.main_heading == blank %}
       <p class="column-heading">{{ section.settings.main_heading }}</p>
       <hr>
