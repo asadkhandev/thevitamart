@@ -119,6 +119,11 @@
     height: 50px;
 }
 
+.brandsCarousel::before,
+.brandsCarousel::after {
+    width: 20px;
+}
+
 
 
 
