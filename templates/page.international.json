@@ -44,30 +44,35 @@
         "logo_EhNnP9": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/bloomberg_blue.png",
             "alt_text": "Network logo"
           }
         },
         "logo_BMWwxL": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/market_watch.webp",
             "alt_text": "Network logo"
           }
         },
         "logo_Ykipnz": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/bloomberg_blue.png",
             "alt_text": "Network logo"
           }
         },
         "logo_kxkMLU": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/market_watch.webp",
             "alt_text": "Network logo"
           }
         },
         "logo_UDU9FN": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/bloomberg_blue.png",
             "alt_text": "Network logo"
           }
         }
