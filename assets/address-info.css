@@ -23,6 +23,8 @@
 .columns-main .column-heading {
     font-size: 34px;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
 .columns-main hr {
