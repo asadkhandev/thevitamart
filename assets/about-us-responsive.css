@@ -504,4 +504,8 @@
   flex-direction: column;
   width: 100%;
 }
+
+.grid-banner-text {
+  width: 100%;
+}
 }
