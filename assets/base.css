@@ -3823,4 +3823,21 @@ nav.header__inline-menu::before {
   .slick-prev{
     left: 0;
   }
+
+  .footer__content-top .grid--4-col-tablet .grid__item{
+    width: calc(30% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+  }
+
+  .footer__content-top .grid--4-col-tablet .grid__item.footer-block--newsletter{
+    width: 100%;
+  }
+  .footer-block--newsletter .newsletter-form{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__content-top .grid--4-col-tablet .grid__item:first-of-type{
+    width: 100%;
+  }
 }
