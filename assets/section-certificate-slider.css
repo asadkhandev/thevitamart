@@ -123,8 +123,33 @@
 .brandsCarousel::after {
     width: 10px;
 }
+}
 
 
+@media (min-width: 768px) and (max-width: 1023px) {
+        .certificate-wrap{
+        flex-direction: column-reverse;
+}
 
+.certificate-content{
+    max-width: 100%;
+}
 
+.certificate-content-inner h2{
+    font-size: 24px
+}
+
+.certificate-content-inner p{
+    font-size: 16px;
+}
+
+.certificate-brandLogo img {
+    width: 50px;
+    height: 50px;
+}
+
+.brandsCarousel::before,
+.brandsCarousel::after {
+    width: 10px;
+}
 }
