@@ -56,11 +56,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 320px;
+    width: 100%;
     border: #e9e9e9 1px solid;
     border-radius: 10px;
     gap: 25px;
     transition: all 0.3s ease;
+    flex: 1; /* ✅ Let banners grow equally */
+    max-width: 320px;
 }
 
 .banner-top {
