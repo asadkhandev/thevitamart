@@ -102,7 +102,15 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 1170px;
+  width: 100%;
+}
+
+.grid-banner-section-2 .page-width .wrapper {
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .grid-heading {
