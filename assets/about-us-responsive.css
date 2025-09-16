@@ -516,4 +516,19 @@
 .grid-banner-imgs {
   width: 100%;
 }
+
+
+
+.grid-banner-section-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.grid-banner-section-2 .page-width {
+   display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+}
 }
