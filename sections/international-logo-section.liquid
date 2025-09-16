@@ -82,29 +82,40 @@ document.addEventListener('DOMContentLoaded', function () {
   if (window.innerWidth <= 767) {
     banner.style.display = 'flex';
     banner.style.overflow = 'hidden';
-    banner.style.gap = '40px';
     banner.style.justifyContent = 'flex-start';
+    banner.style.gap = '40px';
 
+    // Wrap logos inside a track so only they move
+    const track = document.createElement('div');
+    track.style.display = 'flex';
+    track.style.gap = '40px';
+    track.style.willChange = 'transform';
+
+    // Move all logos into track
     const logos = Array.from(banner.querySelectorAll('img'));
+    logos.forEach(logo => track.appendChild(logo));
 
-    // Clone all logos once to create seamless loop
+    // Clone logos to make loop seamless
     logos.forEach(logo => {
       const clone = logo.cloneNode(true);
-      banner.appendChild(clone);
+      track.appendChild(clone);
     });
 
+    banner.appendChild(track);
+
     let position = 0;
-    let speed = 1; // px per frame (adjust for faster/slower)
+    let speed = 1; // px per frame
 
     function animate() {
       position -= speed;
-      banner.style.transform = `translateX(${position}px)`;
+      track.style.transform = `translateX(${position}px)`;
 
-      const firstLogo = banner.querySelector('img');
+      const firstLogo = track.querySelector('img');
       const logoWidth = firstLogo.offsetWidth + 40; // width + gap
+
       if (Math.abs(position) >= logoWidth) {
-        banner.appendChild(firstLogo); // move first to the end
-        position += logoWidth; // reset position so it looks seamless
+        track.appendChild(firstLogo); // move first to the end
+        position += logoWidth; // reset position to keep seamless loop
       }
 
       requestAnimationFrame(animate);
