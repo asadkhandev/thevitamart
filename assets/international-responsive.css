@@ -369,7 +369,7 @@
 
 
 
-/* .promise-section .container {
+.promise-section .container {
     gap: 20px;
 }
 
@@ -402,33 +402,8 @@
 
 .banner-bottom {
     width: 90%;
-} */
-
-.promise-section .container {
-    gap: 20px;
 }
 
-.promise-text {
-    gap: 0px;
-}
-
-.promise-text hr {
-    padding: 0px;
-    margin: 20px;
-    margin-right: 20px;
-}
-
-.promise-text .promise-heading {
-    font-size: 28px;
-    width: 100%;
-}
-.promise-banners {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 30px;
-}
 
 
 
@@ -502,7 +477,7 @@
 
 
 
-@media (max-width: 426px) {
+@media (max-width: 767px) {
     .international-banner-text h1 {
         display: flex;
         flex-direction: column;
