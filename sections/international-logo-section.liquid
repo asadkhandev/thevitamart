@@ -75,10 +75,8 @@
 {% endschema %}
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const banner = document.querySelector('.network-banner');
-
-  if (!banner) return; // safety check
+function initLogoCarousel(banner) {
+  if (!banner) return;
 
   if (window.innerWidth <= 767) {
     banner.style.overflowX = 'auto';
@@ -94,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
       img.style.scrollSnapAlign = 'center';
     });
 
-    // Optional: smooth drag scroll for touch devices
+    // Drag-to-scroll (for desktop testing)
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -111,9 +109,21 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!isDown) return;
       e.preventDefault();
       const x = e.pageX - banner.offsetLeft;
-      const walk = (x - startX) * 1.5; // scroll-fast factor
+      const walk = (x - startX) * 1.5;
       banner.scrollLeft = scrollLeft - walk;
     });
   }
+}
+
+// ✅ Run on page load
+document.addEventListener('DOMContentLoaded', function () {
+  const banner = document.querySelector('.network-banner');
+  initLogoCarousel(banner);
+});
+
+// ✅ Run again if Shopify dynamically reloads the section
+document.addEventListener('shopify:section:load', function (event) {
+  const banner = event.target.querySelector('.network-banner');
+  initLogoCarousel(banner);
 });
 </script>
