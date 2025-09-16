@@ -75,6 +75,8 @@
   font-weight: bold;
   line-height: 1.5;
   letter-spacing: 2px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .grid-banner-text p {
