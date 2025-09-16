@@ -536,4 +536,8 @@
   flex-direction: column;
   width: 100%;
 }
+
+.grid-content-section {
+  flex-direction: coilumn;
+}
 }
