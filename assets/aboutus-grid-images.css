@@ -13,6 +13,14 @@
   width: 1200px;
 }
 
+.grid-banner-section-2 .page-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  width: 1200px;
+}
+
 .grid-banner-imgs {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
