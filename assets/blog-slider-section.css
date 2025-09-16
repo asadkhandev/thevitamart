@@ -2,6 +2,10 @@
     font-size: 12px;
 }
 
+.blog_slider-section .page-width{
+  padding: 0 3rem;
+}
+
 .nutriRow {
     display: flex;
     -ms-flex-wrap: wrap;
