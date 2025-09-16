@@ -272,6 +272,12 @@
     gap: 15px;
   }
 
+   .grid-banner-main .page-width .wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
   .grid-banner-text {
     width: 95%;
     order: 1;
@@ -476,5 +482,26 @@
 
 .link-btn2 {
   width: 40%;
+}
+}
+
+
+@media (min-width: 1024px) and (max-width: 1380px) {
+   .grid-banner-main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+  
+   .grid-banner-main .page-width{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+   .grid-banner-main .page-width .wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 }
