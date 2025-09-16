@@ -40,7 +40,10 @@
   height: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .our_mission-section{
+    background: #fafafa;
+  }
   .our_mission-row {
     flex-direction: column;
     text-align: center;
@@ -48,6 +51,7 @@
 
   .our_mission-col-left,
   .our_mission-col-right {
+    width: 100%;
     max-width: 100%;
   }
 

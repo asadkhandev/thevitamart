@@ -3102,6 +3102,12 @@ nav.header__inline-menu::before {
   .content-container--full-width-mobile:after {
     display: none;
   }
+
+  .utility-bar__grid.page-width{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
 }
 
 .global-media-settings {

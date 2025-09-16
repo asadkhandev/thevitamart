@@ -153,3 +153,9 @@
     width: 10px;
 }
 }
+
+@media screen and (max-width: 749px) {
+    .certificate-slider-wrap {
+        max-width: 90%;
+    }
+}
