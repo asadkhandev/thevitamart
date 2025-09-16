@@ -270,13 +270,13 @@
     flex-direction: column;
     width: 100%;
     gap: 15px;
-    align-items: center;
   }
 
    .grid-banner-main .page-width .wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
+     align-items: center;
 }
 
   .grid-banner-text {
