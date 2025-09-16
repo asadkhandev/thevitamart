@@ -3820,7 +3820,7 @@ nav.header__inline-menu::before {
   .slick-next{
     right: 0;
   }
-  .slick-next{
+  .slick-prev{
     left: 0;
   }
 }
