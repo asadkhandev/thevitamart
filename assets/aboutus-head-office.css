@@ -40,6 +40,8 @@
   line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
+  padding: 10px;
+  margin: 0px;
 }
 
 .head-office-text p {
