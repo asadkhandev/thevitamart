@@ -394,12 +394,12 @@ slider-component.slider-component-full-width {
 
 .slider-button.slider-button--prev{
   background-image: url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/chev-left.svg?v=1753352569');
-  left: 0;
+  left: 10px;
 }
 
 .slider-button.slider-button--next{
   background-image: url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/chev-right.svg?v=1753352355');
-  right: 0;
+  right: 10px;
 }
 
 .slider-button:hover{
