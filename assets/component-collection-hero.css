@@ -151,6 +151,11 @@
   width: 100%;
 }
 
+.collection-info {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 @media (min-width: 768px) {
   .image-mobile{
     display: none;
@@ -162,11 +167,6 @@
 		background: #ffffff !important;
 		border-color: #232323 !important;
 		color: #232323 !important;
-	}
-	
-	.collection-info {
-		padding-left: 50px;
-		padding-right: 50px;
 	}
 
 	.collection-info-item.sub-collection .item-title {
