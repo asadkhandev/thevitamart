@@ -87,7 +87,7 @@
 
 
 @media (min-width: 1024px) and (max-width: 1400px) {
-     .faq .container {
+     .faq .page-width {
     max-width: 1400px;
     flex-direction: column;
  }
@@ -104,7 +104,7 @@
 
 
 @media (max-width: 426px) {
- .faq .container {
+ .faq .page-width {
     max-width: 426px;
     flex-direction: column;
  }
