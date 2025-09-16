@@ -73,3 +73,47 @@
   ]
 }
 {% endschema %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const banner = document.querySelector('.network-banner');
+
+  if (!banner) return; // safety check
+
+  if (window.innerWidth <= 767) {
+    banner.style.overflowX = 'auto';
+    banner.style.scrollSnapType = 'x mandatory';
+    banner.style.display = 'flex';
+    banner.style.gap = '20px';
+    banner.style.justifyContent = 'flex-start';
+    banner.style.padding = '10px 15px';
+
+    // Apply scroll-snap to children
+    banner.querySelectorAll('img').forEach(img => {
+      img.style.flex = '0 0 auto';
+      img.style.scrollSnapAlign = 'center';
+    });
+
+    // Optional: smooth drag scroll for touch devices
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    banner.addEventListener('mousedown', e => {
+      isDown = true;
+      startX = e.pageX - banner.offsetLeft;
+      scrollLeft = banner.scrollLeft;
+    });
+
+    banner.addEventListener('mouseleave', () => isDown = false);
+    banner.addEventListener('mouseup', () => isDown = false);
+    banner.addEventListener('mousemove', e => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - banner.offsetLeft;
+      const walk = (x - startX) * 1.5; // scroll-fast factor
+      banner.scrollLeft = scrollLeft - walk;
+    });
+  }
+});
+</script>
