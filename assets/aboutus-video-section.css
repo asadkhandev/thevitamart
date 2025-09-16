@@ -33,6 +33,8 @@
   font-weight: bold;
   line-height: 1;
   color: #4e327c;
+  padding: 0px;
+  margin: 0px;
 }
 
 .video-headings h2 {
@@ -40,6 +42,8 @@
   font-weight: 600;
   line-height: 1;
   color: #5b625d;
+  padding: 0px;
+  margin: 0px;
 }
 
 #about-us-video {
