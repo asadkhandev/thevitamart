@@ -130,6 +130,9 @@
     .certificate-wrap{
         flex-direction: column-reverse;
     }
+    .certificate-slider-wrap{
+        max-width: 90%;
+    }
 }
 
 .certificate-content{
