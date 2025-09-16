@@ -82,3 +82,43 @@
   ]
 }
 {% endschema %}
+
+<script>
+function initLogoCarousel(banner) {
+  if (!banner) return;
+  const track = banner.querySelector('.network-track');
+  if (!track) return;
+
+  if (window.innerWidth <= 767) {
+    track.style.display = 'flex';
+    track.style.overflowX = 'auto';
+    track.style.scrollSnapType = 'x mandatory';
+    track.style.gap = '20px';
+    track.style.padding = '10px 15px';
+    track.style.justifyContent = 'flex-start';
+    track.style.webkitOverflowScrolling = 'touch';
+
+    track.querySelectorAll('.network-slide').forEach(slide => {
+      slide.style.flex = '0 0 auto';
+      slide.style.scrollSnapAlign = 'center';
+    });
+  } else {
+    // Reset styles for desktop
+    track.removeAttribute('style');
+    track.querySelectorAll('.network-slide').forEach(slide => {
+      slide.removeAttribute('style');
+    });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.network-banner').forEach(banner => initLogoCarousel(banner));
+  window.addEventListener('resize', () => {
+    document.querySelectorAll('.network-banner').forEach(banner => initLogoCarousel(banner));
+  });
+});
+
+document.addEventListener('shopify:section:load', e => {
+  e.target.querySelectorAll('.network-banner').forEach(banner => initLogoCarousel(banner));
+});
+</script>
