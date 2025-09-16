@@ -27,7 +27,8 @@
     font-weight: bold;
     line-height: 1;
     color: black;
-    width: 978.34px;
+    width: 100%;
+    max-width: 978.34px;
     height: 90px;
     margin: 0;
 }
@@ -37,7 +38,8 @@
     font-weight: bold;
     line-height: 1;
     color: white;
-    width: 454.53px;
+    width: 100%;
+    max-width: 454.53px;
     height: 90px;
     background: linear-gradient(135deg, #ccb8f3, #bba0ee);
     border-radius: 50px;
