@@ -408,6 +408,11 @@ h5.article-title.m-0{
     padding: 0 10px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .blog-slider-main{
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 375px) {
   .blogBigCardHead {
     height: 250px;
