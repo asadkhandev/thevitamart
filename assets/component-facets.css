@@ -1209,9 +1209,9 @@ input.mobile-facets__checkbox {
   }
 
   .facets-vertical .facets-wrapper {
-    padding-right: 3rem;
+    padding-right: 1.5rem;
     width: 100%;
-    max-width: 20%;
+    max-width: 30%;
   }
 
   .facets-vertical .facets-wrapper--no-filters {
@@ -1287,6 +1287,13 @@ input.mobile-facets__checkbox {
 
   .facets-container-drawer .facets__form {
     display: block;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .facets-vertical .facets-wrapper{
+    max-width: 20%;
+    padding-right: 3rem;
   }
 }
 
