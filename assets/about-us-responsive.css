@@ -541,9 +541,11 @@
 
 .grid-text .grid-text-heading {
   width: 90%;
+  font-size: 34px;
 }
 
 .grid-text p {
   width: 90%;
+  font-size: 240px;
 }
 }
