@@ -18,7 +18,8 @@
 .contactus-info p {
     font-size: 34px;
     font-weight: bold;
-    width: 560px;
+    width: 100%;
+    max-width: 560px;
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -27,7 +28,8 @@
 .email-btn {
     display: flex;
     align-items: center;
-    width: 610px;
+    width: 100%;
+    max-width: 610px;
     border: 1px solid #c5c5c5;
     border-radius: 50px;
     overflow: hidden;
