@@ -28,6 +28,7 @@
 
   .grid-banner-main .page-width .wrapper {
   display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
