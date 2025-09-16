@@ -177,6 +177,11 @@
   gap: 10px;
 }
 
+.grid-banner-main .page-width .wrapper {
+  display: flex;
+  width: 100%;
+}
+
 .grid-text-section {
   order: 2;
 }
