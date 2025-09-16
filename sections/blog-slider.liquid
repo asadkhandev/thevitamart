@@ -127,29 +127,33 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    $('.blog-slider-main').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      asNavFor: '.blog-slider-nav'
-    });
+    if (window.innerWidth > 767) {
+      $('.blog-slider-main').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        asNavFor: '.blog-slider-nav'
+      });
 
-    $('.blog-slider-nav').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      asNavFor: '.blog-slider-main',
-      dots: false,
-      centerMode: false,
-      focusOnSelect: true,
-      vertical: true,
-      verticalSwiping: true,
-      arrows: false
-    });
+      $('.blog-slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.blog-slider-main',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        vertical: true,
+        verticalSwiping: true,
+        arrows: false
+      });
+    }
   });
 </script>
+
+
 {% endif %}
 
 {% schema %}

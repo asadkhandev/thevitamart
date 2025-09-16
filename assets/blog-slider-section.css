@@ -368,6 +368,13 @@ h5.article-title.m-0{
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .blog-slider-nav{
+    display: none !important;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .blogBigCardBody {
     height: 43.5%;
