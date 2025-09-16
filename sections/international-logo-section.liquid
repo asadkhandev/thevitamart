@@ -80,44 +80,39 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!banner) return;
 
   if (window.innerWidth <= 767) {
-    banner.style.overflowX = 'auto';
-    banner.style.scrollSnapType = 'x mandatory';
     banner.style.display = 'flex';
-    banner.style.gap = '20px';
+    banner.style.overflow = 'hidden';
+    banner.style.gap = '40px';
     banner.style.justifyContent = 'flex-start';
-    banner.style.padding = '10px 15px';
-    banner.style.scrollBehavior = 'smooth';
 
-    // Apply scroll-snap to children
-    const slides = banner.querySelectorAll('img');
-    slides.forEach(img => {
-      img.style.flex = '0 0 auto';
-      img.style.scrollSnapAlign = 'center';
+    const logos = Array.from(banner.querySelectorAll('img'));
+
+    // Clone all logos once to create seamless loop
+    logos.forEach(logo => {
+      const clone = logo.cloneNode(true);
+      banner.appendChild(clone);
     });
 
-    // --- ✅ AUTO SLIDE LOGIC ---
-    let currentIndex = 0;
-    const slideWidth = slides[0]?.offsetWidth + 20 || 140; // logo width + gap fallback
+    let position = 0;
+    let speed = 1; // px per frame (adjust for faster/slower)
 
-    function autoSlide() {
-      currentIndex++;
-      if (currentIndex >= slides.length) {
-        currentIndex = 0; // go back to start
+    function animate() {
+      position -= speed;
+      banner.style.transform = `translateX(${position}px)`;
+
+      const firstLogo = banner.querySelector('img');
+      const logoWidth = firstLogo.offsetWidth + 40; // width + gap
+      if (Math.abs(position) >= logoWidth) {
+        banner.appendChild(firstLogo); // move first to the end
+        position += logoWidth; // reset position so it looks seamless
       }
-      banner.scrollTo({
-        left: currentIndex * slideWidth,
-        behavior: 'smooth'
-      });
+
+      requestAnimationFrame(animate);
     }
 
-    let autoSlideInterval = setInterval(autoSlide, 2500); // every 2.5s
-
-    // --- Optional: Pause when user interacts ---
-    banner.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
-    banner.addEventListener('mouseleave', () => {
-      autoSlideInterval = setInterval(autoSlide, 2500);
-    });
+    animate();
   }
 });
 </script>
+
 
