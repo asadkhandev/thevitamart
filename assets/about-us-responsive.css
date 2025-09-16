@@ -272,6 +272,12 @@
     gap: 15px;
   }
 
+   .grid-banner-main .page-width .wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
   .grid-banner-text {
     width: 95%;
     order: 1;
