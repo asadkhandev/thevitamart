@@ -259,46 +259,6 @@
     border-radius: 15px;
   }
 
-  .grid-banner-main .page-width {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 15px;
-  }
-
-  .grid-banner-text {
-    width: 95%;
-    order: 1;
-  }
-
-  .grid-banner-text .banner-heading {
-    font-size: 26px;
-    text-align: center;
-  }
-
-  .grid-banner-text hr {
-    align-self: center;
-  }
-
-  .grid-banner-text p {
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .grid-banner-imgs {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    width: 95%;
-    gap: 10px;
-  }
-
-  .grid-banner-imgs img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
-
   .medicine-section .page-wdith {
     width: 100%;
   }

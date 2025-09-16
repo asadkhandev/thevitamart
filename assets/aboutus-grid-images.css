@@ -12,7 +12,8 @@
 }
 
 .grid-banner-main .page-width .wrapper {
-
+  display: flex;
+  width: 100%;
 }
 
 .grid-banner-section-2 .page-width {
@@ -163,4 +164,48 @@
   line-height: 1.5;
   width: 525px;
   text-align: justify;
+}
+
+
+@media (min-width: 768px) and (max-width: 1380px) {
+  
+  .grid-banner-main .page-width {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .grid-banner-text {
+    width: 95%;
+    order: 1;
+  }
+
+  .grid-banner-text .banner-heading {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .grid-banner-text hr {
+    align-self: center;
+  }
+
+  .grid-banner-text p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .grid-banner-imgs {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 95%;
+    gap: 10px;
+  }
+
+  .grid-banner-imgs img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
 }
