@@ -491,20 +491,17 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: red;
 }
   
    .grid-banner-main .page-width{
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: blue;
 }
 
    .grid-banner-main .page-width .wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: green;
 }
 }
