@@ -535,6 +535,10 @@
   width: 100%;
 }
 
+.grid-text {
+  width: 100%;
+}
+
 .grid-text .grid-text-heading {
   width: 90%;
 }
