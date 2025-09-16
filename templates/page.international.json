@@ -67,32 +67,35 @@
         "promise_m4Da98": {
           "type": "promise",
           "settings": {
+            "image": "shopify://shop_images/promise1.avif",
             "alt_text": "promise image",
-            "title": "Promise Title",
-            "description": "Promise description text goes here."
+            "title": "TESTING FROM START TO FINISH",
+            "description": "At Vitamart, ingredients and finished products testing is the backbone of our quality assurance programs."
+          }
+        },
+        "promise_KaLxxH": {
+          "type": "promise",
+          "settings": {
+            "image": "shopify://shop_images/promise2.avif",
+            "alt_text": "promise image",
+            "title": "HIGH QUALITY STARTS WITH CLEAN INGREDIENTS",
+            "description": "Our strict requirements for ingredient quality and our comprehensive scientific process ensure that every lot of ingredients accepted into our facility meets international testing specifications."
           }
         },
         "promise_NgrEnU": {
           "type": "promise",
           "settings": {
+            "image": "shopify://shop_images/promise3.png",
             "alt_text": "promise image",
-            "title": "Promise Title",
-            "description": "Promise description text goes here."
-          }
-        },
-        "promise_MAqJBQ": {
-          "type": "promise",
-          "settings": {
-            "alt_text": "promise image",
-            "title": "Promise Title",
-            "description": "Promise description text goes here."
+            "title": "SUPERIOR MANUFACTURING",
+            "description": "Vitamart meets the cGMPs to ensure our delivery of commitment to quality. Vitamart was one of the first companies to be cGMP certified."
           }
         }
       },
       "block_order": [
         "promise_m4Da98",
-        "promise_NgrEnU",
-        "promise_MAqJBQ"
+        "promise_KaLxxH",
+        "promise_NgrEnU"
       ],
       "name": "Promise Section",
       "settings": {
