@@ -547,4 +547,10 @@
 .grid-text p {
   width: 90%;
 }
+
+
+
+.medicine-text {
+  background-color: red;
+}
 }
