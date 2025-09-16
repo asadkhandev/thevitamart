@@ -509,6 +509,7 @@
   width: 100%;
   text-align: center;
   margin-top: 10px;
+  align-items: center;
 }
 
 .grid-banner-imgs {
