@@ -552,4 +552,8 @@
   .newsletter-form__field-wrapper{
     max-width: none;
   }
+  
+  .list-social__link{
+    margin-left: 0;
+  }
 }
