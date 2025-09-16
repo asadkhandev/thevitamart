@@ -55,8 +55,17 @@
     max-width: 100%;
   }
 
+  .our_mission-col-left{
+    padding: 0;
+  }
+
   .our_mission-col-right {
     text-align: center;
     margin-top: 30px;
   }
+
+  .our_mission-title{
+    margin-top: 0;
+  }
+
 }
