@@ -99,7 +99,7 @@
 
 @media (max-width: 426px) {
     .certificate-wrap{
-        flex-direction: column;
+        flex-direction: column-reverse;
 }
 
 .certificate-content{
