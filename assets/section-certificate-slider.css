@@ -95,3 +95,10 @@
     max-width: 90px;
     margin: 0 auto 10px;
 }
+
+
+@media (max-width: 426px) {
+    .certificate-wrap{
+        flex-direction: column;
+}
+}
