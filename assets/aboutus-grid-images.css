@@ -82,6 +82,8 @@
 .grid-banner-text p {
   font-size: 16px;
   line-height: 1.5;
+  padding: 0px;
+  margin: 0px;
 }
 
 .grid-banner-section-2 {
