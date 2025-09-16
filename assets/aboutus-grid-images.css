@@ -18,6 +18,7 @@
   grid-template-rows: repeat(2, 1fr);
   width: 575px;
   gap: 15px;
+  background-color: blue;
 }
 
 .grid-banner-imgs img {
