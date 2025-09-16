@@ -547,6 +547,10 @@
   width: 100%;
 }
 
+.grid-text .grid-text-heading {
+  width: 80%;
+}
+
 .grid-text p {
   width: 80%;
   text-align: start;
