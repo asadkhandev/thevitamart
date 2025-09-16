@@ -3841,3 +3841,9 @@ nav.header__inline-menu::before {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .footer__content-top .grid--4-col-tablet .grid__item.footer-block--menu{
+    width: 100%;
+  }
+}
