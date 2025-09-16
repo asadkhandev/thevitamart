@@ -177,6 +177,8 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .header--has-social .menu-drawer__utility-links {
   padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 749px) {
