@@ -139,7 +139,7 @@
     z-index: 1;
 }
 
-.form-wrapper {
+.contactus-form-wrapper {
     display: flex;
     flex-direction: column;
     max-width: 528px;
@@ -153,13 +153,13 @@
     z-index: 10;
 }
 
-.form-wrapper form {
+.contactus-form-wrapper form {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.form-wrapper label {
+.contactus-form-wrapper label {
     font-size: 13px;
     font-weight: 400;
 }
@@ -369,7 +369,7 @@
     width: 100%;
 }
 
-.form-wrapper {
+.contactus-form-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -524,7 +524,7 @@
     z-index: 0;
 }
 
-.form-wrapper {
+.contactus-form-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -539,7 +539,7 @@
     z-index: 10;
 }
 
-.form-wrapper label {
+.contactus-form-wrapper label {
     font-size: 13px;
     font-weight: 400;
 }
