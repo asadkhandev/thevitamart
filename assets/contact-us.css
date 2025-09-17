@@ -79,17 +79,17 @@
 }
 
 .p-btn div {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    align-items: center;
-}
-
-.p-btn .contactus-btn-icons {
-    grid-column: 1 / span 2;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.3s;
+    gap: 10px; /* space between icon and text */
+}
+
+.p-btn .contactus-btn-icons {
+    flex-shrink: 0; /* prevent icon from shrinking */
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
 }
 
 .p-btn p {
