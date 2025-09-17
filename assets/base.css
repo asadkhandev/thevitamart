@@ -136,7 +136,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 @media screen and (max-width: 749px) {
-  .announcement-bar .slider--everywhere{
+  .announcement-bar .slideshow__slide{
     padding-right: 30px;
     padding-left: 30px;
   }
