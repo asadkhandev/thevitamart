@@ -90,11 +90,11 @@
 
 
 @media (min-width: 1024px) and (max-width: 1400px) {
-     .faq .page-width {
+     /* .faq .page-width {
         width: 100%;
     max-width: 1400px;
     flex-direction: column;
- }
+ } */
 
  .inner-faq-wrap {
     width: 100%;
@@ -110,7 +110,13 @@
 
 
 @media (max-width: 1023px) {
- .faq .page-width {
+ /* .faq .page-width {
+    max-width: 1023px;
+    width: 100%;
+    flex-direction: column;
+ } */
+
+ inner-faq-wrap {
     max-width: 1023px;
     width: 100%;
     flex-direction: column;
