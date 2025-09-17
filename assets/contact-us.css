@@ -156,7 +156,7 @@
 .form-wrapper form {
     display: flex;
     flex-direction: column;
-    gap: 16px; /* spacing between label/input pairs */
+    gap: 16px;
 }
 
 .form-wrapper label {
