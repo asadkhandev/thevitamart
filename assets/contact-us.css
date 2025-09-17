@@ -84,7 +84,7 @@
     align-items: center;
 }
 
-.p-btn .btn-icon {
+.p-btn .contactus-btn-icons {
     grid-column: 1 / span 2;
     display: flex;
     align-items: center;
@@ -107,7 +107,7 @@
     background-color: #b497ed;
 }
 
-.p-btn:hover .btn-icon {
+.p-btn:hover .contactus-btn-icons {
     border: white 1px solid;
 }
 
