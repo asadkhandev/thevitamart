@@ -5,6 +5,13 @@
     align-items: center;
 }
 
+.inner-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .contact-us {
     display: flex;
     width: 100%;
