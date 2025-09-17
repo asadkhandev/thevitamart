@@ -25,7 +25,7 @@
   position: relative;
 }
 
-.is-collection .quick-add__submit.loading > img{
+.is-collection .quick-add__submit.loading img{
   opacity: 0;
   visibility: hidden;
 }
