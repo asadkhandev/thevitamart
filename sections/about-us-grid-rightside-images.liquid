@@ -3,28 +3,26 @@
 
 <div class="grid-banner-section-2">
   <div class="grid-section2-inner">
-    <div class="wrapper">
           <div class="grid-heading">
-      <p>{{ section.settings.grid2_heading }}</p>
-      <hr>
-    </div>
-    <div class="grid-content-section">
-      <div class="grid-text-section">
-        {% for block in section.blocks %}
-          <div class="grid-text">
+              <p>{{ section.settings.grid2_heading }}</p>
+              <hr>
+           </div>
+      <div class="grid-content-section">
+        <div class="grid-text-section">
+         {% for block in section.blocks %}
+            <div class="grid-text">
             <p class="grid-text-heading">{{ block.settings.text_title }}</p>
             <p>{{ block.settings.text_content }}</p>
-          </div>
-        {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+        <div class="grid-banner-imgs">
+          <img src="{{ section.settings.grid2_img_1 | image_url }}">
+          <img src="{{ section.settings.grid2_img_2 | image_url }}">
+          <img src="{{ section.settings.grid2_img_3 | image_url }}">
+          <img src="{{ section.settings.grid2_img_4 | image_url }}">
+        </div>
       </div>
-      <div class="grid-banner-imgs">
-        <img src="{{ section.settings.grid2_img_1 | image_url }}">
-        <img src="{{ section.settings.grid2_img_2 | image_url }}">
-        <img src="{{ section.settings.grid2_img_3 | image_url }}">
-        <img src="{{ section.settings.grid2_img_4 | image_url }}">
-      </div>
-    </div>
-    </div>
   </div>
 </div>
 
