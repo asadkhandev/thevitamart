@@ -18,20 +18,20 @@
         </div>
     </div>
 
-    {% schema %}
-{
-  "name": "Accordion",
-  "class": "accordion-block",
-  "settings": [],
-  "blocks": [
+{% schema %}
     {
-      "type": "accordion",
-      "name": "faq",
-      "limit": 7,
-      "settings": [
-        { "type": "text", "id": "question", "label": "Question" },
-        { "type": "richtext", "id": "answer", "label": "Answer" },
-        { "type": "image_picker", "id": "question-icon", "label": "Question Icon" }
+        "name": "Accordion",
+        "class": "accordion-block",
+        "settings": [],
+            "blocks": [
+                    {
+                        "type": "accordion",
+                        "name": "faq",
+                        "limit": 7,
+                "settings": [
+                    { "type": "text", "id": "question", "label": "Question" },
+                    { "type": "richtext", "id": "answer", "label": "Answer" },
+                    { "type": "image_picker", "id": "question-icon", "label": "Question Icon" }
       ]
     }
   ],
