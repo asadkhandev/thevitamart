@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-.video-section .page-width {
+.video-section .video-inner {
   display: flex;
   flex-direction: column;
   width: 100%;
