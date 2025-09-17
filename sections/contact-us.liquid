@@ -22,7 +22,7 @@
                 {% if section.settings[text_setting] != blank %}
                   <a href="{{ section.settings[link_setting] }}" class="p-btn">
                     <div>
-                      <i class="{{ section.settings[icon_setting] }} fa-lg btn-icon"></i>
+                      <i class="{{ section.settings.quick_link_ }}"></i>
                       <p>{{ section.settings[text_setting] }}</p>
                     </div>
                   </a>
