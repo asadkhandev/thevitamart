@@ -46,11 +46,38 @@
     justify-content: space-between;
     font-size: 16px;
     transition: 0.3s;
-    width: 675px;
+}
+
+.accordion-box strong {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    line-height: 1.5;
+}
+
+.accordion-box.active strong {
+    max-height: 1000px;
 }
 
 .accordion-box.active span {
     color: #b497ed;
+}
+
+.accordion-box strong ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.accordion-box strong ol {
+    list-style: decimal;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.accordion-box strong li {
+    margin-bottom: 15px;
 }
 
 .accordion-box span i {
