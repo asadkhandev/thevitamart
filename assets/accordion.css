@@ -5,7 +5,7 @@
     padding: 50px 0
 }
 
-.faq .page-width {
+.faq .inner-faq-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,7 +92,7 @@
 
 
 @media (min-width: 1024px) and (max-width: 1400px) {
-     .faq .page-width {
+     .faq .inner-faq-wrap {
         width: 100%;
     max-width: 1400px;
     flex-direction: column;
@@ -106,7 +106,7 @@
 
 
 @media (max-width: 1023px) {
- .faq .page-width {
+ .faq .inner-faq-wrap {
     max-width: 1023px;
     width: 100%;
     flex-direction: column;
