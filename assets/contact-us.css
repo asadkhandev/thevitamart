@@ -631,12 +631,4 @@
     transition: 0.5s;
     z-index: -1;
 }
-
-.email-btn .page-width:hover strong::before {
-    bottom: 0;
-}
-
-.email-btn .page-width:hover strong {
-    color: white;
-}
 }
