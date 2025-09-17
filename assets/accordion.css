@@ -37,6 +37,10 @@
     background-repeat: no-repeat;
 }
 
+.accordion-box span::after:active {
+    transform: translateX(-50%);
+}
+
 .accordion-section {
     display: flex;
     flex-direction: column;
