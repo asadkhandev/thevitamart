@@ -227,8 +227,8 @@
 }
 
 .about-btns {
-  width: 95%;
-  gap: 5px;
+  width: 100%;
+  flex-direction: column;
 }
 
 .link-btn {
