@@ -24,9 +24,10 @@
   cursor: pointer;
 }
 
-.is-collection .quick-add__submit.loading img{
+.is-collection .quick-add__submit.loading > img{
   opacity: 0;
   visibility: hidden;
+  display: none;
 }
 
 .is-collection .quick-add__submit[disabled]{
