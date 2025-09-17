@@ -20,7 +20,7 @@
                 {% assign icon_setting = 'quick_link_icon_' | append: i %}
 
                 {% if section.settings[text_setting] != blank %}
-                  <a href="{{ section.settings[link_setting] }}" class="primary-btn">
+                  <a href="{{ section.settings[link_setting] }}" class="p-btn">
                     <div>
                       <i class="{{ section.settings[icon_setting] }} fa-lg btn-icon"></i>
                       <p>{{ section.settings[text_setting] }}</p>
@@ -53,7 +53,7 @@
               <label for="ContactFormMessage">Comment <span class="required">*</span></label>
               <textarea name="contact[body]" id="ContactFormMessage" class="input-text" required></textarea>
 
-              <button type="submit" class="secondary-btn">SUBMIT</button>
+              <button type="submit" class="s-btn">SUBMIT</button>
             {% endform %}
           </div>
 
