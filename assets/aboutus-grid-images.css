@@ -11,6 +11,7 @@
   max-width: 1200px;
   width: 100%;
   padding: 0px;
+  justify-content: space-between;
 }
 
 .grid-banner-section-2 .grid-section2-inner {
