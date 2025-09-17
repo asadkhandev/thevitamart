@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.contact-us {
+.contactus-section {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -314,7 +314,7 @@
     width: 100%;
 }
 
-.page-width .contact-us {
+.page-width .contactus-section {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -423,7 +423,7 @@
     width: 100%
 }
 
-.contact-us {
+.contactus-section {
     display: flex;
     flex-direction: column;
     width: 100%;
