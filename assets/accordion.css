@@ -12,6 +12,13 @@
     width: 100%;
 }
 
+.inner-faq-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .left-section {
     display: flex;
     align-items: center;
