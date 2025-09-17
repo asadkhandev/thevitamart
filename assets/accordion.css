@@ -3,9 +3,8 @@
     align-items: center;
     justify-content: center;
     padding: 50px 0;
-    
     width: 100%;
-    background-color: blue;
+    background-color: transparent;
 }
 
 .faq .inner-faq-wrap {
@@ -14,7 +13,7 @@
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
-    background-color: red;
+    background-color: transparent;
 }
 
 .left-section {
