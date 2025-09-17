@@ -35,6 +35,9 @@
     background: url(https://cdn.shopify.com/s/files/1/0707/8104/2880/files/right-arrow-svgrepo-com.png?v=1758103998);
     background-size: 100% auto;
     background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 50%;
 }
 
 .accordion-box.active span::after {
@@ -43,6 +46,7 @@
 
 .accordion-box span {
     padding-right: 5px;
+    position: relative;
 }
 
 .accordion-section {
