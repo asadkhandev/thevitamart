@@ -9,7 +9,7 @@
             <div class="accordion-section">
                 {% for block in section.blocks %}
                 <div class="accordion-box">
-                    {% if block.settings.question != blank %}<span>{{ block.settings.question }}</span>{% endif %}
+                    {% if block.settings.question != blank %}<span>{{ block.settings.question }}<img class="question-icon" src="{{ block.settings.question-icon }}"></span>{% endif %}
 
                     {% if block.settings.answer != blank %}<div class="answer-text">{{ block.settings.answer }}</div>{% endif %}
                 </div>
