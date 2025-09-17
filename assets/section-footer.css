@@ -546,6 +546,10 @@
     margin-bottom: 0;
   }
 
+  .footer-block__heading + .rte{
+    margin-top: 10px;
+  }
+
   .footer-block__details-content .list-menu__item--link{
     padding-bottom: 0;
   }
