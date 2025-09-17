@@ -1971,6 +1971,10 @@ input[type='checkbox'] {
   appearance: none;
 }
 
+#CartDrawer .quantity__input{
+  pointer-events: none;
+}
+
 .quantity__button {
   width: calc(4.5rem / var(--font-body-scale));
   flex-shrink: 0;
