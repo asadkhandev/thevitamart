@@ -295,7 +295,7 @@
 
 
 @media (min-width: 600px) and (max-width: 1023px) {
-    .p-btn {
+    a.p-btn {
     max-width: 3600px;
 }
 
