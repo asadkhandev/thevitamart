@@ -1378,7 +1378,8 @@ shopify-accelerated-checkout-cart {
 .customer button:disabled,
 .customer button[aria-disabled='true'],
 .customer button.disabled,
-.quantity__button.disabled {
+.quantity__button.disabled,
+.button:disabled + .payment-button {
   cursor: not-allowed;
   opacity: 0.5;
 }
