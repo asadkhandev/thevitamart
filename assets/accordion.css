@@ -94,6 +94,7 @@
         width: 100%;
     max-width: 1400px;
     flex-direction: column;
+    background-color: red;
  }
 
  .accordion-section {
