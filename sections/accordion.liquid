@@ -9,7 +9,7 @@
             <div class="accordion-section">
                 {% for block in section.blocks %}
                 <div class="accordion-box">
-                    {% if block.settings.question != blank %}<span>{{ block.settings.question }}<i class="icon">{{ block.settings.icon }}</i></span>{% endif %}
+                    {% if block.settings.question != blank %}<span>{{ block.settings.question }}<i class="icon">{{ block.settings.accordion-icon }}</i></span>{% endif %}
 
                     {% if block.settings.answer != blank %}<div class="answer-text">{{ block.settings.answer }}</div>{% endif %}
                 </div>
@@ -30,7 +30,7 @@
       "settings": [
         { "type": "text", "id": "question", "label": "Question" },
         { "type": "richtext", "id": "answer", "label": "Answer" },
-        { "type": "image_picker", "id": "icon", "label": "Question Icon" }
+        { "type": "image_picker", "id": "accordion-icon", "label": "Question Icon" }
       ]
     }
   ],
