@@ -11,7 +11,7 @@
                 <div class="accordion-box">
                     {% if block.settings.question != blank %}<span>{{ block.settings.question }}<i class="fa-solid fa-angle-right fa-lg"></i></span>{% endif %}
 
-                    {% if block.settings.answer != blank %}{{ block.settings.answer }}{% endif %}
+                    {% if block.settings.answer != blank %}<div class="answer-text">{{ block.settings.answer }}</div>{% endif %}
                 </div>
                 {% endfor %}
             </div>
