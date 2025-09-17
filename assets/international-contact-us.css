@@ -16,7 +16,7 @@
     padding: 0px;
 }
 
-.contact-us-text-section .page-width {
+.contact-us-text-section .contactus-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
