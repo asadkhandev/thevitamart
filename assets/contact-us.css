@@ -19,7 +19,7 @@
     padding-top: 50px;
 }
 
-.contact-us-banner {
+.contactus-banner {
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -27,13 +27,13 @@
     margin-top: 50px;
 }
 
-.contact-us-banner h2 {
+.contactus-banner h2 {
     font-size: 34px;
     margin: 0px 0px 5px;
     font-weight: bold;
 }
 
-.contact-us-banner h1 {
+.contactus-banner h1 {
     font-size: 80px;
     font-weight: bold;
     color: #b497ed;
@@ -41,12 +41,12 @@
     margin: 0;
 }
 
-.contact-us-banner hr {
+.contactus-banner hr {
     margin: 20px 0px;
     width: 340px;
 }
 
-.contact-us-banner p {
+.contactus-banner p {
     font-size: 20px;
     line-height: 1.5;
     padding: 0;
@@ -276,19 +276,19 @@
     width: 100%;
 }
 
-.contact-us-banner h2 {
+.contactus-banner h2 {
     font-size: 26px;
     margin: 0px 0px 5px;
     font-weight: bold;
 }
 
-.contact-us-banner h1 {
+.contactus-banner h1 {
     font-size: 50px;
     font-weight: bold;
     color: #b497ed;
 }
 
-.contact-us-banner p {
+.contactus-banner p {
     font-size: 16px;
     line-height: 1.5;
     width: 80%;
@@ -323,12 +323,12 @@
     text-align: center;
 }
 
-.contact-us-banner {
+.contactus-banner {
     justify-content: center;
     align-items: center;
 }
 
-.contact-us-banner div {
+.contactus-banner div {
     align-items: center;
     justify-content: center;
 }
@@ -344,21 +344,21 @@
     z-index: 1;
 }
 
-.contact-us-banner h2 {
+.contactus-banner h2 {
     font-size: 20px;
     padding-left: 5px;
 }
 
-.contact-us-banner h1 {
+.contactus-banner h1 {
     font-size: 50px;
 }
 
-.contact-us-banner hr {
+.contactus-banner hr {
     margin: 20px 0px;
     width: 340px;
 }
 
-.contact-us-banner p {
+.contactus-banner p {
     font-size: 16px;
     line-height: 1.5;
     width: 100%;
@@ -430,7 +430,7 @@
     justify-content: center;
 }
 
-.contact-us-banner {
+.contactus-banner {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -441,21 +441,21 @@
     align-items: center;
 }
 
-.contact-us-banner h2 {
+.contactus-banner h2 {
     font-size: 20px;
     padding-left: 5px;
 }
 
-.contact-us-banner h1 {
+.contactus-banner h1 {
     font-size: 50px;
 }
 
-.contact-us-banner hr {
+.contactus-banner hr {
     margin: 20px 0px;
     width: 340px;
 }
 
-.contact-us-banner p {
+.contactus-banner p {
     font-size: 16px;
     line-height: 1.5;
     width: 90%;
