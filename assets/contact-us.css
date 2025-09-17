@@ -120,7 +120,7 @@
 
 
 
-.contact-us-form {
+.contactus-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -364,7 +364,7 @@
     width: 100%;
 }
 
-.contact-us-form {
+.contactus-form {
     margin-top: 50px;
     width: 100%;
 }
@@ -504,7 +504,7 @@
 
 
 
-.contact-us-form {
+.contactus-form {
     display: flex;
     align-items: center;
     justify-content: center;
