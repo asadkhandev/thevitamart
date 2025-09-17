@@ -23,6 +23,11 @@
     margin: 0px 137.5px;
 }
 
+.accordion-box .accordion-icon {
+    width: 20px;
+    height: 20px;
+}
+
 
 
 .accordion-section {
