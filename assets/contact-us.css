@@ -298,7 +298,7 @@
     .p-btn {
         width: 100%;
         max-width: 360px;
-        justify-content: auto;
+        justify-content: flex-start;
 }
 
 
