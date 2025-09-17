@@ -525,7 +525,7 @@
 }
 
 .network-banner {
-    width: 90%;
+    width: 100%;
     height: 120px;
     gap: 60px;
     overflow: hidden;
