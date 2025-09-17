@@ -71,7 +71,7 @@
     row-gap: 10px;
 }
 
-.primary-btn {
+.p-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,13 +85,13 @@
     transition: 0.3s; 
 }
 
-.primary-btn div {
+.p-btn div {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     align-items: center;
 }
 
-.primary-btn .btn-icon {
+.p-btn .btn-icon {
     grid-column: 1 / span 2;
     display: flex;
     align-items: center;
@@ -103,18 +103,18 @@
     transition: 0.3s;
 }
 
-.primary-btn p {
+.p-btn p {
     grid-column: 4 / span 6;
     font-size: 14px;
     margin: 0;
 }
 
-.primary-btn:hover {
+.p-btn:hover {
     color: white;
     background-color: #b497ed;
 }
 
-.primary-btn:hover .btn-icon {
+.p-btn:hover .btn-icon {
     border: white 1px solid;
 }
 
@@ -479,7 +479,7 @@
     row-gap: 10px;
 }
 
-.primary-btn {
+.p-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -493,7 +493,7 @@
     transition: 0.3s; 
 }
 
-.primary-btn div {
+.p-btn div {
     display: flex;
     flex-direction: column;
     height: 100%;
