@@ -103,15 +103,6 @@
     margin-bottom: 15px;
 }
 
-.accordion-box span i {
-    transition: transform 0.3s ease;
-}
-
-.accordion-box.active span i {
-    transform: rotate(90deg);
-}
-
-
 @media (min-width: 1024px) and (max-width: 1400px) {
      .faq .inner-faq-wrap {
         width: 100%;
@@ -153,5 +144,7 @@
     font-size: 16px;
     transition: 0.3s;
     width: 100%;
+    padding-right: 5px;
+    position: relative;
 }
 }
