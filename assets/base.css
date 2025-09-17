@@ -3635,6 +3635,10 @@ nav.header__inline-menu::before {
   display: inline-block;
 }
 
+.loading__spinner .path{
+  stroke: #fff;
+}
+
 .spinner {
   animation: rotator 1.4s linear infinite;
 }
