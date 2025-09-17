@@ -109,7 +109,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 100%;
     position: relative;
 }
 
@@ -127,8 +127,9 @@
 .form-wrapper {
     display: flex;
     flex-direction: column;
-    width: 528px;
-    height: 548.4px;
+    max-width: 528px;
+    width: 100%;
+    
     margin: 0px 66px 66px;
     padding: 30px 30px 0px 30px;
     border-radius: 5px;
