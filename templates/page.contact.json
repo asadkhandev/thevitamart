@@ -55,41 +55,41 @@
         "contact_z9ieyP": {
           "type": "contact",
           "settings": {
-            "heading": "heading",
-            "address": "xyz",
-            "phone": "xyz",
-            "mobile": "xyz",
-            "email": "xyz"
+            "heading": "Corporate Office",
+            "address": "P-130, Kohinoor City, Faisalabad.",
+            "phone": "Call us: 080077722",
+            "mobile": "",
+            "email": "Email: business@nutrifactor.com"
           }
         },
         "contact_CUWeVN": {
           "type": "contact",
           "settings": {
-            "heading": "heading",
-            "address": "xyz",
-            "phone": "xyz",
-            "mobile": "xyz",
-            "email": "xyz"
+            "heading": "Customer Care",
+            "address": "",
+            "phone": "Call us: 080077722",
+            "mobile": "Mobile: +92-303-7772257",
+            "email": "Email: cs@vitamart.com"
           }
         },
         "contact_NCBppG": {
           "type": "contact",
           "settings": {
-            "heading": "heading",
-            "address": "xyz",
-            "phone": "xyz",
-            "mobile": "xyz",
-            "email": "xyz"
+            "heading": "International Inquiries",
+            "address": "",
+            "phone": "",
+            "mobile": "Mobile: +92-303-7776382",
+            "email": "Email: export@nutrifactor.com"
           }
         },
-        "contact_bDBzCX": {
+        "contact_B8PBhV": {
           "type": "contact",
           "settings": {
-            "heading": "heading",
-            "address": "xyz",
-            "phone": "xyz",
-            "mobile": "xyz",
-            "email": "xyz"
+            "heading": "Toll Manufacturing Inquiries",
+            "address": "",
+            "phone": "",
+            "mobile": "Mobile: +92-303-7776382",
+            "email": "Email: export@vitamart.com"
           }
         }
       },
@@ -97,7 +97,7 @@
         "contact_z9ieyP",
         "contact_CUWeVN",
         "contact_NCBppG",
-        "contact_bDBzCX"
+        "contact_B8PBhV"
       ],
       "name": "Contact Info Columns",
       "settings": {
