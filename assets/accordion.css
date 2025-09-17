@@ -37,7 +37,7 @@
     background-repeat: no-repeat;
 }
 
-.accordion-box span::after:active {
+.accordion-box span:active {
     transform: translateX(50%);
 }
 
