@@ -24,6 +24,11 @@
   cursor: pointer;
 }
 
+.is-collection .quick-add__submit.loading img{
+  opacity: 0;
+  visibility: hidden;
+}
+
 .is-collection .quick-add__submit[disabled]{
   opacity: .6;
   pointer-events: none;
