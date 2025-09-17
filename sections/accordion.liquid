@@ -9,7 +9,7 @@
             <div class="accordion-section">
                 {% for block in section.blocks %}
                 <div class="accordion-box">
-                {% if block.settings.question != blank %}<span>{{ block.settings.question }}<i class="fa-solid fa-angle-right fa-lg"></i></span>{% endif %}
+                    {% if block.settings.question != blank %}<span>{{ block.settings.question }}<i class="fa-solid fa-angle-right fa-lg"></i></span>{% endif %}
 
                     {% if block.settings.answer != blank %}<strong>{{ block.settings.answer }}</strong>{% endif %}
                 </div>
