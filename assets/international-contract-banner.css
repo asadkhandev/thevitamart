@@ -5,7 +5,7 @@
     padding: 120px 0px 50px 0px;
 }
 
-.contract-banner .page-width {
+.contract-banner .banner-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
