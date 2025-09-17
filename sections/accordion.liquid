@@ -38,28 +38,37 @@
 {% endschema %}
 
 
-     <script>
-        document.querySelectorAll('.accordion-box span').forEach(span => {
-            const box = span.parentElement;
-            const content = span.nextElementSibling;
-            span.style.cursor = 'pointer';
+    <script>
+document.querySelectorAll('.accordion-box span').forEach(span => {
+    const box = span.parentElement;
+    const content = span.nextElementSibling;
 
-            span.addEventListener('click', () => {
-                if (content.style.height && content.style.height !== '0px') {
-                    // Closing
-                    content.style.height = content.scrollHeight + 'px';
-                    requestAnimationFrame(() => {
-                        content.style.height = '0px';
-                    });
-                    box.classList.remove('active');
-                } else {
-                    // Opening
-                    content.style.height = content.scrollHeight + 'px';
-                    content.addEventListener('transitionend', () => {
-                        content.style.height = 'auto';
-                    }, { once: true });
-                    box.classList.add('active');
-                }
+    span.style.cursor = 'pointer';
+
+    // Initialize content height
+    content.style.height = '0px';
+    content.style.overflow = 'hidden';
+    content.style.transition = 'height 0.3s ease';
+
+    span.addEventListener('click', () => {
+        const isOpen = box.classList.contains('active');
+
+        if (isOpen) {
+            // Closing
+            content.style.height = content.scrollHeight + 'px'; // Set to current height for transition
+            requestAnimationFrame(() => {
+                content.style.height = '0px';
             });
-        });
-    </script>
+            box.classList.remove('active');
+        } else {
+            // Opening
+            content.style.height = content.scrollHeight + 'px';
+            content.addEventListener('transitionend', function handler() {
+                content.style.height = 'auto'; // Allow dynamic content height
+                content.removeEventListener('transitionend', handler);
+            });
+            box.classList.add('active');
+        }
+    });
+});
+</script>
