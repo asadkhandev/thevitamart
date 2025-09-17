@@ -268,9 +268,10 @@
 
 
 @media (min-width: 1024px) and (max-width: 1248px) {
-    .page-width {
-    display: flex;
+.inner-wrapper {
+     display: flex;
     max-width: 1248px;
+    width: 100%;
 }
 
 .contact-us-banner h2 {
