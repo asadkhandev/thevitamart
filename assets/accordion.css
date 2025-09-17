@@ -106,7 +106,8 @@
 
 @media (max-width: 1023px) {
  .faq .page-width {
-    max-width: 426px;
+    max-width: 1023px;
+    width: 100%;
     flex-direction: column;
  }
 
