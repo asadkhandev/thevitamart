@@ -534,7 +534,7 @@
 
 
 
-.contract-banner .page-width {
+.contract-banner .banner-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
