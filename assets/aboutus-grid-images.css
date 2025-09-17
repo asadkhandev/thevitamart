@@ -18,7 +18,7 @@
   justify-content: space-between;
 }
 
-.grid-banner-section-2 .page-width {
+.grid-banner-section-2 .grid-section2-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,7 +97,7 @@
   padding: 50px 0px;
 }
 
-.grid-banner-section-2 .page-width {
+.grid-banner-section-2 .grid-section2-inner {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -105,7 +105,7 @@
   width: 100%;
 }
 
-.grid-banner-section-2 .page-width .wrapper {
+.grid-banner-section-2 .grid-section2-inner .wrapper {
     display: flex;
   flex-direction: column;
   justify-content: space-between;
