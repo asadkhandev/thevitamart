@@ -31,10 +31,11 @@
   .grid-banner-text {
     width: 95%;
     order: 1;
+    padding-top: 20px;
   }
 
   .grid-banner-text .banner-heading {
-    font-size: 26px;
+    font-size: 20px;
     text-align: center;
   }
 
