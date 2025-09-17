@@ -420,6 +420,7 @@
 .inner-wrapper {
     display: flex;
     max-width: 426px;
+    width: 100%
 }
 
 .contact-us {
@@ -526,7 +527,8 @@
 .form-wrapper {
     display: flex;
     flex-direction: column;
-    width: 365.04px;
+    width: 100%;
+    max-width: 365.04px;
     height: 548.4px;
     margin: 0px 20.2875px 20.275px 20.275px;
     padding: 30px;
