@@ -1384,6 +1384,10 @@ shopify-accelerated-checkout-cart {
   opacity: 0.5;
 }
 
+.button:disabled + .shopify-payment-button .shopify-payment-button__button{
+  cursor: not-allowed;
+}
+
 .button--full-width {
   display: flex;
   width: 100%;
