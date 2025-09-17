@@ -29,7 +29,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 675px;
+    width: 100%;
+    max-width: 675px;
 }
 
 .accordion-box {
