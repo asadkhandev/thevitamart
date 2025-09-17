@@ -1,9 +1,4 @@
 @media (max-width: 426px) {
-  .page-width {
-    display: flex;
-    max-width: 426px;
-  }
-
   .video-headings h1 {
     font-size: 32px;
   }
@@ -19,14 +14,14 @@
     border-radius: 15px;
   }
 
-  .grid-banner-main .page-width {
+  .grid-banner-main .grid-main-inner {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 15px;
   }
 
-  .grid-banner-main .page-width .wrapper {
+  .grid-banner-main .grid-main-inner .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,7 +61,7 @@
     object-fit: cover;
   }
 
-  .medicine-section .page-wdith {
+  .medicine-section .medicine-inner {
     width: 100%;
   }
 
@@ -96,7 +91,7 @@
     transition: transform 0.1s ease;
   }
 
-  .graph-section .page-width {
+  .graph-section .graph-inner {
     width: 100%;
   }
 
@@ -175,7 +170,7 @@
   }
   
   
-  .grid-banner-section-2 .page-width {
+  .grid-banner-section-2 .grid-section2-inner {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -223,7 +218,7 @@
 }
 
 
-.about-links .page-width {
+.about-links .links-inner {
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -246,12 +241,7 @@
 
 
 @media (min-width: 768px) and (max-width: 1023px) {
-   .page-width {
-    display: flex;
-    max-width: 1020px;
-  }
-
-  .video-headings h1 {
+ .video-headings h1 {
     font-size: 32px;
   }
 
@@ -266,14 +256,14 @@
     border-radius: 15px;
   }
 
-  .grid-banner-main .page-width {
+  .grid-banner-main .grid-main-inner {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 15px;
   }
 
-   .grid-banner-main .page-width .wrapper {
+   .grid-banner-main .grid-main-inner .wrapper {
   display: flex;
   flex-direction: column;
   width: 97%;
@@ -313,7 +303,7 @@
     object-fit: cover;
   }
 
-  .medicine-section .page-wdith {
+  .medicine-section .medicine-inner {
     width: 100%;
   }
 
@@ -343,7 +333,7 @@
     transition: transform 0.1s ease;
   }
 
-  .graph-section .page-width {
+  .graph-section .graph-inner {
     width: 100%;
   }
 
@@ -418,7 +408,7 @@
   }
   
   
-  .grid-banner-section-2 .page-width {
+  .grid-banner-section-2 .grid-section2-inner {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -466,7 +456,7 @@
 }
 
 
-.about-links .page-width {
+.about-links .links-inner {
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -495,13 +485,13 @@
   width: 100%;
 }
   
-   .grid-banner-main .page-width{
+   .grid-banner-main .grid-main-inner {
   display: flex;
   flex-direction: column;
   width: 95%;
 }
 
-   .grid-banner-main .page-width .wrapper {
+   .grid-banner-main .grid-main-inner .wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -520,7 +510,7 @@
 
 
 
-.grid-banner-section-2 .page-width .wrapper {
+.grid-banner-section-2 .grid-section2-inner .wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
