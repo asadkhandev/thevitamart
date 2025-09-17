@@ -6,7 +6,7 @@
   padding: 50px 0px;
 }
 
-.about-links .page-width {
+.about-links .links-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
