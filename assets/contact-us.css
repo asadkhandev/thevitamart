@@ -372,7 +372,8 @@
 .form-wrapper {
     display: flex;
     flex-direction: column;
-    width: 584px;
+    width: 100%;
+    max-width: 584px;
     height: 548.4px;
     margin: 0px 73px 73px;
     padding: 30px;
