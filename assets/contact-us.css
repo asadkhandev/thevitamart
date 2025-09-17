@@ -305,7 +305,7 @@
 
 
 @media (min-width: 768px) and (max-width: 1023px) {
-.page-width {
+.inner-wrapper {
     display: flex;
     flex-direction: column;
     max-width: 1023px;
@@ -413,9 +413,7 @@
 
 
 @media (max-width: 426px) {
-
-
-.page-width {
+.inner-wrapper {
     display: flex;
     max-width: 426px;
 }
