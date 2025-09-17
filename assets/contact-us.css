@@ -302,11 +302,6 @@
 
 
 @media (min-width: 768px) and (max-width: 1023px) {
-body, h1, h2, h3, h4, h5, h6, p, div, section {
-  margin: 0;
-  padding: 0;
-}
-
 .page-width {
     display: flex;
     flex-direction: column;
@@ -415,10 +410,7 @@ body, h1, h2, h3, h4, h5, h6, p, div, section {
 
 
 @media (max-width: 426px) {
-    body, h1, h2, h3, h4, h5, h6, p, div, section {
-  margin: 0;
-  padding: 0;
-}
+
 
 .page-width {
     display: flex;
