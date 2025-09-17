@@ -1388,6 +1388,12 @@ shopify-accelerated-checkout-cart {
   cursor: not-allowed;
 }
 
+.button:disabled.product-form__submit{
+  background: #ccc;
+  border-color: #ccc;
+  color: #fff;
+}
+
 .button--full-width {
   display: flex;
   width: 100%;
