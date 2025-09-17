@@ -28,6 +28,13 @@
 }
 
 
+.accordion-box span::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url(https://cdn.shopify.com/s/files/1/0707/8104/2880/files/right-arrow-svgrepo-com.png?v=1758103998);
+    background-size: 100%;
+}
 
 .accordion-section {
     display: flex;
