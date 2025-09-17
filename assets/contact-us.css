@@ -165,7 +165,8 @@
 }
 
 .input-info {
-    width: 468px;
+    width: 100%;
+    max-width: 468px;
     padding: 10px;
     border: #cccccc 1px solid;
     border-radius: 5px;
