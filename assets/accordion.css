@@ -38,7 +38,7 @@
 }
 
 .accordion-box span::after:active {
-    transform: translateX(-50%);
+    transform: translateX(50%);
 }
 
 .accordion-section {
