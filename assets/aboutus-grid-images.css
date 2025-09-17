@@ -13,12 +13,6 @@
   padding: 0px;
 }
 
-.grid-banner-main .grid-main-inner .wrapper {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
 .grid-banner-section-2 .grid-section2-inner {
   display: flex;
   align-items: center;
