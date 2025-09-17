@@ -5,14 +5,14 @@
   padding: 50px 0px;
 }
 
-.grid-banner-main .page-width {
+.grid-banner-main .grid-main-inner {
   display: flex;
   align-items: center;
   width: 100%;
   padding: 0px;
 }
 
-.grid-banner-main .page-width .wrapper {
+.grid-banner-main .grid-main-inner .wrapper {
   display: flex;
   width: 100%;
   justify-content: space-between;
