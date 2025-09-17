@@ -55,6 +55,33 @@
         "graph_image": "shopify://shop_images/imgi_14_From_Nature_To_You_New.png"
       }
     },
+    "about_us_phone_carousel_hVRHfF": {
+      "type": "about-us-phone-carousel",
+      "blocks": {
+        "carousel_image_zmYJQm": {
+          "type": "carousel_image",
+          "settings": {
+            "image": "shopify://shop_images/safety_icon_d9fa2e65-793a-42b3-b768-ca6a6418d7e5.png",
+            "alt_text": "",
+            "caption": ""
+          }
+        },
+        "carousel_image_JYHNgb": {
+          "type": "carousel_image",
+          "settings": {
+            "image": "shopify://shop_images/quality_check_icon_ebef4d94-b20d-4007-90ef-1c5a5c484a5b.png",
+            "alt_text": "",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "carousel_image_zmYJQm",
+        "carousel_image_JYHNgb"
+      ],
+      "name": "Phone Carousel",
+      "settings": {}
+    },
     "about_us_grid_rightside_images_RheUwi": {
       "type": "about-us-grid-rightside-images",
       "blocks": {
@@ -123,6 +150,7 @@
     "about_us_grid_images_iyLJt4",
     "about_us_medicine_section_DKy4qy",
     "about_us_graph_section_m7yFBf",
+    "about_us_phone_carousel_hVRHfF",
     "about_us_grid_rightside_images_RheUwi",
     "about_us_head_office_section_ECPnd9",
     "about_us_links_section_Lq6fKD"
