@@ -96,6 +96,12 @@
     flex-direction: column;
  }
 
+ .inner-faq-wrap {
+    width: 100%;
+    max-width: 1400px;
+    flex-direction: column;
+ }
+
  .accordion-section {
     width: 100%;
  }
