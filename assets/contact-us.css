@@ -93,7 +93,6 @@
 }
 
 .p-btn p {
-    grid-column: 4 / span 6;
     font-size: 14px;
     margin: 0;
 }
