@@ -173,7 +173,8 @@
 }
 
 .input-text {
-    width: 468px;
+    width: 100%;
+    max-width: 468px;
     height: 158.4px;
     border: #cccccc 1px solid;
     border-radius: 5px;
@@ -186,7 +187,8 @@
     background-color: black;
     color: white;
     text-decoration: none;
-    width: 178px;
+    width: 100%;
+    max-width: 178px;
     height: 38px;
     border-radius: 5px;
     font-size: 14px;
