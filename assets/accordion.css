@@ -41,6 +41,10 @@
     transform: translateY(-50%);
 }
 
+.accordion-box span {
+    padding-right: 100px;
+}
+
 .accordion-section {
     display: flex;
     flex-direction: column;
