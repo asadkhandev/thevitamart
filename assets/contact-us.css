@@ -204,7 +204,7 @@
 
 
 
-.email-btn {
+.button-email {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,14 +213,14 @@
     text-decoration: none;
 }
 
-.email-btn .container {
+.button-email .container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
 
-.email-btn span {
+.button-email span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,7 +232,7 @@
     color: #b497ed;
 }
 
-.email-btn strong {
+.button-email strong {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,7 +248,7 @@
     z-index: 1;
 }
 
-.email-btn strong::before {
+.button-email strong::before {
     content: '';
     width: 399.2px;
     height: 80px;
@@ -259,11 +259,11 @@
     z-index: -1;
 }
 
-.email-btn .container:hover strong::before {
+.button-email .container:hover strong::before {
     bottom: 0;
 }
 
-.email-btn .container:hover strong {
+.button-email .container:hover strong {
     color: white;
 }
 
@@ -385,7 +385,7 @@
     z-index: 10;
 }
 
-.email-btn{
+.button-email{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -393,7 +393,7 @@
     width: 100%;
 }
 
-.email-btn .container {
+.button-email .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -402,12 +402,12 @@
     max-width: 730px;
 }
 
-.email-btn span {
+.button-email span {
     width: 45.5%;
     font-size: 15px;
 }
 
-.email-btn strong {
+.button-email strong {
     width: 45.5%;
     font-size: 15px;
 }
@@ -584,7 +584,7 @@
 
 
 
-.email-btn {
+.button-email {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -592,7 +592,7 @@
     text-decoration: none;
 }
 
-.email-btn .container {
+.button-email .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -600,7 +600,7 @@
     width: 100%;
 }
 
-.email-btn span {
+.button-email span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -612,7 +612,7 @@
     color: #b497ed;
 }
 
-.email-btn strong {
+.button-email strong {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -627,7 +627,7 @@
     z-index: 1;
 }
 
-.email-btn strong::before {
+.button-email strong::before {
     content: '';
     width: 399.2px;
     height: 80px;
