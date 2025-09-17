@@ -398,7 +398,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 730px;
+    width: 100%;
+    max-width: 730px;
 }
 
 .email-btn span {
