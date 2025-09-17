@@ -269,7 +269,7 @@
 
 @media (min-width: 1024px) and (max-width: 1248px) {
 .inner-wrapper {
-     display: flex;
+    display: flex;
     max-width: 1248px;
     width: 100%;
 }
