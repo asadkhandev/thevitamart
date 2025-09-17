@@ -3906,3 +3906,8 @@ nav.header__inline-menu::before {
     width: 100%;
   }
 }
+
+.shopify-policy__container{
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
