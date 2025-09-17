@@ -37,8 +37,8 @@
     background-repeat: no-repeat;
 }
 
-.accordion-box span:active::after {
-    transform: translateY(-50%);
+.accordion-box.active span::after {
+    transform: rotate(90deg);
 }
 
 .accordion-box span {
