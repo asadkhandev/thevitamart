@@ -104,19 +104,12 @@
     "accordion_pcQgXT": {
       "type": "accordion",
       "blocks": {
-        "accordion_3LP8JU": {
-          "type": "accordion",
-          "settings": {
-            "question": "",
-            "answer": "",
-            "accordion-icon": "shopify://shop_images/right-arrow-svgrepo-com.svg"
-          }
-        },
         "accordion_JWJBNd": {
           "type": "accordion",
           "settings": {
             "question": "What are the shipping charges & how long does it take to get delivered?",
-            "answer": "<p>answerWe currently offer Free Standard Shipping for orders over Rs. 850. For orders below Rs. 850, the shipping charges are Rs. 100 only. Shipping typically takes 2-4 working days.</p>"
+            "answer": "<p>answerWe currently offer Free Standard Shipping for orders over Rs. 850. For orders below Rs. 850, the shipping charges are Rs. 100 only. Shipping typically takes 2-4 working days.</p>",
+            "question-icon": "shopify://shop_images/right-arrow-svgrepo-com.png"
           }
         },
         "accordion_UbbawR": {
@@ -142,7 +135,6 @@
         }
       },
       "block_order": [
-        "accordion_3LP8JU",
         "accordion_JWJBNd",
         "accordion_UbbawR",
         "accordion_TAq7ty",
