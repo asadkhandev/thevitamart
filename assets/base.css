@@ -1400,7 +1400,13 @@ shopify-accelerated-checkout-cart {
 .button:disabled.product-form__submit{
   background: #ccc;
   border-color: #ccc;
-  color: #fff;
+  color: #000;
+  opacity: 1;
+}
+
+.button:disabled.product-form__submit::before,
+.button:disabled.product-form__submit::after{
+  box-shadow: none;
 }
 
 .button--full-width {
