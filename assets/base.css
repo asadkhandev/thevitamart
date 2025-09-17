@@ -135,6 +135,13 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 }
 
+@media screen and (max-width: 749px) {
+  .announcement-bar .slider--everywhere{
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
 @media screen and (min-width: 990px) {
   /* .header:not(.drawer-menu).page-width {
     padding-left: 5rem;
