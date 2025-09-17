@@ -84,17 +84,13 @@
     align-items: center;
 }
 
-/* .p-btn .contactus-btn-icons {
+.p-btn .contactus-btn-icons {
     grid-column: 1 / span 2;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 38.6px;
-    height: 38.6px;
-    border: #848484 1px solid;
-    border-radius: 50%;
     transition: 0.3s;
-} */
+}
 
 .p-btn p {
     grid-column: 4 / span 6;
