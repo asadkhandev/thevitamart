@@ -478,7 +478,7 @@
       "settings": {
         "title": "Latest Offers & Discounts",
         "text_alignment": "center",
-        "collection": "frontpage",
+        "collection": "new-arrivals",
         "products_to_show": 8,
         "image_ratio": "adapt",
         "image_shape": "default",
