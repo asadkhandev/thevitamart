@@ -52,7 +52,7 @@
         autocomplete="given-name"
         {% if form.errors contains 'first_name' %}
           aria-invalid="true"
-          aria-describedby="RegisterFirstName-error"
+          aria-describedby="RegisterForm-FirstName-error"
         {% endif %}
         placeholder="{{ 'customer.register.first_name' | t }} *"
       >
@@ -81,7 +81,7 @@
         autocomplete="family-name"
         {% if form.errors contains 'last_name' %}
           aria-invalid="true"
-          aria-describedby="RegisterLastName-error"
+          aria-describedby="RegisterForm-LastName-error"
         {% endif %}
         placeholder="{{ 'customer.register.last_name' | t }} *"
       >
