@@ -121,7 +121,18 @@
           {{ 'customer.login_page.email' | t }}
         </label>
       </div>
-      {%- if form.errors contains 'form' -%}
+
+      {%- if form.errors contains 'email' -%}
+        <span id="CustomerEmail-error" class="form__message">
+          {{ form.errors.translated_fields.email }} {{ form.errors.messages.email }}
+        </span>
+      {%- elsif form.errors contains 'form' -%}
+        <span id="CustomerEmail-error" class="form__message">
+          Incorrect email or password.
+        </span>
+      {%- endif -%}
+
+      {% comment %} {%- if form.errors contains 'form' -%}
         <span id="CustomerEmail-error" class="form__message">
           Incorrect email or password form.
         </span>
@@ -130,7 +141,7 @@
         <span id="CustomerEmail-error" class="form__message">
           Incorrect email or password.
         </span>
-      {%- endif -%}
+      {%- endif -%} {% endcomment %}
 
       {%- if form.password_needed -%}
         <div class="field">
