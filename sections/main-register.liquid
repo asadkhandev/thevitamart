@@ -58,7 +58,7 @@
     </div>
     {%- if form.errors contains 'first_name' -%}
       <span id="RegisterFirstName-error" class="form__message">
-        {{ form.errors.translated_fields.first_name }} {{ form.errors.messages.first_name }}
+        {{ form.errors.translated_fields.first_name | t }} {{ form.errors.messages.first_name | t }}
       </span>
     {%- endif -%}
 
