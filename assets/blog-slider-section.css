@@ -376,7 +376,7 @@ h5.article-title.m-0{
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   .blog-slider-nav{
     display: none !important;
   }
