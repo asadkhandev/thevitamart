@@ -123,7 +123,7 @@
       </div>
       {%- if form.errors -%}
         <span id="CustomerEmail-error" class="form__message">
-          {{ form.errors.translated_fields.email }} {{ form.errors.messages.email }}
+          Incorrect email or password.
         </span>
       {%- endif -%}
 
@@ -145,12 +145,6 @@
             {{ 'customer.login_page.password' | t }}
           </label>
         </div>
-
-        {%- if form.errors contains 'form' -%}
-          <span id="CustomerPassword-error" class="form__message">
-            {{ form.errors.translated_fields.password }} {{ form.errors.messages.password }}
-          </span>
-        {%- endif -%}
 
         <a href="#recover">
           {{ 'customer.login_page.forgot_password' | t }}
