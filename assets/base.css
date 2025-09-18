@@ -3948,3 +3948,8 @@ nav.header__inline-menu::before {
 .field + .form__message{
   color: red;
 }
+
+.form__message:focus-visible{
+  outline: none;
+  box-shadow: none;
+}
