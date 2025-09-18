@@ -121,6 +121,11 @@
           {{ 'customer.login_page.email' | t }}
         </label>
       </div>
+      {%- if form.errors contains 'email' -%}
+        <span id="CustomerEmail-error" class="form__message">
+          {{ form.errors.translated_fields.email }} {{ form.errors.messages.email }}
+        </span>
+      {%- endif -%}
 
       {%- if form.password_needed -%}
         <div class="field">
@@ -140,15 +145,12 @@
             {{ 'customer.login_page.password' | t }}
           </label>
         </div>
+
         {%- if form.errors contains 'password' -%}
-        <span id="RegisterForm-password-error" class="form__message">
-          <span class="svg-wrapper">
-            {{- 'icon-error.svg' | inline_asset_content -}}
+          <span id="CustomerPassword-error" class="form__message">
+            {{ form.errors.translated_fields.password }} {{ form.errors.messages.password }}
           </span>
-          {{ form.errors.translated_fields.password | capitalize }}
-          {{ form.errors.messages.password }}.
-        </span>
-      {%- endif -%}
+        {%- endif -%}
 
         <a href="#recover">
           {{ 'customer.login_page.forgot_password' | t }}
