@@ -3939,3 +3939,8 @@ nav.header__inline-menu::before {
 .page-customers-register .form-submit-error + ul{
   display: none;
 }
+
+.page-customers-login .form-submit-error + ul{
+  padding-left: 17px;
+  margin-bottom: 0;
+}
