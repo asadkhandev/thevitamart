@@ -50,6 +50,10 @@
           value="{{ form.first_name }}"
         {% endif %}
         autocomplete="given-name"
+        {% if form.errors contains 'first_name' %}
+          aria-invalid="true"
+          aria-describedby="RegisterFirstName-error"
+        {% endif %}
         placeholder="{{ 'customer.register.first_name' | t }} *"
       >
       <label for="RegisterForm-FirstName">
@@ -61,7 +65,8 @@
         <span class="svg-wrapper">
           {{- 'icon-error.svg' | inline_asset_content -}}
         </span>
-        {{ form.errors.translated_fields.first_name | capitalize }} {{ form.errors.messages.first_name | capitalize }}
+        {{ form.errors.translated_fields.first_name | capitalize }}
+        {{ form.errors.messages.first_name }}
       </span>
     {%- endif -%}
 
@@ -74,6 +79,10 @@
           value="{{ form.last_name }}"
         {% endif %}
         autocomplete="family-name"
+        {% if form.errors contains 'last_name' %}
+          aria-invalid="true"
+          aria-describedby="RegisterLastName-error"
+        {% endif %}
         placeholder="{{ 'customer.register.last_name' | t }} *"
       >
       <label for="RegisterForm-LastName">
@@ -85,7 +94,8 @@
         <span class="svg-wrapper">
           {{- 'icon-error.svg' | inline_asset_content -}}
         </span>
-        {{ form.errors.translated_fields.last_name | capitalize }} {{ form.errors.messages.last_name | capitalize }}
+        {{ form.errors.translated_fields.last_name | capitalize }}
+        {{ form.errors.messages.last_name }}
       </span>
     {%- endif -%}
 
