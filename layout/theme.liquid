@@ -427,6 +427,14 @@
           setTimeout(() => loader.remove(), 500); // smoother removal
         }
       });
+
+      // Password view
+      document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("show-pass-field")) {
+          const input = e.target.closest(".field").querySelector("input");
+          input.type = input.type === "password" ? "text" : "password";
+        }
+      });
     </script>
 
   </body>
