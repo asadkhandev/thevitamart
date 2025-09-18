@@ -548,7 +548,6 @@
 
   .footer-block__heading + .rte{
     margin-top: 10px;
-    z-index: 0;
   }
 
   .footer-block__details-content .list-menu__item--link{

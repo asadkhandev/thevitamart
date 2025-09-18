@@ -2751,10 +2751,15 @@ menu-drawer + .header__search {
   .header--top-center > .header__search {
     display: inline-flex;
   }
-
+  
   .header:not(.header--top-center) > .header__search,
   .header--top-center * > .header__search {
     display: none;
+  }
+}
+@media screen and (max-width: 989px) {
+  .header--top-center * > .header__search{
+    z-index: 0;
   }
 }
 
