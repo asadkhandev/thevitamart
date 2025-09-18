@@ -3933,3 +3933,8 @@ nav.header__inline-menu::before {
   font-style: normal;
   cursor: pointer;
 }
+
+.page-customers-register .form__message,
+.page-customers-register .form__message + ul{
+  display: none;
+}
