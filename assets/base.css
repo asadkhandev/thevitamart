@@ -3940,7 +3940,7 @@ nav.header__inline-menu::before {
   display: none;
 }
 
-.page-customers-login .form-submit-error + ul{
+.page-customers-login .form-submit-error + .errors ul{
   padding-left: 17px;
   margin-bottom: 0;
 }
