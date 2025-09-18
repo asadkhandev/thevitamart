@@ -73,7 +73,7 @@
   </h1>
   <div>
     {%- if recover_success == true -%}
-      <h3 class="form__message" tabindex="-1" autofocus>
+      <h3 class="form__message form-recover-success" tabindex="-1" autofocus>
         <span class="svg-wrapper">
           {{- 'icon-success.svg' | inline_asset_content -}}
         </span>
@@ -82,7 +82,7 @@
     {%- endif -%}
     {%- form 'customer_login', novalidate: 'novalidate' -%}
       {%- if form.errors -%}
-        <h2 class="form__message" tabindex="-1" autofocus>
+        <h2 class="form__message form-submit-error" tabindex="-1" autofocus>
           <span class="visually-hidden">{{ 'accessibility.error' | t }} </span>
           <span class="svg-wrapper">
             {{- 'icon-error.svg' | inline_asset_content -}}
@@ -121,6 +121,11 @@
           {{ 'customer.login_page.email' | t }}
         </label>
       </div>
+      {%- if form.errors contains 'form' -%}
+        <span id="CustomerEmail-error" class="form__message">
+          Incorrect email or password form.
+        </span>
+      {%- endif -%}
       {%- if form.errors -%}
         <span id="CustomerEmail-error" class="form__message">
           Incorrect email or password.
