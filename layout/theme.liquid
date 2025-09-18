@@ -338,7 +338,7 @@
     </script>
   </head>
 
-  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}{% if template == 'index' %} is-home{% endif %}{% if template contains 'product' %} is-product{% endif %}{% if template contains 'collection' %} is-collection{% endif %} template-{{ request.page_type }} page-{{ template | replace: '.', '-' }}">
+  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}{% if template == 'index' %} is-home{% endif %}{% if template contains 'product' %} is-product{% endif %}{% if template contains 'collection' %} is-collection{% endif %} template-{{ request.page_type | replace: '.', '-' | replace: '/', '-' }} page-{{ template | replace: '.', '-' | replace: '/', '-' }}">
 
     <div id="page-loader">
       <img src="{{ settings.favicon | image_url: width: 32, height: 32 }}" alt="Loading" class="pulse-logo">
