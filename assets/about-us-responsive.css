@@ -545,7 +545,10 @@
   font-size: 18px;
 }
 
-
+.medicine-inner {
+  max-width: 1380px;
+  width: 90%;
+}
 
 .head-office-text {
   width: 100%;
