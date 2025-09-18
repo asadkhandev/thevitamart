@@ -121,7 +121,7 @@
           {{ 'customer.login_page.email' | t }}
         </label>
       </div>
-      {%- if form.errors contains 'form' -%}
+      {%- if form.errors -%}
         <span id="CustomerEmail-error" class="form__message">
           {{ form.errors.translated_fields.email }} {{ form.errors.messages.email }}
         </span>
