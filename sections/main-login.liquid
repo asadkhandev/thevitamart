@@ -122,27 +122,6 @@
         </label>
       </div>
 
-      {%- if form.errors contains 'email' -%}
-        <span id="CustomerEmail-error" class="form__message">
-          {{ form.errors.translated_fields.email }} {{ form.errors.messages.email }}
-        </span>
-      {%- elsif form.errors contains 'form' -%}
-        <span id="CustomerEmail-error" class="form__message">
-          Incorrect email or password.
-        </span>
-      {%- endif -%}
-
-      {% comment %} {%- if form.errors contains 'form' -%}
-        <span id="CustomerEmail-error" class="form__message">
-          Incorrect email or password form.
-        </span>
-      {%- endif -%}
-      {%- if form.errors -%}
-        <span id="CustomerEmail-error" class="form__message">
-          Incorrect email or password.
-        </span>
-      {%- endif -%} {% endcomment %}
-
       {%- if form.password_needed -%}
         <div class="field">
           <i class="show-pass-field">👁</i>

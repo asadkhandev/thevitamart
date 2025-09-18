@@ -3934,7 +3934,8 @@ nav.header__inline-menu::before {
   cursor: pointer;
 }
 
-.page-customers-register h2.form__message,
-.page-customers-register h2.form__message + ul{
+.page-customers-login .form-submit-error,
+.page-customers-register .form-submit-error,
+.page-customers-register .form-submit-error + ul{
   display: none;
 }
