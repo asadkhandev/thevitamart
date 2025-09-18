@@ -1,5 +1,5 @@
 .blog_slider-section{
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .blog_slider-section .page-width{
@@ -7,28 +7,32 @@
   padding-right: 3rem;
 }
 
+.nutriRow,
+.blog_slider-section .halo-block-header{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 .nutriRow {
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
-    .col-md-7 {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 58.333333%;
-        flex: 0 0 58.333333%;
-        max-width: 58.333333%;
-    }
-    
-    .col-md-5 {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 41.666667%;
-        flex: 0 0 41.666667%;
-        max-width: 41.666667%;
-    }
+  .col-md-7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  
+  .col-md-5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
 }
 
 .tempLink {
@@ -101,7 +105,7 @@
   overflow: hidden;
 }
 h5.article-title.m-0{
-    margin: 0;
+  margin: 0;
 }
 .blogBigCardStats {
   margin-top: 10px;
