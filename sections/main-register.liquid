@@ -53,11 +53,14 @@
         placeholder="{{ 'customer.register.first_name' | t }} *"
       >
       <label for="RegisterForm-FirstName">
-        {{ 'customer.register.first_name' | t }}
+        {{ 'customer.register.first_name' | t }} *
       </label>
     </div>
     {%- if form.errors contains 'first_name' -%}
       <span id="RegisterFirstName-error" class="form__message">
+        <span class="svg-wrapper">
+          {{- 'icon-error.svg' | inline_asset_content -}}
+        </span>
         {{ form.errors.translated_fields.first_name | capitalize }} {{ form.errors.messages.first_name | capitalize }}
       </span>
     {%- endif -%}
@@ -74,11 +77,14 @@
         placeholder="{{ 'customer.register.last_name' | t }} *"
       >
       <label for="RegisterForm-LastName">
-        {{ 'customer.register.last_name' | t }}
+        {{ 'customer.register.last_name' | t }} *
       </label>
     </div>
     {%- if form.errors contains 'last_name' -%}
       <span id="RegisterLastName-error" class="form__message">
+        <span class="svg-wrapper">
+          {{- 'icon-error.svg' | inline_asset_content -}}
+        </span>
         {{ form.errors.translated_fields.last_name | capitalize }} {{ form.errors.messages.last_name | capitalize }}
       </span>
     {%- endif -%}
@@ -102,7 +108,7 @@
         placeholder="{{ 'customer.register.email' | t }} *"
       >
       <label for="RegisterForm-email">
-        {{ 'customer.register.email' | t }}
+        {{ 'customer.register.email' | t }} *
       </label>
     </div>
     {%- if form.errors contains 'email' -%}
@@ -128,7 +134,7 @@
         placeholder="{{ 'customer.register.password' | t }} *"
       >
       <label for="RegisterForm-password">
-        {{ 'customer.register.password' | t }}
+        {{ 'customer.register.password' | t }} *
       </label>
     </div>
     {%- if form.errors contains 'password' -%}
