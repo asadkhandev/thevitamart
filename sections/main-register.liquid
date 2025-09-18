@@ -56,7 +56,13 @@
         {{ 'customer.register.first_name' | t }}
       </label>
     </div>
-    {%- for field in form.errors -%}
+    
+    {%- if form.errors contains 'first_name' -%}
+      <span id="RegisterFirstName-error" class="form__message">
+        {{ form.errors.translated_fields.first_name }} {{ form.errors.messages.first_name }}
+      </span>
+    {%- endif -%}
+    {% comment %} {%- for field in form.errors -%}
         {%- if field == 'form' -%}
         {%- else -%}
           <a href="#RegisterForm-{{ field }}">
@@ -64,8 +70,8 @@
             {{ form.errors.messages[field] }}
           </a>
         {%- endif -%}
-    {%- endfor -%}
-    
+    {%- endfor -%} {% endcomment %}
+
     <div class="field">
       <input
         type="text"
