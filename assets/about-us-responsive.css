@@ -545,7 +545,7 @@
   font-size: 18px;
 }
 
-.medicine-inner {
+.medicine-section .medicine-inner {
   max-width: 1380px;
   width: 90%;
 }
