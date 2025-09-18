@@ -5,9 +5,9 @@
   <div class="page-width">
     <div class="network-inner">
       <div class="network-text">
-        <p class="network-heading">{{ section.settings.heading | default: "VITAMART CAN BE FOUND ON THESE LARGEST NETWORKS" }}</p>
+        <p class="network-heading">{{ section.settings.heading }}</p>
         <hr>
-        <p>{{ section.settings.description | default: "Through sheer determination and constant hard work, Nutrifactor has been featured by some of the largest networks & business journals. Expanding its business to over 60 countries across the globe in 6 different continents, Vitamart is on its way to becoming a globally renowned brand." }}</p>
+        <p>{{ section.settings.description }}</p>
       </div>
 
       <div class="network-banner logos-per-{{ section.settings.logos_per_row }}">
@@ -28,14 +28,12 @@
     {
       "type": "text",
       "id": "heading",
-      "label": "Heading",
-      "default": "NUTRIFACTOR CAN BE FOUND ON THESE LARGEST NETWORKS"
+      "label": "Heading"
     },
     {
       "type": "textarea",
       "id": "description",
-      "label": "Description",
-      "default": "Through sheer determination and constant hard work, Nutrifactor has been featured by some of the largest networks & business journals. Expanding its business to over 60 countries across the globe in 6 different continents, Nutrifactor is on its way to becoming a globally renowned brand."
+      "label": "Description"
     },
     {
       "type": "range",
