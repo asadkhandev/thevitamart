@@ -326,10 +326,10 @@ h5.article-title.m-0{
     display: block;
     overflow: hidden;
   }
-  .blogBigCardHead {
+  /* .blogBigCardHead {
     overflow: hidden;
     height: 300px;
-  }
+  } */
   .blogSmallCardHeading {
     font-size: 14px;
   }
