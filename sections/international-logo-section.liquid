@@ -2,19 +2,21 @@
 {{ 'international-responsive.css' | asset_url | stylesheet_tag }}
 
 <div class="international-network">
-  <div class="network-inner">
-    <div class="network-text">
-      <p class="network-heading">{{ section.settings.heading | default: "VITAMART CAN BE FOUND ON THESE LARGEST NETWORKS" }}</p>
-      <hr>
-      <p>{{ section.settings.description | default: "Through sheer determination and constant hard work, Nutrifactor has been featured by some of the largest networks & business journals. Expanding its business to over 60 countries across the globe in 6 different continents, Vitamart is on its way to becoming a globally renowned brand." }}</p>
-    </div>
+  <div class="page-width">
+    <div class="network-inner">
+      <div class="network-text">
+        <p class="network-heading">{{ section.settings.heading | default: "VITAMART CAN BE FOUND ON THESE LARGEST NETWORKS" }}</p>
+        <hr>
+        <p>{{ section.settings.description | default: "Through sheer determination and constant hard work, Nutrifactor has been featured by some of the largest networks & business journals. Expanding its business to over 60 countries across the globe in 6 different continents, Vitamart is on its way to becoming a globally renowned brand." }}</p>
+      </div>
 
-    <div class="network-banner logos-per-{{ section.settings.logos_per_row }}">
-      {% for block in section.blocks %}
-        {% if block.type == 'logo' %}
-          <img src="{{ block.settings.logo | image_url }}" alt="{{ block.settings.alt_text }}">
-        {% endif %}
-      {% endfor %}
+      <div class="network-banner logos-per-{{ section.settings.logos_per_row }}">
+        {% for block in section.blocks %}
+          {% if block.type == 'logo' %}
+            <img src="{{ block.settings.logo | image_url }}" alt="{{ block.settings.alt_text }}">
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
