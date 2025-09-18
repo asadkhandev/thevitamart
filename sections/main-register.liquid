@@ -56,6 +56,16 @@
         {{ 'customer.register.first_name' | t }}
       </label>
     </div>
+    {%- for field in form.errors -%}
+        {%- if field == 'form' -%}
+        {%- else -%}
+          <a href="#RegisterForm-{{ field }}">
+            {{ form.errors.translated_fields[field] | capitalize }}
+            {{ form.errors.messages[field] }}
+          </a>
+        {%- endif -%}
+    {%- endfor -%}
+    
     <div class="field">
       <input
         type="text"
@@ -71,6 +81,16 @@
         {{ 'customer.register.last_name' | t }}
       </label>
     </div>
+    {%- for field in form.errors -%}
+      {%- if field == 'form' -%}
+      {%- else -%}
+        <a href="#RegisterForm-{{ field }}">
+          {{ form.errors.translated_fields[field] | capitalize }}
+          {{ form.errors.messages[field] }}
+        </a>
+      {%- endif -%}
+    {%- endfor -%}
+
     <div class="field">
       <input
         type="email"
