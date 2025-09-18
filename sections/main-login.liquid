@@ -140,6 +140,15 @@
             {{ 'customer.login_page.password' | t }}
           </label>
         </div>
+        {%- if form.errors contains 'password' -%}
+        <span id="RegisterForm-password-error" class="form__message">
+          <span class="svg-wrapper">
+            {{- 'icon-error.svg' | inline_asset_content -}}
+          </span>
+          {{ form.errors.translated_fields.password | capitalize }}
+          {{ form.errors.messages.password }}.
+        </span>
+      {%- endif -%}
 
         <a href="#recover">
           {{ 'customer.login_page.forgot_password' | t }}
