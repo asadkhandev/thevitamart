@@ -3946,6 +3946,12 @@ nav.header__inline-menu::before {
 .page-customers-login .form-submit-error + .errors ul{
   padding-left: 17px;
   margin-bottom: 0;
+  color: red;
+}
+
+.page-customers-reset_password .form-submit-error + ul a,
+.page-customers-login .form-submit-error + .errors ul a{
+  color: red;
 }
 
 .page-customers-reset_password .form-submit-error + ul{
