@@ -166,27 +166,8 @@
       {{ 'customer.register.submit' | t }}
     </button>
 
-    {% if form.posted_successfully? %}
-      <script>
-        window.location.href = "/account"; // or "/welcome"
-      </script>
-    {% endif %}
   {%- endform -%}
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const registerForm = document.getElementById('RegisterForm');
-  if (!registerForm) return;
-
-  registerForm.addEventListener('submit', function() {
-    // Short delay to let Shopify finish creating the account
-    setTimeout(function() {
-      window.location.href = "/account"; // or "/welcome"
-    }, 500);
-  });
-});
-</script>
 
 {% schema %}
 {
