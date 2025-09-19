@@ -3935,6 +3935,7 @@ nav.header__inline-menu::before {
 }
 
 .page-customers-reset_password .form-submit-error,
+.page-customers-reset_password .form-submit-error + ul,
 .page-customers-login .form-submit-error,
 .page-customers-register .form-submit-error,
 .page-customers-register .form-submit-error + ul{
@@ -3947,8 +3948,18 @@ nav.header__inline-menu::before {
   margin-bottom: 0;
 }
 
+.page-customers-reset_password .form-submit-error + ul{
+  margin: 10px 0;
+}
+
+.form-submit-error + .errors ul a,
+.form-submit-error + ul a{
+  text-decoration: none;
+}
+
 .field + .form__message{
   color: red;
+  text-align: left;
 }
 
 .form__message:focus-visible{
