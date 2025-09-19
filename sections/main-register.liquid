@@ -62,7 +62,7 @@
       </label>
     </div>
     {%- if form.errors contains 'first_name' -%}
-      <span id="RegisterFirstName-error" class="form__message">
+      <span id="RegisterForm-FirstName-error" class="form__message">
         <span class="svg-wrapper">
           {{- 'icon-error.svg' | inline_asset_content -}}
         </span>
@@ -92,7 +92,7 @@
       </label>
     </div>
     {%- if form.errors contains 'last_name' -%}
-      <span id="RegisterLastName-error" class="form__message">
+      <span id="RegisterForm-LastName-error" class="form__message">
         <span class="svg-wrapper">
           {{- 'icon-error.svg' | inline_asset_content -}}
         </span>
