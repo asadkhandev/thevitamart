@@ -165,12 +165,13 @@
     <button>
       {{ 'customer.register.submit' | t }}
     </button>
+
+    {% if form.posted_successfully? %}
+      <script>
+        window.location.href = "/account"; // or "/welcome"
+      </script>
+    {% endif %}
   {%- endform -%}
-  {% if form.posted_successfully? %}
-    <script>
-      window.location.href = "/account";
-    </script>
-  {% endif %}
 </div>
 
 {% schema %}
