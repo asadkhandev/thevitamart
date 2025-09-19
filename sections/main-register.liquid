@@ -166,6 +166,11 @@
       {{ 'customer.register.submit' | t }}
     </button>
   {%- endform -%}
+  {% if form.posted_successfully? %}
+    <script>
+      window.location.href = "/account";
+    </script>
+  {% endif %}
 </div>
 
 {% schema %}
