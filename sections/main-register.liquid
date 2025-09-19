@@ -45,7 +45,7 @@
       <input
         type="text"
         name="customer[first_name]"
-        id="RegisterForm-FirstName"
+        id="RegisterForm-first_name"
         aria-required="true"
         {% if form.first_name %}
           value="{{ form.first_name }}"
@@ -53,16 +53,16 @@
         autocomplete="given-name"
         {% if form.errors contains 'first_name' %}
           aria-invalid="true"
-          aria-describedby="RegisterForm-FirstName-error"
+          aria-describedby="RegisterForm-first_name-error"
         {% endif %}
         placeholder="{{ 'customer.register.first_name' | t }} *"
       >
-      <label for="RegisterForm-FirstName">
+      <label for="RegisterForm-first_name">
         {{ 'customer.register.first_name' | t }} *
       </label>
     </div>
     {%- if form.errors contains 'first_name' -%}
-      <span id="RegisterForm-FirstName-error" class="form__message">
+      <span id="RegisterForm-first_name-error" class="form__message">
         <span class="svg-wrapper">
           {{- 'icon-error.svg' | inline_asset_content -}}
         </span>
@@ -75,7 +75,7 @@
       <input
         type="text"
         name="customer[last_name]"
-        id="RegisterForm-LastName"
+        id="RegisterForm-last_name"
         {% if form.last_name %}
           value="{{ form.last_name }}"
         {% endif %}
@@ -83,16 +83,16 @@
         aria-required="true"
         {% if form.errors contains 'last_name' %}
           aria-invalid="true"
-          aria-describedby="RegisterForm-LastName-error"
+          aria-describedby="RegisterForm-last_name-error"
         {% endif %}
         placeholder="{{ 'customer.register.last_name' | t }} *"
       >
-      <label for="RegisterForm-LastName">
+      <label for="RegisterForm-last_name">
         {{ 'customer.register.last_name' | t }} *
       </label>
     </div>
     {%- if form.errors contains 'last_name' -%}
-      <span id="RegisterForm-LastName-error" class="form__message">
+      <span id="RegisterForm-last_name-error" class="form__message">
         <span class="svg-wrapper">
           {{- 'icon-error.svg' | inline_asset_content -}}
         </span>
