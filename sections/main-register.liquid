@@ -18,7 +18,7 @@
   <h1>
     {{ 'customer.register.title' | t }}
   </h1>
-  {%- form 'create_customer' -%}
+  {%- form 'create_customer', id: 'RegisterForm' -%}
     {%- if form.errors -%}
       <h2 class="form__message form-submit-error" tabindex="-1" autofocus>
         <span class="svg-wrapper">
@@ -173,6 +173,20 @@
     {% endif %}
   {%- endform -%}
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const registerForm = document.getElementById('RegisterForm');
+  if (!registerForm) return;
+
+  registerForm.addEventListener('submit', function() {
+    // Short delay to let Shopify finish creating the account
+    setTimeout(function() {
+      window.location.href = "/account"; // or "/welcome"
+    }, 500);
+  });
+});
+</script>
 
 {% schema %}
 {
