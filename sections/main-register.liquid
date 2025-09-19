@@ -18,7 +18,7 @@
   <h1>
     {{ 'customer.register.title' | t }}
   </h1>
-  {%- form 'create_customer', novalidate: 'novalidate' -%}
+  {%- form 'create_customer' -%}
     {%- if form.errors -%}
       <h2 class="form__message form-submit-error" tabindex="-1" autofocus>
         <span class="svg-wrapper">
@@ -56,7 +56,7 @@
           aria-describedby="RegisterForm-first_name-error"
         {% endif %}
         placeholder="{{ 'customer.register.first_name' | t }} *"
-        required="required"
+        required
       >
       <label for="RegisterForm-first_name">
         {{ 'customer.register.first_name' | t }} *
@@ -87,7 +87,7 @@
           aria-describedby="RegisterForm-last_name-error"
         {% endif %}
         placeholder="{{ 'customer.register.last_name' | t }} *"
-        required="required"
+        required
       >
       <label for="RegisterForm-last_name">
         {{ 'customer.register.last_name' | t }} *
@@ -120,7 +120,7 @@
           aria-describedby="RegisterForm-email-error"
         {% endif %}
         placeholder="{{ 'customer.register.email' | t }} *"
-        required="required"
+        required
       >
       <label for="RegisterForm-email">
         {{ 'customer.register.email' | t }} *
@@ -147,7 +147,7 @@
           aria-describedby="RegisterForm-password-error"
         {% endif %}
         placeholder="{{ 'customer.register.password' | t }} *"
-        required="required"
+        required
       >
       <label for="RegisterForm-password">
         {{ 'customer.register.password' | t }} *
