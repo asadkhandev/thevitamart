@@ -136,7 +136,7 @@
           "settings": {
             "image": "shopify://shop_images/Men_s_health_100x_crop_center_51d02abf-2e47-4636-bd1c-62c306af5cbb.svg",
             "title": "Men's Health",
-            "url": ""
+            "url": "#"
           }
         },
         "column_E6thPk": {
@@ -144,7 +144,7 @@
           "settings": {
             "image": "shopify://shop_images/Women_s_Health_100x_crop_center_e9ee54de-c5ec-4e71-812c-fdd3196bac07.svg",
             "title": "Women's Health",
-            "url": ""
+            "url": "#"
           }
         },
         "column_t3YRnR": {
@@ -160,7 +160,7 @@
           "settings": {
             "image": "shopify://shop_images/Beauty_100x_crop_center_5ddd28a1-f7c6-496a-9d78-b805ff978008.svg",
             "title": "Beauty",
-            "url": ""
+            "url": "#"
           }
         },
         "column_aqqYtE": {
@@ -168,7 +168,7 @@
           "settings": {
             "image": "shopify://shop_images/Hair_Care_100x_crop_center_85f6b3c7-cf4d-4cba-b79c-0ae9afa9278b.svg",
             "title": "Hair Care",
-            "url": ""
+            "url": "#"
           }
         },
         "column_TxUc7a": {
@@ -176,7 +176,7 @@
           "settings": {
             "image": "shopify://shop_images/Herbal_Health_100x_crop_center_dcafffdd-3d67-4f86-ac13-86318813253e.svg",
             "title": "Herbal Health",
-            "url": ""
+            "url": "#"
           }
         },
         "column_jU37qL": {
