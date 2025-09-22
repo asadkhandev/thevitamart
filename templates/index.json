@@ -314,28 +314,21 @@
         "tag_h4mdAi": {
           "type": "tag",
           "settings": {
-            "collection": "acidity",
+            "collection": "dietary-supplement-hair-skin-and-nails",
             "important": false
           }
         },
         "tag_hgNN3T": {
           "type": "tag",
           "settings": {
-            "collection": "anxiety",
+            "collection": "dietary-supplement-sexual-health",
             "important": false
           }
         },
         "tag_EKyghX": {
           "type": "tag",
           "settings": {
-            "collection": "energy-boost-in-men",
-            "important": false
-          }
-        },
-        "tag_dKjXUV": {
-          "type": "tag",
-          "settings": {
-            "collection": "eyesight",
+            "collection": "hair-tonic-men",
             "important": true
           }
         },
@@ -352,87 +345,14 @@
             "collection": "hairfall",
             "important": false
           }
-        },
-        "tag_q6HzCb": {
-          "type": "tag",
-          "settings": {
-            "collection": "muscle-pain",
-            "important": false
-          }
-        },
-        "tag_t8pamt": {
-          "type": "tag",
-          "settings": {
-            "collection": "uti",
-            "important": false
-          }
-        },
-        "tag_zq6EYG": {
-          "type": "tag",
-          "settings": {
-            "collection": "workout",
-            "important": false
-          }
-        },
-        "tag_nbLatj": {
-          "type": "tag",
-          "settings": {
-            "collection": "dandruff",
-            "important": false
-          }
-        },
-        "tag_KJezUG": {
-          "type": "tag",
-          "settings": {
-            "collection": "iron-deficiency",
-            "important": false
-          }
-        },
-        "tag_KTNN8D": {
-          "type": "tag",
-          "settings": {
-            "collection": "joint-pain",
-            "important": false
-          }
-        },
-        "tag_xx6Vgr": {
-          "type": "tag",
-          "settings": {
-            "collection": "migraine",
-            "important": true
-          }
-        },
-        "tag_a6ktFg": {
-          "type": "tag",
-          "settings": {
-            "collection": "muscle-pain",
-            "important": false
-          }
-        },
-        "tag_fTtLWg": {
-          "type": "tag",
-          "settings": {
-            "collection": "weak-bones",
-            "important": true
-          }
         }
       },
       "block_order": [
         "tag_h4mdAi",
         "tag_hgNN3T",
         "tag_EKyghX",
-        "tag_dKjXUV",
         "tag_MGzkjE",
-        "tag_FiKKLg",
-        "tag_q6HzCb",
-        "tag_t8pamt",
-        "tag_zq6EYG",
-        "tag_nbLatj",
-        "tag_KJezUG",
-        "tag_KTNN8D",
-        "tag_xx6Vgr",
-        "tag_a6ktFg",
-        "tag_fTtLWg"
+        "tag_FiKKLg"
       ],
       "name": "ExploreTags",
       "settings": {
