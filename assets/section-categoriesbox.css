@@ -15,7 +15,7 @@
     color: #2b2b2a;
     align-items: center;
     transition: all 0.3s ease-in-out;
-    display: none;
+    /* display: none; */
     position: relative;
 }
 
