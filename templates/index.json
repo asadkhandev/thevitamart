@@ -335,14 +335,14 @@
         "tag_MGzkjE": {
           "type": "tag",
           "settings": {
-            "collection": "female-fertility",
+            "collection": "health-supplement",
             "important": false
           }
         },
         "tag_FiKKLg": {
           "type": "tag",
           "settings": {
-            "collection": "hairfall",
+            "collection": "vitamins",
             "important": false
           }
         }
