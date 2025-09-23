@@ -256,7 +256,7 @@
           "settings": {
             "image": "shopify://shop_images/Fertility_Support_100x_crop_center_34dc454f-008a-4dfd-8255-054e97504739.svg",
             "title": "Fertility Support",
-            "url": ""
+            "url": "shopify://collections/dietary-supplement-sexual-health"
           }
         }
       },
@@ -311,6 +311,20 @@
     "exploretags_section_LywxPh": {
       "type": "exploretags-section",
       "blocks": {
+        "tag_EKyghX": {
+          "type": "tag",
+          "settings": {
+            "collection": "hair-tonic-men",
+            "important": true
+          }
+        },
+        "tag_JfFAX8": {
+          "type": "tag",
+          "settings": {
+            "collection": "women",
+            "important": false
+          }
+        },
         "tag_h4mdAi": {
           "type": "tag",
           "settings": {
@@ -318,18 +332,11 @@
             "important": false
           }
         },
-        "tag_hgNN3T": {
+        "tag_VNnGET": {
           "type": "tag",
           "settings": {
-            "collection": "dietary-supplement-sexual-health",
+            "collection": "hair",
             "important": false
-          }
-        },
-        "tag_EKyghX": {
-          "type": "tag",
-          "settings": {
-            "collection": "hair-tonic-men",
-            "important": true
           }
         },
         "tag_MGzkjE": {
@@ -345,14 +352,23 @@
             "collection": "vitamins",
             "important": false
           }
+        },
+        "tag_hgNN3T": {
+          "type": "tag",
+          "settings": {
+            "collection": "dietary-supplement-sexual-health",
+            "important": false
+          }
         }
       },
       "block_order": [
-        "tag_h4mdAi",
-        "tag_hgNN3T",
         "tag_EKyghX",
+        "tag_JfFAX8",
+        "tag_h4mdAi",
+        "tag_VNnGET",
         "tag_MGzkjE",
-        "tag_FiKKLg"
+        "tag_FiKKLg",
+        "tag_hgNN3T"
       ],
       "name": "ExploreTags",
       "settings": {
