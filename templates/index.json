@@ -15,21 +15,29 @@
         "banner_w8gKkM": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/Vitamart_Banner_1.jpg",
+            "image": "shopify://shop_images/BIOTIN_C_Banner.jpg",
             "link": "#"
           }
         },
         "banner_CWB4yi": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/Vitamart_Banner_2.jpg",
+            "image": "shopify://shop_images/Nutri_Collagen_Banner.jpg",
             "link": "#"
+          }
+        },
+        "banner_tP6aWW": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/Nutri_Plum_Banner.jpg",
+            "link": ""
           }
         }
       },
       "block_order": [
         "banner_w8gKkM",
-        "banner_CWB4yi"
+        "banner_CWB4yi",
+        "banner_tP6aWW"
       ],
       "name": "Banner Slider",
       "settings": {}
