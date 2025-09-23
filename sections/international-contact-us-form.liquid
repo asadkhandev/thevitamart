@@ -1,7 +1,7 @@
 {{ 'international-contact-form.css' | asset_url | stylesheet_tag }}
 {{ 'international-responsive.css' | asset_url | stylesheet_tag }}
 
-<div class="contactus-form-section">
+<div class="contactus-form-section" id="become-a-distributer">
   <div class="contact-img">
     {% if section.settings.image != blank %}
       <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image_alt }}">
