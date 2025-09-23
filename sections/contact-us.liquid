@@ -1,109 +1,104 @@
 {{ 'contact-us.css' | asset_url | stylesheet_tag }}
 
+{% comment %} contact-page.liquid {% endcomment %}
 
-    {% comment %} contact-page.liquid {% endcomment %}
+<div class="page-width">
+  <div class="contactus-inner-wrapper">
+    <div class="contactus-section">
+      <div class="contactus-banner">
+        <h2>{{ section.settings.banner_subheading }}</h2>
+        <h1>{{ section.settings.banner_heading }}</h1>
+        <hr>
+        <p>{{ section.settings.banner_description }}</p>
 
-     <div class="page-width">
-     <div class="contactus-inner-wrapper">
-       <div class="contactus-section">
-        <div class="contactus-banner">
-          <h2>{{ section.settings.banner_subheading }}</h2>
-          <h1>{{ section.settings.banner_heading }}</h1>
-          <hr>
-          <p>{{ section.settings.banner_description }}</p>
-          <div class="contact-banner-btns">
-            <h3>{{ section.settings.quick_response_heading }}</h3>
-            <div>
-                {%- comment -%} Button 1 {%- endcomment -%}
-                  {% if section.settings.quick_link_text_1 != blank and section.settings.quick_link_1 != blank %}
-                    <a href="https://api.whatsapp.com/send?phone={{ section.settings.quick_link_1 }}&text=%20Hi,%20I%20want%20to%20know%20more" class="p-btn">
-                      <div>
-                        <img class="contactus-btn-icons" src="{{ section.settings.quick_link_icon_1 | image_url: width: 25 }}" alt="{{ section.settings.quick_link_text_1 }}">
-                        <p>{{ section.settings.quick_link_text_1 }}</p>
-                      </div>
-                    </a>
-                  {% endif %}
-
-                  {%- comment -%} Button 2 {%- endcomment -%}
-                  {% if section.settings.quick_link_text_2 != blank and section.settings.quick_link_2 != blank %}
-                    <a href="{{ section.settings.quick_link_2 }}" class="p-btn">
-                      <div>
-                        <img class="contactus-btn-icons" src="{{ section.settings.quick_link_icon_2 | image_url: width: 25 }}" alt="{{ section.settings.quick_link_text_2 }}">
-                        <p>{{ section.settings.quick_link_text_2 }}</p>
-                      </div>
-                    </a>
-                  {% endif %}
-
-                  {%- comment -%} Button 3 {%- endcomment -%}
-                  {% if section.settings.quick_link_text_3 != blank and section.settings.quick_link_3 != blank %}
-                    <a href="{{ section.settings.quick_link_3 }}" class="p-btn">
-                      <div>
-                        <img class="contactus-btn-icons" src="{{ section.settings.quick_link_icon_3 | image_url: width: 25 }}" alt="{{ section.settings.quick_link_text_3 }}">
-                        <p>{{ section.settings.quick_link_text_3 }}</p>
-                      </div>
-                    </a>
-                  {% endif %}
-            </div>
-          </div>
-        </div>
-
-        <div class="contactus-form">
-          <div class="contactus-form-wrapper">
-            {% form 'contact' %}
-              {%- if form.posted_successfully? -%}
-                <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
-                  {{- 'icon-success.svg' | inline_asset_content -}}
-                  {{ 'templates.contact.form.post_success' | t }}
-                </h2>
-              {%- elsif form.errors -%}
-                <div class="form__message">
-                  <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
-                    {{- 'icon-error.svg' | inline_asset_content -}}
-                    {{ 'templates.contact.form.error_heading' | t }}
-                  </h2>
+        <div class="contact-banner-btns">
+          <h3>{{ section.settings.quick_response_heading }}</h3>
+          <div>
+            {%- comment -%} Button 1 {%- endcomment -%}
+            {% if section.settings.quick_link_text_1 != blank and section.settings.quick_link_1 != blank %}
+              <a href="https://api.whatsapp.com/send?phone={{ section.settings.quick_link_1 }}&text=%20Hi,%20I%20want%20to%20know%20more" class="p-btn">
+                <div>
+                  <img class="contactus-btn-icons" src="{{ section.settings.quick_link_icon_1 | image_url: width: 25 }}" alt="{{ section.settings.quick_link_text_1 }}">
+                  <p>{{ section.settings.quick_link_text_1 }}</p>
                 </div>
-                <ul class="form-status-list caption-large" role="list">
-                  <li>
-                    <a href="#ContactForm-email" class="link">
-                      {{ form.errors.translated_fields.email | capitalize }}
-                      {{ form.errors.messages.email }}
-                    </a>
-                  </li>
-                </ul>
-              {%- endif -%}
+              </a>
+            {% endif %}
 
-              <label for="ContactFormName">Name <span class="required">*</span></label>
-              <input type="text" id="ContactFormName" name="contact[name]" class="input-info" required>
+            {%- comment -%} Button 2 {%- endcomment -%}
+            {% if section.settings.quick_link_text_2 != blank and section.settings.quick_link_2 != blank %}
+              <a href="{{ section.settings.quick_link_2 }}" class="p-btn">
+                <div>
+                  <img class="contactus-btn-icons" src="{{ section.settings.quick_link_icon_2 | image_url: width: 25 }}" alt="{{ section.settings.quick_link_text_2 }}">
+                  <p>{{ section.settings.quick_link_text_2 }}</p>
+                </div>
+              </a>
+            {% endif %}
 
-              <label for="ContactFormPhone">Phone Number <span class="required">*</span></label>
-              <input type="tel" id="ContactFormPhone" name="contact[phone]" class="input-info" required>
-
-              <label for="ContactFormEmail">Email <span class="required">*</span></label>
-              <input type="email" id="ContactFormEmail" name="contact[email]" class="input-info" required>
-
-              <label for="ContactFormMessage">Comment <span class="required">*</span></label>
-              <textarea name="contact[body]" id="ContactFormMessage" class="input-text" required></textarea>
-
-              <button type="submit" class="s-btn">SUBMIT</button>
-            {% endform %}
+            {%- comment -%} Button 3 {%- endcomment -%}
+            {% if section.settings.quick_link_text_3 != blank and section.settings.quick_link_3 != blank %}
+              <a href="{{ section.settings.quick_link_3 }}" class="p-btn">
+                <div>
+                  <img class="contactus-btn-icons" src="{{ section.settings.quick_link_icon_3 | image_url: width: 25 }}" alt="{{ section.settings.quick_link_text_3 }}">
+                  <p>{{ section.settings.quick_link_text_3 }}</p>
+                </div>
+              </a>
+            {% endif %}
           </div>
-
-          <div class="contact-bg">&nbsp;</div>
         </div>
       </div>
-     </div>
-    </div>
 
-    {% if section.settings.business_link != blank %}
-      <a href="{{ section.settings.business_link }}" class="button-email">
-        <div class="container">
-          <span>{{ section.settings.business_label }}</span>
-          <strong>{{ section.settings.business_email }}</strong>
+      <div class="contactus-form">
+        <div class="contactus-form-wrapper">
+          {% form 'contact' %}
+            {%- if form.posted_successfully? -%}
+              <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+                {{- 'icon-success.svg' | inline_asset_content -}}
+                {{ 'templates.contact.form.post_success' | t }}
+              </h2>
+            {%- elsif form.errors -%}
+              <div class="form__message">
+                <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+                  {{- 'icon-error.svg' | inline_asset_content -}}
+                  {{ 'templates.contact.form.error_heading' | t }}
+                </h2>
+              </div>
+              <ul class="form-status-list caption-large" role="list">
+                <li>
+                  <a href="#ContactForm-email" class="link">
+                    {{ form.errors.translated_fields.email | capitalize }} {{ form.errors.messages.email }}
+                  </a>
+                </li>
+              </ul>
+            {%- endif -%}
+
+            <label for="ContactFormName">Name <span class="required">*</span></label>
+            <input type="text" id="ContactFormName" name="contact[name]" class="input-info" required>
+
+            <label for="ContactFormPhone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="ContactFormPhone" name="contact[phone]" class="input-info" required>
+
+            <label for="ContactFormEmail">Email <span class="required">*</span></label>
+            <input type="email" id="ContactFormEmail" name="contact[email]" class="input-info" required>
+
+            <label for="ContactFormMessage">Comment <span class="required">*</span></label>
+            <textarea name="contact[body]" id="ContactFormMessage" class="input-text" required></textarea>
+
+            <button type="submit" class="s-btn">SUBMIT</button>
+          {% endform %}
         </div>
-      </a>
-    {% endif %}
+        <div class="contact-bg">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+</div>
 
-   
+<a href="mailto:{{ section.settings.business_email }}" class="button-email">
+  <div class="container">
+    <span>{{ section.settings.business_label }}</span>
+    <strong>{{ section.settings.business_email }}</strong>
+  </div>
+</a>
+
 {% schema %}
 {
   "name": "Contact Page",
@@ -191,7 +186,7 @@
       "id": "business_email",
       "label": "Business Email",
       "default": "BUSINESS@VITAMART.COM"
-    },
+    }
   ],
   "presets": [
     {
