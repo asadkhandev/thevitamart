@@ -657,9 +657,9 @@
 
 
 
-.contactus-info p {
+.contactus-info inner-info p {
     width: 100%;
-    font-size: 28px;
+    font-size: 22px;
 }
 
   .email-btn {
