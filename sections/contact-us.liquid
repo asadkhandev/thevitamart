@@ -14,20 +14,20 @@
           <div class="contact-banner-btns">
             <h3>{{ section.settings.quick_response_heading }}</h3>
             <div>
-              {% for i in (1..3) %}
-  {% assign link_setting = 'quick_link_' | append: i %}
-  {% assign text_setting = 'quick_link_text_' | append: i %}
-  {% assign icon_setting = 'quick_link_icon_' | append: i %}
+                {% for i in (1..3) %}
+                  {% assign link_setting = 'quick_link_' | append: i %}
+                  {% assign text_setting = 'quick_link_text_' | append: i %}
+                  {% assign icon_setting = 'quick_link_icon_' | append: i %}
 
-  {% if section.settings[text_setting] != blank and section.settings[link_setting] != blank %}
-    <a href="{{ section.settings[link_setting] }}" class="p-btn">
-      <div>
-        <img class="contactus-btn-icons" src="{{ section.settings[icon_setting] | image_url: width: 25 }}" alt="{{ section.settings[text_setting] }}">
-        <p>{{ section.settings[text_setting] }}</p>
-      </div>
-    </a>
-  {% endif %}
-{% endfor %}
+                  {% if section.settings[text_setting] != blank and section.settings[link_setting] != blank %}
+                    <a href="{{ section.settings[link_setting] }}" class="p-btn">
+                      <div>
+                        <img class="contactus-btn-icons" src="{{ section.settings[icon_setting] | image_url: width: 25 }}" alt="{{ section.settings[text_setting] }}">
+                        <p>{{ section.settings[text_setting] }}</p>
+                      </div>
+                    </a>
+                  {% endif %}
+                {% endfor %}
 
             </div>
           </div>
