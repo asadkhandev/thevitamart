@@ -94,12 +94,14 @@
      </div>
     </div>
 
-    <a href="mailto:{{ section.settings.business_email }}" class="button-email">
-      <div class="container">
-        <span>{{ section.settings.business_label }}</span>
-        <strong>{{ section.settings.business_email }}</strong>
-      </div>
-    </a>
+    {% if section.settings.business_link != blank %}
+      <a href="{{ section.settings.business_link }}" class="button-email">
+        <div class="container">
+          <span>{{ section.settings.business_label }}</span>
+          <strong>{{ section.settings.business_email }}</strong>
+        </div>
+      </a>
+    {% endif %}
 
    
 {% schema %}
@@ -139,7 +141,7 @@
     {
       "type": "image_picker",
       "id": "quick_link_icon_1",
-      "label": "Quick Link 1 Icon",
+      "label": "Quick Link 1 Icon"
     },
     {
       "type": "text",
@@ -155,7 +157,7 @@
     {
       "type": "image_picker",
       "id": "quick_link_icon_2",
-      "label": "Quick Link 2 Icon",
+      "label": "Quick Link 2 Icon"
     },
     {
       "type": "url",
@@ -171,7 +173,7 @@
     {
       "type": "image_picker",
       "id": "quick_link_icon_3",
-      "label": "Quick Link 3 Icon",
+      "label": "Quick Link 3 Icon"
     },
     {
       "type": "url",
@@ -189,6 +191,11 @@
       "id": "business_email",
       "label": "Business Email",
       "default": "BUSINESS@VITAMART.COM"
+    },
+    {
+      "type": "url",
+      "id": "business_link",
+      "label": "Business Link",
     }
   ],
   "presets": [
