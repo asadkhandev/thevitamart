@@ -15,36 +15,34 @@
             <h3>{{ section.settings.quick_response_heading }}</h3>
             <div>
                 {%- comment -%} Button 1 {%- endcomment -%}
-{% if section.settings.quick_link_text_1 != blank and section.settings.quick_link_1 != blank %}
-  <a href="{{ section.settings.quick_link_1 }}" class="p-btn">
-    <div>
-      <img class="contactus-btn-icons" src="{{ section.settings.quick_link_icon_1 | image_url: width: 25 }}" alt="{{ section.settings.quick_link_text_1 }}">
-      <p>{{ section.settings.quick_link_text_1 }}</p>
-    </div>
-  </a>
-{% endif %}
+                  {% if section.settings.quick_link_text_1 != blank and section.settings.quick_link_1 != blank %}
+                    <a href="{{ section.settings.quick_link_1 }}" class="p-btn">
+                      <div>
+                        <img class="contactus-btn-icons" src="{{ section.settings.quick_link_icon_1 | image_url: width: 25 }}" alt="{{ section.settings.quick_link_text_1 }}">
+                        <p>{{ section.settings.quick_link_text_1 }}</p>
+                      </div>
+                    </a>
+                  {% endif %}
 
-{%- comment -%} Button 2 {%- endcomment -%}
-{% if section.settings.quick_link_text_2 != blank and section.settings.quick_link_2 != blank %}
-  <a href="{{ section.settings.quick_link_2 }}" class="p-btn">
-    <div>
-      <img class="contactus-btn-icons" src="{{ section.settings.quick_link_icon_2 | image_url: width: 25 }}" alt="{{ section.settings.quick_link_text_2 }}">
-      <p>{{ section.settings.quick_link_text_2 }}</p>
-    </div>
-  </a>
-{% endif %}
+                  {%- comment -%} Button 2 {%- endcomment -%}
+                  {% if section.settings.quick_link_text_2 != blank and section.settings.quick_link_2 != blank %}
+                    <a href="{{ section.settings.quick_link_2 }}" class="p-btn">
+                      <div>
+                        <img class="contactus-btn-icons" src="{{ section.settings.quick_link_icon_2 | image_url: width: 25 }}" alt="{{ section.settings.quick_link_text_2 }}">
+                        <p>{{ section.settings.quick_link_text_2 }}</p>
+                      </div>
+                    </a>
+                  {% endif %}
 
-{%- comment -%} Button 3 {%- endcomment -%}
-{% if section.settings.quick_link_text_3 != blank and section.settings.quick_link_3 != blank %}
-  <a href="{{ section.settings.quick_link_3 }}" class="p-btn">
-    <div>
-      <img class="contactus-btn-icons" src="{{ section.settings.quick_link_icon_3 | image_url: width: 25 }}" alt="{{ section.settings.quick_link_text_3 }}">
-      <p>{{ section.settings.quick_link_text_3 }}</p>
-    </div>
-  </a>
-{% endif %}
-
-
+                  {%- comment -%} Button 3 {%- endcomment -%}
+                  {% if section.settings.quick_link_text_3 != blank and section.settings.quick_link_3 != blank %}
+                    <a href="{{ section.settings.quick_link_3 }}" class="p-btn">
+                      <div>
+                        <img class="contactus-btn-icons" src="{{ section.settings.quick_link_icon_3 | image_url: width: 25 }}" alt="{{ section.settings.quick_link_text_3 }}">
+                        <p>{{ section.settings.quick_link_text_3 }}</p>
+                      </div>
+                    </a>
+                  {% endif %}
             </div>
           </div>
         </div>
