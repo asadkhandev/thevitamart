@@ -35,7 +35,7 @@
         "grid_img_3": "shopify://shop_images/Manufacturing.webp",
         "grid_img_4": "shopify://shop_images/tablets.webp",
         "grid_banner_heading": "PAKISTAN’S LARGEST NUTRACEUTICAL MANUFACTURING FACILITY",
-        "grid_banner_text": "With over a decade of experience, Vitamart specializes in manufacturing nutraceutical and natural healthcare products. Leveraging our 30+ years of expertise in the family-owned pharmaceutical business, we identify industry trends far ahead of the competition. Vitamart invests heavily in extensive manufacturing, well-equipped laboratories, cutting-edge instrumentation, and warehousing capacities that position us as the largest nutraceutical manufacturing facility in Pakistan."
+        "grid_banner_text": "<p>Backed by decades of expertise in healthcare innovation, Nutrifactor stands at the forefront of nutraceutical and natural wellness manufacturing in Pakistan. With over 30 years of pharmaceutical legacy and more than a decade of specialized nutraceutical production, we continuously anticipate and shape industry trends ahead of the competition.</p><p><br/>Our commitment to excellence is reflected in our state-of-the-art manufacturing infrastructure, advanced laboratory setups, precision-driven instrumentation, and large-scale warehousing capabilities. These investments enable us to maintain exceptional quality standards while producing at unmatched scale — solidifying our position as Pakistan’s largest and most trusted nutraceutical manufacturing facility.<br/></p>"
       }
     },
     "about_us_medicine_section_DKy4qy": {
@@ -43,7 +43,7 @@
       "name": "Medicine Section",
       "settings": {
         "medicine_heading": "WHY VITAMART",
-        "medicine_text": "Vitamart stands out from other nutraceutical brands due to our values of transparency and traceability in delivering high-quality natural healthcare products. Our commitment to excellence encompasses sustainable sourcing, integrity across all levels, and rigorous testing methods exceeding usual standard practices. We strive to bridge the gap between consumers and nutraceuticals science by being transparent in our labels. All the health benefits listed on our products are strictly in accordance with the scientific research.",
+        "medicine_text": "<p>At Vitmart, we go beyond just selling supplements — we deliver trust, transparency, and science-backed wellness. What sets us apart is our commitment to clarity in labeling, ethically sourced ingredients, and uncompromised quality at every step.</p><p><br/>We follow rigorous testing practices and partner with trusted manufacturers to ensure that every product meets international safety and efficacy standards. From sourcing to shelf, every capsule, tablet, and bottle is crafted with integrity, care, and proven research.</p><p><br/><strong>Our mission is simple:</strong><br/>To make nutrition reliable, accessible, and easy to understand — so you can invest in your health with complete confidence.<br/></p>",
         "medicine_image": "shopify://shop_images/Vitamart_Products.png"
       }
     },
