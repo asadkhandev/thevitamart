@@ -63,7 +63,7 @@
           "settings": {
             "image": "shopify://shop_images/safety_icon_d9fa2e65-793a-42b3-b768-ca6a6418d7e5.png",
             "alt_text": "",
-            "caption": ""
+            "caption": "Our in-house experts explore and test natural ingredients to create innovative formulas that bring you the best of science and nature."
           }
         },
         "carousel_image_JYHNgb": {
@@ -71,13 +71,58 @@
           "settings": {
             "image": "shopify://shop_images/quality_check_icon_ebef4d94-b20d-4007-90ef-1c5a5c484a5b.png",
             "alt_text": "",
-            "caption": ""
+            "caption": "We handpick premium-quality ingredients from trusted and certified suppliers around the world to ensure every product starts with the finest materials."
+          }
+        },
+        "carousel_image_WrEGCx": {
+          "type": "carousel_image",
+          "settings": {
+            "image": "shopify://shop_images/quality_check_icon_ebef4d94-b20d-4007-90ef-1c5a5c484a5b.png",
+            "alt_text": "",
+            "caption": "Only raw materials that meet our strict safety and quality standards make it through our doors — because you deserve the best."
+          }
+        },
+        "carousel_image_dBpT8i": {
+          "type": "carousel_image",
+          "settings": {
+            "image": "shopify://shop_images/quality_check_icon_ebef4d94-b20d-4007-90ef-1c5a5c484a5b.png",
+            "alt_text": "",
+            "caption": "Every product is crafted in state-of-the-art facilities that follow global cGMP and ISO standards for safety, consistency, and excellence."
+          }
+        },
+        "carousel_image_iGjcQV": {
+          "type": "carousel_image",
+          "settings": {
+            "image": "shopify://shop_images/quality_check_icon_ebef4d94-b20d-4007-90ef-1c5a5c484a5b.png",
+            "alt_text": "",
+            "caption": "From start to finish, we run rigorous quality checks at every stage of manufacturing to make sure each product meets our promise of purity and performance."
+          }
+        },
+        "carousel_image_yFch9G": {
+          "type": "carousel_image",
+          "settings": {
+            "image": "shopify://shop_images/quality_check_icon_ebef4d94-b20d-4007-90ef-1c5a5c484a5b.png",
+            "alt_text": "",
+            "caption": "Before reaching you, every finished product goes through final testing to confirm its safety, effectiveness, and quality."
+          }
+        },
+        "carousel_image_pXriBx": {
+          "type": "carousel_image",
+          "settings": {
+            "image": "shopify://shop_images/quality_check_icon_ebef4d94-b20d-4007-90ef-1c5a5c484a5b.png",
+            "alt_text": "",
+            "caption": "We store all products under controlled climate conditions to preserve their freshness, potency, and quality — right up to the moment you use them."
           }
         }
       },
       "block_order": [
         "carousel_image_zmYJQm",
-        "carousel_image_JYHNgb"
+        "carousel_image_JYHNgb",
+        "carousel_image_WrEGCx",
+        "carousel_image_dBpT8i",
+        "carousel_image_iGjcQV",
+        "carousel_image_yFch9G",
+        "carousel_image_pXriBx"
       ],
       "name": "Phone Carousel",
       "settings": {}
