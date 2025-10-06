@@ -88,22 +88,22 @@
         "text_block_gJ8at8": {
           "type": "text_block",
           "settings": {
-            "text_title": "Superior Manufacturing",
-            "text_content": "Vitamart establishes high-quality manufacturing standards for nutraceutical products, maintaining control over the entire production process with stringent adherence to cGMPs. Our commitment extends to thorough documentation to ensure the traceability of every step."
+            "text_title": "Certified Manufacturing Standards:",
+            "text_content": "Vitmart is committed to delivering premium-quality nutraceuticals by maintaining complete control over the manufacturing process. Every product is produced in compliance with strict cGMP (Current Good Manufacturing Practices) standards to ensure safety, consistency, and efficacy. Each stage is carefully documented, allowing full traceability from raw materials to final packaging — giving you confidence in every dose."
           }
         },
         "text_block_9nnRYJ": {
           "type": "text_block",
           "settings": {
-            "text_title": "Superior Manufacturing",
-            "text_content": "Vitamart establishes high-quality manufacturing standards for nutraceutical products, maintaining control over the entire production process with stringent adherence to cGMPs. Our commitment extends to thorough documentation to ensure the traceability of every step."
+            "text_title": "Innovation Backed by Science",
+            "text_content": "At Vitmart, every formulation begins with research. Our dedicated development team continuously studies the latest advancements in natural ingredients and nutraceutical science. Supported by in-house laboratory testing, we validate every claim with evidence-based results — ensuring each product delivers real, measurable benefits. We don’t rely on trends — we rely on science."
           }
         },
         "text_block_i9HVJj": {
           "type": "text_block",
           "settings": {
-            "text_title": "Superior Manufacturing",
-            "text_content": "Vitamart establishes high-quality manufacturing standards for nutraceutical products, maintaining control over the entire production process with stringent adherence to cGMPs. Our commitment extends to thorough documentation to ensure the traceability of every step."
+            "text_title": "Tailored Solutions for Real Health Needs",
+            "text_content": "At Vitmart, we don’t just create products — we solve everyday health challenges. By closely monitoring the evolving wellness needs of our community, we identify key concerns such as immunity, energy, digestion, bone health, and more. Our team then develops scientifically crafted formulations that directly address these needs, delivering natural, effective, and accessible solutions for better daily living."
           }
         }
       },
@@ -126,7 +126,7 @@
       "name": "Head Office Section",
       "settings": {
         "office_heading": "Vitamart's corporate office",
-        "office_text": "By 2026, as part of our “Go Green” initiative, Vitamart aims to create a space where eco-friendliness is embedded in every brick. Forest One will be more than just a place where we weave wellness; it will be a thoughtfully designed space with sustainability and efficiency in mind. Vitamart believes that today's choices shape the world for future generations, and we are committed to making a positive impact.",
+        "office_text": "<h4><strong>Building a Greener Future</strong></h4><p><br/>By 2026, as part of our “Go Green” initiative, Vitmart is committed to developing a space where sustainability is integrated into every detail. Our upcoming Forest One facility will be more than just a wellness hub — it will be a purposefully designed environment built on energy efficiency, eco-friendly materials, and responsible practices.<br/>At Vitmart, we believe that the choices we make today shape the world of tomorrow. That’s why we’re dedicated to creating long-term positive change for both people and the planet.</p>",
         "office_icon": "shopify://shop_images/Forest_One_icon_b9e7fb05-f34f-434e-9911-8413b30a43da.webp",
         "office_image": "shopify://shop_images/Head_Office_Banner.webp"
       }
@@ -135,11 +135,11 @@
       "type": "about-us-links-section",
       "name": "About Links Section",
       "settings": {
-        "links_heading": "Add The factor of Nutrition to your life",
-        "links_text": "Where Quality, Safety, and Efficacy Meet; Your Most Trusted Vitamin Brand.",
-        "link_btn_text": "SEE OUR PRODUCT RANGE",
+        "links_heading": "Vitmart — Bringing Nutrition into Everyday Living",
+        "links_text": "Where Quality, Safety, and Results Come Together — Vitmart, Your Trusted Vitamin Partner.",
+        "link_btn_text": "Discover Our Vitamins & Supplements",
         "link_btn_url": "shopify://collections/all",
-        "link_btn2_text": "HELP US CHOOSE",
+        "link_btn2_text": "Get Expert Advice",
         "link_btn2_url": "+920000000000"
       }
     }
