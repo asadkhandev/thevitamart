@@ -159,6 +159,7 @@
       "name": "Contact Us Form Section",
       "settings": {
         "heading": "Contact Us",
+        "image": "shopify://shop_images/810x1020.jpg",
         "image_alt": "contact background"
       }
     },
