@@ -149,6 +149,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    transform: translateY(-100%);
     background-color: transparent;
     color: #000;
     border: none;
