@@ -457,7 +457,11 @@
 }
 
 .head-office-text div {
-  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
 
