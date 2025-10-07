@@ -219,9 +219,15 @@
   }
 
 
-  /* .head-office-text p {
+  .head-office-text p {
     width: 95%;
-  } */
+  }
+
+  .office-description {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
 
 
   .about-links .links-inner {
