@@ -96,3 +96,10 @@
   background-color: #f0ebff;
   border: white 1px solid;
 }
+
+@media (max-width: 426px) {
+  .link-btn{
+    height: auto;
+    padding: 10px;
+  }
+}
