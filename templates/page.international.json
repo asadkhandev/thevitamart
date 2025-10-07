@@ -34,8 +34,8 @@
       "type": "custom-heading-text-section",
       "name": "Custom Heading Text",
       "settings": {
-        "heading": "BETTER CHOICE, BETTER HEALTH, BETTER LIVES",
-        "description": "Starting from Pakistan, Nutrifactor has globally expanded its presence in more than 60 countries & regions to impact and improve the wellbeing of its consumers. We are committed to growth and new opportunities for distribution, and acquisition by leading, innovating, and creating diversity in this sector of nutraceuticals and other healthcare products. With a considerable experience of many years in the international market, we are familiar with the documentation needed for international product registrations and exports."
+        "heading": "Growing Together for a Healthier Tomorrow -Powered by Vitmart",
+        "description": "From our roots in Pakistan, Vitamart is on a mission to make quality nutrition accessible globally. With a growing footprint across multiple regions, we are continuously expanding our reach to improve lives through science-backed wellness solutions.\nOur commitment goes beyond selling supplements — we focus on innovation, transparency, and global compliance. With extensive experience in international markets, we understand regulatory and documentation processes for exports and product registrations, enabling seamless partnerships worldwide.\nVitamart is ready to collaborate, distribute, and grow with those who believe in better health for all."
       }
     },
     "international_logo_section_fjkLzQ": {
@@ -86,8 +86,8 @@
       ],
       "name": "Logo Section",
       "settings": {
-        "heading": "NUTRIFACTOR CAN BE FOUND ON THESE LARGEST NETWORKS",
-        "description": "Through sheer determination and constant hard work, Nutrifactor has been featured by some of the largest networks & business journals. Expanding its business to over 60 countries across the globe in 6 different continents, Nutrifactor is on its way to becoming a globally renowned brand.",
+        "heading": "Trusted by Leading Retailers & Global Platforms",
+        "description": "Vitamart’s commitment to quality and credibility has earned recognition across major marketplaces and wellness networks. With growing availability across international platforms and healthcare distributors, Vitamart is rapidly emerging as a globally trusted nutrition brand.\nBacked by relentless dedication and customer trust, we are expanding our reach across multiple regions — making science-backed wellness more accessible than ever before.",
         "logos_per_row": 5
       }
     },
@@ -97,8 +97,8 @@
       "settings": {
         "image": "shopify://shop_images/Contract_Vector.png",
         "image_alt": "contract image",
-        "heading": "ONE-STOP SOLUTION FOR NUTRACEUTICAL MANUFACTURING",
-        "description": "The contract manufacturing service we offer is a fully comprehensive process. Starting from an innovative idea of development and manufacture, it ends with finalizing the product and providing the necessary documentation for product authorization.",
+        "heading": "Complete End-to-End Nutraceutical Manufacturing Services",
+        "description": "At Vitamart, we provide a fully managed contract manufacturing solution — from concept to finished product. Whether you're starting with an idea or a ready formulation, our expert team handles every stage of the process, including formulation development, large-scale production, packaging, and regulatory documentation for product approval.\nWith a streamlined and compliant workflow, we make it easy for brands to bring high-quality nutraceutical products to market efficiently and confidently.",
         "button_text": "Become A Distributor",
         "button_link": "#become-a-distributer",
         "padding_top": 100,
@@ -113,8 +113,8 @@
           "settings": {
             "image": "shopify://shop_images/promise1.avif",
             "alt_text": "promise image",
-            "title": "TESTING FROM START TO FINISH",
-            "description": "At Vitamart, ingredients and finished products testing is the backbone of our quality assurance programs."
+            "title": "Tested at Every Stage",
+            "description": "At Vitamart, quality begins long before a product reaches you. Every ingredient and every finished batch undergoes rigorous testing to guarantee purity, safety, and effectiveness. From sourcing to packaging, nothing is left to chance — because your health deserves precision and trust."
           }
         },
         "promise_KaLxxH": {
@@ -122,8 +122,8 @@
           "settings": {
             "image": "shopify://shop_images/promise2.avif",
             "alt_text": "promise image",
-            "title": "HIGH QUALITY STARTS WITH CLEAN INGREDIENTS",
-            "description": "Our strict requirements for ingredient quality and our comprehensive scientific process ensure that every lot of ingredients accepted into our facility meets international testing specifications."
+            "title": "Quality Begins with Pure Ingredients",
+            "description": "At Vitamart, we believe exceptional products start with exceptional raw materials. That’s why every ingredient we source must meet strict international quality and safety standards before it enters our facility. Through a combination of careful selection and science-backed testing, we ensure only clean, verified ingredients make it into your supplements — nothing less."
           }
         },
         "promise_NgrEnU": {
@@ -131,8 +131,8 @@
           "settings": {
             "image": "shopify://shop_images/promise3.png",
             "alt_text": "promise image",
-            "title": "SUPERIOR MANUFACTURING",
-            "description": "Vitamart meets the cGMPs to ensure our delivery of commitment to quality. Vitamart was one of the first companies to be cGMP certified."
+            "title": "Excellence in Manufacturing Standards",
+            "description": "Vitamart operates under strict cGMP (Current Good Manufacturing Practices) guidelines to ensure uncompromised product quality at every step. With state-of-the-art production facilities and rigorous process controls, we uphold global manufacturing standards — delivering supplements that are safe, consistent, and trustworthy. Our commitment to quality isn’t just a claim — it’s built into every batch we produce."
           }
         }
       },
@@ -143,22 +143,22 @@
       ],
       "name": "Promise Section",
       "settings": {
-        "heading": "WE PROMISE YOU: QUALITY, SAFETY & EFFICACY"
+        "heading": "Committed to Quality, Safety, and Proven Results"
       }
     },
     "international_contactus_text_section_bF6r6d": {
       "type": "international-contactus-text-section",
       "name": "Contact Us Text Section",
       "settings": {
-        "heading": "Join us at Global Level by Becoming a Distributor",
-        "description": "Contact us today to find out how, together, we can provide high-quality nutritional products to consumers worldwide and help people live healthier lives."
+        "heading": "Partner with Us as a Global Distributor",
+        "description": "Let’s grow together. Join Vitamart in delivering premium nutritional products to customers around the world. Connect with us today to explore distribution opportunities and become part of a mission that empowers healthier living—globally."
       }
     },
     "international_contact_us_form_EFgdYE": {
       "type": "international-contact-us-form",
       "name": "Contact Us Form Section",
       "settings": {
-        "heading": "Contact Us",
+        "heading": "Need Assistance? Get in Touch",
         "image": "shopify://shop_images/810x1020.jpg",
         "image_alt": "contact background"
       }
