@@ -551,6 +551,11 @@
 }
 
 .head-office-text {
-  width: 90%;
+  width: 95%;
+}
+
+.link-btn {
+  max-width: 270px;
+  width: 100%;
 }
 }
