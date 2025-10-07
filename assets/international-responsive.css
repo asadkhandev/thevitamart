@@ -553,6 +553,14 @@
     height: 422px;
 }
 
+@media (max-width: 425px) {
+.contract-image img {
+    width: 100%;
+    max-width: 425px;
+    height: 422px;
+}
+}
+
 .contract-text {
     display: flex;
     flex-direction: column;
