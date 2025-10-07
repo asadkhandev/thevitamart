@@ -547,19 +547,21 @@
     width: 100%;
 }
 
-.contract-image img {
+.contract-img img {
     width: 100%;
     max-width: 767px;
     height: 422px;
 }
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
 .contract-image {
     max-width: 425px;
     width: 100%;
     height: 422px;
 }
-}
+
+.contact-img
+} */
 
 .contract-text {
     display: flex;
