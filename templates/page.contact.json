@@ -46,8 +46,7 @@
         "quick_link_icon_3": "shopify://shop_images/imgi_29_default.png",
         "quick_link_3": "",
         "business_label": "BUSINESS INQUIRIES",
-        "business_email": "BUSINESS@VITAMART.COM",
-        "business_link": "https://thevitamart.myshopify.com/"
+        "business_email": "BUSINESS@VITAMART.COM"
       }
     },
     "address_info_cFYPEJ": {
@@ -111,29 +110,43 @@
         "accordion_JWJBNd": {
           "type": "accordion",
           "settings": {
-            "question": "What are the shipping charges & how long does it take to get delivered?",
-            "answer": "<p>answerWe currently offer Free Standard Shipping for orders over Rs. 850. For orders below Rs. 850, the shipping charges are Rs. 100 only. Shipping typically takes 2-4 working days.</p>"
+            "question": "Shipping Charges & Delivery Time",
+            "answer": "<p>Domestic Shipping<br/>For orders shipped within the brand’s home country, standard shipping charges apply unless minimum order thresholds are met for free shipping. Delivery is typically within 1–5 business days, depending on location.<br/><br/>International Shipping<br/>Delivery Time: 7–21 business days depending on destination, customs clearance, and courier partner.<br/>Shipping Costs: Calculated based on package weight, dimensions, and destination. These fees will be shown at checkout.<br/>Customs / Duties: Any import duties, customs fees, or taxes imposed by the destination country are the responsibility of the customer. Vitamart may assist with documentation if requested.<br/><br/>Order Processing Time<br/>Orders are processed 1‑2 business days after payment confirmation, excluding weekends and public holidays.</p>"
           }
         },
         "accordion_UbbawR": {
           "type": "accordion",
           "settings": {
-            "question": "How does our order verification process work?",
-            "answer": "<p>After placing an order on our website, you’ll receive an automated SMS containing a verification link. Click on the link to verify your order. If the link doesn’t work, you can call our customer care at 0800-77722 or email us at info@vitamart.com.</p>"
+            "question": "Order Verification Process",
+            "answer": "<p>Once you place an order, Vitamart may send a confirmation email or SMS to verify the order details (shipping address, payment method, etc.).<br/><br/>For first‑time customers, high‑value orders, or orders from new addresses, additional verification (e.g. ID confirmation or phone call) may be required.<br/><br/>If verification fails (e.g. no response within a given time), the order may be canceled or held until clarification.<br/><br/></p>"
           }
         },
         "accordion_TAq7ty": {
           "type": "accordion",
           "settings": {
-            "question": "What are the exchange, return, and refund policies for Vitamart.com.pk?",
-            "answer": "<ul><li>Any unopened product can be returned within <strong>10 days</strong> of purchase.</li><li>If you’ve opened the packaging and are unsatisfied, call <strong>0800-77722</strong> for guidance.</li><li><strong>Choose from the following return options:</strong></li></ul><ol><li><strong>Direct Return:</strong> Return the product directly to Nutrifactor at <strong>P-130, Kohinoor City, Jaranwala Road, Faisalabad</strong>. We’ll refund your amount to your <strong>Bank Account / Easy Paisa / Jazz Cash</strong>.</li><li><strong>Courier Pickup:</strong> Our partner courier will pick up the product from your delivery address. We’ll deduct Rs. 200 from your order amount and return the rest to your <strong>Bank Account / Easy Paisa / Jazz Cash</strong>.</li></ol><p><strong>Tampered Products: </strong>If you suspect tampering, keep the original product and packaging. Our customer care team will provide instructions for returning the product.</p>"
+            "question": "Returns, Exchanges & Refund Policy",
+            "answer": "<p>Eligibility for Return/Exchange<br/>Items must be unused, unopened, and in their original packaging with all tags / seals intact. Returns or exchanges due to damage, defects, or incorrect items will be accepted within a certain window (e.g. 7‑30 days) after delivery.<br/><br/>Non‑returnable Items<br/>Products marked as “final sale”, perishable items, opened personal care or hygiene items, etc., may not be eligible for returns.<br/><br/>Return Initiation<br/>Customers must contact customer support, providing order details (order number, product, reason for return). Vitamart may issue a Return Merchandise Authorization (RMA) or similar reference.<br/><br/>Return Shipping Costs<br/>If the return is due to a manufacturing defect, wrong item, or damage, Vitamart covers return shipping. Otherwise, the customer may be responsible for return shipping and any customs clearance on returns. Refund Processing<br/>Once the return is received and inspected, refunds will be issued to the original payment method within a certain time frame (commonly 5‑14 business days). Exchanges will be processed similarly once returned items are verified.<br/><br/></p>"
           }
         },
         "accordion_yE8WJe": {
           "type": "accordion",
           "settings": {
-            "question": "How do I return Nutrifactor’s products if purchased from a different store?",
-            "answer": "<ul><li>If you bought Nutrifactor products online from another website, follow their return and refund instructions.</li><li>For purchases from our retail partners, return the item to their store as per their policy.</li></ul>"
+            "question": "Warranty",
+            "answer": "<p>Some goods may come with manufacturer’s warranty (if applicable). Warranty claims must include proof of purchase.<br/><br/>Warranty does not cover misuse, damage from accident, or alteration of the product.</p>"
+          }
+        },
+        "accordion_e8QHML": {
+          "type": "accordion",
+          "settings": {
+            "question": "Cross‑Store Purchases",
+            "answer": "<p>If Vitamart products are bought through third‑party retailers, Vitamart’s direct return/refund policy usually does not apply. Instead, you should follow the policy of the store where the purchase was made.<br/><br/>Always keep your purchase receipt or invoice, especially for authorized resellers, for any warranty or return claim.</p>"
+          }
+        },
+        "accordion_t84YFt": {
+          "type": "accordion",
+          "settings": {
+            "question": "Order Cancellation",
+            "answer": "<p>Orders may be canceled by the customer within a short window (before processing has started).<br/><br/>Once shipped, cancellation may not be possible. In that case, standard return process applies.</p>"
           }
         }
       },
@@ -141,7 +154,9 @@
         "accordion_JWJBNd",
         "accordion_UbbawR",
         "accordion_TAq7ty",
-        "accordion_yE8WJe"
+        "accordion_yE8WJe",
+        "accordion_e8QHML",
+        "accordion_t84YFt"
       ],
       "name": "Accordion",
       "settings": {}
