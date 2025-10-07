@@ -230,6 +230,11 @@
     height: auto;
 }
 
+.contact-img img {
+    width: 100%;
+    height: auto;
+}
+
 .contact-us-form {
     width: 100%;
     padding: 40px 0px;
