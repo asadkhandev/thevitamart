@@ -43,7 +43,7 @@
       "name": "Medicine Section",
       "settings": {
         "medicine_heading": "WHY VITAMART",
-        "medicine_text": "<p>At Vitmart, we go beyond just selling supplements — we deliver trust, transparency, and science-backed wellness. What sets us apart is our commitment to clarity in labeling, ethically sourced ingredients, and uncompromised quality at every step.</p><p><br/>We follow rigorous testing practices and partner with trusted manufacturers to ensure that every product meets international safety and efficacy standards. From sourcing to shelf, every capsule, tablet, and bottle is crafted with integrity, care, and proven research.</p><p><br/><strong>Our mission is simple:</strong><br/>To make nutrition reliable, accessible, and easy to understand — so you can invest in your health with complete confidence.<br/></p>",
+        "medicine_text": "<p>At Vitmart, we go beyond just selling supplements — we deliver trust, transparency, and science-backed wellness. What sets us apart is our commitment to clarity in labeling, ethically sourced ingredients, and uncompromised quality at every step.</p><p><br/>We follow rigorous testing practices and partner with trusted manufacturers to ensure that every product meets international safety and efficacy standards. From sourcing to shelf, every capsule, tablet, and bottle is crafted with integrity, care, and proven research.</p><p><br/><strong>Our mission is simple</strong><br/>To make nutrition reliable, accessible, and easy to understand — so you can invest in your health with complete confidence.<br/></p>",
         "medicine_image": "shopify://shop_images/Vitamart_Products.png"
       }
     },
@@ -133,7 +133,7 @@
         "text_block_gJ8at8": {
           "type": "text_block",
           "settings": {
-            "text_title": "Certified Manufacturing Standards:",
+            "text_title": "Certified Manufacturing Standards",
             "text_content": "Vitmart is committed to delivering premium-quality nutraceuticals by maintaining complete control over the manufacturing process. Every product is produced in compliance with strict cGMP (Current Good Manufacturing Practices) standards to ensure safety, consistency, and efficacy. Each stage is carefully documented, allowing full traceability from raw materials to final packaging — giving you confidence in every dose."
           }
         },
@@ -171,7 +171,7 @@
       "name": "Head Office Section",
       "settings": {
         "office_heading": "Vitamart's corporate office",
-        "office_text": "<h4><strong>Building a Greener Future</strong></h4><p><br/>By 2026, as part of our “Go Green” initiative, Vitmart is committed to developing a space where sustainability is integrated into every detail. Our upcoming Forest One facility will be more than just a wellness hub — it will be a purposefully designed environment built on energy efficiency, eco-friendly materials, and responsible practices.<br/>At Vitmart, we believe that the choices we make today shape the world of tomorrow. That’s why we’re dedicated to creating long-term positive change for both people and the planet.</p>",
+        "office_text": "<h4><strong>Building a Greener Future</strong></h4><p><br/>By 2026, as part of our “Go Green” initiative, Vitmart is committed to developing a space where sustainability is integrated into every detail. Our upcoming Forest One facility will be more than just a wellness hub — it will be a purposefully designed environment built on energy efficiency, eco-friendly materials, and responsible practices.</p><p><br/>At Vitmart, we believe that the choices we make today shape the world of tomorrow. That’s why we’re dedicated to creating long-term positive change for both people and the planet.</p>",
         "office_icon": "shopify://shop_images/Vitamart_Icon_11b8c4f9-6c7f-4da5-a87e-61edbde6ed9d.png",
         "office_image": "shopify://shop_images/1920x504.jpg"
       }
