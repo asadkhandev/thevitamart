@@ -438,7 +438,12 @@
 
 .contact-img {
     width: 100%;
-    height: 400px;
+    height: 500px;
+}
+
+.contact-img img {
+    width: 100%;
+    height: 500px;
 }
 
 .contact-us-form {
