@@ -23,6 +23,7 @@
     align-items: center;
     text-align: center;
     gap: 15px;
+    width: 100%;
 }
 
 .contact-us-text-section .contact-us-heading {
