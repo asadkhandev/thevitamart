@@ -1,120 +1,114 @@
 {{ 'why-choose.css' | asset_url | stylesheet_tag }}
 <div class="why-choose-section">
   <div class="container">
-
-    <!-- LEFT SIDE -->
     <div class="why-choose-left-section">
       <div class="why-choose-left-inner">
-        
-        <!-- Main Heading -->
-        <h2>{{ section.settings.left_heading }}</h2>
+        <h2>{{ section.settings.main_title }}</h2>
 
-        <!-- Subheading Image -->
-        {% if section.settings.left_subheading_image %}
-          <img src="{{ section.settings.left_subheading_image | img_url: 'master' }}" class="text-image" alt="Subheading">
+        {% if section.settings.subtitle %}
+          <p class="borel">{{ section.settings.subtitle }}</p>
         {% endif %}
 
-        <!-- Description -->
-        <p>{{ section.settings.left_description }}</p>
-
+        {% if section.settings.description %}
+          <p>{{ section.settings.description }}</p>
+        {% endif %}
       </div>
     </div>
 
-    <!-- RIGHT SIDE -->
     <div class="why-choose-right-section">
       <div class="why-choose-right-inner">
+        <h2>{{ section.settings.right_title }}</h2>
 
-        <!-- Right Heading -->
-        <h2>{{ section.settings.right_heading }}</h2>
-
-        <!-- ICON BLOCKS -->
         {% for block in section.blocks %}
-          {% if block.type == 'icon_text' %}
-            <div class="icon-box-section">
-
-              <div class="icon-box">
-                {% if block.settings.icon_image %}
-                  <img src="{{ block.settings.icon_image | img_url: '80x' }}" alt="icon">
-                {% endif %}
-              </div>
-
-              <div class="icon-text">
-                <p>{{ block.settings.icon_text }}</p>
-              </div>
-
+          <div class="icon-box-section">
+            <div class="icon-box">
+              {% if block.settings.icon %}
+                <img
+                  src="{{ block.settings.icon | img_url: '200x' }}"
+                  alt="{{ block.settings.icon.alt | escape }}"
+                  loading="lazy"
+                >
+              {% endif %}
             </div>
-          {% endif %}
+
+            <div class="icon-text">
+              <p>{{ block.settings.text }}</p>
+            </div>
+          </div>
         {% endfor %}
 
-        <!-- Bottom Decorative Image -->
-        {% if section.settings.bottom_text_image %}
-          <div class="text-image">
-            <img src="{{ section.settings.bottom_text_image | img_url: 'master' }}" alt="Trust text">
+        {% if section.settings.bottom_tagline %}
+          <div class="borel-2">
+            <p>{{ section.settings.bottom_tagline }}</p>
           </div>
         {% endif %}
-
       </div>
     </div>
-
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "Why Choose Us Section",
+  "name": "Why Choose Section",
   "settings": [
     {
       "type": "text",
-      "id": "left_heading",
-      "label": "Left Heading",
+      "id": "main_title",
+      "label": "Left Title",
       "default": "Why Choose The Vitamart"
     },
     {
-      "type": "image_picker",
-      "id": "left_subheading_image",
-      "label": "Left Subheading Image"
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle (Borel text)",
+      "default": "Your Wellness, Our Commitment"
     },
     {
       "type": "textarea",
-      "id": "left_description",
-      "label": "Left Description",
+      "id": "description",
+      "label": "Left Paragraph",
       "default": "When you shop at The Vitamart, you’re not just buying vitamins — you’re joining a community that values authenticity, transparency, and trust."
     },
     {
       "type": "text",
-      "id": "right_heading",
-      "label": "Right Heading",
+      "id": "right_title",
+      "label": "Right Title",
       "default": "Here’s what makes us different:"
     },
     {
-      "type": "image_picker",
-      "id": "bottom_text_image",
-      "label": "Bottom Text Image (Right Side)"
+      "type": "text",
+      "id": "bottom_tagline",
+      "label": "Bottom Tagline (Borel text)",
+      "default": "Trusted nutrition, delivered with care."
     }
   ],
+
   "blocks": [
     {
-      "type": "icon_text",
-      "name": "Icon + Text Item",
+      "type": "item",
+      "name": "Why Choose Item",
       "settings": [
         {
           "type": "image_picker",
-          "id": "icon_image",
+          "id": "icon",
           "label": "Icon Image"
         },
         {
-          "type": "richtext",
-          "id": "icon_text",
+          "type": "textarea",
+          "id": "text",
           "label": "Text",
-          "default": "<p><strong>Authorized U.S. Distributor</strong> of Vitamart®</p>"
+          "default": "<strong>Authorized U.S. Distributor</strong> of Vitamart®"
         }
       ]
     }
   ],
+
+  "max_blocks": 10,
+
   "presets": [
     {
-      "name": "Why Choose Us Section",
-      "category": "Homepage"
+      "name": "Why Choose Section",
+      "category": "Custom Sections"
     }
   ]
 }
