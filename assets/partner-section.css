@@ -39,7 +39,8 @@
 }
 
 .partner-logos img {
-    width: 138px;
+    max-width: 138px;
+    width: 100%;
 }
 
 @media (min-width: 610px) and (max-width: 1380px) {
