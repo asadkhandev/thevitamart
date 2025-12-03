@@ -73,8 +73,36 @@
     width: 48%;
 }
 
-@media (min-width: 325px) and (max-width: 1380px) {
+@media (min-width: 441px) and (max-width: 1380px) {
     .banners {
+        justify-content: space-evenly;
+    }
+    .left-banner img {
+    width: 100%;
+    }
+    .right-banner img {
+    width: 100%;
+    }
+    .banner-text span {
+        padding-left: 15px;
+    }
+    .banner-text strong {
+        padding-right: 15px;
+    }
+    .banner-text span h2 {
+        font-size: clamp(16px, 2.5vw, 24px);
+    }
+    .banner-text span p {
+    padding: clamp(6px, 1vw, 10px) clamp(10px, 2vw, 14px);
+    font-size: clamp(12px, 1.8vw, 16px);
+    }
+    .banner-text strong a {
+        font-size: clamp(12px, 1.8vw, 16px);
+    }
+}
+
+@media (min-width: 325px) and (max-width: 440px) {
+     .banners {
         justify-content: space-evenly;
     }
     .left-banner img {
