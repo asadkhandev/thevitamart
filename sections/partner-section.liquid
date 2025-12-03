@@ -1,0 +1,43 @@
+{{ 'partner-section.css' | asset_url | stylesheet_tag }}
+<div class="partner-section">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="partner-heading">
+      <p>{{ section.settings.heading }}</p>
+    </div>
+
+    <!-- Logo Image -->
+    <div class="partner-logos">
+      {% if section.settings.logo_image %}
+        <img src="{{ section.settings.logo_image | img_url: 'master' }}" alt="Partner logos">
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Partner / Science Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "We are Backed by Science"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_image",
+      "label": "Partner Logos Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Partner Section",
+      "category": "Homepage"
+    }
+  ]
+}
+{% endschema %}
