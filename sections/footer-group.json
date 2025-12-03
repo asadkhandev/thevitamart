@@ -11,26 +11,6 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "footer_new_jt6fnj": {
-      "type": "footer-new",
-      "name": "New Footer",
-      "settings": {
-        "footer_logo": "shopify://shop_images/Vitamart_Icon_11b8c4f9-6c7f-4da5-a87e-61edbde6ed9d.png",
-        "footer_tagline": "No.1 Vitamin Brand, Empowering Wellness Globally.",
-        "phone_icon": "shopify://shop_images/1.png",
-        "phone_text": "Call us anytime",
-        "email_icon": "shopify://shop_images/3.png",
-        "email_text": "info@thevitamart.com",
-        "menu1_title": "The Vitamart",
-        "menu1": "footer",
-        "menu2_title": "Shop",
-        "menu2": "footer-menu-business",
-        "menu3_title": "Help & Terms",
-        "menu3": "footer-menu-help-terms",
-        "subscribe_title": "Subscribe to our emails",
-        "subscribe_text": "Receive the latest updates about our products and promotions."
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -94,7 +74,6 @@
     }
   },
   "order": [
-    "footer_new_jt6fnj",
     "footer"
   ]
 }
