@@ -1,0 +1,373 @@
+.container {
+    display: flex;
+    max-width: 1280px;
+}
+
+.blog-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #fcffeb;
+}
+
+.blog-section .container {
+    flex-direction: column;
+    width: 100%;
+    gap: 27px;
+}
+
+.phone-carousel-btns {
+    display: none;
+}
+
+.blog-heading {
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.main-blog {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #e9edd5;
+    position: relative;
+}
+
+.main-blog-image img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.main-blog-text {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 28px;
+    justify-content: space-between;
+}
+
+.main-blog-text span {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.main-blog-text span .sub-heading {
+    display: flex;
+    align-items: center;
+    max-width: 100px;
+    width: 100%;
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px;
+    gap: 10px;
+    border: 1px #b3d11d solid;
+}
+
+.main-blog-text span h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.main-blog-text span p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.main-blog-text strong {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-blog-text strong a {
+    text-decoration: none;
+    color: #00563D;
+    font-weight: 500;
+}
+
+
+
+.blog-carousel-section {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    position: relative;
+}
+
+.carousel-blog {
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #e9edd5;
+}
+
+.carousel-blog-image img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.carousel-blog-text {
+    display: flex;
+    flex-direction: column;
+    padding: 13px 15px;
+    justify-content: space-between;
+}
+
+.carousel-blog-text span {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.carousel-blog-text .sub-heading {
+    display: flex;
+    align-items: center;
+    max-width: 67.67px;
+    width: 100%;
+    background-color: white;
+    border-radius: 50px;
+    padding: 3px 5px;
+    gap: 8px;
+    border: 1px #b3d11d solid;
+    font-size: 10px;
+}
+
+.carousel-blog-text .sub-heading img {
+    width: 14px;
+    height: 14px;
+}
+
+.carousel-blog-text span h2 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.carousel-blog-text span p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.carousel-blog-text strong {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-blog-text strong p {
+    font-size: 12px;
+}
+
+.carousel-blog-text strong a {
+    text-decoration: none;
+    color: #00563D;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.carousel-btns {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    width: 100%;
+    pointer-events: none;
+}
+
+.prev-carousel-btn,
+.next-carousel-btn {
+    pointer-events: all;
+    display: flex;
+    border: 1px solid #AACC00;
+    border-radius: 100%;
+    background-color: #AACC00;
+    padding: 15px 14px;
+}
+
+.prev-carousel-btn {
+    margin-left: -20px;
+}
+
+.next-carousel-btn {
+    margin-right: -20px;
+}
+
+@media (min-width: 1121px) and (max-width: 1320px) {
+    .blog-section .container {
+        padding: 0px 20px;
+    }
+    .main-blog-text span .sub-heading {
+        max-width: 100px;
+        width: 100%;
+    }
+    .carousel-blog-text .sub-heading {
+        max-width: 90px;
+        width: 100%;
+    }
+    .carousel-blog-text span p {
+        padding-bottom: 15px;
+    }
+    .carousel-blog {
+        flex-direction: column;
+    }
+    .carousel-blog-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1120px) {
+    .blog-section {
+        padding: 50px 0px;
+    }
+    .blog-section .container {
+        align-items: center;
+    }
+    .blog-heading {
+        padding: 0px 20px;
+    }
+    .main-blog {
+        flex-direction: column;
+        width: 95%;
+    }
+    .main-blog-image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .main-blog-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .main-blog-text {
+        gap: 20px;
+    }
+    .main-blog-text span .sub-heading {
+        max-width: 90px;
+        width: 100%;
+        font-size: clamp(14px, 1.8vw, 16px);
+    }
+    .main-blog-text span h2 {
+        font-size: clamp(16px, 1.8vw, 18px);
+    }
+    .main-blog-text span p {
+        font-size: clamp(14px, 1.8vw, 16px);
+    }
+    .main-blog-text strong a {
+    font-size: clamp(14px, 1.8vw, 16px);
+    }
+    .main-blog-text strong p {
+    font-size: clamp(14px, 1.8vw, 16px);
+    }
+
+    .blog-carousel-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .carousel-blog {
+    display: flex;
+    width: 95%;
+    border-radius: 10px;
+    background-color: #e9edd5;
+    }
+    .carousel-blog-text .sub-heading {
+        max-width: 90px;
+        width: 100%;
+        font-size: clamp(14px, 1.8vw, 16px);
+    }
+    .carousel-blog-text span h2 {
+        font-size: clamp(16px, 1.8vw, 18px);
+    }
+    .carousel-blog-text span p {
+        font-size: clamp(14px, 1.8vw, 16px);
+    }
+    .carousel-blog-text strong p {
+        font-size: 14px;
+    }
+    .carousel-blog-text strong a {
+        font-size: 14px;
+    }
+    .prev-carousel-btn {
+    margin-left: 5px;
+    }
+
+.next-carousel-btn {
+    margin-right: 5px;
+    }
+}
+
+@media (min-width: 325px) and (max-width: 599px) {
+    .blog-carousel-section {
+        display: none;
+    }
+    .blog-section {
+        padding: 30px 0px;
+    }
+    .blog-section .container {
+        align-items: center;
+    }
+    .blog-heading {
+        padding: 0px 20px;
+    }
+    .main-blog {
+        flex-direction: column;
+        width: 95%;
+    }
+    .main-blog-image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .main-blog-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .main-blog-text {
+        gap: 20px;
+    }
+    .main-blog-text span .sub-heading {
+        max-width: 90px;
+        width: 100%;
+        font-size: clamp(14px, 1.8vw, 16px);
+    }
+    .main-blog-text span h2 {
+        font-size: clamp(16px, 1.8vw, 18px);
+    }
+    .main-blog-text span p {
+        font-size: clamp(14px, 1.8vw, 16px);
+    }
+    .main-blog-text strong a {
+    font-size: clamp(14px, 1.8vw, 16px);
+    }
+    .main-blog-text strong p {
+    font-size: clamp(14px, 1.8vw, 16px);
+    }
+
+    .phone-carousel-btns {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-300%);
+        width: 100%;
+        pointer-events: none;
+    }
+    .phone-carousel-btns .prev-carousel-btn {
+        margin-left: -10px;
+    }
+    .phone-carousel-btns .next-carousel-btn {
+        margin-right: -10px;
+    }
+}
