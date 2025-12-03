@@ -7,11 +7,13 @@
       <p>{{ section.settings.heading }}</p>
     </div>
 
-    <!-- Logo Image -->
+    <!-- Logo Images -->
     <div class="partner-logos">
-      {% if section.settings.logo_image %}
-        <img src="{{ section.settings.logo_image | img_url: 'master' }}" alt="Partner logos">
-      {% endif %}
+      {% for block in section.blocks %}
+        {% if block.settings.logo_image %}
+          <img src="{{ block.settings.logo_image | img_url: 'master' }}" alt="Partner Logo">
+        {% endif %}
+      {% endfor %}
     </div>
 
   </div>
@@ -26,17 +28,36 @@
       "id": "heading",
       "label": "Heading",
       "default": "We are Backed by Science"
-    },
+    }
+  ],
+  "blocks": [
     {
-      "type": "image_picker",
-      "id": "logo_image",
-      "label": "Partner Logos Image"
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo_image",
+          "label": "Logo Image"
+        }
+      ]
     }
   ],
   "presets": [
     {
       "name": "Partner Section",
-      "category": "Homepage"
+      "category": "Homepage",
+      "blocks": [
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        }
+      ]
     }
   ]
 }
