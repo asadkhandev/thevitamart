@@ -120,10 +120,14 @@
     }
     .banner-text span h2 {
         font-size: 15px;
+        padding: 0px;
+        margin: 0px;
     }
     .banner-text span p {
-    padding: clamp(6px, 1vw, 10px) clamp(10px, 2vw, 14px);
-    font-size: 10px;
+        padding: clamp(6px, 1vw, 10px) clamp(10px, 2vw, 14px);
+        font-size: 10px;
+        padding: 0px;
+        margin: 0px;
     }
     .banner-text strong a {
         font-size: clamp(12px, 1.8vw, 16px);
