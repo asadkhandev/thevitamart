@@ -463,17 +463,6 @@
         "padding_top": 0,
         "padding_bottom": 52
       }
-    },
-    "why_choose_section_7AzTPm": {
-      "type": "why-choose-section",
-      "name": "Why Choose Section",
-      "settings": {
-        "main_title": "Why Choose The Vitamart",
-        "subtitle": "Your Wellness, Our Commitment",
-        "description": "When you shop at The Vitamart, you’re not just buying vitamins — you’re joining a community that values authenticity, transparency, and trust.",
-        "right_title": "Here’s what makes us different:",
-        "bottom_tagline": "Trusted nutrition, delivered with care."
-      }
     }
   },
   "order": [
@@ -486,7 +475,6 @@
     "backedbyscience_BrYmNd",
     "featured_collections_slider_NWM3wA",
     "ourworldwide_CEKxQY",
-    "blog_slider_hqeHjp",
-    "why_choose_section_7AzTPm"
+    "blog_slider_hqeHjp"
   ]
 }
