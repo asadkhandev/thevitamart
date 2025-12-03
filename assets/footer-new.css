@@ -48,6 +48,7 @@ footer .container {
     font-size: 14px;
     line-height: 1.5;
     width: 50%;
+    color: white;
 }
 
 .footer-top div:nth-child(2),
@@ -57,6 +58,7 @@ footer .container {
     gap: 10px;
     font-size: 14px;
     line-height: 1.5;
+    color: white;
 }
 
 .footer-top div:nth-child(2) {
@@ -110,6 +112,7 @@ footer .container {
 .footer-middle h2 {
     font-size: 24px;
     font-weight: 600;
+    color: white;
 }
 
 .footer-middle div ul {
@@ -133,6 +136,7 @@ footer .container {
 .footer-middle div:nth-child(4) p {
     font-size: 14px;
     line-height: 1.5;
+    color: white;
 }
 
 .footer-middle input {
@@ -180,6 +184,7 @@ footer .container {
     align-items: center;
     font-size: 14px;
     line-height: 1.5;
+    color: white;
 }
 
 @media (min-width: 325px) and (max-width: 600px) {
