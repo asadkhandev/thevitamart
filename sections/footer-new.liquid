@@ -1,0 +1,173 @@
+{{ 'footer-new.css' | asset_url | stylesheet_tag }}
+<footer>
+  <div class="container">
+
+    <!-- ========== FOOTER TOP ========== -->
+    <div class="footer-top">
+
+      {% for block in section.blocks %}
+        {% if block.type == 'top_item' %}
+          <div>
+            {% if block.settings.icon %}
+              <img src="{{ block.settings.icon | img_url: '100x' }}" alt="Footer Icon">
+            {% endif %}
+            <p>{{ block.settings.text }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+
+    </div>
+
+
+
+    <!-- ========== FOOTER MIDDLE (LINK COLUMNS) ========== -->
+    <div class="footer-middle">
+
+      {% for block in section.blocks %}
+        {% if block.type == 'link_column' %}
+          <div>
+            <h2>{{ block.settings.column_title }}</h2>
+
+            <ul>
+  {% for i in (1..6) %}
+    {% assign key_text = "link_text_" | append: i %}
+    {% assign key_url = "link_url_" | append: i %}
+
+    {% assign link_label = block.settings[key_text] %}
+    {% assign link_url = block.settings[key_url] %}
+
+    {% if link_label != blank %}
+      <li><a href="{{ link_url }}">{{ link_label }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+          </div>
+        {% endif %}
+      {% endfor %}
+
+
+      <!-- Newsletter Section -->
+      <div>
+        <h2>{{ section.settings.newsletter_title }}</h2>
+        <p>{{ section.settings.newsletter_text }}</p>
+
+        <div class="searchbar-input">
+          <form method="post" action="/contact#newsletter" accept-charset="UTF-8">
+            <input type="hidden" name="form_type" value="customer">
+            <input type="hidden" name="contact[tags]" value="newsletter">
+
+            <input type="email" name="contact[email]" placeholder="Email" required>
+
+            {% if section.settings.newsletter_arrow %}
+              <img src="{{ section.settings.newsletter_arrow | img_url: '40x' }}" class="input-arrow">
+            {% endif %}
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- ========== FOOTER BOTTOM ========== -->
+    <div class="footer-bottom">
+
+      <!-- SOCIAL ICONS -->
+      <div class="social-icons">
+        {% for block in section.blocks %}
+          {% if block.type == 'social_icon' %}
+            <div>
+              <a href="{{ block.settings.url }}">
+                <img src="{{ block.settings.icon | img_url: '40x' }}" alt="Social Icon">
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div>
+        <p>{{ section.settings.copyright }}</p>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+{% schema %}
+{
+  "name": "Custom Footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "newsletter_title",
+      "label": "Newsletter Title",
+      "default": "Subscribe to our emails"
+    },
+    {
+      "type": "textarea",
+      "id": "newsletter_text",
+      "label": "Newsletter Description",
+      "default": "Receive the latest updates about our products and promotions."
+    },
+    {
+      "type": "image_picker",
+      "id": "newsletter_arrow",
+      "label": "Newsletter Arrow Icon"
+    },
+    {
+      "type": "text",
+      "id": "copyright",
+      "label": "Copyright Text",
+      "default": "© 2025 All Rights Reserved thevitamart"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "top_item",
+      "name": "Top Item",
+      "settings": [
+        { "type": "image_picker", "id": "icon", "label": "Icon" },
+        { "type": "text", "id": "text", "label": "Text", "default": "Your text here" }
+      ]
+    },
+
+    {
+      "type": "link_column",
+      "name": "Link Column",
+      "settings": [
+        { "type": "text", "id": "column_title", "label": "Column Title", "default": "Column" },
+        { "type": "text", "id": "link_text_1", "label": "Link 1 Text" },
+        { "type": "url", "id": "link_url_1", "label": "Link 1 URL" },
+        { "type": "text", "id": "link_text_2", "label": "Link 2 Text" },
+        { "type": "url", "id": "link_url_2", "label": "Link 2 URL" },
+        { "type": "text", "id": "link_text_3", "label": "Link 3 Text" },
+        { "type": "url", "id": "link_url_3", "label": "Link 3 URL" },
+        { "type": "text", "id": "link_text_4", "label": "Link 4 Text" },
+        { "type": "url", "id": "link_url_4", "label": "Link 4 URL" },
+        { "type": "text", "id": "link_text_5", "label": "Link 5 Text" },
+        { "type": "url", "id": "link_url_5", "label": "Link 5 URL" },
+        { "type": "text", "id": "link_text_6", "label": "Link 6 Text" },
+        { "type": "url", "id": "link_url_6", "label": "Link 6 URL" }
+      ]
+    },
+
+    {
+      "type": "social_icon",
+      "name": "Social Icon",
+      "settings": [
+        { "type": "image_picker", "id": "icon", "label": "Icon" },
+        { "type": "url", "id": "url", "label": "Link URL" }
+      ]
+    }
+  ],
+
+  "presets": [
+    { "name": "Custom Footer" }
+  ]
+}
+{% endschema %}
