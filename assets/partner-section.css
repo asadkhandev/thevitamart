@@ -50,8 +50,7 @@
     .partner-logos img {
         width: 100%;
         height: auto;
-        max-width: 1000px;
-        min-width: 600px;
+        max-width: 138px;
     }
     .partner-heading {
         font-size: clamp(16px, 2.5vw, 24px);
