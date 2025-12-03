@@ -33,7 +33,6 @@
 
 .partner-logos {
     display: flex;
-    max-width: 138px;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
