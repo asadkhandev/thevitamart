@@ -74,6 +74,11 @@
     padding: 16px 0px 16px 0px;
 }
 
+.category-box p {
+    padding: 0px;
+    margin: 0px;
+}
+
 @media (min-width: 768px) and (max-width: 1380px) {
     .category-section .container {
         padding: 50px 20px;
