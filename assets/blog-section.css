@@ -335,7 +335,7 @@
         gap: 20px;
     }
     .main-blog-text span .sub-heading {
-        max-width: 90px;
+        max-width: 100px;
         width: 100%;
         font-size: clamp(14px, 1.8vw, 16px);
     }
