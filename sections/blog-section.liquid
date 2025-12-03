@@ -1,0 +1,196 @@
+{{ 'blog-section.css' | asset_url | stylesheet_tag }}
+<div class="blog-section">
+  <div class="container">
+
+    <!-- BLOG HEADING -->
+    <div class="blog-heading">
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+
+    <!-- MAIN FEATURED BLOG -->
+    <div class="main-blog">
+      <div class="phone-carousel-btns">
+        <a href="#" class="prev-carousel-btn"><img src="{{ 'arrow-left-white.png' | asset_url }}" alt="left arrow"></a>
+        <a href="#" class="next-carousel-btn"><img src="{{ 'arrow-right.png' | asset_url }}" alt="right arrow"></a>
+      </div>
+
+      <div class="main-blog-image">
+        {% if section.settings.main_image %}
+          <img src="{{ section.settings.main_image | img_url: 'master' }}">
+        {% endif %}
+      </div>
+
+      <div class="main-blog-text">
+        <span>
+          <p class="sub-heading">
+            {% if section.settings.main_category_icon %}
+              <img src="{{ section.settings.main_category_icon | img_url: '32x32' }}">
+            {% endif %}
+            {{ section.settings.main_category }}
+          </p>
+
+          <h2>{{ section.settings.main_title }}</h2>
+          <p>{{ section.settings.main_excerpt }}</p>
+        </span>
+
+        <strong>
+          <p>{{ section.settings.main_date }}</p>
+          <a href="{{ section.settings.main_link }}">Read More</a>
+        </strong>
+      </div>
+    </div>
+
+    <!-- CAROUSEL BLOGS -->
+    <div class="blog-carousel-section">
+      <div class="carousel-btns">
+        <a href="#" class="prev-carousel-btn"><img src="{{ 'arrow-left-white.png' | asset_url }}" alt="left arrow"></a>
+        <a href="#" class="next-carousel-btn"><img src="{{ 'arrow-right.png' | asset_url }}" alt="right arrow"></a>
+      </div>
+
+      {% for block in section.blocks %}
+        <div class="carousel-blog">
+          <div class="carousel-blog-image">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: 'master' }}">
+            {% endif %}
+          </div>
+
+          <div class="carousel-blog-text">
+            <span>
+              <p class="sub-heading">
+                {% if block.settings.category_icon %}
+                  <img src="{{ block.settings.category_icon | img_url: '32x32' }}">
+                {% endif %}
+                {{ block.settings.category }}
+              </p>
+
+              <h2>{{ block.settings.title }}</h2>
+              <p>{{ block.settings.excerpt }}</p>
+            </span>
+
+            <strong>
+              <p>{{ block.settings.date }}</p>
+              <a href="{{ block.settings.link }}">Read More</a>
+            </strong>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Blog Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Wellness Blog"
+    },
+
+
+    {
+      "type": "header",
+      "content": "Featured Blog"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Featured Blog Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_category_icon",
+      "label": "Featured Category Icon"
+    },
+    {
+      "type": "text",
+      "id": "main_category",
+      "label": "Featured Category",
+      "default": "Health"
+    },
+    {
+      "type": "text",
+      "id": "main_title",
+      "label": "Featured Title",
+      "default": "The “M” in Migraine Stands for Magnesium"
+    },
+    {
+      "type": "textarea",
+      "id": "main_excerpt",
+      "label": "Featured Excerpt",
+      "default": "Every morning, as the sun rises and the world stirs to life, you hope for a fresh start."
+    },
+    {
+      "type": "text",
+      "id": "main_date",
+      "label": "Featured Date",
+      "default": "Oct 23, 2025"
+    },
+    {
+      "type": "url",
+      "id": "main_link",
+      "label": "Featured Link"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "carousel_blog",
+      "name": "Carousel Blog",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Blog Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "category_icon",
+          "label": "Category Icon"
+        },
+        {
+          "type": "text",
+          "id": "category",
+          "label": "Category",
+          "default": "Health"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Blog Title",
+          "default": "A Helpful Guide To Lose Weight"
+        },
+        {
+          "type": "textarea",
+          "id": "excerpt",
+          "label": "Excerpt",
+          "default": "Perhaps the most perplexing question mankind has ever encountered..."
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Blog Date",
+          "default": "Oct 23, 2025"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Blog Link"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Blog Section",
+      "category": "Homepage"
+    }
+  ]
+}
+{% endschema %}
