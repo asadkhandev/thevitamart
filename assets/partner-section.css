@@ -48,8 +48,7 @@
         padding: 50px 0px;
     }
     .partner-logos img {
-        max-width: 138px;
-        width: 100%;
+        width: auto;
     }
     .partner-heading {
         font-size: clamp(16px, 2.5vw, 24px);
