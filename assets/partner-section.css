@@ -75,6 +75,10 @@
     .partner-section {
         padding: 30px 0px;
     }
+    .partner-logos {
+        justify-content: center;
+        gap: 7px;
+    }
     .partner-logos img {
         width: 100%;
         max-width: 90px;
