@@ -464,18 +464,105 @@
         "padding_bottom": 52
       }
     },
-    "blog_section_MnCbwf": {
-      "type": "blog-section",
-      "name": "Featured Blog Section",
+    "category_section_dXe7yR": {
+      "type": "category-section",
+      "blocks": {
+        "category_n686Np": {
+          "type": "category",
+          "settings": {
+            "category_name": "",
+            "category_link": ""
+          }
+        },
+        "category_zBUbyJ": {
+          "type": "category",
+          "settings": {
+            "category_name": "",
+            "category_link": ""
+          }
+        },
+        "category_axHzGC": {
+          "type": "category",
+          "settings": {
+            "category_name": "",
+            "category_link": ""
+          }
+        },
+        "category_GH67xU": {
+          "type": "category",
+          "settings": {
+            "category_name": "",
+            "category_link": ""
+          }
+        },
+        "category_MiHFUc": {
+          "type": "category",
+          "settings": {
+            "category_name": "",
+            "category_link": ""
+          }
+        },
+        "category_gFYgkw": {
+          "type": "category",
+          "settings": {
+            "category_name": "",
+            "category_link": ""
+          }
+        },
+        "category_HeUA7J": {
+          "type": "category",
+          "settings": {
+            "category_image": "shopify://shop_images/Frame_21_1.png",
+            "category_name": "asd",
+            "category_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "category_n686Np",
+        "category_zBUbyJ",
+        "category_axHzGC",
+        "category_GH67xU",
+        "category_MiHFUc",
+        "category_gFYgkw",
+        "category_HeUA7J"
+      ],
+      "name": "Category Section",
       "settings": {
-        "heading": "Wellness Blog",
-        "blog": "health",
-        "category_text": "Health",
-        "category_icon_custom": "shopify://shop_images/mynaui_leaves-solid.png",
-        "arrow_left": "shopify://shop_images/Vector-white-left.png",
-        "arrow_right": "shopify://shop_images/Vector.png",
-        "category_icon": "shopify://shop_images/5.png",
-        "carousel_limit": 2
+        "heading_text": "Search by Category",
+        "left_arrow": "shopify://shop_images/black_left_arrow.png",
+        "right_arrow": "shopify://shop_images/Vector.png"
+      }
+    },
+    "partner_section_djUtxh": {
+      "type": "partner-section",
+      "name": "Partner Section",
+      "settings": {
+        "heading": "We are Backed by Science",
+        "logo_image": "shopify://shop_images/4.png"
+      }
+    },
+    "banner_section_6tRXrT": {
+      "type": "banner-section",
+      "name": "Two Banner Section",
+      "settings": {
+        "heading": "Trending Products",
+        "subheading": "Best Sellings / New Arrivals",
+        "link_text": "View all products",
+        "link_url": "",
+        "left_image": "shopify://shop_images/Frame_37.png",
+        "right_image": "shopify://shop_images/Frame_38.png"
+      }
+    },
+    "why_choose_section_pNn7rb": {
+      "type": "why-choose-section",
+      "name": "Why Choose Section",
+      "settings": {
+        "main_title": "Why Choose The Vitamart",
+        "subtitle": "Your Wellness, Our Commitment",
+        "description": "When you shop at The Vitamart, you’re not just buying vitamins — you’re joining a community that values authenticity, transparency, and trust.",
+        "right_title": "Here’s what makes us different:",
+        "bottom_tagline": "Trusted nutrition, delivered with care."
       }
     }
   },
@@ -490,6 +577,9 @@
     "featured_collections_slider_NWM3wA",
     "ourworldwide_CEKxQY",
     "blog_slider_hqeHjp",
-    "blog_section_MnCbwf"
+    "category_section_dXe7yR",
+    "partner_section_djUtxh",
+    "banner_section_6tRXrT",
+    "why_choose_section_pNn7rb"
   ]
 }
