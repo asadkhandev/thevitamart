@@ -472,6 +472,8 @@
         "blog": "health",
         "category_text": "Health",
         "category_icon_custom": "shopify://shop_images/mynaui_leaves-solid.png",
+        "arrow_left": "shopify://shop_images/Vector-white-left.png",
+        "arrow_right": "shopify://shop_images/Vector.png",
         "category_icon": "shopify://shop_images/5.png",
         "carousel_limit": 2
       }
