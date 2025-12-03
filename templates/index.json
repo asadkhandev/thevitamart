@@ -473,6 +473,17 @@
         "category_text": "Health",
         "carousel_limit": 2
       }
+    },
+    "blog_section_MnCbwf": {
+      "type": "blog-section",
+      "name": "Featured Blog Section",
+      "settings": {
+        "heading": "Wellness Blog",
+        "blog": "health",
+        "category_text": "Health",
+        "category_icon_custom": "shopify://shop_images/mynaui_leaves-solid.png",
+        "carousel_limit": 2
+      }
     }
   },
   "order": [
@@ -486,6 +497,7 @@
     "featured_collections_slider_NWM3wA",
     "ourworldwide_CEKxQY",
     "blog_slider_hqeHjp",
-    "blog_section_yrJPK3"
+    "blog_section_yrJPK3",
+    "blog_section_MnCbwf"
   ]
 }
