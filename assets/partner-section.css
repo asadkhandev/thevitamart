@@ -71,7 +71,7 @@
     }
 }
 
-@media (min-width: 325px) and (max-width: 609px) {
+@media (min-width: 401px) and (max-width: 609px) {
     .partner-section {
         padding: 30px 0px;
     }
@@ -89,5 +89,18 @@
     }
     .partner-section .container {
         padding: 0px 15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+    .partner-logos {
+        justify-content: center;
+        gap: 7px;
+    }
+    .partner-logos img {
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 90px;
+        min-width: 50px;
     }
 }
