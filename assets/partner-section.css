@@ -103,4 +103,7 @@
         max-width: 60px;
         min-width: 35px;
     }
+    .partner-heading {
+        font-size: 18px;
+    }
 }
