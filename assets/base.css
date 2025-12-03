@@ -3823,7 +3823,6 @@ nav.header__inline-menu::before {
 .slick-next,
 .slick-next:hover,
 .slick-next:focus{
-  background-color: #fff;
   background-repeat: no-repeat;
   background-size: 15px auto;
   background-position: center center;
@@ -3836,7 +3835,6 @@ nav.header__inline-menu::before {
 
 .slick-next:hover, .slick-next:focus,
 .slick-next{
-  background-color: #fff;
   background-image: url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/chev-right.svg?v=1753352355');
 }
 
