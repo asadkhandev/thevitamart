@@ -49,7 +49,7 @@
     }
     .partner-logos {
         justify-content: center;
-        gap: 5px;
+        gap: 20px;
     }
     .partner-logos img {
         max-width: 138px;
