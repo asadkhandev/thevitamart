@@ -380,7 +380,7 @@ slider-component.slider-component-full-width {
 .slider-button{
   width: 35px;
   height: 35px;
-  border: 1px solid #00563D;
+  border: 10px solid #00563D;
   border-radius: 35px;
   z-index: 1;
   background-color: #fff;
