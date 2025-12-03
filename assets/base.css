@@ -3809,7 +3809,7 @@ nav.header__inline-menu::before {
 
 .slick-prev,
 .slick-next{
-  display: flex;
+    display: flex;
     border: 1px solid #AACC00;
     border-radius: 100%;
     background-color: #AACC00;
