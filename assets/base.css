@@ -3826,6 +3826,7 @@ nav.header__inline-menu::before {
   background-repeat: no-repeat;
   background-size: 15px auto;
   background-position: center center;
+  background-color: #AACC00;
 }
 
 .slick-prev:hover, .slick-prev:focus,
