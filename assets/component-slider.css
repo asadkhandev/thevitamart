@@ -345,6 +345,7 @@ slider-component.slider-component-full-width {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: red;
 }
 
 .slider-button:not([disabled]):hover {
