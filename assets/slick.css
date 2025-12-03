@@ -22,7 +22,7 @@
 {
     position: relative;
 
-    display: flex;
+    display: block;
     overflow: hidden;
 
     margin: 0;
