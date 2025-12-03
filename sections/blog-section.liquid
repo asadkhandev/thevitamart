@@ -43,19 +43,14 @@
 
           <!-- ⭐ UPDATED: DYNAMIC CATEGORY + ICON -->
           <p class="sub-heading">
-            {% if main_article.tags.size > 0 %}
-              {% assign tag = main_article.tags.first | downcase %}
-              {% assign tag_icon = selected_blog.metafields.tag_icons[tag] %}
+  {% if section.settings.category_icon_custom %}
+    <img src="{{ section.settings.category_icon_custom | img_url: '50x' }}" alt="{{ section.settings.category_text }}">
+  {% else %}
+    <img src="{{ section.settings.category_icon | img_url: '50x' }}">
+  {% endif %}
+  {{ section.settings.category_text }}
+</p>
 
-              {% if tag_icon %}
-                <img src="{{ tag_icon | img_url: '50x' }}" alt="{{ tag }}">
-              {% else %}
-                <img src="{{ section.settings.category_icon | img_url: '50x' }}">
-              {% endif %}
-
-              {{ main_article.tags.first }}
-            {% endif %}
-          </p>
           <!-- END UPDATE -->
 
           <h2>{{ main_article.title }}</h2>
