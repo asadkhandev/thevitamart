@@ -64,6 +64,13 @@
     }
 }
 
+@media (min-width: 610px) and (max-width: 635px) {
+    .partner-logos {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
 @media (min-width: 325px) and (max-width: 609px) {
     .partner-section {
         padding: 30px 0px;
