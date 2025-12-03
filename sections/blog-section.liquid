@@ -7,70 +7,118 @@
       <h2>{{ section.settings.heading }}</h2>
     </div>
 
-    <!-- MAIN FEATURED BLOG -->
+
+    {% assign selected_blog = blogs[section.settings.blog] %}
+    {% assign articles = selected_blog.articles %}
+
+    {% if articles.size > 0 %}
+      {% assign main_article = articles.first %}
+    {% endif %}
+
+
+    <!-- MAIN FEATURED ARTICLE -->
     <div class="main-blog">
+
       <div class="phone-carousel-btns">
-        <a href="#" class="prev-carousel-btn"><img src="{{ 'arrow-left-white.png' | asset_url }}" alt="left arrow"></a>
-        <a href="#" class="next-carousel-btn"><img src="{{ 'arrow-right.png' | asset_url }}" alt="right arrow"></a>
+        {% if section.settings.arrow_left %}
+          <a href="#" class="prev-carousel-btn"><img src="{{ section.settings.arrow_left | img_url: '50x' }}" alt="Left"></a>
+        {% endif %}
+        {% if section.settings.arrow_right %}
+          <a href="#" class="next-carousel-btn"><img src="{{ section.settings.arrow_right | img_url: '50x' }}" alt="Right"></a>
+        {% endif %}
       </div>
 
       <div class="main-blog-image">
-        {% if section.settings.main_image %}
-          <img src="{{ section.settings.main_image | img_url: 'master' }}">
+        {% if main_article.featured_media %}
+          <a href="{{ main_article.url }}">
+            <img 
+              src="{{ main_article.featured_media | img_url: '800x' }}"
+              alt="{{ main_article.title }}"
+              loading="lazy"
+            >
+          </a>
         {% endif %}
       </div>
 
       <div class="main-blog-text">
         <span>
           <p class="sub-heading">
-            {% if section.settings.main_category_icon %}
-              <img src="{{ section.settings.main_category_icon | img_url: '32x32' }}">
+            {% if main_article.tags.size > 0 %}
+              <img src="{{ section.settings.category_icon | img_url: '50x' }}">
+              {{ main_article.tags.first }}
             {% endif %}
-            {{ section.settings.main_category }}
           </p>
 
-          <h2>{{ section.settings.main_title }}</h2>
-          <p>{{ section.settings.main_excerpt }}</p>
+          <h2>{{ main_article.title }}</h2>
+
+          <p>
+            {% if main_article.excerpt != blank %}
+              {{ main_article.excerpt }}
+            {% else %}
+              {{ main_article.content | strip_html | truncate: 140 }}
+            {% endif %}
+          </p>
         </span>
 
         <strong>
-          <p>{{ section.settings.main_date }}</p>
-          <a href="{{ section.settings.main_link }}">Read More</a>
+          <p>{{ main_article.published_at | date: "%b %d, %Y" }}</p>
+          <a href="{{ main_article.url }}">Read More</a>
         </strong>
       </div>
     </div>
 
-    <!-- CAROUSEL BLOGS -->
+
+
+    <!-- BLOG CAROUSEL -->
     <div class="blog-carousel-section">
+
       <div class="carousel-btns">
-        <a href="#" class="prev-carousel-btn"><img src="{{ 'arrow-left-white.png' | asset_url }}" alt="left arrow"></a>
-        <a href="#" class="next-carousel-btn"><img src="{{ 'arrow-right.png' | asset_url }}" alt="right arrow"></a>
+        {% if section.settings.arrow_left %}
+          <a href="#" class="prev-carousel-btn"><img src="{{ section.settings.arrow_left | img_url: '50x' }}" alt="Left"></a>
+        {% endif %}
+        {% if section.settings.arrow_right %}
+          <a href="#" class="next-carousel-btn"><img src="{{ section.settings.arrow_right | img_url: '50x' }}" alt="Right"></a>
+        {% endif %}
       </div>
 
-      {% for block in section.blocks %}
+
+      {% for article in articles offset:1 limit: section.settings.carousel_limit %}
         <div class="carousel-blog">
           <div class="carousel-blog-image">
-            {% if block.settings.image %}
-              <img src="{{ block.settings.image | img_url: 'master' }}">
+            {% if article.featured_media %}
+              <a href="{{ article.url }}">
+                <img 
+                  src="{{ article.featured_media | img_url: '500x' }}"
+                  alt="{{ article.title }}"
+                  loading="lazy"
+                >
+              </a>
             {% endif %}
           </div>
 
           <div class="carousel-blog-text">
             <span>
               <p class="sub-heading">
-                {% if block.settings.category_icon %}
-                  <img src="{{ block.settings.category_icon | img_url: '32x32' }}">
+                {% if article.tags.size > 0 %}
+                  <img src="{{ section.settings.category_icon | img_url: '50x' }}">
+                  {{ article.tags.first }}
                 {% endif %}
-                {{ block.settings.category }}
               </p>
 
-              <h2>{{ block.settings.title }}</h2>
-              <p>{{ block.settings.excerpt }}</p>
+              <h2>{{ article.title }}</h2>
+
+              <p>
+                {% if article.excerpt != blank %}
+                  {{ article.excerpt }}
+                {% else %}
+                  {{ article.content | strip_html | truncate: 90 }}
+                {% endif %}
+              </p>
             </span>
 
             <strong>
-              <p>{{ block.settings.date }}</p>
-              <a href="{{ block.settings.link }}">Read More</a>
+              <p>{{ article.published_at | date: "%b %d, %Y" }}</p>
+              <a href="{{ article.url }}">Read More</a>
             </strong>
           </div>
         </div>
@@ -83,7 +131,7 @@
 
 {% schema %}
 {
-  "name": "Blog Section",
+  "name": "Featured Blog Section",
   "settings": [
     {
       "type": "text",
@@ -91,104 +139,40 @@
       "label": "Section Heading",
       "default": "Wellness Blog"
     },
-
-
     {
-      "type": "header",
-      "content": "Featured Blog"
+      "type": "blog",
+      "id": "blog",
+      "label": "Select Blog"
     },
     {
       "type": "image_picker",
-      "id": "main_image",
-      "label": "Featured Blog Image"
+      "id": "arrow_left",
+      "label": "Left Arrow Icon"
     },
     {
       "type": "image_picker",
-      "id": "main_category_icon",
-      "label": "Featured Category Icon"
+      "id": "arrow_right",
+      "label": "Right Arrow Icon"
     },
     {
-      "type": "text",
-      "id": "main_category",
-      "label": "Featured Category",
-      "default": "Health"
+      "type": "image_picker",
+      "id": "category_icon",
+      "label": "Category Icon"
     },
     {
-      "type": "text",
-      "id": "main_title",
-      "label": "Featured Title",
-      "default": "The “M” in Migraine Stands for Magnesium"
-    },
-    {
-      "type": "textarea",
-      "id": "main_excerpt",
-      "label": "Featured Excerpt",
-      "default": "Every morning, as the sun rises and the world stirs to life, you hope for a fresh start."
-    },
-    {
-      "type": "text",
-      "id": "main_date",
-      "label": "Featured Date",
-      "default": "Oct 23, 2025"
-    },
-    {
-      "type": "url",
-      "id": "main_link",
-      "label": "Featured Link"
-    }
-  ],
-
-  "blocks": [
-    {
-      "type": "carousel_blog",
-      "name": "Carousel Blog",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Blog Image"
-        },
-        {
-          "type": "image_picker",
-          "id": "category_icon",
-          "label": "Category Icon"
-        },
-        {
-          "type": "text",
-          "id": "category",
-          "label": "Category",
-          "default": "Health"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Blog Title",
-          "default": "A Helpful Guide To Lose Weight"
-        },
-        {
-          "type": "textarea",
-          "id": "excerpt",
-          "label": "Excerpt",
-          "default": "Perhaps the most perplexing question mankind has ever encountered..."
-        },
-        {
-          "type": "text",
-          "id": "date",
-          "label": "Blog Date",
-          "default": "Oct 23, 2025"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Blog Link"
-        }
-      ]
+      "type": "range",
+      "id": "carousel_limit",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 2,
+      "label": "Number of carousel articles"
     }
   ],
 
   "presets": [
     {
-      "name": "Blog Section",
+      "name": "Featured Blog Section",
       "category": "Homepage"
     }
   ]
