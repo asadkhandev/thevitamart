@@ -630,7 +630,7 @@
         "discount_heading": "Latest Offers & Discounts",
         "button_text": "View all products",
         "button_link": "",
-        "title": "Featured Collections",
+        "title": "",
         "text_alignment": "center",
         "collection": "best-sellings",
         "products_to_show": 8,
