@@ -64,6 +64,7 @@
     font-weight: 400;
     line-height: 1.5;
     margin: -15px 0px 0px 0px;
+    padding: 0;
 }
 
 .text-image {
@@ -75,7 +76,8 @@
     font-weight: 600;
     padding-bottom: 5px;
     color: white;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 .why-choose-right-section {
