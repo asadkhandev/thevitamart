@@ -622,6 +622,28 @@
         "right_title": "Here’s what makes us different:",
         "bottom_tagline": "Trusted nutrition, delivered with care."
       }
+    },
+    "discount_section_9yA6fh": {
+      "type": "discount-section",
+      "name": "Collections",
+      "settings": {
+        "discount_heading": "Latest Offers & Discounts",
+        "button_text": "View all products",
+        "button_link": "",
+        "title": "Featured Collections",
+        "text_alignment": "center",
+        "collection": "best-sellings",
+        "products_to_show": 8,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -638,6 +660,7 @@
     "category_section_dXe7yR",
     "partner_section_djUtxh",
     "banner_section_6tRXrT",
-    "why_choose_section_pNn7rb"
+    "why_choose_section_pNn7rb",
+    "discount_section_9yA6fh"
   ]
 }
