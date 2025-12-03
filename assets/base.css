@@ -3811,7 +3811,7 @@ nav.header__inline-menu::before {
 .slick-next{
   width: 35px;
   height: 35px;
-  border: 1px solid #00563D;
+  border: 10px solid #00563D;
   border-radius: 35px;
   z-index: 1;
 }
