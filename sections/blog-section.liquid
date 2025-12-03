@@ -41,16 +41,28 @@
       <div class="main-blog-text">
         <span>
 
-          <!-- ⭐ UPDATED: DYNAMIC CATEGORY + ICON -->
+          <!-- ⭐ DYNAMIC CATEGORY + ICON -->
           <p class="sub-heading">
-  {% if section.settings.category_icon_custom %}
-    <img src="{{ section.settings.category_icon_custom | img_url: '50x' }}" alt="{{ section.settings.category_text }}">
-  {% else %}
-    <img src="{{ section.settings.category_icon | img_url: '50x' }}">
-  {% endif %}
-  {{ section.settings.category_text }}
-</p>
+            {% if main_article.tags.size > 0 %}
+              {% assign main_tag = main_article.tags.first | downcase %}
+              {% assign main_tag_icon = selected_blog.metafields.tag_icons[main_tag] %}
 
+              {% if main_tag_icon %}
+                <img src="{{ main_tag_icon | img_url: '50x' }}" alt="{{ main_article.tags.first }}">
+              {% else %}
+                <img src="{{ section.settings.category_icon | img_url: '50x' }}">
+              {% endif %}
+
+              {{ main_article.tags.first }}
+            {% else %}
+              {% if section.settings.category_icon_custom %}
+                <img src="{{ section.settings.category_icon_custom | img_url: '50x' }}" alt="{{ section.settings.category_text }}">
+              {% else %}
+                <img src="{{ section.settings.category_icon | img_url: '50x' }}">
+              {% endif %}
+              {{ section.settings.category_text }}
+            {% endif %}
+          </p>
           <!-- END UPDATE -->
 
           <h2>{{ main_article.title }}</h2>
@@ -70,8 +82,6 @@
         </strong>
       </div>
     </div>
-
-
 
     <!-- BLOG CAROUSEL -->
     <div class="blog-carousel-section">
@@ -103,19 +113,26 @@
           <div class="carousel-blog-text">
             <span>
 
-              <!-- ⭐ UPDATED: DYNAMIC CATEGORY + ICON -->
+              <!-- ⭐ DYNAMIC CATEGORY + ICON -->
               <p class="sub-heading">
                 {% if article.tags.size > 0 %}
                   {% assign tag = article.tags.first | downcase %}
                   {% assign tag_icon = selected_blog.metafields.tag_icons[tag] %}
 
                   {% if tag_icon %}
-                    <img src="{{ tag_icon | img_url: '50x' }}" alt="{{ tag }}">
+                    <img src="{{ tag_icon | img_url: '50x' }}" alt="{{ article.tags.first }}">
                   {% else %}
                     <img src="{{ section.settings.category_icon | img_url: '50x' }}">
                   {% endif %}
 
                   {{ article.tags.first }}
+                {% else %}
+                  {% if section.settings.category_icon_custom %}
+                    <img src="{{ section.settings.category_icon_custom | img_url: '50x' }}" alt="{{ section.settings.category_text }}">
+                  {% else %}
+                    <img src="{{ section.settings.category_icon | img_url: '50x' }}">
+                  {% endif %}
+                  {{ section.settings.category_text }}
                 {% endif %}
               </p>
               <!-- END UPDATE -->
@@ -142,8 +159,6 @@
 
   </div>
 </div>
-
-
 
 {% schema %}
 {
