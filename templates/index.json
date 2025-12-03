@@ -536,10 +536,48 @@
     },
     "partner_section_djUtxh": {
       "type": "partner-section",
+      "blocks": {
+        "logo_Xwgfdy": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/Frame_21_1.png"
+          }
+        },
+        "logo_7p4aYK": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/Frame_21_1.png"
+          }
+        },
+        "logo_icdEVR": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/Frame_21_1.png"
+          }
+        },
+        "logo_ixRhJM": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/Frame_21_1.png"
+          }
+        },
+        "logo_wwP3P7": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/Frame_21_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "logo_Xwgfdy",
+        "logo_7p4aYK",
+        "logo_icdEVR",
+        "logo_ixRhJM",
+        "logo_wwP3P7"
+      ],
       "name": "Partner Section",
       "settings": {
-        "heading": "We are Backed by Science",
-        "logo_image": "shopify://shop_images/4.png"
+        "heading": "We are Backed by Science"
       }
     },
     "banner_section_6tRXrT": {
