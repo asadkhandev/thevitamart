@@ -36,7 +36,6 @@
     background: linear-gradient(to bottom right, #0c5f39, #689e18);
     border-radius: 10px;
     padding: 40px 0px 40px 30px;
-    color: white;
     gap: 15px;
 }
 
@@ -45,6 +44,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+    color: white;
 }
 
 .text-image {
@@ -54,6 +54,7 @@
 .why-choose-left-inner h2 {
     font-size: 24px;
     font-weight: 600;
+    color: white;
 }
 
 .why-choose-right-section {
