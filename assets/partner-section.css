@@ -96,9 +96,9 @@
     .partner-logos {
         justify-content: center;
         gap: 7px;
+        flex-wrap: wrap;
     }
     .partner-logos img {
-        flex-wrap: wrap;
         width: 100%;
         max-width: 90px;
         min-width: 50px;
