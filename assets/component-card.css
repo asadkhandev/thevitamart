@@ -411,6 +411,9 @@
 
 .card--card.card--media > .card__content {
   margin-top: calc(0rem - var(--image-padding));
+  background: #fff;
+}
+.banner-section .card--card.card--media > .card__content {
   background: #e9edd5;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
