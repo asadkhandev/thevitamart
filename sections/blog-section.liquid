@@ -27,10 +27,10 @@
       </div>
 
       <div class="main-blog-image">
-        {% if main_article.featured_media %}
+        {% if main_article.image %}
           <a href="{{ main_article.url }}">
             <img 
-              src="{{ main_article.featured_media | img_url: '800x' }}"
+              src="{{ main_article.image | img_url: '800x' }}"
               alt="{{ main_article.title }}"
               loading="lazy"
             >
