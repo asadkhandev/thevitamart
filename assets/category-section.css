@@ -109,11 +109,14 @@
 }
 
 @media (min-width: 851px) and (max-width: 1100px) {
+    .category-carousel {
+    gap: 15px;
+}
     .category-section .container {
         padding: 0px 20px;
     }
     .category-box {
-        max-width: 100px;
+        max-width: 110px;
         width: 100%;
         padding: 10px 14px 10px 14px;
     }
