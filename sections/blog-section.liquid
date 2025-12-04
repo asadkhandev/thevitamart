@@ -27,10 +27,10 @@
       </div>
 
       <div class="main-blog-image">
-        {% if main_article.featured_media %}
+        {% if main_article.image %}
           <a href="{{ main_article.url }}">
             <img 
-              src="{{ main_article.featured_media | img_url: '800x' }}"
+              src="{{ main_article.image | img_url: '800x' }}"
               alt="{{ main_article.title }}"
               loading="lazy"
             >
@@ -99,10 +99,10 @@
         <div class="carousel-blog">
 
           <div class="carousel-blog-image">
-            {% if article.featured_media %}
+            {% if article.image %}
               <a href="{{ article.url }}">
                 <img 
-                  src="{{ article.featured_media | img_url: '500x' }}"
+                  src="{{ article.image | img_url: '500x' }}"
                   alt="{{ article.title }}"
                   loading="lazy"
                 >
@@ -160,8 +160,6 @@
   </div>
 </div>
 
-
-
 {% schema %}
 {
   "name": "Featured Blog Section",
@@ -213,7 +211,6 @@
       "label": "Number of carousel articles"
     }
   ],
-
   "presets": [
     {
       "name": "Featured Blog Section",
