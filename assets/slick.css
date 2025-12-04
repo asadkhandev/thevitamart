@@ -105,6 +105,8 @@
 .banner-section .slick-initialized .slick-slide
 {
     background-color: #e9edd5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .slick-loading .slick-slide
 {
