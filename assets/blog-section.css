@@ -47,13 +47,13 @@
     flex-direction: column;
     padding: 34px 28px;
     justify-content: space-between;
-    background-color: red;
 }
 
 .main-blog-text span {
     display: flex;
     flex-direction: column;
     gap: 14px;
+    padding: 0px;
 }
 
 .main-blog-text span .sub-heading {
