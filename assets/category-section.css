@@ -81,7 +81,7 @@
     margin: 0px;
 }
 
-@media (min-width: 768px) and (max-width: 1380px) {
+@media (min-width: 768px) and (max-width: 1150px) {
     .category-section .container {
         padding: 35px 20px;
     }
