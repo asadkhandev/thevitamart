@@ -1,43 +1,82 @@
 {{ 'category-section.css' | asset_url | stylesheet_tag }}
 <div class="category-section">
   <div class="container">
+
     <!-- Top heading and navigation -->
     <div class="category-top-section">
       <div class="category-heading">
         <p>{{ section.settings.heading_text }}</p>
       </div>
+
+      <!-- Slick-style buttons -->
       <div class="category-btns">
         {% if section.settings.left_arrow %}
-          <a href="#" class="previous-btn">
-            <img src="{{ section.settings.left_arrow | img_url: '50x50' }}" alt="left arrow">
-          </a>
+          <button class="previous-btn">
+            <img src="{{ section.settings.left_arrow | img_url: '50x50' }}" alt="Left">
+          </button>
         {% endif %}
         {% if section.settings.right_arrow %}
-          <a href="#" class="next-btn">
-            <img src="{{ section.settings.right_arrow | img_url: '50x50' }}" alt="right arrow">
-          </a>
+          <button class="next-btn">
+            <img src="{{ section.settings.right_arrow | img_url: '50x50' }}" alt="Right">
+          </button>
         {% endif %}
       </div>
     </div>
 
-    <!-- Category carousel -->
-    <div class="category-carousel">
-      {% for block in section.blocks %}
-        <div class="category-box">
-          {% if block.settings.category_link %}
-            <a href="{{ block.settings.category_link }}">
+    <!-- Carousel Wrapper -->
+    <div class="category-carousel-wrapper" style="position:relative; overflow:hidden;">
+      <div class="category-carousel" style="display:flex; gap:20px; transition: transform 0.3s ease;">
+        {% for block in section.blocks %}
+          <div class="category-box" style="flex:0 0 auto; width:150px; text-align:center;">
+            {% if block.settings.category_link %}
+              <a href="{{ block.settings.category_link }}">
+                <img src="{{ block.settings.category_image | img_url: '300x300' }}" alt="{{ block.settings.category_name }}">
+                <p>{{ block.settings.category_name }}</p>
+              </a>
+            {% else %}
               <img src="{{ block.settings.category_image | img_url: '300x300' }}" alt="{{ block.settings.category_name }}">
               <p>{{ block.settings.category_name }}</p>
-            </a>
-          {% else %}
-            <img src="{{ block.settings.category_image | img_url: '300x300' }}" alt="{{ block.settings.category_name }}">
-            <p>{{ block.settings.category_name }}</p>
-          {% endif %}
-        </div>
-      {% endfor %}
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
     </div>
+
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const carouselWrapper = document.querySelector('.category-carousel-wrapper');
+  const carousel = document.querySelector('.category-carousel');
+  const items = document.querySelectorAll('.category-box');
+  const prevBtn = document.querySelector('.previous-btn');
+  const nextBtn = document.querySelector('.next-btn');
+
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    const wrapperWidth = carouselWrapper.offsetWidth;
+    const itemWidth = items[0].offsetWidth + 20; // include gap
+    const maxIndex = Math.max(0, items.length - Math.floor(wrapperWidth / itemWidth));
+    currentIndex = Math.min(Math.max(currentIndex, 0), maxIndex);
+    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+  }
+
+  if(prevBtn) prevBtn.addEventListener('click', () => {
+    currentIndex--;
+    updateCarousel();
+  });
+
+  if(nextBtn) nextBtn.addEventListener('click', () => {
+    currentIndex++;
+    updateCarousel();
+  });
+
+  window.addEventListener('resize', updateCarousel);
+  updateCarousel();
+});
+</script>
 
 {% schema %}
 {
