@@ -291,12 +291,8 @@
     border-radius: 10px;
     background-color: #e9edd5;
     }
-    .carousel-blog-image {
-        width: 402px;
-        overflow: hidden;
-    }
     .carousel-blog-image img {
-        width: 402px;
+        width: 100%;
         border-radius: 10px;
     }
     .carousel-blog-text .sub-heading {
