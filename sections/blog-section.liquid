@@ -17,7 +17,6 @@
     <!-- MAIN FEATURED ARTICLE -->
     <div class="main-blog">
 
-      <!-- PHONE BUTTONS (mobile) -->
       <div class="phone-carousel-btns">
         {% if section.settings.arrow_left %}
           <a href="#" class="prev-carousel-btn"><img src="{{ section.settings.arrow_left | img_url: '50x' }}" alt="Left"></a>
@@ -30,22 +29,30 @@
       <div class="main-blog-image">
         {% if main_article.image %}
           <a href="{{ main_article.url }}">
-            <img src="{{ main_article.image | img_url: '800x' }}" alt="{{ main_article.title }}" loading="lazy">
+            <img 
+              src="{{ main_article.image | img_url: '800x' }}"
+              alt="{{ main_article.title }}"
+              loading="lazy"
+            >
           </a>
         {% endif %}
       </div>
 
       <div class="main-blog-text">
         <span>
+
+          <!-- ⭐ DYNAMIC CATEGORY + ICON -->
           <p class="sub-heading">
             {% if main_article.tags.size > 0 %}
               {% assign main_tag = main_article.tags.first | downcase %}
               {% assign main_tag_icon = selected_blog.metafields.tag_icons[main_tag] %}
+
               {% if main_tag_icon %}
                 <img src="{{ main_tag_icon | img_url: '50x' }}" alt="{{ main_article.tags.first }}">
               {% else %}
                 <img src="{{ section.settings.category_icon | img_url: '50x' }}">
               {% endif %}
+
               {{ main_article.tags.first }}
             {% else %}
               {% if section.settings.category_icon_custom %}
@@ -56,7 +63,10 @@
               {{ section.settings.category_text }}
             {% endif %}
           </p>
+          <!-- END UPDATE -->
+
           <h2>{{ main_article.title }}</h2>
+
           <p>
             {% if main_article.excerpt != blank %}
               {{ main_article.excerpt }}
@@ -65,6 +75,7 @@
             {% endif %}
           </p>
         </span>
+
         <strong>
           <p>{{ main_article.published_at | date: "%b %d, %Y" }}</p>
           <a href="{{ main_article.url }}">Read More</a>
@@ -73,8 +84,8 @@
     </div>
 
     <!-- BLOG CAROUSEL -->
-    <div class="blog-carousel-wrapper" style="position: relative; overflow: hidden;">
-      <!-- Carousel Buttons -->
+    <div class="blog-carousel-section">
+
       <div class="carousel-btns">
         {% if section.settings.arrow_left %}
           <a href="#" class="prev-carousel-btn"><img src="{{ section.settings.arrow_left | img_url: '50x' }}" alt="Left"></a>
@@ -84,63 +95,73 @@
         {% endif %}
       </div>
 
-      <!-- Sliding Container -->
-      <div class="blog-carousel-section" style="display: flex; transition: transform 0.3s ease; gap: 20px;">
-        {% for article in articles offset:1 limit: section.settings.carousel_limit %}
-          <div class="carousel-blog">
-            <div class="carousel-blog-image">
-              {% if article.image %}
-                <a href="{{ article.url }}">
-                  <img src="{{ article.image | img_url: '500x' }}" alt="{{ article.title }}" loading="lazy">
-                </a>
-              {% endif %}
-            </div>
-            <div class="carousel-blog-text">
-              <span>
-                <p class="sub-heading">
-                  {% if article.tags.size > 0 %}
-                    {% assign tag = article.tags.first | downcase %}
-                    {% assign tag_icon = selected_blog.metafields.tag_icons[tag] %}
-                    {% if tag_icon %}
-                      <img src="{{ tag_icon | img_url: '50x' }}" alt="{{ article.tags.first }}">
-                    {% else %}
-                      <img src="{{ section.settings.category_icon | img_url: '50x' }}">
-                    {% endif %}
-                    {{ article.tags.first }}
-                  {% else %}
-                    {% if section.settings.category_icon_custom %}
-                      <img src="{{ section.settings.category_icon_custom | img_url: '50x' }}" alt="{{ section.settings.category_text }}">
-                    {% else %}
-                      <img src="{{ section.settings.category_icon | img_url: '50x' }}">
-                    {% endif %}
-                    {{ section.settings.category_text }}
-                  {% endif %}
-                </p>
-                <h2>{{ article.title }}</h2>
-                <p>
-                  {% if article.excerpt != blank %}
-                    {{ article.excerpt }}
-                  {% else %}
-                    {{ article.content | strip_html | truncate: 90 }}
-                  {% endif %}
-                </p>
-              </span>
-              <strong>
-                <p>{{ article.published_at | date: "%b %d, %Y" }}</p>
-                <a href="{{ article.url }}">Read More</a>
-              </strong>
-            </div>
+      {% for article in articles offset:1 limit: section.settings.carousel_limit %}
+        <div class="carousel-blog">
+
+          <div class="carousel-blog-image">
+            {% if article.image %}
+              <a href="{{ article.url }}">
+                <img 
+                  src="{{ article.image | img_url: '500x' }}"
+                  alt="{{ article.title }}"
+                  loading="lazy"
+                >
+              </a>
+            {% endif %}
           </div>
-        {% endfor %}
-      </div>
+
+          <div class="carousel-blog-text">
+            <span>
+
+              <!-- ⭐ DYNAMIC CATEGORY + ICON -->
+              <p class="sub-heading">
+                {% if article.tags.size > 0 %}
+                  {% assign tag = article.tags.first | downcase %}
+                  {% assign tag_icon = selected_blog.metafields.tag_icons[tag] %}
+
+                  {% if tag_icon %}
+                    <img src="{{ tag_icon | img_url: '50x' }}" alt="{{ article.tags.first }}">
+                  {% else %}
+                    <img src="{{ section.settings.category_icon | img_url: '50x' }}">
+                  {% endif %}
+
+                  {{ article.tags.first }}
+                {% else %}
+                  {% if section.settings.category_icon_custom %}
+                    <img src="{{ section.settings.category_icon_custom | img_url: '50x' }}" alt="{{ section.settings.category_text }}">
+                  {% else %}
+                    <img src="{{ section.settings.category_icon | img_url: '50x' }}">
+                  {% endif %}
+                  {{ section.settings.category_text }}
+                {% endif %}
+              </p>
+              <!-- END UPDATE -->
+
+              <h2>{{ article.title }}</h2>
+
+              <p>
+                {% if article.excerpt != blank %}
+                  {{ article.excerpt }}
+                {% else %}
+                  {{ article.content | strip_html | truncate: 90 }}
+                {% endif %}
+              </p>
+            </span>
+
+            <strong>
+              <p>{{ article.published_at | date: "%b %d, %Y" }}</p>
+              <a href="{{ article.url }}">Read More</a>
+            </strong>
+          </div>
+        </div>
+      {% endfor %}
     </div>
 
   </div>
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const carouselWrapper = document.querySelector('.blog-carousel-wrapper');
+  document.addEventListener('DOMContentLoaded', function() {
   const carousel = document.querySelector('.blog-carousel-section');
   const carouselItems = document.querySelectorAll('.carousel-blog');
   const prevBtns = document.querySelectorAll('.prev-carousel-btn');
@@ -150,17 +171,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const totalItems = carouselItems.length;
 
   function updateCarousel() {
-    const wrapperWidth = carouselWrapper.offsetWidth;
     const itemWidth = carouselItems[0].offsetWidth + 20; // 20 = gap
-    const maxIndex = totalItems - Math.floor(wrapperWidth / itemWidth);
-    currentIndex = Math.min(Math.max(currentIndex, 0), maxIndex);
     carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
   }
 
   prevBtns.forEach(btn => {
     btn.addEventListener('click', function(e) {
       e.preventDefault();
-      currentIndex--;
+      currentIndex = Math.max(currentIndex - 1, 0);
       updateCarousel();
     });
   });
@@ -168,15 +186,15 @@ document.addEventListener('DOMContentLoaded', function() {
   nextBtns.forEach(btn => {
     btn.addEventListener('click', function(e) {
       e.preventDefault();
-      currentIndex++;
+      currentIndex = Math.min(currentIndex + 1, totalItems - 1);
       updateCarousel();
     });
   });
-
-  window.addEventListener('resize', updateCarousel);
-  updateCarousel();
 });
+
 </script>
+
+
 
 {% schema %}
 {
