@@ -160,40 +160,6 @@
   </div>
 </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-  const carousel = document.querySelector('.blog-carousel-section');
-  const carouselItems = document.querySelectorAll('.carousel-blog');
-  const prevBtns = document.querySelectorAll('.prev-carousel-btn');
-  const nextBtns = document.querySelectorAll('.next-carousel-btn');
-
-  let currentIndex = 0;
-  const totalItems = carouselItems.length;
-
-  function updateCarousel() {
-    const itemWidth = carouselItems[0].offsetWidth + 20; // 20 = gap
-    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-  }
-
-  prevBtns.forEach(btn => {
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-      currentIndex = Math.max(currentIndex - 1, 0);
-      updateCarousel();
-    });
-  });
-
-  nextBtns.forEach(btn => {
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-      currentIndex = Math.min(currentIndex + 1, totalItems - 1);
-      updateCarousel();
-    });
-  });
-});
-
-</script>
-
 
 
 {% schema %}
