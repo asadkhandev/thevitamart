@@ -39,6 +39,41 @@
   </div>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const carouselWrapper = document.querySelector('.category-carousel');
+  const items = document.querySelectorAll('.category-box');
+  const prevBtn = document.querySelector('.previous-btn');
+  const nextBtn = document.querySelector('.next-btn');
+
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    const wrapperWidth = carouselWrapper.offsetWidth;
+    const itemWidth = items[0].offsetWidth + parseInt(getComputedStyle(items[0]).marginRight);
+    const maxIndex = Math.max(0, items.length - Math.floor(wrapperWidth / itemWidth));
+    currentIndex = Math.min(Math.max(currentIndex, 0), maxIndex);
+    carouselWrapper.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+  }
+
+  if(prevBtn) prevBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    currentIndex--;
+    updateCarousel();
+  });
+
+  if(nextBtn) nextBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    currentIndex++;
+    updateCarousel();
+  });
+
+  window.addEventListener('resize', updateCarousel);
+  updateCarousel();
+});
+</script>
+
+
 {% schema %}
 {
   "name": "Category Section",
