@@ -107,7 +107,8 @@
 }
 
 .carousel-blog-image img {
-    width: 402px;
+    max-width: 402px;
+    width: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
