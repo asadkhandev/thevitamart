@@ -37,6 +37,7 @@
 }
 
 .main-blog-image img {
+    width: 846px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -246,7 +247,7 @@
         width: 100%;
     }
     .main-blog-image img {
-        width: 846px;
+        width: 100%;
         border-radius: 10px;
     }
     .main-blog-text {
