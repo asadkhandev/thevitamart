@@ -83,7 +83,7 @@
 
 @media (min-width: 1101px) and (max-width: 1380px) {
     .category-box {
-        max-width: 110px;
+        max-width: 130px;
         width: 100%;
         padding: 10px 14px 10px 14px;
     }
