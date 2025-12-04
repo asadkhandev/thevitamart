@@ -102,7 +102,7 @@
             {% if article.image %}
               <a href="{{ article.url }}">
                 <img 
-                  src="{{ article.image | img_url }}"
+                  src="{{ article.image | img_url: '2048x2048' }}"
                   alt="{{ article.title }}"
                   loading="lazy"
                 >
