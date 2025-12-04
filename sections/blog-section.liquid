@@ -2,7 +2,7 @@
 <div class="blog-section">
   <div class="container">
 
-    <!-- BLOG HEADING -->
+
     <div class="blog-heading">
       <h2>{{ section.settings.heading }}</h2>
     </div>
@@ -14,7 +14,7 @@
       {% assign main_article = articles.first %}
     {% endif %}
 
-    <!-- MAIN FEATURED ARTICLE -->
+
     <div class="main-blog">
 
       <div class="phone-carousel-btns">
@@ -41,7 +41,7 @@
       <div class="main-blog-text">
         <span>
 
-          <!-- ⭐ DYNAMIC CATEGORY + ICON -->
+ 
           <p class="sub-heading">
             {% if main_article.tags.size > 0 %}
               {% assign main_tag = main_article.tags.first | downcase %}
@@ -63,7 +63,7 @@
               {{ section.settings.category_text }}
             {% endif %}
           </p>
-          <!-- END UPDATE -->
+
 
           <h2>{{ main_article.title }}</h2>
 
@@ -83,7 +83,7 @@
       </div>
     </div>
 
-    <!-- BLOG CAROUSEL -->
+
     <div class="blog-carousel-section">
 
       <div class="carousel-btns">
@@ -113,7 +113,7 @@
           <div class="carousel-blog-text">
             <span>
 
-              <!-- ⭐ DYNAMIC CATEGORY + ICON -->
+
               <p class="sub-heading">
                 {% if article.tags.size > 0 %}
                   {% assign tag = article.tags.first | downcase %}
@@ -135,7 +135,7 @@
                   {{ section.settings.category_text }}
                 {% endif %}
               </p>
-              <!-- END UPDATE -->
+
 
               <h2>{{ article.title }}</h2>
 
