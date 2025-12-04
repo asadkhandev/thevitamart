@@ -30,7 +30,7 @@
         {% if main_article.image %}
           <a href="{{ main_article.url }}">
             <img 
-              src="{{ main_article.image | img_url: '800x' }}"
+              src="{{ main_article.image | img_url }}"
               alt="{{ main_article.title }}"
               loading="lazy"
             >
@@ -102,7 +102,7 @@
             {% if article.image %}
               <a href="{{ article.url }}">
                 <img 
-                  src="{{ article.image | img_url: '500x' }}"
+                  src="{{ article.image | img_url }}"
                   alt="{{ article.title }}"
                   loading="lazy"
                 >
