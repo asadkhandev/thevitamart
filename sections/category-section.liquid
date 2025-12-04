@@ -6,38 +6,121 @@
       <div class="category-heading">
         <p>{{ section.settings.heading_text }}</p>
       </div>
+
+      <!-- Slick-style buttons (properly positioned) -->
       <div class="category-btns">
         {% if section.settings.left_arrow %}
-          <a href="#" class="previous-btn">
-            <img src="{{ section.settings.left_arrow | img_url: '50x50' }}" alt="left arrow">
-          </a>
+          <button class="previous-btn">
+            <img src="{{ section.settings.left_arrow | img_url: '50x50' }}" alt="Left">
+          </button>
         {% endif %}
         {% if section.settings.right_arrow %}
-          <a href="#" class="next-btn">
-            <img src="{{ section.settings.right_arrow | img_url: '50x50' }}" alt="right arrow">
-          </a>
+          <button class="next-btn">
+            <img src="{{ section.settings.right_arrow | img_url: '50x50' }}" alt="Right">
+          </button>
         {% endif %}
       </div>
     </div>
 
-    <!-- Category carousel -->
-    <div class="category-carousel">
-      {% for block in section.blocks %}
-        <div class="category-box">
-          {% if block.settings.category_link %}
-            <a href="{{ block.settings.category_link }}">
+    <!-- Carousel wrapper -->
+    <div class="category-carousel-wrapper">
+      <div class="category-carousel">
+        {% for block in section.blocks %}
+          <div class="category-box">
+            {% if block.settings.category_link %}
+              <a href="{{ block.settings.category_link }}">
+                <img src="{{ block.settings.category_image | img_url: '300x300' }}" alt="{{ block.settings.category_name }}">
+                <p>{{ block.settings.category_name }}</p>
+              </a>
+            {% else %}
               <img src="{{ block.settings.category_image | img_url: '300x300' }}" alt="{{ block.settings.category_name }}">
               <p>{{ block.settings.category_name }}</p>
-            </a>
-          {% else %}
-            <img src="{{ block.settings.category_image | img_url: '300x300' }}" alt="{{ block.settings.category_name }}">
-            <p>{{ block.settings.category_name }}</p>
-          {% endif %}
-        </div>
-      {% endfor %}
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
+
+<style>
+.category-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.category-carousel {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s ease;
+}
+
+.category-box {
+  flex: 0 0 auto;
+  width: 150px;
+  text-align: center;
+}
+
+/* Slick-style buttons */
+.category-btns {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; /* buttons container itself ignores pointer */
+  z-index: 10;
+}
+
+.category-btns button {
+  pointer-events: all; /* buttons themselves receive clicks */
+  border: none;
+  background-color: #AACC00;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.category-btns button:hover {
+  transform: scale(1.1);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const carouselWrapper = document.querySelector('.category-carousel-wrapper');
+  const carousel = document.querySelector('.category-carousel');
+  const items = document.querySelectorAll('.category-box');
+  const prevBtn = document.querySelector('.previous-btn');
+  const nextBtn = document.querySelector('.next-btn');
+
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    const wrapperWidth = carouselWrapper.offsetWidth;
+    const itemWidth = items[0].offsetWidth + 20; // include gap
+    const maxIndex = Math.max(0, items.length - Math.floor(wrapperWidth / itemWidth));
+    currentIndex = Math.min(Math.max(currentIndex, 0), maxIndex);
+    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+  }
+
+  if(prevBtn) prevBtn.addEventListener('click', () => {
+    currentIndex--;
+    updateCarousel();
+  });
+
+  if(nextBtn) nextBtn.addEventListener('click', () => {
+    currentIndex++;
+    updateCarousel();
+  });
+
+  window.addEventListener('resize', updateCarousel);
+  updateCarousel();
+});
+</script>
 
 {% schema %}
 {
