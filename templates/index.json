@@ -53,7 +53,23 @@
             "category_link": ""
           }
         },
+        "category_pQiUa9": {
+          "type": "category",
+          "settings": {
+            "category_image": "shopify://shop_images/Frame_21.png",
+            "category_name": "Men’s Health",
+            "category_link": ""
+          }
+        },
         "category_RN8Cnm": {
+          "type": "category",
+          "settings": {
+            "category_image": "shopify://shop_images/Frame_21_1.png",
+            "category_name": "Women’s Health",
+            "category_link": ""
+          }
+        },
+        "category_i3jb3M": {
           "type": "category",
           "settings": {
             "category_image": "shopify://shop_images/Frame_21_1.png",
@@ -104,7 +120,9 @@
       },
       "block_order": [
         "category_HeUA7J",
+        "category_pQiUa9",
         "category_RN8Cnm",
+        "category_i3jb3M",
         "category_T7tjQW",
         "category_JQnBYP",
         "category_YNUUmJ",
