@@ -99,10 +99,10 @@
         <div class="carousel-blog">
 
           <div class="carousel-blog-image">
-            {% if article.featured_media %}
+            {% if article.image %}
               <a href="{{ article.url }}">
                 <img 
-                  src="{{ article.featured_media | img_url: '500x' }}"
+                  src="{{ article.image | img_url: '500x' }}"
                   alt="{{ article.title }}"
                   loading="lazy"
                 >
