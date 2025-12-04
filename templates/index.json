@@ -128,7 +128,6 @@
         "column_a6M88K",
         "column_QifHbN"
       ],
-      "disabled": true,
       "name": "Certificate Slider",
       "settings": {
         "content": "<h2>20+ Certificates</h2><p>From Global Regulatory Authorities</p>",
@@ -287,7 +286,6 @@
         "column_JcwxEJ",
         "column_DRB6hK"
       ],
-      "disabled": true,
       "name": "CategoriesBox",
       "settings": {
         "title": "NATURAL CHOICE FOR YOUR HEALTH",
@@ -300,7 +298,6 @@
     },
     "multi_collections_CwHw9Q": {
       "type": "multi-collections",
-      "disabled": true,
       "name": "Multi Collections",
       "settings": {
         "title": "Trending Now",
@@ -381,7 +378,6 @@
         "tag_FiKKLg",
         "tag_hgNN3T"
       ],
-      "disabled": true,
       "name": "ExploreTags",
       "settings": {
         "title": "We’re Here to Help You With",
@@ -392,7 +388,6 @@
     },
     "ourmission_C7eMEq": {
       "type": "ourmission",
-      "disabled": true,
       "name": "Our Mission",
       "settings": {
         "title": "OUR MISSION – WELLNESS FOR LIFE!",
@@ -407,7 +402,6 @@
     },
     "backedbyscience_BrYmNd": {
       "type": "backedbyscience",
-      "disabled": true,
       "name": "Backed by Science",
       "settings": {
         "image": "shopify://shop_images/Backed_by_Science.png",
@@ -424,7 +418,6 @@
     },
     "featured_collections_slider_NWM3wA": {
       "type": "featured-collections-slider",
-      "disabled": true,
       "name": "Collections Slider",
       "settings": {
         "title": "Latest Offers & Discounts",
@@ -444,7 +437,6 @@
     },
     "ourworldwide_CEKxQY": {
       "type": "ourworldwide",
-      "disabled": true,
       "name": "Our WorldWide",
       "settings": {
         "title": "",
@@ -461,7 +453,6 @@
     },
     "blog_slider_hqeHjp": {
       "type": "blog-slider",
-      "disabled": true,
       "name": "Home Blog Slider",
       "settings": {
         "blog": "health",
@@ -623,6 +614,50 @@
     },
     "why_choose_section_pNn7rb": {
       "type": "why-choose-section",
+      "blocks": {
+        "item_XW3Kgn": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_48.png",
+            "text": "<strong>Authorized U.S. Distributor</strong> of Vitamart®"
+          }
+        },
+        "item_qtyULA": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_48_1.png",
+            "text": "<strong>Scientifically Formulated, Naturally Inspired</strong> products"
+          }
+        },
+        "item_xQzwgU": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_48_2.png",
+            "text": "<strong>Fast Nationwide Shipping</strong>"
+          }
+        },
+        "item_edn4dy": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_48_3.png",
+            "text": "<strong>Authenticity Guarantee</strong> — no fakes, no compromises"
+          }
+        },
+        "item_KyHaeN": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_48_4.png",
+            "text": "<strong>Friendly Customer Care</strong> that truly listens"
+          }
+        }
+      },
+      "block_order": [
+        "item_XW3Kgn",
+        "item_qtyULA",
+        "item_xQzwgU",
+        "item_edn4dy",
+        "item_KyHaeN"
+      ],
       "name": "Why Choose Section",
       "settings": {
         "main_title": "Why Choose The Vitamart",
