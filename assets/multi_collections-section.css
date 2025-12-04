@@ -16,7 +16,7 @@
     font-weight: 700;
     line-height: 20px;
     border-radius: 3px;
-    background: #ffffff;
+    background: transparent;
     text-transform: uppercase;
     cursor: pointer;
 }
