@@ -94,6 +94,10 @@
         width: 100%;
         padding: 10px 14px 10px 14px;
     }
+    .category-box img {
+        max-width: 80px;
+        width: 100%;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
