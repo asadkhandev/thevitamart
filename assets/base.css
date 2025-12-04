@@ -3093,9 +3093,10 @@ nav.header__inline-menu::before {
 }
 
 .gradient {
-  background: rgb(var(--color-background));
+  /* background: rgb(var(--color-background));
   background: var(--gradient-background);
-  background-attachment: fixed;
+  background-attachment: fixed; */
+  background-color: transparent;
 }
 
 @media screen and (forced-colors: active) {
