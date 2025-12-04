@@ -160,6 +160,45 @@
   </div>
 </div>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  if (typeof jQuery !== 'undefined' && typeof jQuery.fn.slick !== 'undefined') {
+
+    // MAIN BLOG SLIDER (phone buttons)
+    $('.main-blog').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: $('.phone-carousel-btns .prev-carousel-btn'),
+      nextArrow: $('.phone-carousel-btns .next-carousel-btn'),
+      autoplay: true,
+      autoplaySpeed: 5000
+    });
+
+    // CAROUSEL BLOG SLIDER (bottom blogs)
+    $('.blog-carousel-section').slick({
+      slidesToShow: 2, // number of carousel slides visible
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: $('.carousel-btns .prev-carousel-btn'),
+      nextArrow: $('.carousel-btns .next-carousel-btn'),
+      autoplay: true,
+      autoplaySpeed: 5000,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+  } else {
+    console.error('Slick Slider is not loaded!');
+  }
+});
+</script>
 
 
 {% schema %}
