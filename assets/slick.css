@@ -102,6 +102,10 @@
 {
     display: block;
 }
+.banner-section .slick-initialized .slick-slide
+{
+    background-color: #e9edd5;
+}
 .slick-loading .slick-slide
 {
     visibility: hidden;
