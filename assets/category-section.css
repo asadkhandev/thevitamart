@@ -162,10 +162,10 @@
     }
     .category-carousel {
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 10px;
     }
     .category-box {
-        max-width: 110px;
+        max-width: 120px;
         width: 100%;
         padding: 10px 14px 10px 14px;
     }
