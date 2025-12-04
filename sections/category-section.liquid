@@ -39,6 +39,34 @@
   </div>
 </div>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const carousel = document.querySelector(".category-carousel");
+  const nextBtn = document.querySelector(".next-btn");
+  const prevBtn = document.querySelector(".previous-btn");
+  const boxes = document.querySelectorAll(".category-box");
+
+  if (!carousel || boxes.length === 0) return;
+
+  const boxWidth = boxes[0].offsetWidth + 20; // include gap
+  let scrollPosition = 0;
+
+  nextBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+    scrollPosition = Math.min(scrollPosition + boxWidth, maxScroll);
+    carousel.scrollTo({ left: scrollPosition, behavior: "smooth" });
+  });
+
+  prevBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    scrollPosition = Math.max(scrollPosition - boxWidth, 0);
+    carousel.scrollTo({ left: scrollPosition, behavior: "smooth" });
+  });
+});
+</script>
+
+
 
 
 {% schema %}
