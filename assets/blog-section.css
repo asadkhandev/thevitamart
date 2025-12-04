@@ -37,6 +37,7 @@
 }
 
 .main-blog-image img {
+    object-fit: contain;
     width: 846px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
