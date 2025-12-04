@@ -292,6 +292,7 @@
     background-color: #e9edd5;
     }
     .carousel-blog-image {
+        width: 402px;
         overflow: hidden;
     }
     .carousel-blog-image img {
