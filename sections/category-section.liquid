@@ -39,48 +39,6 @@
   </div>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const carousel = document.querySelector('.category-carousel');
-  const items = document.querySelectorAll('.category-box');
-  const prevBtn = document.querySelector('.previous-btn');
-  const nextBtn = document.querySelector('.next-btn');
-
-  if (!carousel || items.length === 0) return;
-
-  let currentIndex = 0;
-
-  function updateCarousel() {
-    const itemStyle = getComputedStyle(items[0]);
-    const itemWidth = items[0].offsetWidth + parseInt(itemStyle.marginRight);
-    const wrapperWidth = carousel.offsetWidth;
-    const visibleItems = Math.floor(wrapperWidth / itemWidth);
-    const maxIndex = items.length - visibleItems;
-
-    // clamp currentIndex to valid range
-    currentIndex = Math.max(0, Math.min(currentIndex, maxIndex));
-
-    carousel.style.transition = 'transform 0.4s ease';
-    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-  }
-
-  prevBtn?.addEventListener('click', (e) => {
-    e.preventDefault();
-    currentIndex--;
-    updateCarousel();
-  });
-
-  nextBtn?.addEventListener('click', (e) => {
-    e.preventDefault();
-    currentIndex++;
-    updateCarousel();
-  });
-
-  window.addEventListener('resize', updateCarousel);
-  updateCarousel();
-});
-</script>
-
 
 
 {% schema %}
