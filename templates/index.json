@@ -416,13 +416,16 @@
         "padding_bottom": 52
       }
     },
-    "featured_collections_slider_NWM3wA": {
-      "type": "featured-collections-slider",
-      "name": "Collections Slider",
+    "discount_section_x6krbj": {
+      "type": "discount-section",
+      "name": "Collections",
       "settings": {
-        "title": "Latest Offers & Discounts",
+        "discount_heading": "Latest Offers & Discounts",
+        "button_text": "View all products",
+        "button_link": "",
+        "title": "",
         "text_alignment": "center",
-        "collection": "new-arrivals",
+        "collection": "best-sellings",
         "products_to_show": 8,
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -431,8 +434,8 @@
         "show_rating": true,
         "quick_add": false,
         "color_scheme": "",
-        "padding_top": 52,
-        "padding_bottom": 52
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "ourworldwide_CEKxQY": {
@@ -666,28 +669,6 @@
         "right_title": "Here’s what makes us different:",
         "bottom_tagline": "Trusted nutrition, delivered with care."
       }
-    },
-    "discount_section_9yA6fh": {
-      "type": "discount-section",
-      "name": "Collections",
-      "settings": {
-        "discount_heading": "Latest Offers & Discounts",
-        "button_text": "View all products",
-        "button_link": "",
-        "title": "",
-        "text_alignment": "center",
-        "collection": "best-sellings",
-        "products_to_show": 8,
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "quick_add": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -698,13 +679,12 @@
     "exploretags_section_LywxPh",
     "ourmission_C7eMEq",
     "backedbyscience_BrYmNd",
-    "featured_collections_slider_NWM3wA",
+    "discount_section_x6krbj",
     "ourworldwide_CEKxQY",
     "blog_slider_hqeHjp",
     "category_section_dXe7yR",
     "partner_section_djUtxh",
     "banner_section_6tRXrT",
-    "why_choose_section_pNn7rb",
-    "discount_section_9yA6fh"
+    "why_choose_section_pNn7rb"
   ]
 }
