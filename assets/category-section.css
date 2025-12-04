@@ -86,7 +86,7 @@
         padding: 35px 20px;
     }
     .category-carousel {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        flex-wrap: wrap;
         gap: 15px;
     }
     .category-box {
@@ -99,7 +99,7 @@
         padding: 25px 15px;
     }
     .category-carousel {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        flex-wrap: wrap;
         gap: 10px;
     }
 }
