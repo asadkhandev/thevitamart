@@ -19,10 +19,10 @@
 
       <div class="phone-carousel-btns">
         {% if section.settings.arrow_left %}
-          <a href="#" class="prev-carousel-btn"><img src="{{ section.settings.arrow_left | img_url: '50x' }}" alt="Left"></a>
+          <a href="#" class="prev-carousel-btn"><img src="{{ section.settings.arrow_left | img_url }}" alt="Left"></a>
         {% endif %}
         {% if section.settings.arrow_right %}
-          <a href="#" class="next-carousel-btn"><img src="{{ section.settings.arrow_right | img_url: '50x' }}" alt="Right"></a>
+          <a href="#" class="next-carousel-btn"><img src="{{ section.settings.arrow_right | img_url }}" alt="Right"></a>
         {% endif %}
       </div>
 
@@ -48,17 +48,17 @@
               {% assign main_tag_icon = selected_blog.metafields.tag_icons[main_tag] %}
 
               {% if main_tag_icon %}
-                <img src="{{ main_tag_icon | img_url: '50x' }}" alt="{{ main_article.tags.first }}">
+                <img src="{{ main_tag_icon | img_url }}" alt="{{ main_article.tags.first }}">
               {% else %}
-                <img src="{{ section.settings.category_icon | img_url: '50x' }}">
+                <img src="{{ section.settings.category_icon | img_url }}">
               {% endif %}
 
               {{ main_article.tags.first }}
             {% else %}
               {% if section.settings.category_icon_custom %}
-                <img src="{{ section.settings.category_icon_custom | img_url: '50x' }}" alt="{{ section.settings.category_text }}">
+                <img src="{{ section.settings.category_icon_custom | img_url }}" alt="{{ section.settings.category_text }}">
               {% else %}
-                <img src="{{ section.settings.category_icon | img_url: '50x' }}">
+                <img src="{{ section.settings.category_icon | img_url }}">
               {% endif %}
               {{ section.settings.category_text }}
             {% endif %}
@@ -88,10 +88,10 @@
 
       <div class="carousel-btns">
         {% if section.settings.arrow_left %}
-          <a href="#" class="prev-carousel-btn"><img src="{{ section.settings.arrow_left | img_url: '50x' }}" alt="Left"></a>
+          <a href="#" class="prev-carousel-btn"><img src="{{ section.settings.arrow_left | img_url }}" alt="Left"></a>
         {% endif %}
         {% if section.settings.arrow_right %}
-          <a href="#" class="next-carousel-btn"><img src="{{ section.settings.arrow_right | img_url: '50x' }}" alt="Right"></a>
+          <a href="#" class="next-carousel-btn"><img src="{{ section.settings.arrow_right | img_url }}" alt="Right"></a>
         {% endif %}
       </div>
 
@@ -118,17 +118,17 @@
                   {% assign tag_icon = selected_blog.metafields.tag_icons[tag] %}
 
                   {% if tag_icon %}
-                    <img src="{{ tag_icon | img_url: '50x' }}" alt="{{ article.tags.first }}">
+                    <img src="{{ tag_icon | img_url }}" alt="{{ article.tags.first }}">
                   {% else %}
-                    <img src="{{ section.settings.category_icon | img_url: '50x' }}">
+                    <img src="{{ section.settings.category_icon | img_url }}">
                   {% endif %}
 
                   {{ article.tags.first }}
                 {% else %}
                   {% if section.settings.category_icon_custom %}
-                    <img src="{{ section.settings.category_icon_custom | img_url: '50x' }}" alt="{{ section.settings.category_text }}">
+                    <img src="{{ section.settings.category_icon_custom | img_url }}" alt="{{ section.settings.category_text }}">
                   {% else %}
-                    <img src="{{ section.settings.category_icon | img_url: '50x' }}">
+                    <img src="{{ section.settings.category_icon | img_url }}">
                   {% endif %}
                   {{ section.settings.category_text }}
                 {% endif %}
