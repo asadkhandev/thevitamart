@@ -109,10 +109,17 @@
 }
 
 @media (min-width: 851px) and (max-width: 1100px) {
+    .category-section .container {
+        padding: 0px 20px;
+    }
     .category-box {
         max-width: 100px;
         width: 100%;
         padding: 10px 14px 10px 14px;
+    }
+    .category-box img {
+        max-width: 70px;
+        width: 100%;
     }
     .category-box p {
         font-size: 15px;
