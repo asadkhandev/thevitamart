@@ -39,6 +39,30 @@
   </div>
 </div>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const carousel = document.querySelector(".category-carousel");
+  const nextBtn = document.querySelector(".next-btn");
+  const prevBtn = document.querySelector(".previous-btn");
+  const categoryBox = document.querySelector(".category-box");
+
+  if (!carousel || !categoryBox) return;
+
+  const boxWidth = categoryBox.offsetWidth + 20; // 20 = gap between boxes
+
+  nextBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    carousel.scrollBy({ left: boxWidth, behavior: "smooth" });
+  });
+
+  prevBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    carousel.scrollBy({ left: -boxWidth, behavior: "smooth" });
+  });
+});
+</script>
+
+
 
 
 {% schema %}
