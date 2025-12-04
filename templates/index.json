@@ -128,6 +128,7 @@
         "column_a6M88K",
         "column_QifHbN"
       ],
+      "disabled": true,
       "name": "Certificate Slider",
       "settings": {
         "content": "<h2>20+ Certificates</h2><p>From Global Regulatory Authorities</p>",
@@ -286,6 +287,7 @@
         "column_JcwxEJ",
         "column_DRB6hK"
       ],
+      "disabled": true,
       "name": "CategoriesBox",
       "settings": {
         "title": "NATURAL CHOICE FOR YOUR HEALTH",
@@ -298,6 +300,7 @@
     },
     "multi_collections_CwHw9Q": {
       "type": "multi-collections",
+      "disabled": true,
       "name": "Multi Collections",
       "settings": {
         "title": "Trending Now",
@@ -378,6 +381,7 @@
         "tag_FiKKLg",
         "tag_hgNN3T"
       ],
+      "disabled": true,
       "name": "ExploreTags",
       "settings": {
         "title": "We’re Here to Help You With",
@@ -388,6 +392,7 @@
     },
     "ourmission_C7eMEq": {
       "type": "ourmission",
+      "disabled": true,
       "name": "Our Mission",
       "settings": {
         "title": "OUR MISSION – WELLNESS FOR LIFE!",
@@ -402,6 +407,7 @@
     },
     "backedbyscience_BrYmNd": {
       "type": "backedbyscience",
+      "disabled": true,
       "name": "Backed by Science",
       "settings": {
         "image": "shopify://shop_images/Backed_by_Science.png",
@@ -418,6 +424,7 @@
     },
     "featured_collections_slider_NWM3wA": {
       "type": "featured-collections-slider",
+      "disabled": true,
       "name": "Collections Slider",
       "settings": {
         "title": "Latest Offers & Discounts",
@@ -437,6 +444,7 @@
     },
     "ourworldwide_CEKxQY": {
       "type": "ourworldwide",
+      "disabled": true,
       "name": "Our WorldWide",
       "settings": {
         "title": "",
@@ -453,6 +461,7 @@
     },
     "blog_slider_hqeHjp": {
       "type": "blog-slider",
+      "disabled": true,
       "name": "Home Blog Slider",
       "settings": {
         "blog": "health",
