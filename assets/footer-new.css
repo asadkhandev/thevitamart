@@ -152,13 +152,12 @@ footer .container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  position: relative;
-  background-color: blue;
 }
 
 .input-form-wrapper {
   display: flex;
   width: 100%;
+  position: relative;
 }
 
 .input-submit-message {
