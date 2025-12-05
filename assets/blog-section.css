@@ -339,6 +339,9 @@
         object-fit: cover;
         border-radius: 10px;
     }
+    .carousel-blog-text {
+        justify-content: space-between;
+    }
     .carousel-blog-text .sub-heading {
         max-width: 100px;
         width: 100%;
