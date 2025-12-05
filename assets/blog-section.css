@@ -244,6 +244,9 @@
         max-width: 75px;
         width: 100%;
     }
+    .main-blog-text span h2 {
+        font-size: 20px;
+    }
     .carousel-blog-text span p {
         padding-bottom: 15px;
     }
