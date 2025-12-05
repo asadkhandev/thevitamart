@@ -11,6 +11,55 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "footer_new_EQcdTA": {
+      "type": "footer-new",
+      "blocks": {
+        "social_gCrpR6": {
+          "type": "social",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_73.png",
+            "url": ""
+          }
+        },
+        "social_mNyyBL": {
+          "type": "social",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_74.png",
+            "url": ""
+          }
+        },
+        "social_8jbG9X": {
+          "type": "social",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_75.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "social_gCrpR6",
+        "social_mNyyBL",
+        "social_8jbG9X"
+      ],
+      "name": "New Footer",
+      "settings": {
+        "footer_logo": "shopify://shop_images/Layer_1_16bcfc78-52ba-41ce-b98a-a615f7c5e9a3.png",
+        "footer_tagline": "No.1 Vitamin Brand, Empowering Wellness Globally.",
+        "phone_icon": "shopify://shop_images/fluent_call-24-filled.png",
+        "phone_text": "Call us anytime",
+        "email_icon": "shopify://shop_images/entypo_email.png",
+        "email_text": "info@thevitamart.com",
+        "menu1_title": "The Vitamart",
+        "menu1": "footer",
+        "menu2_title": "Shop",
+        "menu2": "footer-menu-shop",
+        "menu3_title": "Help & Terms",
+        "menu3": "footer-menu-help-terms",
+        "subscribe_title": "Subscribe to our emails",
+        "subscribe_text": "Receive the latest updates about our products and promotions.",
+        "subscribe_arrow": "shopify://shop_images/green_right_arrow.png"
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -57,6 +106,7 @@
         "link_list_98e3LA",
         "link_list_3g9kce"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-3",
         "newsletter_enable": true,
@@ -74,6 +124,7 @@
     }
   },
   "order": [
+    "footer_new_EQcdTA",
     "footer"
   ]
 }
