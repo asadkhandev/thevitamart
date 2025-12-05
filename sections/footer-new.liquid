@@ -87,13 +87,15 @@
           {% endif %}
           </div>
 
-          {% if form.errors %}
+          <div class="input-submit-message">
+            {% if form.errors %}
             <p class="newsletter-error">{{ form.errors.messages.email }}</p>
           {% endif %}
 
           {% if form.posted_successfully? %}
             <p class="newsletter-success">Thanks for subscribing!</p>
           {% endif %}
+          </div>
 
         {% endform %}
 
