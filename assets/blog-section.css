@@ -37,8 +37,7 @@
 }
 
 .main-blog-image img {
-    max-width: 846px;
-    width: 100%;
+    width: 846px;
     height: 100%;
     object-fit: cover;
     border-top-left-radius: 10px;
