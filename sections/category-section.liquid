@@ -51,12 +51,53 @@ document.addEventListener('DOMContentLoaded', function() {
     if (typeof jQuery !== 'undefined' && jQuery.fn.slick && carousel && !carousel.classList.contains('slick-initialized')) {
       const $carousel = jQuery(carousel);
       
+      // First, remove any inline styles Slick might add
+      $carousel.removeAttr('style');
+      
       $carousel.slick({
         slidesToShow: 5,
         slidesToScroll: 1,
         infinite: false,
         arrows: false,
         dots: false,
+        // CRITICAL: Disable Slick's default styling
+        cssEase: 'linear',
+        useCSS: false, // Disable CSS transitions (use JS)
+        useTransform: false, // Disable transform animations
+        // Prevent Slick from messing with slide styles
+        variableWidth: false,
+        centerMode: false,
+        // Custom responsive settings
+        responsive: [
+          { 
+            breakpoint: 1200, 
+            settings: { 
+              slidesToShow: 4,
+              slidesToScroll: 1
+            } 
+          },
+          { 
+            breakpoint: 992, 
+            settings: { 
+              slidesToShow: 3,
+              slidesToScroll: 1
+            } 
+          },
+          { 
+            breakpoint: 768, 
+            settings: { 
+              slidesToShow: 2,
+              slidesToScroll: 1
+            } 
+          },
+          { 
+            breakpoint: 480, 
+            settings: { 
+              slidesToShow: 1,
+              slidesToScroll: 1
+            } 
+          }
+        ]
       });
 
       // Add click handlers for navigation buttons
@@ -71,7 +112,20 @@ document.addEventListener('DOMContentLoaded', function() {
           $carousel.slick('slickNext');
         });
       }
-    } else if (!carousel.classList.contains('slick-initialized')) {
+      
+      // Clean up Slick's inline styles after initialization
+      setTimeout(() => {
+        // Remove Slick's inline styles from slides
+        $carousel.find('.slick-slide').each(function() {
+          jQuery(this).removeAttr('style');
+        });
+        // Remove Slick's inline styles from track
+        $carousel.find('.slick-track').removeAttr('style');
+        // Remove Slick's inline styles from list
+        $carousel.find('.slick-list').removeAttr('style');
+      }, 100);
+      
+    } else if (carousel && !carousel.classList.contains('slick-initialized')) {
       // If slick isn't loaded yet, wait for it
       console.log('Waiting for slick to load...');
       setTimeout(function() {
