@@ -40,46 +40,34 @@
 </div>
 
 <script>
-  $(document).ready(function(){
+  $(window).on('load', function(){
     const $carousel = $('.category-carousel');
 
-    $carousel.slick({
-      slidesToShow: 5,      // Number of items visible
-      slidesToScroll: 1,
-      infinite: false,
-      arrows: false,        // We'll use custom arrows
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: { slidesToShow: 4 }
-        },
-        {
-          breakpoint: 992,
-          settings: { slidesToShow: 3 }
-        },
-        {
-          breakpoint: 768,
-          settings: { slidesToShow: 2 }
-        },
-        {
-          breakpoint: 480,
-          settings: { slidesToShow: 1 }
-        }
-      ]
-    });
+    if ($carousel.length) { // check it exists
+      $carousel.slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: false,
+        arrows: false,
+        responsive: [
+          { breakpoint: 1200, settings: { slidesToShow: 4 } },
+          { breakpoint: 992, settings: { slidesToShow: 3 } },
+          { breakpoint: 768, settings: { slidesToShow: 2 } },
+          { breakpoint: 480, settings: { slidesToShow: 1 } }
+        ]
+      });
 
-    // Custom buttons
-    $('.previous-btn').click(function(e){
-      e.preventDefault();
-      $carousel.slick('slickPrev');
-    });
+      $('.previous-btn').off('click').on('click', function(){
+        $carousel.slick('slickPrev');
+      });
 
-    $('.next-btn').click(function(e){
-      e.preventDefault();
-      $carousel.slick('slickNext');
-    });
+      $('.next-btn').off('click').on('click', function(){
+        $carousel.slick('slickNext');
+      });
+    }
   });
 </script>
+
 
 
 
