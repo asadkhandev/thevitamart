@@ -300,12 +300,12 @@
         flex-direction: column;
         align-items: center;
     }
-    .carousel-blog {
+    /* .carousel-blog {
     display: flex;
     width: 95%;
     border-radius: 10px;
     background-color: #e9edd5;
-    }
+    } */
     .carousel-blog {
         flex-direction: column;
     }
