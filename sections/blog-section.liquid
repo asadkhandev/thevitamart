@@ -17,14 +17,14 @@
 
     <div class="main-blog">
 
-      <div class="phone-carousel-btns">
+      {% comment %} <div class="phone-carousel-btns">
         {% if section.settings.arrow_left %}
           <a href="#" class="prev-carousel-btn"><img src="{{ section.settings.arrow_left | img_url }}" alt="Left"></a>
         {% endif %}
         {% if section.settings.arrow_right %}
           <a href="#" class="next-carousel-btn"><img src="{{ section.settings.arrow_right | img_url }}" alt="Right"></a>
         {% endif %}
-      </div>
+      </div> {% endcomment %}
 
       <div class="main-blog-image">
         {% if main_article.image %}
@@ -86,14 +86,14 @@
 
     <div class="blog-carousel-section">
 
-      <div class="carousel-btns">
+      {% comment %} <div class="carousel-btns">
         {% if section.settings.arrow_left %}
           <a href="#" class="prev-carousel-btn"><img src="{{ section.settings.arrow_left | img_url }}" alt="Left"></a>
         {% endif %}
         {% if section.settings.arrow_right %}
           <a href="#" class="next-carousel-btn"><img src="{{ section.settings.arrow_right | img_url }}" alt="Right"></a>
         {% endif %}
-      </div>
+      </div> {% endcomment %}
 
       {% for article in articles offset:1 limit: section.settings.carousel_limit %}
         <div class="carousel-blog">
