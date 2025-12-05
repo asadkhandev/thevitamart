@@ -40,16 +40,15 @@
 </div>
 
 <script>
-  $(window).on('load', function(){
-    const $carousel = $('.category-section .category-carousel');
+  function initCategoryCarousel($section) {
+    const $carousel = $section.find('.category-carousel');
 
-    if ($carousel.length) {
-      // Initialize Slick
+    if ($carousel.length && !$carousel.hasClass('slick-initialized')) {
       $carousel.slick({
         slidesToShow: 5,
         slidesToScroll: 1,
         infinite: false,
-        arrows: false, // using custom buttons
+        arrows: false,
         responsive: [
           { breakpoint: 1200, settings: { slidesToShow: 4 } },
           { breakpoint: 992, settings: { slidesToShow: 3 } },
@@ -58,20 +57,28 @@
         ]
       });
 
-      // Custom buttons
-      $('.category-section .previous-btn').off('click').on('click', function(){
+      $section.find('.previous-btn').off('click').on('click', function(){
         $carousel.slick('slickPrev');
       });
 
-      $('.category-section .next-btn').off('click').on('click', function(){
+      $section.find('.next-btn').off('click').on('click', function(){
         $carousel.slick('slickNext');
       });
     }
+  }
+
+  // Initialize existing sections
+  $(document).ready(function() {
+    $('.category-section').each(function(){
+      initCategoryCarousel($(this));
+    });
+  });
+
+  // Re-initialize on Shopify section load (for theme editor)
+  $(document).on('shopify:section:load', function(event) {
+    initCategoryCarousel($(event.target));
   });
 </script>
-
-
-
 
 
 
