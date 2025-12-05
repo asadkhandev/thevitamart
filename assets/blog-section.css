@@ -285,7 +285,7 @@
     }
     .main-blog {
         flex-direction: column;
-        width: 95%;
+        width: 100%;
     }
     .main-blog-image {
         max-width: none;
