@@ -150,7 +150,7 @@ footer .container {
 
 .input-form-wrapper {
   display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 
 .footer-middle input {
