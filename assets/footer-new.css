@@ -142,6 +142,11 @@ footer .container {
     text-decoration: underline;
 }
 
+.footer-middle div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-middle div:nth-child(4) p {
     font-size: 14px;
     line-height: 1.5;
@@ -149,6 +154,11 @@ footer .container {
 }
 
 .input-form-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.input-submit-message {
   display: flex;
   width: 100%;
 }
