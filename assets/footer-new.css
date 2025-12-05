@@ -188,6 +188,7 @@ footer .container {
     position: absolute;
     bottom: 6px;
     right: 5px;
+    cursor: pointer;
 }
 
 
