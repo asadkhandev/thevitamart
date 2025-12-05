@@ -45,22 +45,6 @@
     "category_section_dXe7yR": {
       "type": "category-section",
       "blocks": {
-        "category_HeUA7J": {
-          "type": "category",
-          "settings": {
-            "category_image": "shopify://shop_images/Frame_21.png",
-            "category_name": "Men’s Health",
-            "category_link": "shopify://collections/hair-tonic-men"
-          }
-        },
-        "category_PNYVkg": {
-          "type": "category",
-          "settings": {
-            "category_image": "shopify://shop_images/Frame_21.png",
-            "category_name": "Men’s Health",
-            "category_link": "shopify://collections/hair-tonic-men"
-          }
-        },
         "category_jygaLE": {
           "type": "category",
           "settings": {
@@ -119,8 +103,6 @@
         }
       },
       "block_order": [
-        "category_HeUA7J",
-        "category_PNYVkg",
         "category_jygaLE",
         "category_pQiUa9",
         "category_T7tjQW",
