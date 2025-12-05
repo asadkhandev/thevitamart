@@ -250,6 +250,9 @@
     .main-blog-text strong p {
         font-size: 15px;
     }
+    .main-blog-text strong a {
+        font-size: 15px;
+    }
     .carousel-blog-text span p {
         font-size: 15px;
         padding-bottom: 15px;
