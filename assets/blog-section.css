@@ -322,10 +322,10 @@
         font-size: 14px;
     }
     .carousel-blog-text span h2 {
-        font-size: clamp(16px, 1.8vw, 18px);
+        font-size: 16px;
     }
     .carousel-blog-text span p {
-        font-size: clamp(14px, 1.8vw, 16px);
+        font-size: 14px;
     }
     .carousel-blog-text strong p {
         font-size: 14px;
