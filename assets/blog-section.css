@@ -296,10 +296,10 @@
     font-size: clamp(14px, 1.8vw, 16px);
     }
 
-    .blog-carousel-section {
+    /* .blog-carousel-section {
         flex-direction: column;
         align-items: center;
-    }
+    } */
     .carousel-blog {
     display: flex;
     width: 95%;
