@@ -112,7 +112,8 @@
 }
 
 .carousel-blog-image {
-    width: 402px;
+    max-width: 430px;
+    width: 100%;
 }
 
 .carousel-blog-image img {
