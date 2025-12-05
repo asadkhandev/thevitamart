@@ -77,6 +77,10 @@
     width: 100%;
 }
 
+.category-box a {
+    text-decoration: none;
+}
+
 .category-box p {
     padding: 0px;
     margin: 0px;
