@@ -40,30 +40,45 @@
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  const carousel = document.querySelector(".category-carousel");
-  const nextBtn = document.querySelector(".next-btn");
-  const prevBtn = document.querySelector(".previous-btn");
-  const boxes = document.querySelectorAll(".category-box");
+  $(document).ready(function(){
+    const $carousel = $('.category-carousel');
 
-  if (!carousel || boxes.length === 0) return;
+    $carousel.slick({
+      slidesToShow: 5,      // Number of items visible
+      slidesToScroll: 1,
+      infinite: false,
+      arrows: false,        // We'll use custom arrows
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: { slidesToShow: 4 }
+        },
+        {
+          breakpoint: 992,
+          settings: { slidesToShow: 3 }
+        },
+        {
+          breakpoint: 768,
+          settings: { slidesToShow: 2 }
+        },
+        {
+          breakpoint: 480,
+          settings: { slidesToShow: 1 }
+        }
+      ]
+    });
 
-  const boxWidth = boxes[0].offsetWidth + 20; // include gap
-  let scrollPosition = 0;
+    // Custom buttons
+    $('.previous-btn').click(function(e){
+      e.preventDefault();
+      $carousel.slick('slickPrev');
+    });
 
-  nextBtn.addEventListener("click", function(e) {
-    e.preventDefault();
-    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
-    scrollPosition = Math.min(scrollPosition + boxWidth, maxScroll);
-    carousel.scrollTo({ left: scrollPosition, behavior: "smooth" });
+    $('.next-btn').click(function(e){
+      e.preventDefault();
+      $carousel.slick('slickNext');
+    });
   });
-
-  prevBtn.addEventListener("click", function(e) {
-    e.preventDefault();
-    scrollPosition = Math.max(scrollPosition - boxWidth, 0);
-    carousel.scrollTo({ left: scrollPosition, behavior: "smooth" });
-  });
-});
 </script>
 
 
