@@ -23,16 +23,18 @@
     <!-- Category carousel -->
     <div class="category-carousel">
       {% for block in section.blocks %}
-        <div class="category-box">
-          {% if block.settings.category_link %}
-            <a href="{{ block.settings.category_link }}">
+        <div>
+          <div class="category-box">
+            {% if block.settings.category_link %}
+              <a href="{{ block.settings.category_link }}">
+                <img src="{{ block.settings.category_image | img_url: '300x300' }}" alt="{{ block.settings.category_name }}">
+                <p>{{ block.settings.category_name }}</p>
+              </a>
+            {% else %}
               <img src="{{ block.settings.category_image | img_url: '300x300' }}" alt="{{ block.settings.category_name }}">
               <p>{{ block.settings.category_name }}</p>
-            </a>
-          {% else %}
-            <img src="{{ block.settings.category_image | img_url: '300x300' }}" alt="{{ block.settings.category_name }}">
-            <p>{{ block.settings.category_name }}</p>
-          {% endif %}
+            {% endif %}
+          </div>
         </div>
       {% endfor %}
     </div>
