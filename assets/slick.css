@@ -86,10 +86,12 @@
 {
     float: right;
 }
+.slick-slide .category-box img {
+    width: 100px;
+}
 .slick-slide img
 {
     display: block;
-    width: 100px;
 }
 .slick-slide.slick-loading img
 {
