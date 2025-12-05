@@ -157,60 +157,6 @@
   </div>
 </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-  // Create arrow buttons dynamically if not in the HTML
-  const carouselSection = document.querySelector('.blog-carousel-section');
-  if (!document.querySelector('.carousel-btns')) {
-    const btnsWrapper = document.createElement('div');
-    btnsWrapper.classList.add('carousel-btns');
-
-    // Left arrow
-    const leftBtn = document.createElement('a');
-    leftBtn.href = '#';
-    leftBtn.classList.add('prev-carousel-btn');
-    const leftImg = document.createElement('img');
-    leftImg.src = '/https://cdn.shopify.com/s/files/1/0707/8104/2880/files/green_right_arrow.png?v=1764920890'; // Replace with your arrow image or Liquid variable
-    leftImg.alt = 'Left';
-    leftBtn.appendChild(leftImg);
-
-    // Right arrow
-    const rightBtn = document.createElement('a');
-    rightBtn.href = '#';
-    rightBtn.classList.add('next-carousel-btn');
-    const rightImg = document.createElement('img');
-    rightImg.src = '/https://cdn.shopify.com/s/files/1/0707/8104/2880/files/green_right_arrow.png?v=1764920890'; // Replace with your arrow image or Liquid variable
-    rightImg.alt = 'Right';
-    rightBtn.appendChild(rightImg);
-
-    btnsWrapper.appendChild(leftBtn);
-    btnsWrapper.appendChild(rightBtn);
-    carouselSection.insertAdjacentElement('beforebegin', btnsWrapper);
-  }
-
-  // Initialize Slick Slider
-  jQuery('.blog-carousel-section').slick({
-    slidesToShow: 2, // or match section.settings.carousel_limit
-    slidesToScroll: 1,
-    infinite: true,
-    arrows: true,
-    prevArrow: '.prev-carousel-btn',
-    nextArrow: '.next-carousel-btn',
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 2 }
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 1 }
-      }
-    ]
-  });
-});
-
-</script>
-
 
 
 {% schema %}
