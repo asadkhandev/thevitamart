@@ -41,14 +41,15 @@
 
 <script>
   $(window).on('load', function(){
-    const $carousel = $('.category-carousel');
+    const $carousel = $('.category-section .category-carousel');
 
-    if ($carousel.length) { // check it exists
+    if ($carousel.length) {
+      // Initialize Slick
       $carousel.slick({
         slidesToShow: 5,
         slidesToScroll: 1,
         infinite: false,
-        arrows: false,
+        arrows: false, // using custom buttons
         responsive: [
           { breakpoint: 1200, settings: { slidesToShow: 4 } },
           { breakpoint: 992, settings: { slidesToShow: 3 } },
@@ -57,16 +58,18 @@
         ]
       });
 
-      $('.previous-btn').off('click').on('click', function(){
+      // Custom buttons
+      $('.category-section .previous-btn').off('click').on('click', function(){
         $carousel.slick('slickPrev');
       });
 
-      $('.next-btn').off('click').on('click', function(){
+      $('.category-section .next-btn').off('click').on('click', function(){
         $carousel.slick('slickNext');
       });
     }
   });
 </script>
+
 
 
 
