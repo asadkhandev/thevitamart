@@ -148,6 +148,10 @@ footer .container {
     color: white;
 }
 
+.input-form-wrapper {
+  display: flex;
+}
+
 .footer-middle input {
     border-radius: 50px;
     padding: 11px 15px 11px 15px;
