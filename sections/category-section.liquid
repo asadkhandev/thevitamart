@@ -8,14 +8,14 @@
       </div>
       <div class="category-btns">
         {% if section.settings.left_arrow %}
-          <a href="#" class="previous-btn">
+          <button class="previous-btn">
             <img src="{{ section.settings.left_arrow | img_url: '50x50' }}" alt="left arrow">
-          </a>
+          </button>
         {% endif %}
         {% if section.settings.right_arrow %}
-          <a href="#" class="next-btn">
+          <button class="next-btn">
             <img src="{{ section.settings.right_arrow | img_url: '50x50' }}" alt="right arrow">
-          </a>
+          </button>
         {% endif %}
       </div>
     </div>
