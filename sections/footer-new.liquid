@@ -66,36 +66,35 @@
       <div>
         <h2>{{ section.settings.subscribe_title }}</h2>
         <p>{{ section.settings.subscribe_text }}</p>
-
-          <div class="input-form-wrapper">
-            {% form 'customer', id: 'footer-newsletter', class: 'searchbar-input' %}
         
-              <input type="hidden" name="contact[tags]" value="newsletter">
+        {% form 'customer', id: 'footer-newsletter', class: 'searchbar-input' %}
+    
+          <input type="hidden" name="contact[tags]" value="newsletter">
 
-              <input 
-                type="email" 
-                name="contact[email]" 
-                placeholder="Email" 
-                value="{{ form.email }}"
-                required
-              >
+          <input 
+            type="email" 
+            name="contact[email]" 
+            placeholder="Email" 
+            value="{{ form.email }}"
+            required
+          >
 
-              {% if section.settings.subscribe_arrow %}
-                <button type="submit" class="arrow-submit">
-                  <img src="{{ section.settings.subscribe_arrow | img_url: '40x' }}" class="input-arrow">
-                </button>
-              {% endif %}
+          {% if section.settings.subscribe_arrow %}
+            <button type="submit" class="arrow-submit">
+              <img src="{{ section.settings.subscribe_arrow | img_url: '40x' }}" class="input-arrow">
+            </button>
+          {% endif %}
 
-              {% if form.errors %}
-                <p class="newsletter-error">{{ form.errors.messages.email }}</p>
-              {% endif %}
+          {% if form.errors %}
+            <p class="newsletter-error">{{ form.errors.messages.email }}</p>
+          {% endif %}
 
-              {% if form.posted_successfully? %}
-                <p class="newsletter-success">Thanks for subscribing!</p>
-              {% endif %}
+          {% if form.posted_successfully? %}
+            <p class="newsletter-success">Thanks for subscribing!</p>
+          {% endif %}
 
-            {% endform %}
-          </div>
+        {% endform %}
+
       </div>
     </div>
 
