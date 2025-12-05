@@ -247,6 +247,9 @@
     .main-blog-text span h2 {
         font-size: 20px;
     }
+    .main-blog-text strong p {
+        font-size: 15px;
+    }
     .carousel-blog-text span p {
         font-size: 15px;
         padding-bottom: 15px;
