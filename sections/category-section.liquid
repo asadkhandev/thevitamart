@@ -39,69 +39,6 @@
   </div>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  function initCategoryCarousel(section) {
-    const carousel = section.querySelector('.category-carousel');
-    const prevBtn = section.querySelector('.previous-btn');
-    const nextBtn = section.querySelector('.next-btn');
-    
-    if (typeof jQuery !== 'undefined' && jQuery.fn.slick && carousel && !carousel.classList.contains('slick-initialized')) {
-      const $carousel = jQuery(carousel);
-      
-      $carousel.slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        infinite: false,
-        arrows: false,
-        dots: false,
-        // Simple configuration - let your CSS handle responsive
-        cssEase: 'linear',
-        speed: 300,
-        variableWidth: false,
-        centerMode: false,
-        // NO responsive settings since you have them in CSS
-      });
-
-      // Button handlers
-      if (prevBtn) {
-        prevBtn.addEventListener('click', function() {
-          $carousel.slick('slickPrev');
-        });
-      }
-      
-      if (nextBtn) {
-        nextBtn.addEventListener('click', function() {
-          $carousel.slick('slickNext');
-        });
-      }
-      
-    } else if (carousel && !carousel.classList.contains('slick-initialized')) {
-      setTimeout(function() {
-        initCategoryCarousel(section);
-      }, 500);
-    }
-  }
-
-  // Initialize all existing category sections
-  document.querySelectorAll('.category-section').forEach(function(section) {
-    initCategoryCarousel(section);
-  });
-
-  // Shopify section load
-  if (typeof Shopify !== 'undefined') {
-    document.addEventListener('shopify:section:load', function(event) {
-      const section = event.target.querySelector('.category-section') || event.target;
-      if (section.classList.contains('category-section')) {
-        setTimeout(function() {
-          initCategoryCarousel(section);
-        }, 100);
-      }
-    });
-  }
-});
-</script>
-
 
 
 {% schema %}
