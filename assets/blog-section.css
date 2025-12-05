@@ -229,6 +229,9 @@
     .blog-section .container {
         padding: 0px 20px;
     }
+    .main-blog-image {
+        max-width: none;
+    }
     .main-blog-text span .sub-heading {
         max-width: 110px;
         width: 100%;
