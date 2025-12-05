@@ -163,6 +163,7 @@ footer .container {
 .input-submit-message {
   display: flex;
   width: 100%;
+  padding: 10px 0px 0px 0px;
 }
 
 .footer-middle input {
@@ -175,7 +176,6 @@ footer .container {
 .searchbar-input {
     display: flex;
     width: 100%;
-    background-color: green;
 }
 
 .searchbar-input input {
