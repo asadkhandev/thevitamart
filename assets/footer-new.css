@@ -149,7 +149,8 @@ footer .container {
 }
 
 .input-form-wrapper {
-  background-color: red;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-middle input {
