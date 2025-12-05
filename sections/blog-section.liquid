@@ -157,69 +157,6 @@
   </div>
 </div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    if (window.innerWidth > 767) {
-      // Main blog slider
-      $('.main-blog').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        asNavFor: '.blog-carousel-section'
-      });
-
-      // Carousel / thumbnails slider
-      $('.blog-carousel-section').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        asNavFor: '.main-blog',
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true,
-        vertical: true,
-        verticalSwiping: true,
-        responsive: [
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 2,
-              vertical: true,
-              verticalSwiping: true
-            }
-          }
-        ],
-        arrows: false
-      });
-    }
-
-    // Mobile slider
-    if (window.innerWidth < 768) {
-      $('.main-blog').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        autoplay: true,
-        autoplaySpeed: 5000
-      });
-    }
-
-    // Optional: add custom prev/next buttons
-    $('.prev-carousel-btn').on('click', function(e){
-      e.preventDefault();
-      $('.main-blog').slick('slickPrev');
-    });
-
-    $('.next-carousel-btn').on('click', function(e){
-      e.preventDefault();
-      $('.main-blog').slick('slickNext');
-    });
-  });
-</script>
-
-
 {% schema %}
 {
   "name": "Featured Blog Section",
