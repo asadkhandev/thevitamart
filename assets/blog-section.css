@@ -240,6 +240,7 @@
     }
     .carousel-blog-image {
         max-width: none;
+        height: 240px;
     }
     .carousel-blog-image img {
         width: 100%;
