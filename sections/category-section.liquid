@@ -40,117 +40,6 @@
 </div>
 
 <script>
-class CategoryCarousel {
-  constructor(container) {
-    this.container = container;
-    this.carousel = container.querySelector('.category-carousel');
-    this.prevBtn = container.querySelector('.previous-btn');
-    this.nextBtn = container.querySelector('.next-btn');
-    this.slides = this.carousel.querySelectorAll('.category-box');
-    this.currentIndex = 0;
-    this.slidesToShow = this.getSlidesToShow();
-    
-    this.init();
-  }
-  
-  getSlidesToShow() {
-    const width = window.innerWidth;
-    if (width <= 480) return 1;
-    if (width <= 768) return 2;
-    if (width <= 992) return 3;
-    if (width <= 1200) return 4;
-    return 5;
-  }
-  
-  init() {
-    // Set initial styles
-    this.carousel.style.display = 'flex';
-    this.carousel.style.overflow = 'hidden';
-    this.carousel.style.gap = '20px';
-    this.carousel.style.transition = 'transform 0.3s ease';
-    
-    // Set slide width
-    this.updateSlideWidth();
-    
-    // Add event listeners
-    if (this.prevBtn) {
-      this.prevBtn.addEventListener('click', () => this.prev());
-    }
-    
-    if (this.nextBtn) {
-      this.nextBtn.addEventListener('click', () => this.next());
-    }
-    
-    // Handle window resize
-    window.addEventListener('resize', () => {
-      this.updateSlideWidth();
-      this.updatePosition();
-    });
-  }
-  
-  updateSlideWidth() {
-    this.slidesToShow = this.getSlidesToShow();
-    const slideWidth = `calc(${100 / this.slidesToShow}% - 20px)`;
-    this.slides.forEach(slide => {
-      slide.style.flex = `0 0 ${slideWidth}`;
-      slide.style.minWidth = slideWidth;
-    });
-  }
-  
-  prev() {
-    if (this.currentIndex > 0) {
-      this.currentIndex--;
-      this.updatePosition();
-    }
-  }
-  
-  next() {
-    const maxIndex = this.slides.length - this.slidesToShow;
-    if (this.currentIndex < maxIndex) {
-      this.currentIndex++;
-      this.updatePosition();
-    }
-  }
-  
-  updatePosition() {
-    const slideWidth = 100 / this.slidesToShow;
-    const translateX = -this.currentIndex * slideWidth;
-    this.carousel.style.transform = `translateX(${translateX}%)`;
-    
-    // Update button states
-    this.updateButtonStates();
-  }
-  
-  updateButtonStates() {
-    if (this.prevBtn) {
-      this.prevBtn.disabled = this.currentIndex === 0;
-    }
-    if (this.nextBtn) {
-      const maxIndex = this.slides.length - this.slidesToShow;
-      this.nextBtn.disabled = this.currentIndex >= maxIndex;
-    }
-  }
-}
-
-// Initialize carousels
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.category-section').forEach(section => {
-    new CategoryCarousel(section);
-  });
-  
-  // For Shopify editor
-  if (typeof Shopify !== 'undefined') {
-    document.addEventListener('shopify:section:load', function(event) {
-      const section = event.target.querySelector('.category-section') || event.target;
-      if (section.classList.contains('category-section')) {
-        new CategoryCarousel(section);
-      }
-    });
-  }
-});
-</script>
-
-{% comment %} <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Initialize category carousels
   function initCategoryCarousel(section) {
@@ -214,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
-</script> {% endcomment %}
+</script>
 
 
 
