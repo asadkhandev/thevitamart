@@ -306,6 +306,9 @@
     border-radius: 10px;
     background-color: #e9edd5;
     }
+    .carousel-blog {
+        flex-direction: column;
+    }
     .carousel-blog-image img {
         width: 403px;
         height: 100%;
