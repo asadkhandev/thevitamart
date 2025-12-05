@@ -71,6 +71,10 @@ footer .container {
     padding-right: 20px;
 }
 
+.arrow-submit {
+  border: none;
+}
+
 @media (min-width: 325px) and (max-width: 850px) {
      .footer-top {
     display: grid;
