@@ -41,18 +41,13 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Initialize category carousels
   function initCategoryCarousel(section) {
     const carousel = section.querySelector('.category-carousel');
     const prevBtn = section.querySelector('.previous-btn');
     const nextBtn = section.querySelector('.next-btn');
     
-    // Check if slick is loaded and carousel exists
     if (typeof jQuery !== 'undefined' && jQuery.fn.slick && carousel && !carousel.classList.contains('slick-initialized')) {
       const $carousel = jQuery(carousel);
-      
-      // First, remove any inline styles Slick might add
-      $carousel.removeAttr('style');
       
       $carousel.slick({
         slidesToShow: 5,
@@ -60,47 +55,15 @@ document.addEventListener('DOMContentLoaded', function() {
         infinite: false,
         arrows: false,
         dots: false,
-        // CRITICAL: Disable Slick's default styling
+        // Simple configuration - let your CSS handle responsive
         cssEase: 'linear',
-        useCSS: false, // Disable CSS transitions (use JS)
-        useTransform: false, // Disable transform animations
-        // Prevent Slick from messing with slide styles
+        speed: 300,
         variableWidth: false,
         centerMode: false,
-        // Custom responsive settings
-        responsive: [
-          { 
-            breakpoint: 1200, 
-            settings: { 
-              slidesToShow: 4,
-              slidesToScroll: 1
-            } 
-          },
-          { 
-            breakpoint: 992, 
-            settings: { 
-              slidesToShow: 3,
-              slidesToScroll: 1
-            } 
-          },
-          { 
-            breakpoint: 768, 
-            settings: { 
-              slidesToShow: 2,
-              slidesToScroll: 1
-            } 
-          },
-          { 
-            breakpoint: 480, 
-            settings: { 
-              slidesToShow: 1,
-              slidesToScroll: 1
-            } 
-          }
-        ]
+        // NO responsive settings since you have them in CSS
       });
 
-      // Add click handlers for navigation buttons
+      // Button handlers
       if (prevBtn) {
         prevBtn.addEventListener('click', function() {
           $carousel.slick('slickPrev');
@@ -113,21 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       }
       
-      // Clean up Slick's inline styles after initialization
-      setTimeout(() => {
-        // Remove Slick's inline styles from slides
-        $carousel.find('.slick-slide').each(function() {
-          jQuery(this).removeAttr('style');
-        });
-        // Remove Slick's inline styles from track
-        $carousel.find('.slick-track').removeAttr('style');
-        // Remove Slick's inline styles from list
-        $carousel.find('.slick-list').removeAttr('style');
-      }, 100);
-      
     } else if (carousel && !carousel.classList.contains('slick-initialized')) {
-      // If slick isn't loaded yet, wait for it
-      console.log('Waiting for slick to load...');
       setTimeout(function() {
         initCategoryCarousel(section);
       }, 500);
@@ -139,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initCategoryCarousel(section);
   });
 
-  // Re-initialize when Shopify section loads (for theme editor)
+  // Shopify section load
   if (typeof Shopify !== 'undefined') {
     document.addEventListener('shopify:section:load', function(event) {
       const section = event.target.querySelector('.category-section') || event.target;
