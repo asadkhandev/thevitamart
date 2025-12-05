@@ -238,6 +238,9 @@
     .carousel-blog {
         flex-direction: column;
     }
+    .carousel-blog-image {
+        width: 100%;
+    }
     .carousel-blog-image img {
         width: 100%;
         height: 100%;
