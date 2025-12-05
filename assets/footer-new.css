@@ -148,6 +148,12 @@ footer .container {
     color: white;
 }
 
+.input-form-outer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .input-form-wrapper {
   display: flex;
   width: 100%;
