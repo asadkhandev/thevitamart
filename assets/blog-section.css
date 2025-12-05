@@ -239,7 +239,7 @@
         flex-direction: column;
     }
     .carousel-blog-image {
-        max-width: 500px;
+        max-width: 800px;
         width: 100%;
     }
     .carousel-blog-image img {
