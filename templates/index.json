@@ -45,12 +45,20 @@
     "category_section_dXe7yR": {
       "type": "category-section",
       "blocks": {
-        "category_jygaLE": {
+        "category_mi7eHQ": {
           "type": "category",
           "settings": {
             "category_image": "shopify://shop_images/Frame_21.png",
             "category_name": "Men’s Health",
             "category_link": "shopify://collections/hair-tonic-men"
+          }
+        },
+        "category_L479t3": {
+          "type": "category",
+          "settings": {
+            "category_image": "shopify://shop_images/Kids_Health_100x_crop_center_4f3f9780-28be-47ab-932c-62cf97a98083.svg",
+            "category_name": "New Arrivals",
+            "category_link": "shopify://collections/new-arrivals"
           }
         },
         "category_pQiUa9": {
@@ -103,7 +111,8 @@
         }
       },
       "block_order": [
-        "category_jygaLE",
+        "category_mi7eHQ",
+        "category_L479t3",
         "category_pQiUa9",
         "category_T7tjQW",
         "category_JQnBYP",
