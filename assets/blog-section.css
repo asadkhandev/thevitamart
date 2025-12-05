@@ -308,6 +308,7 @@
     }
     .carousel-blog-image {
         max-width: none;
+        height: 250px;
     }
     .carousel-blog-image img {
         width: 100%;
