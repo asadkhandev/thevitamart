@@ -50,7 +50,7 @@
           "settings": {
             "category_image": "shopify://shop_images/Frame_21.png",
             "category_name": "Men’s Health",
-            "category_link": ""
+            "category_link": "shopify://collections/hair-tonic-men"
           }
         },
         "category_pQiUa9": {
@@ -58,7 +58,7 @@
           "settings": {
             "category_image": "shopify://shop_images/Frame_21_1.png",
             "category_name": "Women’s Health",
-            "category_link": ""
+            "category_link": "shopify://collections/women"
           }
         },
         "category_T7tjQW": {
@@ -66,7 +66,7 @@
           "settings": {
             "category_image": "shopify://shop_images/Frame_21_2.png",
             "category_name": "Beauty",
-            "category_link": ""
+            "category_link": "shopify://collections/dietary-supplement-hair-skin-and-nails"
           }
         },
         "category_JQnBYP": {
@@ -74,7 +74,7 @@
           "settings": {
             "category_image": "shopify://shop_images/Frame_21_3.png",
             "category_name": "Hair Care",
-            "category_link": ""
+            "category_link": "shopify://collections/hair"
           }
         },
         "category_YNUUmJ": {
@@ -82,7 +82,7 @@
           "settings": {
             "category_image": "shopify://shop_images/Frame_21_4.png",
             "category_name": "Herbal Health",
-            "category_link": ""
+            "category_link": "shopify://collections/health-supplement"
           }
         },
         "category_MnUEN8": {
@@ -90,7 +90,7 @@
           "settings": {
             "category_image": "shopify://shop_images/Frame_21_5.png",
             "category_name": "Vitamins",
-            "category_link": ""
+            "category_link": "shopify://collections/vitamins"
           }
         },
         "category_XynVnj": {
@@ -98,7 +98,7 @@
           "settings": {
             "category_image": "shopify://shop_images/Frame_21_6.png",
             "category_name": "Fertility Support",
-            "category_link": ""
+            "category_link": "shopify://collections/dietary-supplement-sexual-health"
           }
         }
       },
