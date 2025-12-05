@@ -75,32 +75,6 @@ footer .container {
   border: none;
 }
 
-.newsletter-error,
-.newsletter-success {
-  display: block;
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.newsletter-error {
-  color: #ff4b4b;
-}
-
-.newsletter-success {
-  color: #4caf50;
-}
-
-.arrow-submit {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.arrow-submit img {
-  display: block;
-}
-
 @media (min-width: 325px) and (max-width: 850px) {
      .footer-top {
     display: grid;
