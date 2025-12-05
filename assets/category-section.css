@@ -3,6 +3,14 @@
     max-width: 1280px;
 }
 
+.category-carousel .category-box {
+  flex: none;
+}
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
 .category-section {
     display: flex;
     width: 100%;
