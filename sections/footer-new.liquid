@@ -63,7 +63,7 @@
       </div>
 
       <!-- Newsletter -->
-      <div>
+      {% comment %} <div>
         <h2>{{ section.settings.subscribe_title }}</h2>
         <p>{{ section.settings.subscribe_text }}</p>
 
@@ -76,7 +76,40 @@
           {% endif %}
 
         </form>
-      </div>
+      </div> {% endcomment %}
+         <div>
+  <h2>{{ section.settings.subscribe_title }}</h2>
+  <p>{{ section.settings.subscribe_text }}</p>
+
+  {% form 'customer', id: 'footer-newsletter', class: 'searchbar-input' %}
+    
+    <input type="hidden" name="contact[tags]" value="newsletter">
+
+    <input 
+      type="email" 
+      name="contact[email]" 
+      placeholder="Email" 
+      value="{{ form.email }}"
+      required
+    >
+
+    {% if section.settings.subscribe_arrow %}
+      <button type="submit" class="arrow-submit">
+        <img src="{{ section.settings.subscribe_arrow | img_url: '50x' }}" class="input-arrow">
+      </button>
+    {% endif %}
+
+    {% if form.errors %}
+      <p class="newsletter-error hidden">{{ form.errors.messages.email }}</p>
+    {% endif %}
+
+    {% if form.posted_successfully? %}
+      <p class="newsletter-success hidden">Thanks for subscribing!</p>
+    {% endif %}
+
+  {% endform %}
+</div>
+
     </div>
 
 
