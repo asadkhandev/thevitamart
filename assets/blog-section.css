@@ -111,6 +111,10 @@
     background-color: #e9edd5;
 }
 
+.carousel-blog-image {
+    width: 402px;
+}
+
 .carousel-blog-image img {
     width: 100%;
     height: 100%;
