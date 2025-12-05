@@ -71,7 +71,8 @@
     
           <input type="hidden" name="contact[tags]" value="newsletter">
 
-          <input 
+          <div class="input-form-wrapper">
+            <input 
             type="email" 
             name="contact[email]" 
             placeholder="Email" 
@@ -84,6 +85,7 @@
               <img src="{{ section.settings.subscribe_arrow | img_url: '40x' }}" class="input-arrow">
             </button>
           {% endif %}
+          </div>
 
           {% if form.errors %}
             <p class="newsletter-error">{{ form.errors.messages.email }}</p>
