@@ -293,6 +293,19 @@
         "category_icon": "shopify://shop_images/mynaui_leaves-solid.png",
         "carousel_limit": 2
       }
+    },
+    "blog_slider_V3mkrB": {
+      "type": "blog-slider",
+      "name": "Home Blog Slider",
+      "settings": {
+        "blog": "health",
+        "post_limit": 4,
+        "title": "",
+        "text_alignment": "center",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -302,6 +315,7 @@
     "partner_section_djUtxh",
     "why_choose_section_pNn7rb",
     "discount_section_x6krbj",
-    "blog_section_3fUbJC"
+    "blog_section_3fUbJC",
+    "blog_slider_V3mkrB"
   ]
 }
