@@ -195,7 +195,7 @@
     font-size: 12px;
 }
 
-.carousel-btns {
+/* .carousel-btns {
     position: absolute;
     top: 50%;
     left: 0;
@@ -223,7 +223,7 @@
 
 .next-carousel-btn {
     margin-right: -20px;
-}
+} */
 
 @media (min-width: 1142px) and (max-width: 1320px) {
     .blog-section .container {
