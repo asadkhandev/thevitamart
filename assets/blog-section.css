@@ -302,11 +302,8 @@
     border-radius: 10px;
     background-color: #e9edd5;
     }
-    .carousel-blog-image {
-
-    }
     .carousel-blog-image img {
-        width: 100%;
+        width: 403px;
         height: 100%;
         object-fit: cover;
         border-radius: 10px;
