@@ -3,6 +3,88 @@
     max-width: 1280px;
 }
 
+
+/* Override Slick slider styles */
+.category-carousel.slick-slider {
+  /* Remove Slick's default positioning */
+  position: relative !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+.category-carousel .slick-list {
+  /* Reset Slick's overflow */
+  overflow: visible !important;
+  position: relative !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.category-carousel .slick-track {
+  /* Use display: flex instead of Slick's table-cell */
+  display: flex !important;
+  position: relative !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  transform: none !important;
+  gap: 20px; /* Your desired gap */
+}
+
+.category-carousel .slick-slide {
+  /* Reset Slick's float and display */
+  float: none !important;
+  display: block !important;
+  height: auto !important;
+  min-height: 1px !important;
+  flex: 0 0 auto !important;
+  /* Calculate width based on slidesToShow */
+  width: calc((100% - (4 * 20px)) / 5) !important; /* For 5 slides with 20px gaps */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Responsive width calculations */
+@media (max-width: 1200px) {
+  .category-carousel .slick-slide {
+    width: calc((100% - (3 * 20px)) / 4) !important; /* For 4 slides */
+  }
+}
+
+@media (max-width: 992px) {
+  .category-carousel .slick-slide {
+    width: calc((100% - (2 * 20px)) / 3) !important; /* For 3 slides */
+  }
+}
+
+@media (max-width: 768px) {
+  .category-carousel .slick-slide {
+    width: calc((100% - (1 * 20px)) / 2) !important; /* For 2 slides */
+  }
+}
+
+@media (max-width: 480px) {
+  .category-carousel .slick-slide {
+    width: 100% !important; /* For 1 slide */
+  }
+}
+
+/* Your original styles for category-box should remain */
+.category-box {
+  /* Your existing styles here */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 .category-carousel .category-box {
   flex: none;
 }
