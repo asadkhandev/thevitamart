@@ -230,7 +230,12 @@
         padding: 0px 20px;
     }
     .main-blog-image {
-        max-width: none;
+        max-width: 1200px;
+        width: 100%;
+    }
+    .main-blog-image img {
+        width: 100%;
+        height: 100%;
     }
     .main-blog-text span .sub-heading {
         max-width: 110px;
