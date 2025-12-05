@@ -40,15 +40,23 @@
 </div>
 
 <script>
-  function initCategoryCarousel($section) {
-    const $carousel = $section.find('.category-carousel');
-
-    if ($carousel.length && !$carousel.hasClass('slick-initialized')) {
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize category carousels
+  function initCategoryCarousel(section) {
+    const carousel = section.querySelector('.category-carousel');
+    const prevBtn = section.querySelector('.previous-btn');
+    const nextBtn = section.querySelector('.next-btn');
+    
+    // Check if slick is loaded and carousel exists
+    if (typeof jQuery !== 'undefined' && jQuery.fn.slick && carousel && !carousel.classList.contains('slick-initialized')) {
+      const $carousel = jQuery(carousel);
+      
       $carousel.slick({
         slidesToShow: 5,
         slidesToScroll: 1,
         infinite: false,
         arrows: false,
+        dots: false,
         responsive: [
           { breakpoint: 1200, settings: { slidesToShow: 4 } },
           { breakpoint: 992, settings: { slidesToShow: 3 } },
@@ -57,27 +65,44 @@
         ]
       });
 
-      $section.find('.previous-btn').off('click').on('click', function(){
-        $carousel.slick('slickPrev');
-      });
-
-      $section.find('.next-btn').off('click').on('click', function(){
-        $carousel.slick('slickNext');
-      });
+      // Add click handlers for navigation buttons
+      if (prevBtn) {
+        prevBtn.addEventListener('click', function() {
+          $carousel.slick('slickPrev');
+        });
+      }
+      
+      if (nextBtn) {
+        nextBtn.addEventListener('click', function() {
+          $carousel.slick('slickNext');
+        });
+      }
+    } else if (!carousel.classList.contains('slick-initialized')) {
+      // If slick isn't loaded yet, wait for it
+      console.log('Waiting for slick to load...');
+      setTimeout(function() {
+        initCategoryCarousel(section);
+      }, 500);
     }
   }
 
-  // Initialize existing sections
-  $(document).ready(function() {
-    $('.category-section').each(function(){
-      initCategoryCarousel($(this));
-    });
+  // Initialize all existing category sections
+  document.querySelectorAll('.category-section').forEach(function(section) {
+    initCategoryCarousel(section);
   });
 
-  // Re-initialize on Shopify section load (for theme editor)
-  $(document).on('shopify:section:load', function(event) {
-    initCategoryCarousel($(event.target));
-  });
+  // Re-initialize when Shopify section loads (for theme editor)
+  if (typeof Shopify !== 'undefined') {
+    document.addEventListener('shopify:section:load', function(event) {
+      const section = event.target.querySelector('.category-section') || event.target;
+      if (section.classList.contains('category-section')) {
+        setTimeout(function() {
+          initCategoryCarousel(section);
+        }, 100);
+      }
+    });
+  }
+});
 </script>
 
 
