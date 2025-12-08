@@ -119,14 +119,14 @@
     margin: 0 -10px;
 }
 
-/* .blog-carousel-section .slick-track {
+.blog-carousel-section .slick-track {
     display: flex !important;
-} */
+}
 
-/* .blog-carousel-section .slick-slide {
+.blog-carousel-section .slick-slide {
     height: auto !important;
     display: flex !important;
-} */
+}
 
 .blog-carousel-section .carousel-blog {
     height: 100%;
