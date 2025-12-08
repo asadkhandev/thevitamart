@@ -96,60 +96,61 @@
       </div> {% endcomment %}
 
       {% for article in articles offset:1 limit: section.settings.carousel_limit %}
-        <div class="carousel-blog">
+        <div>
+          <div class="carousel-blog">
+            <div class="carousel-blog-image">
+              {% if article.image %}
+                <a href="{{ article.url }}">
+                  <img 
+                    src="{{ article.image | img_url: '2048x2048' }}"
+                    alt="{{ article.title }}"
+                    loading="lazy"
+                  >
+                </a>
+              {% endif %}
+            </div>
 
-          <div class="carousel-blog-image">
-            {% if article.image %}
-              <a href="{{ article.url }}">
-                <img 
-                  src="{{ article.image | img_url: '2048x2048' }}"
-                  alt="{{ article.title }}"
-                  loading="lazy"
-                >
-              </a>
-            {% endif %}
-          </div>
+            <div class="carousel-blog-text">
+              <span>
+                <p class="sub-heading">
+                  {% if article.tags.size > 0 %}
+                    {% assign tag = article.tags.first | downcase %}
+                    {% assign tag_icon = selected_blog.metafields.tag_icons[tag] %}
 
-          <div class="carousel-blog-text">
-            <span>
-              <p class="sub-heading">
-                {% if article.tags.size > 0 %}
-                  {% assign tag = article.tags.first | downcase %}
-                  {% assign tag_icon = selected_blog.metafields.tag_icons[tag] %}
+                    {% if tag_icon %}
+                      <img src="{{ tag_icon | img_url }}" alt="{{ article.tags.first }}">
+                    {% else %}
+                      <img src="{{ section.settings.category_icon | img_url }}">
+                    {% endif %}
 
-                  {% if tag_icon %}
-                    <img src="{{ tag_icon | img_url }}" alt="{{ article.tags.first }}">
+                    {{ article.tags.first }}
                   {% else %}
-                    <img src="{{ section.settings.category_icon | img_url }}">
+                    {% if section.settings.category_icon_custom %}
+                      <img src="{{ section.settings.category_icon_custom | img_url }}" alt="{{ section.settings.category_text }}">
+                    {% else %}
+                      <img src="{{ section.settings.category_icon | img_url }}">
+                    {% endif %}
+                    {{ section.settings.category_text }}
                   {% endif %}
+                </p>
 
-                  {{ article.tags.first }}
-                {% else %}
-                  {% if section.settings.category_icon_custom %}
-                    <img src="{{ section.settings.category_icon_custom | img_url }}" alt="{{ section.settings.category_text }}">
+
+                <h2>{{ article.title }}</h2>
+
+                <p>
+                  {% if article.excerpt != blank %}
+                    {{ article.excerpt }}
                   {% else %}
-                    <img src="{{ section.settings.category_icon | img_url }}">
+                    {{ article.content | strip_html | truncate: 90 }}
                   {% endif %}
-                  {{ section.settings.category_text }}
-                {% endif %}
-              </p>
+                </p>
+              </span>
 
-
-              <h2>{{ article.title }}</h2>
-
-              <p>
-                {% if article.excerpt != blank %}
-                  {{ article.excerpt }}
-                {% else %}
-                  {{ article.content | strip_html | truncate: 90 }}
-                {% endif %}
-              </p>
-            </span>
-
-            <strong>
-              <p>{{ article.published_at | date: "%b %d, %Y" }}</p>
-              <a href="{{ article.url }}">Read More</a>
-            </strong>
+              <strong>
+                <p>{{ article.published_at | date: "%b %d, %Y" }}</p>
+                <a href="{{ article.url }}">Read More</a>
+              </strong>
+            </div>
           </div>
         </div>
       {% endfor %}
