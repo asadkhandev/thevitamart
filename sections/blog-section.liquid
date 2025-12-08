@@ -26,62 +26,60 @@
         {% endif %}
       </div> {% endcomment %}
         {% for article in articles offset:1 limit: section.settings.carousel_limit %}
-          <div>
-            <div class="main-blog-image">
-          {% if main_article.image %}
-            <a href="{{ main_article.url }}">
-              <img 
-                src="{{ main_article.image | img_url: '2048x2048' }}"
-                alt="{{ main_article.title }}"
-                loading="lazy"
-              >
-            </a>
-          {% endif %}
-        </div>
-
-        <div class="main-blog-text">
-          <span>
-
-  
-            <p class="sub-heading">
-              {% if main_article.tags.size > 0 %}
-                {% assign main_tag = main_article.tags.first | downcase %}
-                {% assign main_tag_icon = selected_blog.metafields.tag_icons[main_tag] %}
-
-                {% if main_tag_icon %}
-                  <img src="{{ main_tag_icon | img_url }}" alt="{{ main_article.tags.first }}">
-                {% else %}
-                  <img src="{{ section.settings.category_icon | img_url }}">
+            <div>
+              <div class="main-blog-image">
+                {% if main_article.image %}
+                  <a href="{{ main_article.url }}">
+                    <img 
+                      src="{{ main_article.image | img_url: '2048x2048' }}"
+                      alt="{{ main_article.title }}"
+                      loading="lazy"
+                    >
+                  </a>
                 {% endif %}
+              </div>
 
-                {{ main_article.tags.first }}
-              {% else %}
-                {% if section.settings.category_icon_custom %}
-                  <img src="{{ section.settings.category_icon_custom | img_url }}" alt="{{ section.settings.category_text }}">
-                {% else %}
-                  <img src="{{ section.settings.category_icon | img_url }}">
-                {% endif %}
-                {{ section.settings.category_text }}
-              {% endif %}
-            </p>
+              <div class="main-blog-text">
+                <span>
+                  <p class="sub-heading">
+                    {% if main_article.tags.size > 0 %}
+                      {% assign main_tag = main_article.tags.first | downcase %}
+                      {% assign main_tag_icon = selected_blog.metafields.tag_icons[main_tag] %}
+
+                      {% if main_tag_icon %}
+                        <img src="{{ main_tag_icon | img_url }}" alt="{{ main_article.tags.first }}">
+                      {% else %}
+                        <img src="{{ section.settings.category_icon | img_url }}">
+                      {% endif %}
+
+                      {{ main_article.tags.first }}
+                    {% else %}
+                      {% if section.settings.category_icon_custom %}
+                        <img src="{{ section.settings.category_icon_custom | img_url }}" alt="{{ section.settings.category_text }}">
+                      {% else %}
+                        <img src="{{ section.settings.category_icon | img_url }}">
+                      {% endif %}
+                      {{ section.settings.category_text }}
+                    {% endif %}
+                  </p>
 
 
-            <h2>{{ main_article.title }}</h2>
+                  <h2>{{ main_article.title }}</h2>
 
-            <p>
-              {% if main_article.excerpt != blank %}
-                {{ main_article.excerpt }}
-              {% else %}
-                {{ main_article.content | strip_html | truncate: 140 }}
-              {% endif %}
-            </p>
-          </span>
+                  <p>
+                    {% if main_article.excerpt != blank %}
+                      {{ main_article.excerpt }}
+                    {% else %}
+                      {{ main_article.content | strip_html | truncate: 140 }}
+                    {% endif %}
+                  </p>
+                </span>
 
-          <strong>
-            <p>{{ main_article.published_at | date: "%b %d, %Y" }}</p>
-            <a href="{{ main_article.url }}">Read More</a>
-          </strong>
-        </div>
+                <strong>
+                  <p>{{ main_article.published_at | date: "%b %d, %Y" }}</p>
+                  <a href="{{ main_article.url }}">Read More</a>
+                </strong>
+              </div>
           </div>
         {% endfor %}
     </div>
