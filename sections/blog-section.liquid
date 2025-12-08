@@ -158,36 +158,6 @@
   </div>
 </div>
 
-<script>
-  $(document).ready(function () {
-
-  // Initialize Slick only if more than one carousel item exists
-  if ($('.blog-carousel-section .carousel-blog-outer').length > 1) {
-    $('.blog-carousel-section').slick({
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      infinite: true,
-      arrows: true,
-      dots: false,
-      prevArrow: '<button type="button" class="slick-prev">‹</button>',
-      nextArrow: '<button type="button" class="slick-next">›</button>',
-
-      responsive: [
-        {
-          breakpoint: 1141,
-          settings: {
-            slidesToShow: 1,
-            arrows: true
-          }
-        }
-      ]
-    });
-  }
-
-});
-
-</script>
-
 
 
 {% schema %}
