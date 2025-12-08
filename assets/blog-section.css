@@ -384,8 +384,14 @@
     margin-left: 5px;
     }
 
-.next-carousel-btn {
+    .next-carousel-btn {
     margin-right: 5px;
+    }
+    .blog-carousel-section .slick-slide {
+    margin: 0 5px;
+    }
+    .blog-carousel-section .slick-list {
+    margin: 0 -5px;
     }
 }
 
