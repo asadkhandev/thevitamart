@@ -162,6 +162,17 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
+    if (window.innerWidth < 600) {
+      $('.blog-carousel-section').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 5000
+    });
+    }
     $('.blog-carousel-section').slick({
       slidesToShow: 2,
       slidesToScroll: 1,
