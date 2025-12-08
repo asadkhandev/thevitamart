@@ -160,36 +160,31 @@
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function() {
+    $('.main-blog').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      infinite: true,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      asNavFor: '.blog-carousel-section'
+    });
 
-  // Initialize carousel blog
+
   $('.blog-carousel-section').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     dots: false,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000
+    asNavFor: '.main-blog'
   });
-
-
-  function updateMainBlog(currentSlideIndex) {
-
-    const firstSlide = $('.blog-carousel-section .slick-slide[data-slick-index="' + currentSlideIndex + '"]').html();
-   
-    $('.main-blog').html(firstSlide);
-  }
-
-  updateMainBlog(0);
-
-  $('.blog-carousel-section').on('afterChange', function(event, slick, currentSlide){
-    updateMainBlog(currentSlide);
-  });
-
 });
 </script>
-
 
 
 
