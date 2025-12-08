@@ -64,20 +64,20 @@
                   </p>
 
 
-                  <h2>{{ main_article.title }}</h2>
+                  <h2>{{ article.title }}</h2>
 
                   <p>
-                    {% if main_article.excerpt != blank %}
-                      {{ main_article.excerpt }}
+                    {% if article.excerpt != blank %}
+                      {{ article.excerpt }}
                     {% else %}
-                      {{ main_article.content | strip_html | truncate: 140 }}
+                      {{ article.content | strip_html | truncate: 140 }}
                     {% endif %}
                   </p>
                 </span>
 
                 <strong>
-                  <p>{{ main_article.published_at | date: "%b %d, %Y" }}</p>
-                  <a href="{{ main_article.url }}">Read More</a>
+                  <p>{{ article.published_at | date: "%b %d, %Y" }}</p>
+                  <a href="{{ article.url }}">Read More</a>
                 </strong>
               </div>
           </div>
