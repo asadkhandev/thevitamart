@@ -111,12 +111,14 @@
     position: relative;
 }
 
+.blog-carousel-section .slick-slide {
+    margin-left: -20px;
+}
+
 .blog-carousel-section .slick-list {
-    /* prevent overflow caused by margins */
     padding-right: 20px;
 }
 
-/* Force Slick to use flex layout so slides match height */
 .blog-carousel-section .slick-track {
     display: flex !important;
 }
@@ -131,6 +133,7 @@
     display: flex;
     flex-direction: row; /* or column for mobile; it already switches in your media query */
 }
+
 
 
 .carousel-blog {
