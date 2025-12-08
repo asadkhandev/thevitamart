@@ -305,6 +305,10 @@
     .blog-section {
         padding: 50px 0px;
     }
+    .blog-section .slick-initialized .slick-slide {
+        display: flex;
+        flex-direction: column;
+    }
     .blog-section .container {
         align-items: center;
         padding: 0px 15px;
