@@ -289,16 +289,6 @@
     .carousel-blog {
         flex-direction: column;
     }
-    .carousel-blog-image {
-        max-width: none;
-        height: 350px;
-    }
-    .carousel-blog-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-    }
 }
 
 @media (min-width: 600px) and (max-width: 1141px) {
