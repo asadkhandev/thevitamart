@@ -7,12 +7,12 @@
       <h2>{{ section.settings.heading }}</h2>
     </div>
 
-    {% assign selected_blog = blogs[section.settings.blog] %}
+    {% comment %} {% assign selected_blog = blogs[section.settings.blog] %}
     {% assign articles = selected_blog.articles %}
 
     {% if articles.size > 0 %}
       {% assign main_article = articles.first %}
-    {% endif %}
+    {% endif %} {% endcomment %}
 
 
     <div class="main-blog">
@@ -25,7 +25,9 @@
           <a href="#" class="next-carousel-btn"><img src="{{ section.settings.arrow_right | img_url }}" alt="Right"></a>
         {% endif %}
       </div> {% endcomment %}
-        {% for article in articles limit: section.settings.carousel_limit %}
+      {% assign blog = blogs[section.settings.blog] %}
+        {% for article in blog.articles limit: section.settings.carousel_limit %}
+        {% comment %} {% for article in articles limit: section.settings.carousel_limit %} {% endcomment %}
             <div>
               <div class="main-blog-image">
                 {% if main_article.image %}
