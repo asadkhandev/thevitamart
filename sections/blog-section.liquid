@@ -162,9 +162,9 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    if (window.innerWidth < 600) {
-      $('.main-blog').slick({
-      slidesToShow: 1,
+  if (window.innerWidth < 600) {
+    $('.main-blog').slick({
+      slidesToShow: {{ section.settings.main_blog_mobile_limit }},
       slidesToScroll: 1,
       arrows: true,
       dots: false,
@@ -172,17 +172,18 @@
       autoplay: true,
       autoplaySpeed: 5000
     });
-    }
-    $('.blog-carousel-section').slick({
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      arrows: true,
-      dots: false,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 5000
-    });
+  }
+
+  $('.blog-carousel-section').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000
   });
+});
 </script>
 
 
