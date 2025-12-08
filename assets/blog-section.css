@@ -144,7 +144,8 @@
 }
 
 .carousel-blog-image {
-    width: 430px;
+    max-width: 430px;
+    width: 100%;
 }
 
 .carousel-blog-image img {
@@ -160,6 +161,7 @@
     flex-direction: column;
     padding: 13px 15px;
     justify-content: space-between;
+    width: 100%;
 }
 
 .carousel-blog-text span {
