@@ -303,7 +303,7 @@
     }
 }
 
-@media (min-width: 600px) and (max-width: 1141px) {
+@media (min-width: 325px) and (max-width: 1141px) {
     .blog-section {
         padding: 50px 0px;
     }
@@ -407,7 +407,7 @@
     }
 }
 
-@media (min-width: 325px) and (max-width: 599px) {
+/* @media (min-width: 325px) and (max-width: 599px) {
     .blog-carousel-section {
         display: none;
     }
@@ -472,4 +472,4 @@
     .phone-carousel-btns .next-carousel-btn {
         margin-right: -10px;
     }
-}
+} */
