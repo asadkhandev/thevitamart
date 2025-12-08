@@ -59,6 +59,7 @@
     flex-direction: column;
     padding: 34px 28px;
     justify-content: space-between;
+    width: 100%;
 }
 
 .main-blog-text span {
