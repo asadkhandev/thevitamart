@@ -111,6 +111,11 @@
     position: relative;
 }
 
+.carousel-blog-outer {
+    display: flex;
+    width: 100%;
+}
+
 .carousel-blog {
     display: flex;
     width: 50%;
