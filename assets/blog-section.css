@@ -111,10 +111,6 @@
     position: relative;
 }
 
-.blog-carousel-section .slick-slide {
-    margin-right: 20px; /* your desired spacing */
-}
-
 .blog-carousel-section .slick-list {
     /* prevent overflow caused by margins */
     padding-right: 20px;
