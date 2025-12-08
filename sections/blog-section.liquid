@@ -158,6 +158,47 @@
   </div>
 </div>
 
+<script>
+$(document).ready(function () {
+
+  var prevArrow = `
+    <button type="button" class="slick-prev carousel-arrow">
+      <img src="{{ section.settings.arrow_left | img_url }}" alt="Prev">
+    </button>
+  `;
+
+  var nextArrow = `
+    <button type="button" class="slick-next carousel-arrow">
+      <img src="{{ section.settings.arrow_right | img_url }}" alt="Next">
+    </button>
+  `;
+
+  if ($('.blog-carousel-section .carousel-blog-outer').length > 1) {
+    $('.blog-carousel-section').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      infinite: true,
+      arrows: true,
+      dots: false,
+      prevArrow: prevArrow,
+      nextArrow: nextArrow,
+
+      responsive: [
+        {
+          breakpoint: 1141,
+          settings: {
+            slidesToShow: 1,
+            arrows: true
+          }
+        }
+      ]
+    });
+  }
+
+});
+</script>
+
+
 
 
 {% schema %}
