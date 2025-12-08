@@ -158,6 +158,24 @@
   </div>
 </div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+
+    // Initialize Slick for the blog carousel
+    $('.blog-carousel-section').slick({
+      slidesToShow: 2,          // adjust if needed
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 5000
+    });
+
+  });
+</script>
+
+
 
 
 {% schema %}
