@@ -1,6 +1,6 @@
 {{ 'blog-slider-section.css' | asset_url | stylesheet_tag }}
 
-{%- style -%}
+{% comment %} {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -172,6 +172,239 @@
   });
 </script>
 
+
+{% endif %}
+
+{% schema %}
+{
+  "name": "Home Blog Slider",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "t:sections.featured-blog.settings.blog.label"
+    },
+    {
+      "type": "range",
+      "id": "post_limit",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.featured-blog.settings.post_limit.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Blog Slider"
+    }
+  ]
+}
+{% endschema %} {% endcomment %}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{% if section.settings.blog != blank %}
+<div class="blog_slider-section color-{{ section.settings.color_scheme }}{% if section.settings.title == blank %} no-heading{% endif %}">
+  <div
+    class="section-{{ section.id }}-padding page-width isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+    {% endif %}
+  >
+
+    {%- if section.settings.title != blank -%}
+      <div class="halo-block-header{% if section.settings.text_alignment == 'center' %} text-center{% endif %}{% if section.settings.text_alignment == 'left' %} text-left{% endif %}{% if section.settings.text_alignment == 'right' %} text-right{% endif %}">
+        <h3 class="title">
+          <span class="text">{{ section.settings.title }}</span>
+        </h3>
+      </div>
+    {%- endif -%}
+
+    <div class="nutriRow">
+      <div class="col-md-7 blog-slider-main">
+        {% assign blog = blogs[section.settings.blog] %}
+        {% for article in blog.articles limit: section.settings.post_limit %}
+          <div class="blogBigCardBodyOuter">
+            <div class="blogBigCard">
+              <div class="blogBigCardHead">
+                <a href="{{ article.url }}">
+                  {% if article.image %}
+                    <img 
+                      src="{{ article.image | img_url: '960x600' }}" 
+                      alt="{{ article.title | escape }}" 
+                      class="article__image" />
+                  {% endif %}
+                </a>
+                <div class="blogSmallCardHeadOverlay">5 Min Read</div>
+              </div>
+              <div class="blogBigCardBody">
+                <div class="blogBigCardBodyContent">
+                  <div class="blogBigCardGenre">
+                    <div class="blogBigCardGenreTxt">
+                      <div class="blogCategoryIcon">
+                        <img 
+                        src="{{ 'health-icon.svg' | asset_url }}" 
+                        alt="Health Icon" 
+                        class="imgFluid" />
+                      </div>&nbsp;{{ article.tags[0] | default: 'Health' }}
+                    </div>
+                  </div>
+                  <div class="blogBigCardHeading">
+                    <h3 class="article-title m-0">
+                      <a class="tempLinkBlog" href="{{ article.url }}">{{ article.title }}</a>
+                    </h3>
+                  </div>
+                  <div class="blogBigCardTxt">{{ article.excerpt | strip_html | truncate: 140 }}</div>
+                </div>
+                <div class="blogBigCardStats">
+                  <div class="blogBigCardPublishStats">
+                    <span class="BlogpublishDate">{{ article.published_at | date: "%b %d, %Y" }}</span>
+                  </div>
+                  <a href="{{ article.url }}" class="blogBigCardBtn tempLink">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="col-md-5 blog-slider-nav">
+        {% for article in blog.articles limit: section.settings.post_limit %}
+          <div class="BlogSmallCard">
+            <div class="blogSmallCardHead">
+              <div class="blogSmallCardHeadOverlay">5 Min Read</div>
+              <a href="{{ article.url }}">
+                {% if article.image %}
+                  <img 
+                    src="{{ article.image | img_url: '960x600' }}" 
+                    alt="{{ article.title | escape }}" 
+                    class="article__image" />
+                {% endif %}
+              </a>
+            </div>
+            <div class="blogSmallCardBody">
+              <div class="blogSmallCardStatsOuter">
+                <div class="blogSmallCardBodyContent">
+                  <div class="blogSmallCardHeading">
+                    <h5 class="article-title m-0">
+                      <a class="tempLinkBlog tempLinkBlogSmall" href="{{ article.url }}">{{ article.title }}</a>
+                    </h5>
+                  </div>
+                  <div class="blogSmallCardTxt">{{ article.excerpt | strip_html | truncate: 140 }}</div>
+                </div>
+                <div class="blogSmallCardStats">
+                  <div class="blogSmallCardGenreTxt">
+                    <div class="blogCategoryIcon">
+                      <img 
+                        src="{{ 'health-icon.svg' | asset_url }}" 
+                        alt="Health Icon" 
+                        class="imgFluid" />
+                    </div>&nbsp; {{ article.tags[0] | default: 'Health' }}
+                  </div>
+                  <div class="blogSmallCardDate">
+                    {{ article.published_at | date: "%b %d, %Y" }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Main slider
+    $('.blog-slider-main').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      asNavFor: '.blog-slider-nav'
+    });
+
+    // Navigation slider
+    $('.blog-slider-nav').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.blog-slider-main',
+      dots: false,
+      centerMode: false,
+      focusOnSelect: true,
+      vertical: true,
+      verticalSwiping: true,
+      arrows: true
+    });
+  });
+</script>
 
 {% endif %}
 
