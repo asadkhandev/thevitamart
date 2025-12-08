@@ -150,8 +150,7 @@
         "quick_add": true,
         "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36,
-        "add_product": "standard"
+        "padding_bottom": 36
       }
     },
     "partner_section_djUtxh": {
@@ -160,43 +159,43 @@
         "logo_Xwgfdy": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify://shop_images/Frame_21_1.png"
+            "logo_image": "shopify://shop_images/certified-img1.png"
           }
         },
         "logo_7p4aYK": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify://shop_images/Frame_21_1.png"
+            "logo_image": "shopify://shop_images/certified-img2.png"
           }
         },
         "logo_HjJnHK": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify://shop_images/Frame_21_1.png"
+            "logo_image": "shopify://shop_images/certified-img3.png"
           }
         },
         "logo_jPJgYm": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify://shop_images/Frame_21_1.png"
+            "logo_image": "shopify://shop_images/certified-img4.png"
           }
         },
         "logo_icdEVR": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify://shop_images/Frame_21_1.png"
+            "logo_image": "shopify://shop_images/certified-img5.png"
           }
         },
         "logo_ixRhJM": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify://shop_images/Frame_21_1.png"
+            "logo_image": "shopify://shop_images/certified-img6.png"
           }
         },
         "logo_wwP3P7": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify://shop_images/Frame_21_1.png"
+            "logo_image": "shopify://shop_images/certified-img7.png"
           }
         }
       },
