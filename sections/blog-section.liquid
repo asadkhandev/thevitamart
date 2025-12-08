@@ -25,7 +25,8 @@
           <a href="#" class="next-carousel-btn"><img src="{{ section.settings.arrow_right | img_url }}" alt="Right"></a>
         {% endif %}
       </div> {% endcomment %}
-
+        {% for article in articles offset:1 limit: section.settings.carousel_limit %}
+          
       <div class="main-blog-image">
         {% if main_article.image %}
           <a href="{{ main_article.url }}">
@@ -81,6 +82,7 @@
           <a href="{{ main_article.url }}">Read More</a>
         </strong>
       </div>
+        {% endfor %}
     </div>
 
 
