@@ -351,13 +351,10 @@
 
     .carousel-blog {
     display: flex;
+    flex-direction: column;
     width: 95%;
     border-radius: 10px;
     background-color: #e9edd5;
-    }
-    .carousel-blog {
-        display: flex;
-        flex-direction: column;
     }
     .carousel-blog-image {
         max-width: none;
