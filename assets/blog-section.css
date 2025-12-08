@@ -278,6 +278,9 @@
 }
 
 @media (min-width: 1000px) and (max-width: 1141px) {
+    .carousel-blog {
+        flex-direction: column;
+    }
     .carousel-blog-image {
         max-width: none;
         height: 350px;
@@ -291,6 +294,9 @@
 }
 
 @media (min-width: 800px) and (max-width: 999px) {
+    .carousel-blog {
+        flex-direction: column;
+    }
     .carousel-blog-image {
         max-width: none;
         height: 300px;
