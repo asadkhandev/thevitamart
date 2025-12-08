@@ -174,19 +174,8 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    // Main blog carousel
-    $('.main-blog').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true,
-      dots: false,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      asNavFor: '.blog-carousel-section', // Sync with carousel
-    });
 
-    // Carousel blog section
+    // Initialize carousel blog
     $('.blog-carousel-section').slick({
       slidesToShow: 2,
       slidesToScroll: 1,
@@ -194,10 +183,31 @@
       dots: false,
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 5000,
-      focusOnSelect: true, // Clicking a slide will sync main blog
-      asNavFor: '.main-blog', // Sync with main blog
+      autoplaySpeed: 5000
     });
+
+    // Initialize main blog (always 1 slide)
+    $('.main-blog').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      infinite: true,
+      autoplay: false,
+      draggable: false
+    });
+
+    // Sync main blog when carousel changes
+    $('.blog-carousel-section').on('afterChange', function(event, slick, currentSlide){
+      // Move main blog to the first visible carousel slide
+      $('.main-blog').slick('slickGoTo', currentSlide);
+    });
+
+    // Optional: if you want main blog arrows to change carousel
+    $('.main-blog').on('afterChange', function(event, slick, currentSlide){
+      $('.blog-carousel-section').slick('slickGoTo', currentSlide);
+    });
+
   });
 </script>
 
