@@ -266,6 +266,9 @@
         max-width: 110px;
         width: 100%;
     }
+    .carousel-blog-text {
+        width: 100%;
+    }
     .carousel-blog-text .sub-heading {
         max-width: 75px;
         width: 100%;
