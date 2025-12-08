@@ -158,6 +158,73 @@
   </div>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof jQuery === 'undefined') {
+    var script = document.createElement('script');
+    script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
+    script.onload = loadSlickAndInit;
+    document.head.appendChild(script);
+  } else {
+    loadSlickAndInit();
+  }
+
+  function loadSlickAndInit() {
+    var slickCSS = document.createElement('link');
+    slickCSS.rel = 'stylesheet';
+    slickCSS.href = 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css';
+    document.head.appendChild(slickCSS);
+    
+    var slickThemeCSS = document.createElement('link');
+    slickThemeCSS.rel = 'stylesheet';
+    slickThemeCSS.href = 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css';
+    document.head.appendChild(slickThemeCSS);
+    
+    if (typeof $.fn.slick === 'undefined') {
+      var slickScript = document.createElement('script');
+      slickScript.src = 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js';
+      slickScript.onload = initCarousel;
+      document.head.appendChild(slickScript);
+    } else {
+      initCarousel();
+    }
+  }
+
+  function initCarousel() {
+    setTimeout(function() {
+      var $carousel = $('.blog-carousel-section');
+      
+      if ($carousel.length && $carousel.children().length > 1) {
+        $carousel.slick({
+          dots: true,
+          arrows: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          prevArrow: '<button type="button" class="prev-carousel-btn"><img src="{{ section.settings.arrow_left | img_url | default: '' }}" alt="Previous"></button>',
+          nextArrow: '<button type="button" class="next-carousel-btn"><img src="{{ section.settings.arrow_right | img_url | default: '' }}" alt="Next"></button>',
+          responsive: [
+            {
+              breakpoint: 1141,
+              settings: { slidesToShow: 2, slidesToScroll: 1 }
+            },
+            {
+              breakpoint: 768,
+              settings: { slidesToShow: 2, slidesToScroll: 1, arrows: false }
+            },
+            {
+              breakpoint: 599,
+              settings: { slidesToShow: 1, slidesToScroll: 1, arrows: false, dots: true }
+            }
+          ]
+        });
+      }
+    }, 100);
+  }
+});
+</script>
+
 
 
 {% schema %}
