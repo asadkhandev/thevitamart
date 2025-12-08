@@ -114,6 +114,7 @@
 .carousel-blog-outer {
     display: flex;
     width: 100%;
+    background-color: red;
 }
 
 .carousel-blog {
