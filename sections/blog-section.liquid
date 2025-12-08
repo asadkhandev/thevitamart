@@ -26,8 +26,8 @@
         {% endif %}
       </div> {% endcomment %}
         {% for article in articles offset:1 limit: section.settings.carousel_limit %}
-          
-        <div class="main-blog-image">
+          <div>
+            <div class="main-blog-image">
           {% if main_article.image %}
             <a href="{{ main_article.url }}">
               <img 
@@ -82,6 +82,7 @@
             <a href="{{ main_article.url }}">Read More</a>
           </strong>
         </div>
+          </div>
         {% endfor %}
     </div>
 
