@@ -96,7 +96,7 @@
       </div> {% endcomment %}
 
       {% for article in articles offset:1 limit: section.settings.carousel_limit %}
-        <div>
+        <div class="carousel-blog-outer">
           <div class="carousel-blog">
             <div class="carousel-blog-image">
               {% if article.image %}
