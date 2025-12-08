@@ -356,6 +356,7 @@
     background-color: #e9edd5;
     }
     .carousel-blog {
+        display: flex;
         flex-direction: column;
     }
     .carousel-blog-image {
