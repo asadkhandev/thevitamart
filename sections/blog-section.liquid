@@ -42,17 +42,17 @@
               <div class="main-blog-text">
                 <span>
                   <p class="sub-heading">
-                    {% if main_article.tags.size > 0 %}
-                      {% assign main_tag = main_article.tags.first | downcase %}
+                    {% if article.tags.size > 0 %}
+                      {% assign main_tag = article.tags.first | downcase %}
                       {% assign main_tag_icon = selected_blog.metafields.tag_icons[main_tag] %}
 
                       {% if main_tag_icon %}
-                        <img src="{{ main_tag_icon | img_url }}" alt="{{ main_article.tags.first }}">
+                        <img src="{{ main_tag_icon | img_url }}" alt="{{ article.tags.first }}">
                       {% else %}
                         <img src="{{ section.settings.category_icon | img_url }}">
                       {% endif %}
 
-                      {{ main_article.tags.first }}
+                      {{ article.tags.first }}
                     {% else %}
                       {% if section.settings.category_icon_custom %}
                         <img src="{{ section.settings.category_icon_custom | img_url }}" alt="{{ section.settings.category_text }}">
