@@ -125,7 +125,7 @@
   </div>
 </div>
 
-<script>
+{% comment %} <script>
   document.addEventListener("DOMContentLoaded", function() {
     if (window.innerWidth > 767) {
       $('.blog-slider-main').slick({
@@ -170,7 +170,37 @@
       });
     }
   });
+</script> {% endcomment %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Main blog carousel
+    $('.main-blog').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      asNavFor: '.blog-carousel-section', // Sync with carousel
+    });
+
+    // Carousel blog section
+    $('.blog-carousel-section').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      focusOnSelect: true, // Clicking a slide will sync main blog
+      asNavFor: '.main-blog', // Sync with main blog
+    });
+  });
 </script>
+
 
 
 {% endif %}
