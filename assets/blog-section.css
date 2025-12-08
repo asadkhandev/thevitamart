@@ -112,11 +112,11 @@
 }
 
 .blog-carousel-section .slick-slide {
-    margin-right: 20px;
+    margin: 0 10px;
 }
 
 .blog-carousel-section .slick-list {
-    padding-right: 20px;
+    margin: 0 -10px;
 }
 
 /* .blog-carousel-section .slick-track {
