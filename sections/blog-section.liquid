@@ -173,18 +173,16 @@ document.addEventListener("DOMContentLoaded", function() {
     autoplaySpeed: 5000
   });
 
-  // Initialize main blog with first carousel slide
+
   function updateMainBlog(currentSlideIndex) {
-    // Get the first visible carousel slide
+
     const firstSlide = $('.blog-carousel-section .slick-slide[data-slick-index="' + currentSlideIndex + '"]').html();
     // Replace main blog content
     $('.main-blog').html(firstSlide);
   }
 
-  // Set initial main blog
   updateMainBlog(0);
 
-  // Update main blog whenever carousel changes
   $('.blog-carousel-section').on('afterChange', function(event, slick, currentSlide){
     updateMainBlog(currentSlide);
   });
