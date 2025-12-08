@@ -280,7 +280,7 @@
 @media (min-width: 1000px) and (max-width: 1141px) {
     .carousel-blog-image {
         max-width: none;
-        height: 300px;
+        height: auto;
     }
     .carousel-blog-image img {
         width: 100%;
