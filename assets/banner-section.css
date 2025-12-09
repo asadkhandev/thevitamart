@@ -18,6 +18,10 @@
     display: none;
 }
 
+.banner-section-products .gradient {
+    background: transparent !important;
+}
+
 .banner-section .container {
     width: 100%;
     flex-direction: column;
