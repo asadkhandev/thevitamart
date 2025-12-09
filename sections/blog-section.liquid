@@ -161,7 +161,8 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    $('.main-blog').slick({
+    if ($(window).width() <= 768) {
+      $('.main-blog').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
@@ -171,7 +172,7 @@
       autoplaySpeed: 5000,
       asNavFor: '.blog-carousel-section',
     });
-
+  }
 
   $('.blog-carousel-section').slick({
     slidesToShow: 2,
