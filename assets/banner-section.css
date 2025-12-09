@@ -207,4 +207,7 @@
     .banner-text span h2 {
         width: 100%;
     }
+    .banner-text strong a {
+        font-size: 11px;
+    }
 }
