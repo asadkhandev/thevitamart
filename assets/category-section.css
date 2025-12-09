@@ -60,6 +60,7 @@
 .previous-btn:hover {
     background-color: #aacc00;
     color: white;
+    cursor: pointer;
 }
 
 .next-btn {
@@ -73,6 +74,7 @@
 .next-btn:hover {
     background-color: #aacc00;
     color: white;
+    cursor: pointer;
 }
 
 .category-carousel {
