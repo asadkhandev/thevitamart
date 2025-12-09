@@ -57,6 +57,7 @@
     transition: ease 0.3s;
     background-image: url(https://cdn.shopify.com/s/files/1/0707/8104/2880/files/black_left_arrow_367f6448-3304-42a5-bfd6-9313189ebbf7.png?v=1765267920);
     width: 42px;
+    height: 42px;
 }
 
 .previous-btn:hover {
@@ -75,6 +76,7 @@
     transition: ease 0.3s;
     background-image: url(https://cdn.shopify.com/s/files/1/0707/8104/2880/files/right_black_arrow_0ce2a2bc-0357-47a0-8087-4d0d6f6850eb.png?v=1765267889);
     width: 42px;
+    height: 42px;
 }
 
 .next-btn:hover {
