@@ -14,6 +14,10 @@
     background-size: cover;
 }
 
+.banner-section-products .slick-dots li button {
+    display: none;
+}
+
 .banner-section .container {
     width: 100%;
     flex-direction: column;
