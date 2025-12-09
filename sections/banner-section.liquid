@@ -67,11 +67,11 @@
         </div>
       {%- endif -%}
 
-      <ul class="tabs-menu">
+      {% comment %} <ul class="tabs-menu">
         <li class="tab-link active" data-tab="tab1">{{ collections[section.settings.collection_1].title }}</li>
         <li class="tab-space">/</li>
         <li class="tab-link" data-tab="tab2">{{ collections[section.settings.collection_2].title }}</li>
-      </ul>
+      </ul> {% endcomment %}
 
       <div class="tab-content{% if section.settings.text_alignment == 'center' %} text-center{% endif %}">
         <!-- Collection 1 -->
