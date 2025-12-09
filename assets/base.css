@@ -2737,6 +2737,7 @@ menu-drawer + .header__search {
 .header__search {
   display: inline-flex;
   line-height: 0;
+  position: relative;
 }
 
 .header--top-center > .header__search {
@@ -2831,6 +2832,8 @@ details[open] .modal-overlay::after {
 @media screen and (min-width: 990px) {
   .search-modal__form {
     max-width: 74.2rem;
+    position: absolute;
+    right: 0;
   }
 
   .search-modal__close-button {
