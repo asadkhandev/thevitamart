@@ -326,6 +326,7 @@
     }
     .category-carousel {
         gap: 10px;
+        justify-content: center;
     }
     .category-box {
         max-width: 200px;
