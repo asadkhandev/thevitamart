@@ -198,11 +198,14 @@
     .banner-text {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
     .banner-text span {
         width: 100%;
         flex-direction: column;
         align-items: center;
+        gap: 10px;
+        text-align: center;
     }
     .banner-text span h2 {
         width: 100%;
