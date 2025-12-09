@@ -108,8 +108,8 @@
     font-weight: 500;
 }
 
-.main-blog .slick-next {
-    display: none;
+.main-blog .slick-next .slick-arrow {
+    display: none !important;
 }
 
 
