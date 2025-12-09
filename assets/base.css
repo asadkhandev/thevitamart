@@ -2845,7 +2845,7 @@ details[open] .modal-overlay::after {
 
   .header .header__icons.active predictive-search.search-modal__form{
     opacity: 1;
-    visibility: visibility;
+    visibility: visible;
   }
 
   .search-modal__close-button {
