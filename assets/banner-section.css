@@ -104,6 +104,7 @@
     }
     .banner-text span h2 {
         font-size: 16px;
+        background-color: red;
     }
     .banner-text span p {
     padding: 10px;
