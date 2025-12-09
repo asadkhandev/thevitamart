@@ -211,12 +211,12 @@
         padding: 0px 20px;
     }
     .category-box {
-        max-width: 110px;
+        max-width: 120px;
         width: 100%;
-        padding: 10px 14px 10px 14px;
+        padding: 10px 0px 10px 0px;
     }
     .category-box img {
-        max-width: 70px;
+        max-width: 65px;
         width: 100%;
     }
     .category-box p {
