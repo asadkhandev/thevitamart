@@ -1317,3 +1317,7 @@ input.mobile-facets__checkbox {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
+
+.facets-vertical .facets__form-vertical-mobile .active-facets-vertical-filter ul{
+  margin: 0;
+}
