@@ -113,6 +113,12 @@
     .banners {
         padding: 0px 15px;
     }
+    .left-banner img {
+    width: 100%;
+    }
+    .right-banner img {
+    width: 100%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1380px) {
