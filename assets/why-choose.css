@@ -166,6 +166,7 @@
 @media (min-width: 1200px) and (max-width: 1249px) {
     .family-image {
         right: 300px;
+        z-index: 1;
     }
     .why-choose-left-inner p {
         width: 80%;
