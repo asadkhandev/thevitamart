@@ -6,11 +6,10 @@
 .category-carousel .category-box {
   flex: none;
 }
-.category-carousel .slick-slide {
-    display: block !important;
-    justify-content: unset !important;
+.slick-slide {
+  display: flex;
+  justify-content: center;
 }
-
 
 .category-section {
     display: flex;
@@ -21,7 +20,6 @@
 }
 
 .category-section .container {
-    display: flex !important;
     width: 100%;
     flex-direction: column;
     gap: 24px;
@@ -52,49 +50,18 @@
 }
 
 .previous-btn {
-    display: inline-flex;
+    display: flex;
     border: 1px solid #dedede;
     border-radius: 100%;
     padding: 15px 14px 15px 14px;
-    transition: ease 0.3s;
-    background-image: url(https://cdn.shopify.com/s/files/1/0707/8104/2880/files/black_left_arrow_367f6448-3304-42a5-bfd6-9313189ebbf7.png?v=1765267920);
-    width: 42px;
-    height: 42px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.previous-btn:hover {
-    background-color: #aacc00;
-    border: 1px solid #aacc00;
-    color: white;
-    cursor: pointer;
-    background-image: url(https://cdn.shopify.com/s/files/1/0707/8104/2880/files/Vector-white-left.png?v=1764752101);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .next-btn {
-    display: inline-flex;
-    border: 1px solid #dedede;
+    display: flex;
+    border: 1px solid #AACC00;
     border-radius: 100%;
+    background-color: #AACC00;
     padding: 15px 14px 15px 14px;
-    transition: ease 0.3s;
-    background-image: url(https://cdn.shopify.com/s/files/1/0707/8104/2880/files/right_black_arrow_0ce2a2bc-0357-47a0-8087-4d0d6f6850eb.png?v=1765267889);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 42px;
-    height: 42px;
-}
-
-.next-btn:hover {
-    background-color: #aacc00;
-    border: 1px solid #aacc00;
-    color: white;
-    cursor: pointer;
-    background-image: url(https://cdn.shopify.com/s/files/1/0707/8104/2880/files/Vector.png?v=1764752101);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .category-carousel {
