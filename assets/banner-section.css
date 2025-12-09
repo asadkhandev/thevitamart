@@ -14,6 +14,10 @@
     background-size: cover;
 }
 
+.banner-section .slick-initialized .slick-slide {
+    margin: 0 10px;
+}
+
 .banner-section-products .slick-dots li button {
     display: none;
 }
