@@ -167,6 +167,9 @@
     .family-image {
         right: 300px;
     }
+    .why-choose-left-inner {
+        z-index: 5;
+    }
     .why-choose-left-inner p {
         width: 80%;
     }
