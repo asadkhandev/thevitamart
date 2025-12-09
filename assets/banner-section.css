@@ -112,10 +112,10 @@
     .banner-text strong a {
         font-size: clamp(12px, 1.8vw, 16px);
     }
-    .banner-section-products .tab-link {
+    .banner-text .tab-link {
         font-size: 9px;
     }
-    .banner-section-products .tab-link.active {
+    .banner-text .tab-link.active {
         font-size: 9px;
     }
 }
