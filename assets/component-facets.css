@@ -1308,3 +1308,7 @@ input.mobile-facets__checkbox {
     padding: 0 1rem 1rem;
   }
 }
+
+.facets__form-vertical-mobile{
+  padding: 1.3rem 2.5rem;
+}
