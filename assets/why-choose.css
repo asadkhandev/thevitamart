@@ -154,6 +154,7 @@
 @media (max-width: 1300px) {
     .family-image {
         z-index: 1;
+        right: 0;
     }
     .why-choose-left-inner {
         z-index: 5;
