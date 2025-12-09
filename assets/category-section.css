@@ -3,9 +3,9 @@
     max-width: 1280px;
 }
 
-.category-carousel .category-box {
+/* .category-carousel .category-box {
   flex: none;
-}
+} */
 .slick-slide {
   display: flex;
   justify-content: center;
