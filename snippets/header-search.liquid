@@ -176,10 +176,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const btnSearch = document.querySelector(".btn-search");
   const searchForm = document.querySelector(".header__icons");
+  const header__search = document.querySelector(".header__icons");
 
   if (btnSearch && searchForm) {
     btnSearch.addEventListener("click", function () {
       searchForm.classList.add("active");
+      header__search.classList.add("active");
       console.log("Search form activated"); // debug
     });
   }
