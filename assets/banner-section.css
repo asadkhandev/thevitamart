@@ -199,4 +199,7 @@
         width: 100%;
         flex-direction: column;
     }
+    .banner-text span h2 {
+        width: 100%;
+    }
 }
