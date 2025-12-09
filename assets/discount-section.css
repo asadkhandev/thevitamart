@@ -70,3 +70,9 @@
     font-size: clamp(12px, 1.8vw, 16px);
     }
 }
+
+@media (min-width: 320px) and (max-width: 350px) {
+    .discount-text span h2 {
+        font-size: 11px;
+    }
+}
