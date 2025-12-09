@@ -29,7 +29,7 @@
 .contactus-banner h1 {
     font-size: 80px;
     font-weight: bold;
-    color: #b497ed;
+    color: #AACC00;
     padding: 0;
     margin: 0;
 }
@@ -99,7 +99,7 @@
 
 /* .p-btn:hover {
     color: white;
-    background-color: #b497ed;
+    background-color: #AACC00;
 }
 
 .p-btn:hover .contactus-btn-icons {
@@ -121,7 +121,7 @@
     width: 100%;
     height: 300px;
     position: absolute;
-    background-color: #b497ed;
+    background-color: #AACC00;
     border-radius: 5px;
     bottom: 0;
     z-index: 1;
@@ -186,7 +186,7 @@
 }
 
 .s-btn:hover {
-    background-color: #3c3c3c;
+    background-color: #AACC00;
 }
 
 .required {
@@ -221,7 +221,7 @@
     border: 1px solid #cccccc;
     font-size: 30px;
     font-weight: bold;
-    color: #b497ed;
+    color: #AACC00;
 }
 
 .button-email strong {
@@ -232,7 +232,7 @@
     max-width: 399.2px;
     height: 80px;
     border: 1px solid #cccccc;
-    color: #b497ed;
+    color: #AACC00;
     font-size: 20px;
     position: relative;
     overflow: hidden;
@@ -244,7 +244,7 @@
     content: '';
     width: 399.2px;
     height: 80px;
-    background-color: #b497ed;
+    background-color: #AACC00;
     position: absolute;
     bottom: -100px;
     transition: 0.5s;
@@ -277,7 +277,7 @@
 .contactus-banner h1 {
     font-size: 50px;
     font-weight: bold;
-    color: #b497ed;
+    color: #AACC00;
 }
 
 .contactus-banner p {
@@ -338,7 +338,7 @@
     width: 100%;
     height: 300px;
     position: absolute;
-    background-color: #b497ed;
+    background-color: #AACC00;
     border-radius: 5px;
     bottom: 0;
     z-index: 1;
@@ -517,7 +517,7 @@
     width: 99%;
     height: 300px;
     position: absolute;
-    background-color: #b497ed;
+    background-color: #AACC00;
     border-radius: 5px;
     bottom: -20px;
     z-index: 0;
@@ -573,7 +573,7 @@
 }
 
 .s-btn:hover {
-    background-color: #3c3c3c;
+    background-color: #AACC00;
 }
 
 .required {
@@ -608,7 +608,7 @@
     border: 1px solid #cccccc;
     font-size: 20px;
     font-weight: bold;
-    color: #b497ed;
+    color: #AACC00;
 }
 
 .button-email strong {
@@ -618,7 +618,7 @@
     width: 95%;
     height: 80px;
     border: 1px solid #cccccc;
-    color: #b497ed;
+    color: #AACC00;
     font-size: 16px;
     position: relative;
     overflow: hidden;
@@ -630,7 +630,7 @@
     content: '';
     width: 399.2px;
     height: 80px;
-    background-color: #b497ed;
+    background-color: #AACC00;
     position: absolute;
     bottom: -100px;
     transition: 0.5s;
