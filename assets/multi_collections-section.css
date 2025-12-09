@@ -26,6 +26,7 @@
 .tab-link.active{
     background:rgb(131, 156, 7);
     font-weight: 700;
+    border-radius: 50px;
 }
 
 .tab-space{
