@@ -195,6 +195,9 @@
 }
 
 @media (min-width: 325px) and (max-width: 439px) {
+    .banner-text {
+        flex-direction: column;
+    }
     .banner-text span {
         width: 100%;
         flex-direction: column;
