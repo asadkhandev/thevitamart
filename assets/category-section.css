@@ -20,14 +20,14 @@
 }
 
 .category-section .container {
-    display: flex;
+    display: flex !important;
     width: 100%;
     flex-direction: column;
     gap: 24px;
 }
 
 .category-top-section {
-    display: flex !important;
+    display: flex;
     width: 100%;
     justify-content: space-between;
 }
