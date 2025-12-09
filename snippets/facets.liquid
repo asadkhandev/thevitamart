@@ -525,7 +525,7 @@
               {%- if enable_filtering -%}
 
                 {% if collections.size > 0 %}
-                  <div class="facets__form-vertical">
+                  <div class="facets__form-vertical facets__form-vertical-mobile">
                     <div class="active-facets-vertical-filter">
 
                         <h2 class="facets__heading facets__heading--vertical caption-large text-body">Categories</h2>
@@ -539,7 +539,7 @@
                             {% endunless %}
                           {% endfor %}
                         </ul>
-                        
+
                       </div>
                     </div>
                 {% endif %}
