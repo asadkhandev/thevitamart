@@ -2859,6 +2859,8 @@ details[open] .modal-overlay::after {
   .header__icons.active .btn-search-close{
     opacity: 1;
     visibility: visible;
+    background: #fff;
+    border-radius: 100%;
   }
 
   .search-modal__close-button {

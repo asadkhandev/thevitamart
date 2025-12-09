@@ -83,17 +83,17 @@
   justify-content: center;
   width: 197.11px;
   height: 43.6px;
-  border: #4e327c 1px solid;
+  border: #AACC00 1px solid;
   border-radius: 10px;
   text-decoration: none;
-  color: #54327c;
+  color: black;
   font-size: 14px;
   gap: 5px;
   transition: 0.3s ease;
 }
 
 .link-btn2:hover {
-  background-color: #f0ebff;
+  background-color:rgb(221, 252, 70);
   border: white 1px solid;
 }
 
