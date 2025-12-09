@@ -173,13 +173,13 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.querySelector(".btn-search");
-  const form = document.querySelector(".header__search");
+  const btnSearch = document.querySelector(".btn-search");
+  const searchForm = document.querySelector(".search-modal__form");
 
-  if (btn && form) {
-    btn.addEventListener("click", function () {
-      console.log(123);
-      form.classList.add("active");
+  if (btnSearch && searchForm) {
+    btnSearch.addEventListener("click", function () {
+      searchForm.classList.add("active");
+      console.log("Search form activated"); // debug
     });
   }
 });

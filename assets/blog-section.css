@@ -108,7 +108,7 @@
     font-weight: 500;
 }
 
-.main-blog .slick-next:hover, .slick-next:focus, .slick-next {
+.main-blog .slick-next .slick-arrow {
     display: none;
 }
 
