@@ -182,7 +182,7 @@
     }
 }
 
-@media (min-width: 951px) and (max-width: 1029px) {
+@media (min-width: 960px) and (max-width: 1029px) {
     .category-section .container {
         padding: 0px 15px;
     }
@@ -200,7 +200,7 @@
     }
 }
 
-@media (min-width: 851px) and (max-width: 950px) {
+@media (min-width: 851px) and (max-width: 959px) {
     .category-carousel {
         gap: 15px;
     }
