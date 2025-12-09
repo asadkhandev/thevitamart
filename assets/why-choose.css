@@ -158,6 +158,9 @@
     .why-choose-left-inner {
         z-index: 5;
     }
+    .why-choose-left-inner p {
+        width: 85%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1250px) {
