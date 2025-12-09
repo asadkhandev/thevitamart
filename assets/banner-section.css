@@ -50,13 +50,6 @@
     font-size: 24px;
 }
 
-.banner-text span p {
-    background-color: red;
-    border-radius: 50px;
-    padding: 10px 20px;
-    color: white;
-}
-
 .banner-text strong {
     display: flex;
     width: 50%;
