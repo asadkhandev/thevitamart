@@ -135,10 +135,11 @@ footer .container {
     color: white;
     font-size: 14px;
     line-height: 1.5;
+    transition: ease 0.3s;
 }
 
-.footer-middle a.green-links {
-    color: #AACC00;
+.footer-middle a:hover {
+  color: #AACC00;
     text-decoration: underline;
 }
 
