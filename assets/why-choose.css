@@ -193,6 +193,14 @@
     .family-image {
         right: 180px;
     }
+    .why-choose-left-inner {
+        z-index: 5;
+    }
+    .why-choose-left-inner p {
+        width: 90%;
+        font-size: 15px;
+        padding: 10px 0 0 0;
+    }
 }
 
 
