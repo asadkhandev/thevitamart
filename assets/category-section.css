@@ -73,6 +73,30 @@
     background-color: #aacc00;
 }
 
+/* Hide the hover arrows by default */
+.pre-arrow-hover,
+.next-arrow-hover {
+    display: none;
+}
+
+/* When hovering the parent link, swap arrows */
+.previous-btn:hover .pre-arrow {
+    display: none;
+}
+
+.previous-btn:hover .pre-arrow-hover {
+    display: inline-block;
+}
+
+.next-btn:hover .next-arrow {
+    display: none;
+}
+
+.next-btn:hover .next-arrow-hover {
+    display: inline-block;
+}
+
+
 .category-carousel {
     display: flex;
     justify-content: center;
