@@ -73,32 +73,6 @@
     background-color: #aacc00;
 }
 
-
-
-/* Hide hover arrows by default */
-.pre-arrow-hover,
-.next-arrow-hover {
-    display: none;
-}
-
-/* On hover, hide default and show hover arrow */
-.previous-btn:hover .pre-arrow {
-    display: none;
-}
-.previous-btn:hover .pre-arrow-hover {
-    display: inline-block;
-}
-
-.next-btn:hover .next-arrow {
-    display: none;
-}
-.next-btn:hover .next-arrow-hover {
-    display: inline-block;
-}
-
-
-
-
 .category-carousel {
     display: flex;
     justify-content: center;
