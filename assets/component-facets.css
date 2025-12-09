@@ -1312,3 +1312,8 @@ input.mobile-facets__checkbox {
 .facets__form-vertical-mobile{
   padding: 1.3rem 2.5rem;
 }
+.facets__form-vertical-mobile .facets__heading{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
