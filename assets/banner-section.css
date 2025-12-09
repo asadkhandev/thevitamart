@@ -104,6 +104,9 @@
 }
 
 @media (min-width: 325px) and (max-width: 767px) {
+    .banner-text span {
+        width: 70%;
+    }
     .banner-text .tab-link {
         font-size: 10px;
     }
