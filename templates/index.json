@@ -261,6 +261,8 @@
       ],
       "name": "Why Choose Section",
       "settings": {
+        "family_image": "shopify://shop_images/Family.png",
+        "platform_image": "shopify://shop_images/platform.png",
         "main_title": "Why Choose The Vitamart",
         "subtitle": "Your Wellness, Our Commitment",
         "description": "When you shop at The Vitamart, you’re not just buying vitamins — you’re joining a community that values authenticity, transparency, and trust.",
