@@ -60,6 +60,7 @@
     background-repeat: no-repeat;
     width: 42px;
     height: 42px;
+    text-decoration: none;
 }
 
 .previous-btn:hover {
@@ -80,6 +81,7 @@
     background-repeat: no-repeat;
     width: 42px;
     height: 42px;
+    text-decoration: none;
 }
 
 .next-btn:hover {
