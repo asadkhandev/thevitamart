@@ -54,14 +54,25 @@
     border: 1px solid #dedede;
     border-radius: 100%;
     padding: 15px 14px 15px 14px;
+    transition: ease 0.3s
+}
+
+.previous-btn:hover {
+    background-color: #aacc00;
+    color: white;
 }
 
 .next-btn {
     display: flex;
-    border: 1px solid #AACC00;
+    border: 1px solid #dedede;
     border-radius: 100%;
-    background-color: #AACC00;
     padding: 15px 14px 15px 14px;
+    transition: ease 0.3s
+}
+
+.next-btn:hover {
+    background-color: #aacc00;
+    color: white;
 }
 
 .category-carousel {
