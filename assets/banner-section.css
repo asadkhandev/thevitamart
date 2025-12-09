@@ -48,7 +48,6 @@
 
 .banner-text span h2 {
     font-size: 24px;
-    font-weight: 600;
 }
 
 .banner-text span p {
@@ -106,14 +105,17 @@
 
 @media (min-width: 325px) and (max-width: 767px) {
     .banner-text .tab-link {
-        font-size: 9px;
+        font-size: 10px;
     }
     .banner-text .tab-link.active {
-        font-size: 9px;
+        font-size: 10px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1380px) {
+    .banner-section .container {
+        padding: 0px 20px;
+    }
     .banners {
         justify-content: space-evenly;
     }
