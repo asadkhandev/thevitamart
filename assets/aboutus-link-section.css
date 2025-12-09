@@ -94,7 +94,7 @@
 
 .link-btn2:hover {
   background-color:rgb(221, 252, 70);
-  border: #AACC00 1px solid;
+  border: rgb(221, 252, 70) 1px solid;
 }
 
 @media (max-width: 426px) {
