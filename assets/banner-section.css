@@ -86,11 +86,10 @@
 @media (min-width: 930px) and (max-width: 1380px) {
     .banner-text .tab-link {
         font-size: 14px;
-        width: 100%;
     }
     .banner-text .tab-link.active {
         font-size: 14px;
-        width: 100%;
+        width: 50%;
     }
 }
 
