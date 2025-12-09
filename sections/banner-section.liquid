@@ -61,7 +61,8 @@
   <script src="{{ 'quick-order-list.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-<div class="color-{{ section.settings.color_scheme }} isolate gradient">
+<div class="banner-section-products">
+  <div class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="collection-tabs-section section-{{ section.id }}-padding">
     <div class="page-width">
       {%- if section.settings.title != blank -%}
@@ -121,6 +122,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 
 <script>
