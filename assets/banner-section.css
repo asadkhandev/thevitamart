@@ -42,7 +42,7 @@
 .banner-text span {
     display: flex;
     width: 50%;
-    gap: 12px;
+    gap: 5px;
     align-items: center;
 }
 
