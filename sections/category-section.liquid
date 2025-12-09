@@ -33,7 +33,7 @@
   </div>
 </div>
 
-<script>
+{% comment %} <script>
 document.addEventListener('DOMContentLoaded', function() {
   function initCategoryCarousel(section) {
     const carousel = section.querySelector('.category-carousel');
@@ -85,7 +85,60 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+</script> {% endcomment %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  function initCategoryCarousel(section) {
+    const carousel = section.querySelector('.category-carousel');
+    const prevBtn = section.querySelector('.previous-btn');
+    const nextBtn = section.querySelector('.next-btn');
+    
+    // Simple check for jQuery and Slick
+    if (!carousel || !window.jQuery || !jQuery.fn.slick) return;
+    if (carousel.classList.contains('slick-initialized')) return;
+    
+    const $carousel = jQuery(carousel);
+    
+    // Minimal Slick config - won't mess with your CSS
+    $carousel.slick({
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      infinite: true,
+      arrows: false,
+      dots: false,
+      cssEase: 'linear',
+      speed: 300,
+      responsive: [
+        { breakpoint: 767, settings: { slidesToShow: 1 } } // 325px-767px
+      ]
+    });
+
+    // Simple button handlers
+    if (prevBtn) {
+      prevBtn.onclick = () => $carousel.slick('slickPrev');
+    }
+    
+    if (nextBtn) {
+      nextBtn.onclick = () => $carousel.slick('slickNext');
+    }
+  }
+
+  // Initialize
+  document.querySelectorAll('.category-section').forEach(initCategoryCarousel);
+  
+  // Shopify editor
+  if (window.Shopify) {
+    document.addEventListener('shopify:section:load', (e) => {
+      const section = e.target.querySelector('.category-section') || e.target;
+      if (section.classList.contains('category-section')) {
+        setTimeout(() => initCategoryCarousel(section), 50);
+      }
+    });
+  }
+});
 </script>
+
 
 
 
