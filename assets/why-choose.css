@@ -151,7 +151,7 @@
     }
 }
 
-@media (min-width: 1100px) and (max-width: 1300px) {
+@media (min-width: 1200px) and (max-width: 1300px) {
     .family-image {
         z-index: 1;
     }
