@@ -331,10 +331,10 @@
         max-width: 200px;
         width: 100%;
         padding: 10px 0px 10px 0px;
-        height: 100px;
+        height: 120px;
     }
     .category-box img {
-        max-width: 70px;
+        max-width: 100px;
         width: 100%;
     }
     .category-box p {
