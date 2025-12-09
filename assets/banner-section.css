@@ -86,7 +86,7 @@
     width: 50%;
 }
 
-@media (min-width: 441px) and (max-width: 1380px) {
+@media (min-width: 768px) and (max-width: 1380px) {
     .banners {
         justify-content: space-evenly;
     }
@@ -103,8 +103,7 @@
         padding-right: 15px;
     }
     .banner-text span h2 {
-        font-size: 20px;
-        background-color: red;
+        font-size: 17px;
     }
     .banner-text span p {
     padding: 10px;
