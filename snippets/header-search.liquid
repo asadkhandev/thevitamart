@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("DOMContentLoaded", function () {
   const headerIcons = document.querySelector(".header__icons");
-  const searchForm = document.querySelector(".search-modal__form");
+  const searchForm = document.querySelector(".header__search");
 
   if (!headerIcons || !searchForm) return;
 
@@ -200,10 +200,6 @@ document.addEventListener("DOMContentLoaded", function () {
     event.stopPropagation();
     headerIcons.classList.add("active");
   });
-  document.querySelector(".header__search").addEventListener("click", function (event) {
-    event.stopPropagation();
-    headerIcons.classList.add("active");
-  });  
 });
 
 </script>
