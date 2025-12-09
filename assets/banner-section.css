@@ -103,7 +103,8 @@
         padding-right: 15px;
     }
     .banner-text span h2 {
-        font-size: 18px;
+        font-size: 20px;
+        background-color: red;
     }
     .banner-text span p {
     padding: 10px;
