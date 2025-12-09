@@ -110,6 +110,9 @@
     .banner-text .tab-link.active {
         font-size: 10px;
     }
+    .banners {
+        padding: 0px 15px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1380px) {
