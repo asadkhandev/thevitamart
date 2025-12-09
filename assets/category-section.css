@@ -166,7 +166,7 @@
         padding: 0px 20px;
     }
     .category-box {
-        max-width: 120px;
+        max-width: 130px;
         width: 100%;
         padding: 10px 10px 10px 10px;
     }
@@ -175,7 +175,7 @@
         width: 100%;
     }
     .category-box p {
-        font-size: 15px;
+        font-size: 14px;
     }
     .category-heading p {
         font-size: 20px;
