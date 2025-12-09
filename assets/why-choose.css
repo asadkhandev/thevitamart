@@ -176,6 +176,9 @@
     .family-image {
         right: 250px;
     }
+    .why-choose-left-inner {
+        z-index: 5;
+    }
     .why-choose-left-inner p {
         width: 90%;
         font-size: 15px;
