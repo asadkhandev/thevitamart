@@ -104,7 +104,6 @@
     }
     .banner-text span h2 {
         font-size: 16px;
-        background-color: red;
     }
     .banner-text span p {
     padding: 10px;
@@ -112,6 +111,12 @@
     }
     .banner-text strong a {
         font-size: clamp(12px, 1.8vw, 16px);
+    }
+    .banner-section-products .tab-link {
+        font-size: 9px;
+    }
+    .banner-section-products .tab-link.active {
+        font-size: 9px;
     }
 }
 
