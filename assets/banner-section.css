@@ -166,7 +166,7 @@
     }
 }
 
-@media (min-width: 325px) and (max-width: 440px) {
+@media (min-width: 325px) and (max-width: 467px) {
      .banners {
         justify-content: space-evenly;
     }
