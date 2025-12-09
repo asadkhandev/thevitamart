@@ -175,35 +175,20 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const btnSearch = document.querySelector(".btn-search");
+  const btnSearchClose = document.querySelector(".btn-search-close");
   const searchForm = document.querySelector(".header__icons");
-  const header__search = document.querySelector(".header__search");
 
   if (btnSearch && searchForm) {
     btnSearch.addEventListener("click", function () {
-      setTimeout(() => {
         searchForm.classList.add("active");
-        header__search.classList.add("active");
         console.log("Search form activated"); // debug
-      }, 300); // adjust delay as needed
     });
+    btnSearchClose.addEventListener("click", function () {
+        searchForm.classList.remove("active");
+        console.log("Search form Inactivate"); // debug
+    });
+    btn-search-close
   }
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const headerIcons = document.querySelector(".header__icons");
-  const searchForm = document.querySelector(".header__search");
-
-  if (!headerIcons || !searchForm) return;
-
-  document.addEventListener("click", function (event) {
-    // If click is NOT inside the search form
-    if (!searchForm.contains(event.target)) {
-      headerIcons.classList.remove("active");
-    }
-  });
-  document.querySelector(".btn-search").addEventListener("click", function (event) {
-    event.stopPropagation();
-    headerIcons.classList.add("active");
-  });
 });
 
 </script>
