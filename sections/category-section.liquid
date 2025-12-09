@@ -34,58 +34,51 @@
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  function initCategoryCarousel(section) {
-    const carousel = section.querySelector('.category-carousel');
-    const prevBtn = section.querySelector('.previous-btn');
-    const nextBtn = section.querySelector('.next-btn');
-    
-    // Simple check for jQuery and Slick
-    if (!carousel || !window.jQuery || !jQuery.fn.slick) return;
-    if (carousel.classList.contains('slick-initialized')) return;
-    
-    const $carousel = jQuery(carousel);
-    
-    // Minimal Slick config - won't mess with your CSS
+jQuery(function($) {
+  function initCategoryCarousel($section) {
+    var $carousel = $section.find('.category-carousel');
+
+    if (!$carousel.length || $carousel.hasClass('slick-initialized')) return;
+
+    // Initialize Slick
     $carousel.slick({
-      slidesToShow: 7,
-      slidesToScroll: 1,
+      slidesToShow: 7,   // show 7 slides
+      slidesToScroll: 1,  // scroll 1 slide at a time
       infinite: true,
       arrows: false,
       dots: false,
-      // This is key: Slick won't style anything
-
-      // No animations that could conflict
-      cssEase: 'linear',
       speed: 300,
-      // No responsive configs
-      responsive: []
+      cssEase: 'linear'
     });
 
-    // Simple button handlers
-    if (prevBtn) {
-      prevBtn.onclick = () => $carousel.slick('slickPrev');
-    }
-    
-    if (nextBtn) {
-      nextBtn.onclick = () => $carousel.slick('slickNext');
-    }
-  }
-
-  // Initialize
-  document.querySelectorAll('.category-section').forEach(initCategoryCarousel);
-  
-  // Shopify editor
-  if (window.Shopify) {
-    document.addEventListener('shopify:section:load', (e) => {
-      const section = e.target.querySelector('.category-section') || e.target;
-      if (section.classList.contains('category-section')) {
-        setTimeout(() => initCategoryCarousel(section), 50);
-      }
+    // Prev/Next buttons
+    $section.find('.previous-btn').off('click').on('click', function(e){
+      e.preventDefault();
+      $carousel.slick('slickPrev');
+    });
+    $section.find('.next-btn').off('click').on('click', function(e){
+      e.preventDefault();
+      $carousel.slick('slickNext');
     });
   }
+
+  // Initialize all category sections on page load
+  $('.category-section').each(function(){
+    initCategoryCarousel($(this));
+  });
+
+  // Re-initialize in Shopify editor when section loads
+  document.addEventListener('shopify:section:load', function(e){
+    var $section = $(e.target).find('.category-section');
+    if ($section.length) {
+      setTimeout(function(){
+        initCategoryCarousel($section);
+      }, 50);
+    }
+  });
 });
 </script>
+
 
 
 
