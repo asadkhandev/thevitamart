@@ -180,9 +180,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (btnSearch && searchForm) {
     btnSearch.addEventListener("click", function () {
-      searchForm.classList.add("active");
-      header__search.classList.add("active");
-      console.log("Search form activated"); // debug
+      setTimeout(() => {
+        searchForm.classList.add("active");
+        header__search.classList.add("active");
+        console.log("Search form activated"); // debug
+      }, 300); // adjust delay as needed
     });
   }
 });
