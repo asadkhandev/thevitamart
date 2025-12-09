@@ -51,10 +51,6 @@
     width: 30%;
 }
 
-.banner-text .tabs-menu {
-    width: 65%;
-}
-
 .banner-text strong {
     display: flex;
     width: 50%;
@@ -89,7 +85,6 @@
     }
     .banner-text .tab-link.active {
         font-size: 14px;
-        width: auto;
     }
 }
 
