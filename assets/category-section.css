@@ -195,6 +195,9 @@
         max-width: 70px;
         width: 100%;
     }
+    .category-box p {
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 851px) and (max-width: 950px) {
