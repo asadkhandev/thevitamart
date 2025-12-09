@@ -86,6 +86,15 @@
     width: 50%;
 }
 
+@media (min-width: 930px) and (max-width: 1380px) {
+    .banner-text .tab-link {
+        font-size: 14px;
+    }
+    .banner-text .tab-link.active {
+        font-size: 14px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 900px) {
     .banner-text .tab-link {
         font-size: 9px;
