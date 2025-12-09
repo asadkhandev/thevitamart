@@ -229,18 +229,18 @@
 
 @media (min-width: 851px) and (max-width: 919px) {
     .category-carousel {
-        gap: 15px;
+        gap: 10px;
     }
     .category-section .container {
         padding: 0px 20px;
     }
     .category-box {
-        max-width: 120px;
+        max-width: 110px;
         width: 100%;
         padding: 10px 0px 10px 0px;
     }
     .category-box img {
-        max-width: 65px;
+        max-width: 60px;
         width: 100%;
     }
     .category-box p {
