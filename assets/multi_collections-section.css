@@ -6,6 +6,8 @@
     margin: 0;
     padding: 0;
     background-color: #aacc00;
+    border-radius: 50px;
+    color: white;
 }
 
 .tab-link{
