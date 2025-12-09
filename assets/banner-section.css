@@ -89,7 +89,7 @@
     }
     .banner-text .tab-link.active {
         font-size: 14px;
-        width: 50%;
+        width: auto;
     }
 }
 
