@@ -176,13 +176,6 @@
     .right-banner img {
     width: 100%;
     }
-    .banner-text span {
-        flex-direction: column;
-        padding-left: 15px;
-    }
-    .banner-text strong {
-        padding-right: 15px;
-    }
     .banner-text span h2 {
         font-size: 15px;
         padding: 0px;
