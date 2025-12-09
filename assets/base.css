@@ -2836,6 +2836,11 @@ details[open] .modal-overlay::after {
     right: 0;
   }
 
+  .btn-search-close{
+    opacity: 0;
+    visibility: hidden;
+  }
+
   .header predictive-search.search-modal__form {
     position: absolute;
     width: 220px;
@@ -2844,6 +2849,11 @@ details[open] .modal-overlay::after {
   }
 
   .header .header__icons.active predictive-search.search-modal__form{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header__icons.active .btn-search-close{
     opacity: 1;
     visibility: visible;
   }
