@@ -87,63 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-{% comment %} <script>
-document.addEventListener('DOMContentLoaded', function() {
-  function initCategoryCarousel(section) {
-    const carousel = section.querySelector('.category-carousel');
-    const prevBtn = section.querySelector('.previous-btn');
-    const nextBtn = section.querySelector('.next-btn');
-    
-    // Simple check for jQuery and Slick
-    if (!carousel || !window.jQuery || !jQuery.fn.slick) return;
-    if (carousel.classList.contains('slick-initialized')) return;
-    
-    const $carousel = jQuery(carousel);
-    
-    // Minimal Slick config - won't mess with your CSS
-    $carousel.slick({
-      slidesToShow: 7,
-      slidesToScroll: 1,
-      infinite: true,
-      arrows: false,
-      dots: false,
-      cssEase: 'linear',
-      speed: 300,
-      responsive: [
-        { breakpoint: 1300, settings: { slidesToShow: 6 } }, // 1171px-1300px
-        { breakpoint: 1170, settings: { slidesToShow: 5 } }, // 1101px-1170px
-        { breakpoint: 1100, settings: { slidesToShow: 4 } }, // 951px-1100px
-        { breakpoint: 950,  settings: { slidesToShow: 3 } }, // 851px-950px
-        { breakpoint: 850,  settings: { slidesToShow: 2 } }, // 768px-850px
-        { breakpoint: 767,  settings: { slidesToShow: 1 } }  // 320px-767px
-      ]
-    });
-
-    // Simple button handlers
-    if (prevBtn) {
-      prevBtn.onclick = () => $carousel.slick('slickPrev');
-    }
-    
-    if (nextBtn) {
-      nextBtn.onclick = () => $carousel.slick('slickNext');
-    }
-  }
-
-  // Initialize
-  document.querySelectorAll('.category-section').forEach(initCategoryCarousel);
-  
-  // Shopify editor
-  if (window.Shopify) {
-    document.addEventListener('shopify:section:load', (e) => {
-      const section = e.target.querySelector('.category-section') || e.target;
-      if (section.classList.contains('category-section')) {
-        setTimeout(() => initCategoryCarousel(section), 50);
-      }
-    });
-  }
-});
-</script> {% endcomment %}
-
 
 
 
