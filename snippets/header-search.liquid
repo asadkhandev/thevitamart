@@ -196,6 +196,10 @@ document.addEventListener("DOMContentLoaded", function () {
       headerIcons.classList.remove("active");
     }
   });
+  document.querySelector(".btn-search").addEventListener("click", function (event) {
+    event.stopPropagation();
+    headerIcons.classList.add("active");
+  });
 });
 
 </script>
