@@ -319,3 +319,25 @@
         font-size: 12px;
     }
 }
+
+@media (min-width: 300px) and (max-width: 399px) {
+    .category-section .container {
+        padding: 25px 15px;
+    }
+    .category-carousel {
+        gap: 10px;
+    }
+    .category-box {
+        max-width: 100px;
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        height: 100px;
+    }
+    .category-box img {
+        max-width: 50px;
+        width: 100%;
+    }
+    .category-box p {
+        font-size: 12px;
+    }
+}
