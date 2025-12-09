@@ -68,6 +68,11 @@
     padding: 15px 14px 15px 14px;
 }
 
+.next-btn:hover {
+    background-color: #aacc00;
+    color: white;
+}
+
 .category-carousel {
     display: flex;
     justify-content: center;
