@@ -284,13 +284,13 @@
         gap: 10px;
     }
     .category-box {
-        max-width: 90px;
+        max-width: 100px;
         width: 100%;
         padding: 10px 0px 10px 0px;
         height: 100px;
     }
     .category-box img {
-        max-width: 50px;
+        max-width: 55px;
         width: 100%;
     }
     .category-box p {
