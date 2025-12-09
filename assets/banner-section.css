@@ -104,6 +104,15 @@
     }
 }
 
+@media (min-width: 325px) and (max-width: 767px) {
+    .banner-text .tab-link {
+        font-size: 9px;
+    }
+    .banner-text .tab-link.active {
+        font-size: 9px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1380px) {
     .banners {
         justify-content: space-evenly;
