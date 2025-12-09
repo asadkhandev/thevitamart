@@ -63,66 +63,66 @@
 
 <div class="banner-section-products">
   <div class="color-{{ section.settings.color_scheme }} isolate gradient">
-  <div class="collection-tabs-section section-{{ section.id }}-padding">
-    <div class="page-width">
-      {%- if section.settings.title != blank -%}
-        <div class="halo-block-header{% if section.settings.text_alignment == 'center' %} text-center{% endif %}{% if section.settings.text_alignment == 'left' %} text-left{% endif %}{% if section.settings.text_alignment == 'right' %} text-right{% endif %}">
-          <h3 class="title">
-            <span class="text">{{ section.settings.title }}</span>
-          </h3>
-        </div>
-      {%- endif -%}
-
-      {% comment %} <ul class="tabs-menu">
-        <li class="tab-link active" data-tab="tab1">{{ collections[section.settings.collection_1].title }}</li>
-        <li class="tab-space">/</li>
-        <li class="tab-link" data-tab="tab2">{{ collections[section.settings.collection_2].title }}</li>
-      </ul> {% endcomment %}
-
-      <div class="tab-content{% if section.settings.text_alignment == 'center' %} text-center{% endif %}">
-        <!-- Collection 1 -->
-        <div id="tab1" class="tab-panel active">
-          <div class="product-slider slider-collection-1">
-            {% for product in collections[section.settings.collection_1].products limit: section.settings.products_to_show %}
-              <div class="multi_slide">
-                {% render 'card-product',
-                  card_product: product,
-                  media_aspect_ratio: section.settings.image_ratio,
-                  image_shape: section.settings.image_shape,
-                  show_secondary_image: section.settings.show_secondary_image,
-                  show_vendor: section.settings.show_vendor,
-                  show_rating: section.settings.show_rating,
-                  section_id: section.id,
-                  quick_add: section.settings.quick_add
-                %}
-              </div>
-            {% endfor %}
+    <div class="collection-tabs-section section-{{ section.id }}-padding">
+      <div class="page-width">
+        {%- if section.settings.title != blank -%}
+          <div class="halo-block-header{% if section.settings.text_alignment == 'center' %} text-center{% endif %}{% if section.settings.text_alignment == 'left' %} text-left{% endif %}{% if section.settings.text_alignment == 'right' %} text-right{% endif %}">
+            <h3 class="title">
+              <span class="text">{{ section.settings.title }}</span>
+            </h3>
           </div>
-        </div>
+        {%- endif -%}
 
-        <!-- Collection 2 -->
-        <div id="tab2" class="tab-panel">
-          <div class="product-slider slider-collection-2">
-            {% for product in collections[section.settings.collection_2].products limit: section.settings.products_to_show %}
-              <div class="multi_slide">
-                {% render 'card-product',
-                  card_product: product,
-                  media_aspect_ratio: section.settings.image_ratio,
-                  image_shape: section.settings.image_shape,
-                  show_secondary_image: section.settings.show_secondary_image,
-                  show_vendor: section.settings.show_vendor,
-                  show_rating: section.settings.show_rating,
-                  section_id: section.id,
-                  quick_add: section.settings.quick_add
-                %}
-              </div>
-            {% endfor %}
+        {% comment %} <ul class="tabs-menu">
+          <li class="tab-link active" data-tab="tab1">{{ collections[section.settings.collection_1].title }}</li>
+          <li class="tab-space">/</li>
+          <li class="tab-link" data-tab="tab2">{{ collections[section.settings.collection_2].title }}</li>
+        </ul> {% endcomment %}
+
+        <div class="tab-content{% if section.settings.text_alignment == 'center' %} text-center{% endif %}">
+          <!-- Collection 1 -->
+          <div id="tab1" class="tab-panel active">
+            <div class="product-slider slider-collection-1">
+              {% for product in collections[section.settings.collection_1].products limit: section.settings.products_to_show %}
+                <div class="multi_slide">
+                  {% render 'card-product',
+                    card_product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    image_shape: section.settings.image_shape,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    section_id: section.id,
+                    quick_add: section.settings.quick_add
+                  %}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <!-- Collection 2 -->
+          <div id="tab2" class="tab-panel">
+            <div class="product-slider slider-collection-2">
+              {% for product in collections[section.settings.collection_2].products limit: section.settings.products_to_show %}
+                <div class="multi_slide">
+                  {% render 'card-product',
+                    card_product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    image_shape: section.settings.image_shape,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    section_id: section.id,
+                    quick_add: section.settings.quick_add
+                  %}
+                </div>
+              {% endfor %}
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 
 <script>
