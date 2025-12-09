@@ -185,6 +185,7 @@
 @media (min-width: 960px) and (max-width: 1029px) {
     .category-carousel {
         gap: 10px;
+        padding: 20px 0px;
     }
     .category-section .container {
         padding: 0px 15px;
