@@ -112,6 +112,11 @@
     display: none !important;
 }
 
+.main-blog .slick-prev{
+    display: none !important;
+}
+
+
 
 
 .blog-carousel-section {
