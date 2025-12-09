@@ -176,6 +176,11 @@
     .family-image {
         right: 250px;
     }
+    .why-choose-left-inner p {
+        width: 90%;
+        font-size: 15px;
+        padding: 10px 0 0 0;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1250px) {
