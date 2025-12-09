@@ -110,7 +110,6 @@
 
 .why-choose-right-inner h2 {
     font-size: 20px;
-    font-weight: 600;
     color: #00563D;
 }
 
@@ -141,7 +140,7 @@
 }
 
 .icon-text strong {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 @media (min-width: 1251px) and (max-width: 1350px) {
