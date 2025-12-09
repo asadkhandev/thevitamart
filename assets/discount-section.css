@@ -11,6 +11,10 @@
     padding: 50px 0px 0px 0px;
 }
 
+.discount-section .slick-dots li button {
+    display: none;
+}
+
 .discount-section .container {
     width: 100%;
 }
