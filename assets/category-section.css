@@ -234,6 +234,9 @@
 }
 
 @media (min-width: 851px) and (max-width: 919px) {
+    .category-section {
+        padding: 25px 0px;
+    }
     .category-carousel {
         gap: 10px;
     }
@@ -258,6 +261,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 850px) {
+    .category-section {
+        padding: 20px 0px;
+    }
     .category-section .container {
         padding: 15px 20px;
     }
@@ -283,6 +289,9 @@
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
+    .category-section {
+        padding: 17px 0px;
+    }
     .category-section .container {
         padding: 10px 15px;
     }
@@ -305,6 +314,9 @@
 }
 
 @media (min-width: 400px) and (max-width: 599px) {
+    .category-section {
+        padding: 13px 0px;
+    }
     .category-section .container {
         padding: 10px 15px;
     }
@@ -327,6 +339,9 @@
 }
 
 @media (min-width: 300px) and (max-width: 399px) {
+    .category-section {
+        padding: 13px 0px;
+    }
     .category-section .container {
         padding: 10px 15px;
     }
