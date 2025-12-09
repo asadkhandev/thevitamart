@@ -60,6 +60,7 @@
 
 .previous-btn:hover {
     background-color: #aacc00;
+    border: 1px solid #aacc00;
     color: white;
     cursor: pointer;
     background-image: url(https://cdn.shopify.com/s/files/1/0707/8104/2880/files/Vector-white-left.png?v=1764752101);
@@ -76,6 +77,7 @@
 
 .next-btn:hover {
     background-color: #aacc00;
+    border: 1px solid #aacc00;
     color: white;
     cursor: pointer;
     background-image: url(https://cdn.shopify.com/s/files/1/0707/8104/2880/files/Vector.png?v=1764752101);
