@@ -64,12 +64,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Simple button handlers
     if (prevBtn) {
-      prevBtn.onclick = () => $carousel.slick('slickPrev');
+      prevBtn.onclick = (e) => {
+      e.preventDefault(); // <--- stops # from scrolling
+      $carousel.slick('slickPrev');
     }
+  }
     
     if (nextBtn) {
-      nextBtn.onclick = () => $carousel.slick('slickNext');
-    }
+      nextBtn.onclick = (e) => {
+      e.preventDefault();
+      $carousel.slick('slickNext');
+      }
   }
 
   // Initialize
