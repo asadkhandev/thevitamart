@@ -50,7 +50,7 @@
 
 /* same text responsiveness as in banners section */
 
-@media (min-width: 325px) and (max-width: 1380px) {
+@media (min-width: 320px) and (max-width: 1380px) {
     .discount-section {
         padding: 30px 0px 0px 0px;
     }
