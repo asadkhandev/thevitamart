@@ -192,6 +192,7 @@
 
 @media (min-width: 325px) and (max-width: 439px) {
     .banner-text {
+        width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 10px;
