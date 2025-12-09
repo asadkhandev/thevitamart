@@ -168,7 +168,7 @@
         right: 300px;
     }
     .why-choose-left-inner p {
-        width: 7%;
+        width: 80%;
     }
 }
 
@@ -194,11 +194,11 @@
         margin: 0;
     }
 
-    .why-choose-left-inner p {
+    /* .why-choose-left-inner p {
         width: 90%;
         font-size: 15px;
         padding: 10px 0 0 0;
-    }
+    } */
     .why-choose-right-inner {
         padding: 25px 15px;
     }
