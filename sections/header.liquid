@@ -483,6 +483,20 @@
   </script>
 {%- endif -%}
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.querySelector(".btn-search");
+  const form = document.querySelector(".search-modal__form");
+
+  if (btn && form) {
+    btn.addEventListener("click", function () {
+      form.classList.add("active");
+    });
+  }
+});
+</script>
+
+
 {% schema %}
 {
   "name": "t:sections.header.name",
