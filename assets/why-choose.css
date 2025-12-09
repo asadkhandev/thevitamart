@@ -151,7 +151,7 @@
     }
 }
 
-@media (min-width: 1250px) and (max-width: 1300px) {
+/* @media (min-width: 1250px) and (max-width: 1300px) {
     .family-image {
         z-index: 1;
     }
@@ -161,9 +161,9 @@
     .why-choose-left-inner p {
         width: 100%;
     }
-}
+} */
 
-@media (min-width: 1200px) and (max-width: 1249px) {
+@media (min-width: 1200px) and (max-width: 1300px) {
     .family-image {
         right: 300px;
     }
