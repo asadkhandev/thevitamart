@@ -104,6 +104,9 @@
 }
 
 @media (min-width: 325px) and (max-width: 767px) {
+    .banner-section .container {
+        padding: 0px 10px;
+    }
     .banner-text span {
         width: 70%;
     }
