@@ -2843,6 +2843,11 @@ details[open] .modal-overlay::after {
     visibility: hidden;
   }
 
+  .header .header__icons.active predictive-search.search-modal__form{
+    opacity: 1;
+    visibility: visibility;
+  }
+
   .search-modal__close-button {
     position: initial;
     margin-left: 0.5rem;
