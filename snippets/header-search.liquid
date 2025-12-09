@@ -17,7 +17,14 @@
   {%- else -%}
     <search-form class="search-modal__form">
   {%- endif -%}
-  <button class="btn-search-close field__button">x</button>
+  <button class="btn-search-close field__button"><svg width="20" height="20" viewBox="0 0 24 24">
+    <path d="M18 6L6 18M6 6l12 12"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg></button>
   <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
     <div class="field">
       <input
