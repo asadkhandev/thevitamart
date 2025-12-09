@@ -523,6 +523,21 @@
               class="mobile-facets__main has-submenu gradient"
             >
               {%- if enable_filtering -%}
+                
+                {% if collections.size > 0 %}
+                  <h2 class="facets__heading facets__heading--vertical caption-large text-body">Categories</h2>
+                  <a href="/collections/all">All Products</a>
+                  <ul class="all-collections-list">
+                    {% for collection in collections %}
+                      {% unless collection.handle == 'all' %}
+                        <li>
+                          <a href="{{ collection.url }}">{{ collection.title }}</a>
+                        </li>
+                      {% endunless %}
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+
                 {%- for filter in results.filters -%}
                   {% liquid
                     assign presentation = filter.presentation | default: default_presentation

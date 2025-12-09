@@ -187,9 +187,13 @@
         padding: 0px 15px;
     }
     .category-box {
-        max-width: 125px;
+        max-width: 130px;
         width: 100%;
         padding: 10px 0px 10px 0px;
+    }
+    .category-box img {
+        max-width: 70px;
+        width: 100%;
     }
 }
 
