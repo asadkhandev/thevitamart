@@ -55,12 +55,14 @@
     border-radius: 100%;
     padding: 15px 14px 15px 14px;
     transition: ease 0.3s;
+    background-image: url(https://cdn.shopify.com/s/files/1/0707/8104/2880/files/black_left_arrow_367f6448-3304-42a5-bfd6-9313189ebbf7.png?v=1765267920);
 }
 
 .previous-btn:hover {
     background-color: #aacc00;
     color: white;
     cursor: pointer;
+    background-image: url(https://cdn.shopify.com/s/files/1/0707/8104/2880/files/Vector-white-left.png?v=1764752101);
 }
 
 .next-btn {
@@ -69,12 +71,14 @@
     border-radius: 100%;
     padding: 15px 14px 15px 14px;
     transition: ease 0.3s;
+    background-image: url(https://cdn.shopify.com/s/files/1/0707/8104/2880/files/right_black_arrow_0ce2a2bc-0357-47a0-8087-4d0d6f6850eb.png?v=1765267889)
 }
 
 .next-btn:hover {
     background-color: #aacc00;
     color: white;
     cursor: pointer;
+    background-image: url(https://cdn.shopify.com/s/files/1/0707/8104/2880/files/Vector.png?v=1764752101);
 }
 
 .category-carousel {
