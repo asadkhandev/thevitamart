@@ -122,6 +122,10 @@
     .banner-text span h2 {
         font-size: 16px;
     }
+    .banner-text strong a {
+        font-size: 14px;
+    }
+    
 }
 
 @media (min-width: 768px) and (max-width: 1380px) {
