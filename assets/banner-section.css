@@ -113,7 +113,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1380px) {
-    .banner-section .container {
+    .banners {
         padding: 0px 20px;
     }
     .banners {

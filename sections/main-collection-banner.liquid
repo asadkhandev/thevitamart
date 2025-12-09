@@ -51,18 +51,21 @@
     </div>
 
     <div class="collection-info collection-info--relative" style="--desc-color: #232323;">
-      <h1 class="collection-title page-header text-left">
+      {% comment %} <h1 class="collection-title page-header text-left"> {% endcomment %}
+       <h1 class="collection-title page-header text-center">
         {{ collection.title }}
       </h1>
       {% if collection.image %}
         <div class="collection-info-item">
-          <div class="collection-description halo-text-format text-left" style="margin: 0;">
+          {% comment %} <div class="collection-description halo-text-format text-left" style="margin: 0;"> {% endcomment %}
+          <div class="collection-description halo-text-format text-center" style="margin: 0;">
             {{ collection.description }}
           </div>
         </div>
       {% else %}
         <div class="collection-info-item">
-        <div class="collection-description halo-text-format text-left" style="margin: 0;">
+        {% comment %} <div class="collection-description halo-text-format text-left" style="margin: 0;"> {% endcomment %}
+        <div class="collection-description halo-text-format text-center" style="margin: 0;">
           {{ section.settings.description }}
         </div>
       </div>
