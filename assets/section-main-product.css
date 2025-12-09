@@ -310,9 +310,9 @@ a.product__text {
   }
 }
 
-.product__description-title {
+/* .product__description-title {
   font-weight: 600;
-}
+} */
 
 .product--no-media .product__title,
 .product--no-media .product__text,
