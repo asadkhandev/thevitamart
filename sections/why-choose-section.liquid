@@ -1,6 +1,20 @@
 {{ 'why-choose.css' | asset_url | stylesheet_tag }}
 <div class="why-choose-section">
+  {% if section.settings.platform_image %}
+        <img 
+            src="{{ section.settings.platform_image | img_url: 'master' }}" 
+            class="platform-image"
+            alt="{{ section.settings.platform_image.alt | escape }}"
+        >
+    {% endif %}
   <div class="container">
+    {% if section.settings.family_image %}
+        <img 
+            src="{{ section.settings.family_image | img_url: 'master' }}" 
+            class="family-image"
+            alt="{{ section.settings.family_image.alt | escape }}"
+        >
+    {% endif %}
     <div class="why-choose-left-section">
       <div class="why-choose-left-inner">
         <h2>{{ section.settings.main_title }}</h2>
@@ -51,6 +65,16 @@
 {
   "name": "Why Choose Section",
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "family_image",
+      "label": "Family Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "platform_image",
+      "label": "Platform Image"
+    },
     {
       "type": "text",
       "id": "main_title",
