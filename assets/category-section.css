@@ -259,16 +259,16 @@
         gap: 10px;
     }
     .category-box {
-        max-width: 120px;
+        max-width: 100px;
         width: 100%;
-        padding: 10px 14px 10px 14px;
+        padding: 10px 0px 10px 0px;
     }
     .category-box img {
         max-width: 80px;
         width: 100%;
     }
     .category-box p {
-        font-size: 14px;
+        font-size: 12px;
     }
     .category-heading p {
         font-size: 20px;
