@@ -741,7 +741,7 @@ a.active-facets__button.focused .active-facets__button-inner {
   position: relative;
   font-size: 12px;
   display: inline-flex;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
 }
 .facets-vertical .active-facets-vertical-filter a:before {
   content: "";
@@ -764,6 +764,7 @@ a.active-facets__button.focused .active-facets__button-inner {
 .facets-vertical .active-facets-vertical-filter a:hover{
   /* padding-left: 15px; */
   font-weight: 500;
+  color: #000;
 }
 
 /* .facets-vertical .active-facets-vertical-filter a:hover::before{
