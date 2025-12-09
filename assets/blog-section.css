@@ -313,6 +313,13 @@
 }
 
 @media (min-width: 325px) and (max-width: 1141px) {
+    .main-blog .slick-next{
+    display: flex !important;
+}
+
+.main-blog .slick-prev{
+    display: flex !important;
+}
     .blog-carousel-section {
         display: none;
     }
