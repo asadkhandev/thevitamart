@@ -2839,6 +2839,7 @@ details[open] .modal-overlay::after {
   .btn-search-close{
     opacity: 0;
     visibility: hidden;
+    right: 100%;
   }
 
   .header predictive-search.search-modal__form {
