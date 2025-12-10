@@ -432,7 +432,8 @@
 .contactus-inner-wrapper {
     display: flex;
     max-width: 426px;
-    width: 100%
+    width: 100%;
+    background-color: red;
 }
 
 .contactus-section {
