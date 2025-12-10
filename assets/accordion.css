@@ -170,7 +170,7 @@
 @media (min-width: 800px) and (max-width: 1023px) {
     .faq-number {
         display: flex;
-        padding: 25px 10px 25px 35px;
+        padding: 25px 40px 25px 40px;
     }
 
     .faq-number p {
