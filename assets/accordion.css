@@ -19,7 +19,6 @@
 .left-section {
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 100%;
     max-width: 420px;
     font-size: 40px;
