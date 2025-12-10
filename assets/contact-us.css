@@ -200,6 +200,7 @@
 
 .s-btn:hover {
     background-color: #AACC00;
+    border: #AACC00 1px solid;
 }
 
 .required {
