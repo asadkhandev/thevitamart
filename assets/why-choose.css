@@ -173,6 +173,7 @@
     }
     .why-choose-left-inner p {
         width: 90%;
+        margin-top: 0px;
     }
 }
 
