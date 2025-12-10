@@ -59,11 +59,11 @@
         <div class="collection-info-item">
           <div class="collection-description halo-text-format text-center" style="margin: 0;">
       {% endif %}
-          {% if collection.description %}
+          {% comment %} {% if collection.description %}
             {{ collection.description }}
-          {% else %}
+          {% else %} {% endcomment %}
             {{ section.settings.description }}
-          {% endif %}
+          {% comment %} {% endif %} {% endcomment %}
       {% if collection.description != blank or section.settings.description != blank %}
           </div>
         </div>
