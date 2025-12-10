@@ -57,6 +57,7 @@
     font-size: 18px;
     color: #AACC00;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .contact-banner-btns {
@@ -195,7 +196,6 @@
     font-size: 14px;
     font-weight: bold;
     transition: 0.3s;
-    cursor: pointer;
 }
 
 .s-btn:hover {
