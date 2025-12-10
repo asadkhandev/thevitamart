@@ -17,6 +17,13 @@
     background-color: transparent;
 }
 
+.faq:last-child p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
 .left-section {
     display: flex;
     align-items: center;
@@ -25,14 +32,6 @@
     font-size: 40px;
     font-weight: bold;
 }
-
-.faq:last-child p {
-    font-size: 20px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-}
-
 
 .accordion-box span::after {
     content: "";
