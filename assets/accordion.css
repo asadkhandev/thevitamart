@@ -25,6 +25,13 @@
     font-weight: bold;
 }
 
+.inner-faq-wrap:last-child p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
 
 .accordion-box span::after {
     content: "";
