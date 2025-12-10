@@ -1,5 +1,6 @@
 .faq {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 50px 0;
@@ -25,7 +26,7 @@
     font-weight: bold;
 }
 
-.inner-faq-wrap:last-child p {
+.faq:last-child p {
     font-size: 20px;
     line-height: 1.5;
     margin: 0;
