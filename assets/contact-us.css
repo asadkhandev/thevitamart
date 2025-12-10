@@ -46,14 +46,14 @@
     margin: 0;
 }
 
-.business_email_text{
+.contactus-banner p:last-child {
     font-size: 18px;
     line-height: 1.5;
     padding: 0;
     margin: 0;
 }
 
-.business_email_text a {
+.contactus-banner p:last-child a {
     font-size: 18px;
     color: #AACC00;
     text-decoration: none;
