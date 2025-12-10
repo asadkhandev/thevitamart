@@ -171,7 +171,7 @@
 
 @media (min-width: 800px) and (max-width: 1023px) {
     .faq .inner-faq-wrap {
-        padding: 20px 0px;
+        padding: 0px 0px;
     }
     .faq-number {
         display: flex;
