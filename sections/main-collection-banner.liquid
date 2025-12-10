@@ -55,20 +55,18 @@
        <h1 class="collection-title page-header text-center">
         {{ collection.title }}
       </h1>
-      {% if collection.description %}
+      {% if collection.description != blank or section.settings.description != blank %}
         <div class="collection-info-item">
-          {% comment %} <div class="collection-description halo-text-format text-left" style="margin: 0;"> {% endcomment %}
           <div class="collection-description halo-text-format text-center" style="margin: 0;">
+      {% endif %}
+          {% if collection.description %}
             {{ collection.description }}
+          {% else %}
+            {{ section.settings.description }}
+          {% endif %}
+      {% if collection.description != blank or section.settings.description != blank %}
           </div>
         </div>
-      {% else %}
-        <div class="collection-info-item">
-        {% comment %} <div class="collection-description halo-text-format text-left" style="margin: 0;"> {% endcomment %}
-        <div class="collection-description halo-text-format text-center" style="margin: 0;">
-          {{ section.settings.description }}
-        </div>
-      </div>
       {% endif %}
     </div>
 
