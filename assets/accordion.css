@@ -19,7 +19,7 @@
 
 .faq-number {
     display: flex;
-    padding: 50px 0px;
+    padding: 50px 20px;
 }
 
 .faq-number p {
@@ -123,6 +123,14 @@
  .accordion-section {
     width: 100%;
  }
+ .faq-number {
+    display: flex;
+    padding: 50px 20px;
+}
+
+.faq-number p {
+    font-size: 30px;
+}
 }
 
 
@@ -157,4 +165,37 @@
     padding-right: 5px;
     position: relative;
 }
+}
+
+@media (min-width: 800px) and (max-width: 1023px) {
+    .faq-number {
+        display: flex;
+        padding: 35px 15px;
+    }
+
+    .faq-number p {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+    .faq-number {
+        display: flex;
+        padding: 25px 13px;
+    }
+
+    .faq-number p {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+    .faq-number {
+        display: flex;
+        padding: 20px 13px;
+    }
+
+    .faq-number p {
+        font-size: 18px;
+    }
 }
