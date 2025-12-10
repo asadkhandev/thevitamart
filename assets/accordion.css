@@ -17,12 +17,12 @@
     background-color: transparent;
 }
 
-.faq:last-child {
+.faq-number {
     display: flex;
     padding: 20px 0px;
 }
 
-.faq:last-child p {
+.faq-number p {
     font-size: 20px;
     line-height: 1.5;
     margin: 0;
