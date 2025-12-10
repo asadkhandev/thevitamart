@@ -17,6 +17,11 @@
     background-color: transparent;
 }
 
+.faq:last-child {
+    display: flex;
+    padding: 20px 0px;
+}
+
 .faq:last-child p {
     font-size: 20px;
     line-height: 1.5;
