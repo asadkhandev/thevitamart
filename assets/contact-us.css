@@ -431,7 +431,6 @@
 @media (max-width: 599px) {
 .contactus-inner-wrapper {
     display: flex;
-    max-width: 426px;
     width: 100%;
     background-color: red;
 }
