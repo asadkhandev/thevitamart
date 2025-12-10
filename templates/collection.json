@@ -13,7 +13,7 @@
       "type": "main-collection-banner",
       "settings": {
         "image": "shopify://shop_images/collections-banner.jpg",
-        "description": "At theVitaMart, we aim to provide you with premium quality products packed with purity of nature & goodness of science. We offer a wide range of nutraceuticals to support your nutritional needs & general wellness.",
+        "description": "At theVitaMart, we aim to provide you with premium quality products packed with purity of nature & goodness of science.",
         "show_collection_description": true,
         "show_collection_image": true,
         "color_scheme": "scheme-1"
