@@ -53,6 +53,11 @@
     margin: 0;
 }
 
+.contactus-banner p:last-child span {
+    font-size: 18px;
+    color: #AACC00;
+}
+
 .contact-banner-btns {
     display: flex;
     flex-direction: column;
