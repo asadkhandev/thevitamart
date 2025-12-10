@@ -57,7 +57,10 @@
     font-size: 18px;
     color: #AACC00;
     text-decoration: none;
-    cursor: pointer;
+}
+
+.contactus-banner p:last-child a:hover {
+    text-decoration: underline;
 }
 
 .contact-banner-btns {
