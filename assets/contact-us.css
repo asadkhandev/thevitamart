@@ -53,9 +53,10 @@
     margin: 0;
 }
 
-.contactus-banner p:last-child span {
+.contactus-banner p:last-child a {
     font-size: 18px;
     color: #AACC00;
+    text-decoration: none;
 }
 
 .contact-banner-btns {
