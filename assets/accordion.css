@@ -193,6 +193,7 @@
     .faq-number {
         display: flex;
         padding: 20px 13px;
+        text-align: center;
     }
 
     .faq-number p {
