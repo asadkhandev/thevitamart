@@ -10,7 +10,7 @@
         <h1>{{ section.settings.banner_heading }}</h1>
         <hr>
         <p>{{ section.settings.banner_description }}</p>
-        <p>{{ section.settings.banner_email }}<span>{{ section.settings.banner_test }}</span></p>
+        <p>{{ section.settings.banner_info }}<span>{{ section.settings.banner_test }}</span></p>
 
         {% comment %} <div class="contact-banner-btns">
           <h3>{{ section.settings.quick_response_heading }}</h3>
@@ -124,14 +124,14 @@
     },
     {
       "type": "textarea",
-      "id": "banner_email",
-      "label": "Banner Info",
+      "id": "banner_info",
+      "label": "Banner Info Description",
       "default": "For Business Inquiries please write to us at"
     },
     {
       "type": "textarea",
-      "id": "banner_test",
-      "label": "Banner test",
+      "id": "banner_email",
+      "label": "Banner Email",
       "default": "Business@vitamart.com."
     },
     {
