@@ -10,6 +10,7 @@
         <h1>{{ section.settings.banner_heading }}</h1>
         <hr>
         <p>{{ section.settings.banner_description }}</p>
+        <p>{{ section.settings.banner_email }}</p>
 
         {% comment %} <div class="contact-banner-btns">
           <h3>{{ section.settings.quick_response_heading }}</h3>
@@ -120,6 +121,12 @@
       "id": "banner_description",
       "label": "Banner Description",
       "default": "If you have any queries or suggestions, you can call, email, or send us a message through the following form."
+    },
+    {
+      "type": "textarea",
+      "id": "banner_email",
+      "label": "Banner Info",
+      "default": "For Business Inquiries please write to us at Business@vitamart.com"
     },
     {
       "type": "text",
