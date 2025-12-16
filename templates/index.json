@@ -274,7 +274,7 @@
       "settings": {
         "discount_heading": "Latest Offers & Discounts",
         "button_text": "View all products",
-        "button_link": "shopify://collections",
+        "button_link": "shopify://collections/all",
         "title": "",
         "text_alignment": "center",
         "collection": "best-sellings",
