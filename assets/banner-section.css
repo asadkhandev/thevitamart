@@ -1,8 +1,3 @@
-.container {
-    display: flex;
-    max-width: 128rem;
-}
-
 .banner-section {
     display: flex;
     align-items: center;
