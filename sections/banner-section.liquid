@@ -65,7 +65,7 @@
   <div class="color-{{ section.settings.color_scheme }} isolate gradient">
     <div class="collection-tabs-section section-{{ section.id }}-padding">
       {% comment %} <div class="page-width"> {% endcomment %}
-      <div class="container">
+      {% comment %} <div class="container"> {% endcomment %}
         {%- if section.settings.title != blank -%}
           <div class="halo-block-header{% if section.settings.text_alignment == 'center' %} text-center{% endif %}{% if section.settings.text_alignment == 'left' %} text-left{% endif %}{% if section.settings.text_alignment == 'right' %} text-right{% endif %}">
             <h3 class="title">
@@ -121,7 +121,7 @@
             </div>
           </div>
         </div>
-      </div>
+      {% comment %} </div> {% endcomment %}
     </div>
   </div>
 </div>
