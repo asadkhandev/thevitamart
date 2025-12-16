@@ -132,7 +132,7 @@
         "heading": "Trending Products",
         "subheading": "Best Sellings / New Arrivals",
         "link_text": "View all products",
-        "link_url": "",
+        "link_url": "shopify://collections/all",
         "left_image": "shopify://shop_images/Frame_37.png",
         "right_image": "shopify://shop_images/Frame_38.png",
         "title": "",
