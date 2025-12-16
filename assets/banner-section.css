@@ -133,9 +133,6 @@
 
 @media (min-width: 768px) and (max-width: 1380px) {
     .banners {
-        padding: 0px 20px;
-    }
-    .banners {
         justify-content: space-evenly;
     }
     .left-banner img {
@@ -143,12 +140,6 @@
     }
     .right-banner img {
     width: 100%;
-    }
-    .banner-text span {
-        padding-left: 15px;
-    }
-    .banner-text strong {
-        padding-right: 15px;
     }
     .banner-text span h2 {
         font-size: 16px;
