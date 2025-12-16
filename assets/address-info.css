@@ -1,4 +1,4 @@
-.container {
+.columns-main .container {
     display: flex;
     max-width: 1370px;
 }
