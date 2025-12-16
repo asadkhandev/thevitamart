@@ -114,7 +114,7 @@
         font-size: 10px;
     }
     .banners {
-        padding: 0px 15px;
+        flex-direction: column;
     }
     .left-banner img {
     width: 100%;
