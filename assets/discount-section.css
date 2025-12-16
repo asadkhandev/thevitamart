@@ -52,6 +52,16 @@
     color: #AACC00;
 }
 
+/* Add gap between slides */
+.slider-collection-1 .slick-slide {
+    margin: 0 12px; /* Adjust gap size here */
+}
+
+/* Fix outer alignment */
+.slider-collection-1 .slick-list {
+    margin: 0 -12px;
+}
+
 /* same text responsiveness as in banners section */
 
 @media (min-width: 320px) and (max-width: 1380px) {
