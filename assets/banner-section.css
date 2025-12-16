@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    max-width: 1280px;
+    max-width: 128rem;
 }
 
 .banner-section {
@@ -30,6 +30,7 @@
     width: 100%;
     flex-direction: column;
     gap: 20px;
+    padding: 0 1.5rem;
 }
 
 .banner-text {
