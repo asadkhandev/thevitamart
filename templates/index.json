@@ -122,9 +122,7 @@
       ],
       "name": "Category Section",
       "settings": {
-        "heading_text": "Search by Category",
-        "left_arrow": "shopify://shop_images/black_left_arrow.png",
-        "right_arrow": "shopify://shop_images/right_black_arrow.png"
+        "heading_text": "Search by Category"
       }
     },
     "banner_section_6tRXrT": {
@@ -147,7 +145,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": true,
-        "quick_add": true,
+        "quick_add": "standard",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
