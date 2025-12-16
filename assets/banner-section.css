@@ -116,11 +116,10 @@
     .banners {
         flex-direction: column;
     }
-    .left-banner img {
-    width: 100%;
-    }
+    .left-banner, .right-banner,
+    .left-banner img,
     .right-banner img {
-    width: 100%;
+        width: 100%;
     }
     .banner-text span h2 {
         font-size: 16px;
