@@ -494,6 +494,22 @@
                   section_id: section.id,
                   show_pickup_availability: true
                 -%}
+              {%- when 'certified_logo' -%}
+                <div class="certified-logo-block" {{ block.shopify_attributes }}>
+                  {% if block.settings.logo %}
+                    <img
+                      src="{{ block.settings.logo | image_url: width: 120 }}"
+                      alt="{{ block.settings.logo.alt | escape }}"
+                      loading="lazy"
+                    >
+                  {% endif %}
+
+                  {% if block.settings.logo_text != blank %}
+                    <span class="certified-logo-text">
+                      {{ block.settings.logo_text }}
+                    </span>
+                  {% endif %}
+                </div>
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
