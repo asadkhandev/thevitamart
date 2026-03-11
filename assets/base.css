@@ -4007,3 +4007,7 @@ nav.header__inline-menu{
   outline: none;
   box-shadow: none;
 }
+
+.certified-logo-block img{
+  max-width: 100%;
+}
