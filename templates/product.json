@@ -20,16 +20,16 @@
           "type": "rating",
           "settings": {}
         },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
         "text_6H4Lxa": {
           "type": "text",
           "settings": {
             "text": "<p><strong>Helps to: </strong></p><p>{{ product.metafields.custom.product_key_details | metafield_tag }}</p>",
             "text_style": "body"
           }
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -126,8 +126,8 @@
       "block_order": [
         "title",
         "rating_p4agDF",
-        "text_6H4Lxa",
         "price",
+        "text_6H4Lxa",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
