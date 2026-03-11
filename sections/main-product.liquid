@@ -223,8 +223,7 @@
                     </summary>
                     <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                       {% if block.settings.heading == 'Customer Reviews' %}
-                        <div class="jdgm-widget jdgm-review-widget"
-                          data-id="{{ product.id }}">
+                        <div class="jdgm-widget jdgm-review-widget" data-id="{{ product.id }}">
                           {{ product.metafields.judgeme.widget }}
                         </div>
                         {% comment %} {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %} {% endcomment %}
