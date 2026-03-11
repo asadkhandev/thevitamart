@@ -496,17 +496,17 @@
                 -%}
               {%- when 'certified_logo' -%}
                 <div class="certified-logo-block" {{ block.shopify_attributes }}>
-                  {% if block.settings.logo %}
+                  {% if block.settings.certified_logo_img %}
                     <img
-                      src="{{ block.settings.logo | image_url: width: 120 }}"
-                      alt="{{ block.settings.logo.alt | escape }}"
+                      src="{{ block.settings.certified_logo_img | image_url: width: 120 }}"
+                      alt="{{ block.settings.certified_logo_img.alt | escape }}"
                       loading="lazy"
                     >
                   {% endif %}
 
-                  {% if block.settings.logo_text != blank %}
+                  {% if block.settings.certified_logo_text != blank %}
                     <span class="certified-logo-text">
-                      {{ block.settings.logo_text }}
+                      {{ block.settings.certified_logo_text }}
                     </span>
                   {% endif %}
                 </div>
@@ -959,12 +959,12 @@
       "settings": [
         {
           "type": "image_picker",
-          "id": "logo",
+          "id": "certified_logo_img",
           "label": "Certified Logo Image"
         },
         {
           "type": "text",
-          "id": "logo_text",
+          "id": "certified_logo_text",
           "label": "Text",
           "default": "Certified Product"
         }
