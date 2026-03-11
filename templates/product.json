@@ -121,6 +121,17 @@
             "content": "<p>TheVitamart customer trust is built on our efforts to create and formulate high quality products and to manufacture with same consistent quality standards. Our People in quality assurance, manufacturing, packaging, distribution and facility management are all required to meet standards for Current Good Manufacturing Practices (cGMPs).</p>",
             "page": ""
           }
+        },
+        "collapsible_tab_eUzDnU": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Customer Reviews",
+            "metafield_namespace": "custom",
+            "metafield_key": "",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -138,7 +149,8 @@
         "collapsible_tab_VyELJA",
         "collapsible_tab_R3Wb6G",
         "collapsible_tab_biHPma",
-        "collapsible_tab_awCA6h"
+        "collapsible_tab_awCA6h",
+        "collapsible_tab_eUzDnU"
       ],
       "settings": {
         "enable_sticky_info": true,
