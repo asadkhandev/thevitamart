@@ -132,6 +132,15 @@
             "content": "",
             "page": ""
           }
+        },
+        "judge_me_reviews_review_widget_NgtJje": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
         }
       },
       "block_order": [
@@ -150,7 +159,8 @@
         "collapsible_tab_R3Wb6G",
         "collapsible_tab_biHPma",
         "collapsible_tab_awCA6h",
-        "collapsible_tab_eUzDnU"
+        "collapsible_tab_eUzDnU",
+        "judge_me_reviews_review_widget_NgtJje"
       ],
       "settings": {
         "enable_sticky_info": true,
