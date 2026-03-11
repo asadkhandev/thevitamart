@@ -499,14 +499,14 @@
                   <div class="certified-logo-block" {{ block.shopify_attributes }}>
 
                     <img
-                      src="{{ product.metafields.custom.certified_logo | image_url: width: 120 }}"
+                      src="{{ product.metafields.custom.certified_logo | image_url: width: 220 }}"
                       alt="Certified Logo"
                       loading="lazy"
                     >
 
-                    {% if block.settings.logo_text != blank %}
+                    {% if block.settings.certified_logo_text != blank %}
                       <span class="certified-logo-text">
-                        {{ block.settings.logo_text }}
+                        {{ block.settings.certified_logo_text }}
                       </span>
                     {% endif %}
 
@@ -959,11 +959,6 @@
       "type": "certified_logo",
       "name": "Certified Logo",
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "certified_logo_img",
-          "label": "Certified Logo Image"
-        },
         {
           "type": "text",
           "id": "certified_logo_text",
