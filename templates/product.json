@@ -49,6 +49,12 @@
             "show_gift_card_recipient": true
           }
         },
+        "certified_logo_qgTiP6": {
+          "type": "certified_logo",
+          "settings": {
+            "certified_logo_text": ""
+          }
+        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -125,6 +131,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "certified_logo_qgTiP6",
         "description",
         "share",
         "collapsible_tab_fBDdQ4",
