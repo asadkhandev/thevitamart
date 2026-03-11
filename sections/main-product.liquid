@@ -211,7 +211,11 @@
                 {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
                 {% if block.settings.heading == 'Customer Reviews' %}
-                  {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
+                  <div class="jdgm-widget jdgm-review-widget"
+                    data-id="{{ product.id }}">
+                    {{ product.metafields.judgeme.widget }}
+                  </div>
+                  {% comment %} {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %} {% endcomment %}
                 {% else %}
                   <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                     <details id="Details-{{ block.id }}-{{ section.id }}">
