@@ -189,12 +189,6 @@
           "settings": {
             "logo_image": "shopify://shop_images/certified-img6.png"
           }
-        },
-        "logo_wwP3P7": {
-          "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/certified-img7.png"
-          }
         }
       },
       "block_order": [
@@ -203,8 +197,7 @@
         "logo_HjJnHK",
         "logo_jPJgYm",
         "logo_icdEVR",
-        "logo_ixRhJM",
-        "logo_wwP3P7"
+        "logo_ixRhJM"
       ],
       "name": "Partner Section",
       "settings": {
