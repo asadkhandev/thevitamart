@@ -17,21 +17,18 @@
         "social_gCrpR6": {
           "type": "social",
           "settings": {
-            "icon": "shopify://shop_images/Frame_73.png",
             "url": ""
           }
         },
         "social_mNyyBL": {
           "type": "social",
           "settings": {
-            "icon": "shopify://shop_images/Frame_74.png",
             "url": ""
           }
         },
         "social_8jbG9X": {
           "type": "social",
           "settings": {
-            "icon": "shopify://shop_images/Frame_75.png",
             "url": ""
           }
         }
@@ -43,7 +40,7 @@
       ],
       "name": "New Footer",
       "settings": {
-        "footer_logo": "shopify://shop_images/Layer_1_16bcfc78-52ba-41ce-b98a-a615f7c5e9a3.png",
+        "footer_logo": "shopify://shop_images/Layer_1.png",
         "footer_tagline": "No.1 Vitamin Brand, Empowering Wellness Globally.",
         "phone_icon": "shopify://shop_images/fluent_call-24-filled.png",
         "phone_text": "Call us anytime",
