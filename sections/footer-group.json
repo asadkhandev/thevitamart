@@ -17,18 +17,21 @@
         "social_gCrpR6": {
           "type": "social",
           "settings": {
+            "icon": "shopify://shop_images/Frame_73.png",
             "url": ""
           }
         },
         "social_mNyyBL": {
           "type": "social",
           "settings": {
+            "icon": "shopify://shop_images/Frame_74.png",
             "url": ""
           }
         },
         "social_8jbG9X": {
           "type": "social",
           "settings": {
+            "icon": "shopify://shop_images/Frame_75.png",
             "url": ""
           }
         }
