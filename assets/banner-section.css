@@ -249,18 +249,17 @@
   justify-content: space-between;
 }
 
-/* Force consistent image container */
-.banner-section .card__inner .card__media,
+/* --- PRODUCT CARD IMAGE FIX --- */
 .banner-section .card__media,
-.banner-section .media {
-  height: 300px;
+.banner-section .card__inner .media {
+  aspect-ratio: 1 / 1;
   overflow: hidden;
 }
 
-/* Force image to fill container */
 .banner-section .card__media img,
 .banner-section .media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
