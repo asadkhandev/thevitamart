@@ -199,13 +199,65 @@
 
 
 
-/* --- PRODUCT CARD IMAGE FIX --- */
-.banner-section .card__media,
-.banner-section .card__inner .media {
-  aspect-ratio: 1 / 1;
+/* Make slick slides stretch */
+.banner-section .slick-track {
+  display: flex !important;
+}
+
+.banner-section .slick-slide {
+  height: auto !important;
+  display: flex !important;
+}
+
+/* Force each slide to fill height */
+.banner-section .multi_slide {
+  display: flex;
+  width: 100%;
+}
+
+/* Make card fill slide */
+.banner-section .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.banner-section .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Equal image height */
+.banner-section .card__media {
+  height: 300px;
   overflow: hidden;
 }
 
+.banner-section .card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Push price/buttons to bottom so cards align */
+.banner-section .card__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Force consistent image container */
+.banner-section .card__inner .card__media,
+.banner-section .card__media,
+.banner-section .media {
+  height: 300px;
+  overflow: hidden;
+}
+
+/* Force image to fill container */
 .banner-section .card__media img,
 .banner-section .media img {
   width: 100%;
