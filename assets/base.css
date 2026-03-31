@@ -2492,7 +2492,8 @@ input[type='checkbox'] {
       'navigation navigation navigation'; */
     grid-template-areas:
       "heading left-icons icons"
-      "navigation navigation navigation"
+      "navigation navigation navigation";
+    align-items: initial;
   }
 
   .header--top-center.drawer-menu {
