@@ -133,8 +133,6 @@
         "subheading": "Best Sellings / New Arrivals",
         "link_text": "View all products",
         "link_url": "shopify://collections/all",
-        "left_image": "shopify://shop_images/Frame_37.png",
-        "right_image": "shopify://shop_images/Frame_38.png",
         "title": "",
         "text_alignment": "center",
         "collection_1": "best-sellings",
@@ -146,6 +144,124 @@
         "show_vendor": false,
         "show_rating": true,
         "quick_add": "standard",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "exploretags_section_T4eyJb": {
+      "type": "exploretags-section",
+      "blocks": {
+        "tag_dLrmqq": {
+          "type": "tag",
+          "settings": {
+            "collection": "best-sellings",
+            "important": true
+          }
+        },
+        "tag_4nT3th": {
+          "type": "tag",
+          "settings": {
+            "collection": "multivitamins-copy",
+            "important": false
+          }
+        },
+        "tag_4PdLpG": {
+          "type": "tag",
+          "settings": {
+            "collection": "immune-support-copy",
+            "important": false
+          }
+        },
+        "tag_DGxDcM": {
+          "type": "tag",
+          "settings": {
+            "collection": "weight-management-copy",
+            "important": false
+          }
+        },
+        "tag_3bJzgH": {
+          "type": "tag",
+          "settings": {
+            "collection": "mens-health-copy",
+            "important": false
+          }
+        },
+        "tag_Ca7E9P": {
+          "type": "tag",
+          "settings": {
+            "collection": "immune-support",
+            "important": false
+          }
+        },
+        "tag_UVkc9F": {
+          "type": "tag",
+          "settings": {
+            "collection": "blood-sugar-support-copy",
+            "important": false
+          }
+        },
+        "tag_pnwJP7": {
+          "type": "tag",
+          "settings": {
+            "collection": "womens-health-copy",
+            "important": false
+          }
+        },
+        "tag_gXriRG": {
+          "type": "tag",
+          "settings": {
+            "collection": "fertility-support-copy",
+            "important": true
+          }
+        },
+        "tag_MMbfeD": {
+          "type": "tag",
+          "settings": {
+            "collection": "hearts-health-copy",
+            "important": false
+          }
+        },
+        "tag_BkbFra": {
+          "type": "tag",
+          "settings": {
+            "collection": "bones-joints-copy",
+            "important": false
+          }
+        },
+        "tag_gpdQ8i": {
+          "type": "tag",
+          "settings": {
+            "collection": "best-sellings-copy",
+            "important": false
+          }
+        },
+        "tag_RYWrYM": {
+          "type": "tag",
+          "settings": {
+            "collection": "stress-sleep-copy",
+            "important": false
+          }
+        }
+      },
+      "block_order": [
+        "tag_dLrmqq",
+        "tag_4nT3th",
+        "tag_4PdLpG",
+        "tag_DGxDcM",
+        "tag_3bJzgH",
+        "tag_Ca7E9P",
+        "tag_UVkc9F",
+        "tag_pnwJP7",
+        "tag_gXriRG",
+        "tag_MMbfeD",
+        "tag_BkbFra",
+        "tag_gpdQ8i",
+        "tag_RYWrYM"
+      ],
+      "name": "ExploreTags",
+      "settings": {
+        "title": "We’re Here to Help You With",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
@@ -301,6 +417,7 @@
     "banner_slider_KWGVAx",
     "category_section_dXe7yR",
     "banner_section_6tRXrT",
+    "exploretags_section_T4eyJb",
     "partner_section_djUtxh",
     "why_choose_section_pNn7rb",
     "discount_section_x6krbj",
