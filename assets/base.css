@@ -2929,7 +2929,7 @@ details[open] > .header__submenu {
   display: flex;
   justify-content: center;
   border-top: 1px solid #ebebeb;
-  
+  width: 100%;
 }
 
 .header--top-center .header__inline-menu,
