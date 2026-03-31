@@ -1,5 +1,5 @@
 {{ 'partner-section.css' | asset_url | stylesheet_tag }}
-<div class="partner-section">
+<div class="partner-section"  style="background-image:url({% if section.settings.banner_bg_image %}{{ section.settings.banner_bg_image | img_url: 'master' }}"{% endif %});">
   <div class="container">
 
     <!-- Heading -->
@@ -28,6 +28,11 @@
       "id": "heading",
       "label": "Heading",
       "default": "We are Backed by Science"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_bg_image",
+      "label": "Section BG"
     }
   ],
   "blocks": [
