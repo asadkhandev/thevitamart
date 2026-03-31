@@ -2841,7 +2841,7 @@ details[open] .modal-overlay::after {
     right: 0;
   }
 
-  .btn-search-close{
+  .header--middle-left .btn-search-close{
     opacity: 0;
     visibility: hidden;
     right: 100%;
