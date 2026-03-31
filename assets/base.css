@@ -2762,7 +2762,8 @@ menu-drawer + .header__search {
   }
   .header--top-center .field:hover.field:after,
   .header--top-center .field:before,
-  .header--top-center .field:after{
+  .header--top-center .field:after,
+  .header--top-center .search__input.field__input{
     border-radius: 20px;
   }
 }
