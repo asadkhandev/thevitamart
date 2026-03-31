@@ -2847,14 +2847,14 @@ details[open] .modal-overlay::after {
     font-weight: 700;
   }
 
-  .header predictive-search.search-modal__form {
+  .header--middle-left predictive-search.search-modal__form {
     position: absolute;
     width: 220px;
     opacity:0;
     visibility: hidden;
   }
 
-  .header .header__icons.active predictive-search.search-modal__form{
+  .header--middle-left .header__icons.active predictive-search.search-modal__form{
     opacity: 1;
     visibility: visible;
   }
