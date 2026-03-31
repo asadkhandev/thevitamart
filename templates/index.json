@@ -133,6 +133,7 @@
         "subheading": "Best Sellings / New Arrivals",
         "link_text": "View all products",
         "link_url": "shopify://collections/all",
+        "banner_bg_image": "shopify://shop_images/1920x504.jpg",
         "title": "",
         "text_alignment": "center",
         "collection_1": "best-sellings",
