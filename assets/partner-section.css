@@ -1,15 +1,10 @@
-.partner-section .container {
-    display: flex;
-    max-width: 1280px;
-}
-
 .partner-section {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 100px 0px;
-    background-image: url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/green-bg.png?v=1765266154');
+    /* background-image: url('https://cdn.shopify.com/s/files/1/0707/8104/2880/files/green-bg.png?v=1765266154'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,6 +12,8 @@
 }
 
 .partner-section .container {
+    display: flex;
+    max-width: 1280px;
     flex-direction: column;
     width: 100%;
     justify-content: center;
