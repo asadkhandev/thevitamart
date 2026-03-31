@@ -2760,6 +2760,11 @@ menu-drawer + .header__search {
   .header--top-center * > .header__search {
     display: none;
   }
+  .header--top-center .field:hover.field:after,
+  .header--top-center .field:before,
+  .header--top-center .field:after{
+    border-radius: 20px;
+  }
 }
 @media screen and (max-width: 989px) {
   .header--top-center * > .header__search{
