@@ -15,7 +15,7 @@
 {%- endstyle -%}
 
 <div class="partner-section color-{{ section.settings.color_scheme }}" style='background-image:url({% if section.settings.banner_bg_image %}{{ section.settings.banner_bg_image | img_url: 'master' }}"{% endif %});'>
-  <div class="container">
+  <div class="container section-{{ section.id }}-padding">
 
     <!-- Heading -->
     <div class="partner-heading">
