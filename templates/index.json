@@ -134,7 +134,7 @@
         "link_text": "View all products",
         "link_url": "shopify://collections/all",
         "border_width": 1,
-        "border_color": "#000000",
+        "border_color": "#ebebeb",
         "title": "",
         "text_alignment": "center",
         "collection_1": "best-sellings",
