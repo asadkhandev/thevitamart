@@ -16,7 +16,7 @@
   }  
 {%- endstyle -%}
 
-<div class="banner-section color-{{ section.settings.color_scheme }}" style="background-image:{% if section.settings.banner_bg_image %}{{ section.settings.banner_bg_image | img_url: 'master' }}"{% endif %};">
+<div class="banner-section color-{{ section.settings.color_scheme }}" style="background-image:url({% if section.settings.banner_bg_image %}{{ section.settings.banner_bg_image | img_url: 'master' }}"{% endif %});">
   <div class="container section-{{ section.id }}-padding">
 
     <!-- Banner Text -->
