@@ -63,6 +63,7 @@
     display: flex;
 }
 .slider-collection-1 .slick-slide{
+    min-height: 100%;
 }
 
 /* same text responsiveness as in banners section */
