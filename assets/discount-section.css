@@ -66,6 +66,9 @@
     height: auto;
     min-height: 100%;
 }
+.slider-collection-1 .slick-slide a:hover{
+    text-decoration: none;
+}
 
 /* same text responsiveness as in banners section */
 
