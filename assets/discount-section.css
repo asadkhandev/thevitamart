@@ -58,8 +58,11 @@
 .slider-collection-1 .slick-slide {
     margin: 0 12px; /* Adjust gap size here */
 }
+.slider-collection-1 .slick-track,
 .slider-collection-1 .slick-slide{
     display: flex;
+}
+.slider-collection-1 .slick-slide{
 }
 
 /* same text responsiveness as in banners section */
