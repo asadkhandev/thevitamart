@@ -11,6 +11,10 @@
     display: flex;
 }
 
+.blog-section .page-width{
+    gap: 27px;
+}
+
 .blog-section .container {
     flex-direction: column;
     width: 100%;
