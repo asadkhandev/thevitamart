@@ -415,7 +415,10 @@
         "arrow_left": "shopify://shop_images/Vector-white-left_37d890e1-00af-4e2a-91d9-edc6a63f3628.png",
         "arrow_right": "shopify://shop_images/Vector.png",
         "category_icon": "shopify://shop_images/mynaui_leaves-solid.png",
-        "carousel_limit": 10
+        "carousel_limit": 10,
+        "color_scheme": "",
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     }
   },
