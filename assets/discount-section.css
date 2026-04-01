@@ -63,6 +63,7 @@
     display: flex;
 }
 .slider-collection-1 .slick-slide{
+    height: auto;
     min-height: 100%;
 }
 
