@@ -44,6 +44,10 @@
     position: relative;
 }
 
+.color-scheme-4 .main-blog{
+    background-color: #fff;
+}
+
 .main-blog-image {
     max-width: 846px;
     width: 100%;
