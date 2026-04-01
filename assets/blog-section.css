@@ -30,7 +30,10 @@
 
 .blog-heading {
     display: flex;
-    font-size: 24px;
+}
+
+.blog-heading h2{
+    margin-top: 0;
 }
 
 .main-blog {
