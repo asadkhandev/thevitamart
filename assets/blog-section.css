@@ -11,8 +11,11 @@
     display: flex;
 }
 
-.blog-section .page-width{
+.blog-section .blog-section-inner{
+    display: flex;
     gap: 27px;
+    flex-direction: column;
+    width: 100%;
 }
 
 .blog-section .container {
