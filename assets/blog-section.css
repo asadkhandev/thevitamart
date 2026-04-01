@@ -44,7 +44,8 @@
     position: relative;
 }
 
-.color-scheme-4 .main-blog{
+.color-scheme-4 .main-blog,
+.color-scheme-4 .carousel-blog{
     background-color: #fff;
 }
 
