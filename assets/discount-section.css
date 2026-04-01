@@ -66,6 +66,7 @@
     height: auto;
     min-height: 100%;
 }
+.banner-section-products .underline-links-hover:hover a,
 .slider-collection-1 .underline-links-hover:hover a{
     text-decoration: none;
 }
