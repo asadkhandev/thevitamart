@@ -56,7 +56,7 @@
 .slider-collection-1 .slick-dots{
     display: none !important;
 }
-.slider-collection-1 .slick-dotted.slick-slider{
+.tab-panel .slick-dotted.slick-slider{
     margin-botttom: 0;
 }
 
