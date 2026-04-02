@@ -53,6 +53,10 @@
     margin: 0 -12px;
 }
 
+slider-collection-1 .slick-dots{
+    display: none !important;
+}
+
 /* Add gap between slides */
 .tab-content .slick-slide,
 .slider-collection-1 .slick-slide {
