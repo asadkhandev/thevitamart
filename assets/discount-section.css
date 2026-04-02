@@ -53,8 +53,11 @@
     margin: 0 -12px;
 }
 
-slider-collection-1 .slick-dots{
+.slider-collection-1 .slick-dots{
     display: none !important;
+}
+.slider-collection-1 .slick-dotted.slick-slider{
+    margin-botttom: 0;
 }
 
 /* Add gap between slides */
