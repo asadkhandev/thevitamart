@@ -60,6 +60,10 @@
     margin-bottom: 0;
 }
 
+.tab-panel .banner-text h2{
+    margin-top: 0;
+}
+
 /* Add gap between slides */
 .tab-content .slick-slide,
 .slider-collection-1 .slick-slide {
