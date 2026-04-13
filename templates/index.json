@@ -199,7 +199,7 @@
         "tag_UVkc9F": {
           "type": "tag",
           "settings": {
-            "collection": "blood-sugar-support-copy",
+            "collection": "kids-teens-health",
             "important": false
           }
         },
@@ -241,7 +241,7 @@
         "tag_RYWrYM": {
           "type": "tag",
           "settings": {
-            "collection": "stress-sleep-copy",
+            "collection": "womens-health",
             "important": false
           }
         }
