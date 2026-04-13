@@ -4037,7 +4037,7 @@ nav.header__inline-menu{
   }
 
   .header header--top-center header--mobile-left  header--has-menu header--has-social header--has-account {
-    margin-right: 1rem;
+    margin-right: -1rem;
   }
 }
 
