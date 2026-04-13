@@ -4036,7 +4036,7 @@ nav.header__inline-menu{
     display: none;
   }
 
-  .header .header--top-center .header--mobile-left  .header--has-menu .header--has-social .header--has-account {
+  .header.header--top-center.header--mobile-left.header--has-menu.header--has-social.header--has-account {
     margin-left: 10rem;
   }
 }
