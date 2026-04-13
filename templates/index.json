@@ -164,7 +164,7 @@
         "tag_4nT3th": {
           "type": "tag",
           "settings": {
-            "collection": "multivitamins-copy",
+            "collection": "blood-sugar-support",
             "important": false
           }
         },
@@ -227,7 +227,7 @@
         "tag_BkbFra": {
           "type": "tag",
           "settings": {
-            "collection": "bones-joints-copy",
+            "collection": "stress-sleep",
             "important": false
           }
         },
