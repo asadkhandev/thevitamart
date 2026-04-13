@@ -213,14 +213,14 @@
         "tag_gXriRG": {
           "type": "tag",
           "settings": {
-            "collection": "fertility-support-copy",
+            "collection": "multivitamins",
             "important": true
           }
         },
         "tag_MMbfeD": {
           "type": "tag",
           "settings": {
-            "collection": "hearts-health-copy",
+            "collection": "muscle-support",
             "important": false
           }
         },
