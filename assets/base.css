@@ -4031,9 +4031,30 @@ nav.header__inline-menu{
 }
 
 
-@media (max-width: 989px) {
+@media screen and (max-width: 989px) {
   .header .header__inline-menu {
     display: none;
     margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .header {
+    justify-content: center;
+  }
+
+  .header__heading {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header__icons {
+    position: absolute;
+    right: 1rem;
+  }
+
+  .header__icon--menu {
+    position: absolute;
+    left: 1rem;
   }
 }
