@@ -4032,7 +4032,7 @@ nav.header__inline-menu{
 
 
 @media (max-width: 989px) {
-  .header__inline-menu [
+  .header .header__inline-menu [
   display: none;
 ]
 }
