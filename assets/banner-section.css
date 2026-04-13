@@ -235,12 +235,12 @@
 
 /* Equal image height */
 .banner-section .card__media {
-  height: 100%;
+  height: 300px;
   overflow: hidden;
 }
 
-.banner-section div:not(.collection-tabs-section) .card__media{
-    height: 300px;
+.banner-section .collection-tabs-section .card__media {
+  height: 100%;
 }
 
 .banner-section .card__media img {
