@@ -418,7 +418,7 @@
         "carousel_limit": 10,
         "color_scheme": "scheme-4",
         "padding_top": 72,
-        "padding_bottom": 72
+        "padding_bottom": 0
       }
     }
   },
