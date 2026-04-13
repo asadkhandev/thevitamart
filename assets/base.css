@@ -4029,3 +4029,10 @@ nav.header__inline-menu{
 .certified-logo-block img{
   max-width: 100%;
 }
+
+
+@media (max-width: 989px) {
+  .header__inline-menu [
+  display: none;
+]
+}
