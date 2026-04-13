@@ -360,7 +360,7 @@
         border-radius: 10px;
     }
     .main-blog-text {
-        gap: 20px;
+        justify-content: space-between;
     }
     .main-blog-text span .sub-heading {
         max-width: 110px;
