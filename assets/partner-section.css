@@ -101,7 +101,7 @@
     } */
     .partner-logos {
         justify-content: center;
-        gap: 7px;
+        gap: 20px;
         flex-wrap: wrap;
     }
     .partner-logos img {
