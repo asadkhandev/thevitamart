@@ -360,6 +360,8 @@
         border-radius: 10px;
     }
     .main-blog-text {
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
     .main-blog-text span .sub-heading {
