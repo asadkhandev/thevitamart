@@ -101,30 +101,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!phoneInput) return;
 
-  // Allow only digits while typing
+  function formatUSPhone(value) {
+    const digits = value.replace(/\D/g, "").substring(0, 10);
+
+    const parts = [];
+
+    if (digits.length > 0) parts.push("(" + digits.substring(0, 3));
+    if (digits.length >= 4) parts.push(") " + digits.substring(3, 6));
+    if (digits.length >= 7) parts.push("-" + digits.substring(6, 10));
+
+    return parts.join("");
+  }
+
   phoneInput.addEventListener("input", function (e) {
-    let value = e.target.value;
-
-    // Remove all non-digit characters
-    value = value.replace(/\D/g, "");
-
-    // Limit to 10 digits (US number)
-    value = value.substring(0, 10);
-
-    e.target.value = value;
+    e.target.value = formatUSPhone(e.target.value);
   });
 
-  // Validate on submit
   if (form) {
     form.addEventListener("submit", function (e) {
-      const value = phoneInput.value.trim();
+      const digits = phoneInput.value.replace(/\D/g, "");
 
-      // US phone must be exactly 10 digits
-      const isValid = /^\d{10}$/.test(value);
-
-      if (!isValid) {
+      if (digits.length !== 10) {
         e.preventDefault();
-        alert("Please enter a valid US phone number (10 digits).");
+        alert("Please enter a valid US phone number.");
         phoneInput.focus();
       }
     });
