@@ -310,8 +310,7 @@
         padding: 13px 0px;
     }
     .category-section .slick-slide {
-        max-width: 150px;
-        width: 100%;
+        margin-right: 15px;
     }
     .category-section .container {
         padding: 10px 15px;
