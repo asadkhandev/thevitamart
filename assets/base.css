@@ -4056,3 +4056,9 @@ nav.header__inline-menu{
   background: #e9edd5 !important;
 }
 
+.related-products .multi_slide .card-wrapper {
+  padding: 5px;
+  border: 1px solid #f2f2f2;
+  border-radius: 0.5rem;
+}
+
