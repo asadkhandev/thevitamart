@@ -434,11 +434,11 @@
     }
 }
 
-@media (min-width: 325px) and (max-width: 767px) {
+/* @media (min-width: 325px) and (max-width: 767px) {
     .main-blog-image {
         height: 350px;
     }
-}
+} */
 
 /* @media (min-width: 325px) and (max-width: 599px) {
     .blog-carousel-section {
