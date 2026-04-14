@@ -3975,7 +3975,8 @@ nav.header__inline-menu{
 .shopify-policy__container{
   padding-top: 35px;
   padding-bottom: 50px;
-  width: 100%;
+  max-width: 100%;
+  width: 70%;
 }
 
 .show-pass-field{
