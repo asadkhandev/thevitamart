@@ -94,7 +94,67 @@
 </div>
 
 
+<script>
+(function () {
 
+  function getPhoneInput() {
+    return document.getElementById("ContactFormPhone");
+  }
+
+  // Live input sanitization (digits + formatting chars only)
+  document.addEventListener("input", function (e) {
+    if (e.target && e.target.id === "ContactFormPhone") {
+      let value = e.target.value;
+
+      value = value.replace(/[^0-9+\-\s()]/g, "");
+      e.target.value = value;
+    }
+  });
+
+  // Form submit validation (event delegation = Shopify safe)
+  document.addEventListener("submit", function (e) {
+    const phoneInput = getPhoneInput();
+    if (!phoneInput) return;
+
+    const form = phoneInput.closest("form");
+    if (!form || e.target !== form) return;
+
+    let digits = phoneInput.value.replace(/\D/g, "");
+
+    // Remove leading country code 1
+    if (digits.length === 11 && digits.startsWith("1")) {
+      digits = digits.substring(1);
+    }
+
+    // Must be exactly 10 digits
+    if (digits.length !== 10) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      phoneInput.setCustomValidity("Enter a valid 10-digit US phone number.");
+      phoneInput.reportValidity();
+
+      return false;
+    }
+
+    // Optional stricter NANP validation
+    const usRegex = /^[2-9]\d{2}[2-9]\d{2}\d{4}$/;
+
+    if (!usRegex.test(digits)) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      phoneInput.setCustomValidity("Invalid US phone number format.");
+      phoneInput.reportValidity();
+
+      return false;
+    }
+
+    phoneInput.setCustomValidity("");
+  }, true);
+
+})();
+</script>
 
 {% comment %} <a href="mailto:{{ section.settings.business_email }}" class="button-email">
   <div class="container">
