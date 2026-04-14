@@ -360,23 +360,4 @@
     .category-box p {
         font-size: 14px;
     }
-    .category-carousel .slick-slide {
-    display: block !important;
-    justify-content: unset !important;
 }
-
-.category-carousel .slick-list {
-    padding-left: 0 !important;
-}
-.category-carousel .slick-list {
-    padding-left: 0 !important;
-}
-}
-<script>
-if (window.innerWidth <= 399) {
-  $('.category-carousel').slick('slickSetOption', {
-    centerMode: false,
-    centerPadding: '0px'
-  }, true);
-}
-</script>
