@@ -361,7 +361,7 @@
     transition: transform 0.1s ease;
   }
 
-  graph-section {
+  .graph-section {
     padding: 20px 15px 0px 15px !important;
   }
 
