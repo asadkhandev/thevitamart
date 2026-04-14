@@ -318,12 +318,14 @@
     .category-carousel {
         gap: 10px;
     }
+    .slick-slide {
+        margin-right: 15px;
+    }
     .category-box {
         max-width: 130px;
         width: 100%;
         padding: 10px 0px 10px 0px;
         height: 100px;
-        margin-right: 15px;
     }
     .category-box img {
         max-width: 55px;
