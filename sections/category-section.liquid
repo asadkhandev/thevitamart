@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
           breakpoint: 400,
           settings: { 
             slidesToShow: 1,
-            centerMode: true
+            centerMode: false
           } 
         },
         { 
@@ -147,15 +147,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       ]
     });
-
-    if (window.innerWidth <= 399) {
-  setTimeout(() => {
-    $carousel.slick('slickSetOption', {
-      centerMode: false,
-      centerPadding: '0px'
-    }, true);
-  }, 100);
-}
 
     // Simple button handlers
     if (prevBtn) {
