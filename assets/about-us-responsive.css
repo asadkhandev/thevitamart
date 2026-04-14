@@ -361,6 +361,10 @@
     transition: transform 0.1s ease;
   }
 
+  graph-section {
+    padding: 30px 15px;
+  }
+
   .graph-section .graph-inner {
     width: 100%;
   }
