@@ -368,4 +368,11 @@
 .category-carousel .slick-list {
     padding-left: 0 !important;
 }
+.category-carousel .slick-list {
+    padding-left: 0 !important;
+}
+
+.category-carousel .slick-track {
+    transform: none !important;
+}
 }
