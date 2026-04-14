@@ -360,11 +360,4 @@
     .category-box p {
         font-size: 14px;
     }
-    .category-carousel {
-    justify-content: flex-start;
-  }
-
-  .slick-slide {
-    justify-content: flex-start;
-  }
 }
