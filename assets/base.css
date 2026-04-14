@@ -4052,3 +4052,7 @@ nav.header__inline-menu{
   margin: 0px 12px;
 }
 
+.related-products .multi_slide .card__inner {
+  background: #e9edd5 !important;
+}
+
