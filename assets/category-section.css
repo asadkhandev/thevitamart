@@ -372,3 +372,9 @@
     padding-left: 0 !important;
 }
 }
+if (window.innerWidth <= 399) {
+  $('.category-carousel').slick('slickSetOption', {
+    centerMode: false,
+    centerPadding: '0px'
+  }, true);
+}
