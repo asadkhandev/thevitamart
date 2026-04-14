@@ -42,10 +42,8 @@
         "quick_link_icon_1": "shopify://shop_images/imgi_31_default.png",
         "quick_link_1": "+920000000000",
         "quick_link_text_2": "Chat Support",
-        "quick_link_icon_2": "shopify://shop_images/imgi_28_default.png",
         "quick_link_2": "",
         "quick_link_text_3": "Track Your Order",
-        "quick_link_icon_3": "shopify://shop_images/imgi_29_default.png",
         "quick_link_3": "",
         "business_label": "BUSINESS INQUIRIES",
         "business_email": "BUSINESS@VITAMART.COM"
@@ -58,7 +56,7 @@
           "type": "accordion",
           "settings": {
             "question": "Shipping Charges & Delivery Time",
-            "answer": "<p>Domestic Shipping<br/>For orders shipped within the brand’s home country, standard shipping charges apply unless minimum order thresholds are met for free shipping. Delivery is typically within 1–5 business days, depending on location.<br/><br/>International Shipping<br/>Delivery Time: 7–21 business days depending on destination, customs clearance, and courier partner.<br/>Shipping Costs: Calculated based on package weight, dimensions, and destination. These fees will be shown at checkout.<br/>Customs / Duties: Any import duties, customs fees, or taxes imposed by the destination country are the responsibility of the customer. Vitamart may assist with documentation if requested.<br/><br/>Order Processing Time<br/>Orders are processed 1‑2 business days after payment confirmation, excluding weekends and public holidays.</p>"
+            "answer": "<p><strong>Domestic Shipping</strong><br/>For orders shipped within the brand’s home country, standard shipping charges apply unless minimum order thresholds are met for free shipping. Delivery is typically within 1–5 business days, depending on location.<br/><br/><strong>International Shipping<br/></strong>Delivery Time: 7–21 business days depending on destination, customs clearance, and courier partner.<br/>Shipping Costs: Calculated based on package weight, dimensions, and destination. These fees will be shown at checkout.<br/>Customs / Duties: Any import duties, customs fees, or taxes imposed by the destination country are the responsibility of the customer. Vitamart may assist with documentation if requested.<br/><br/><strong>Order Processing Time</strong><br/>Orders are processed 1‑2 business days after payment confirmation, excluding weekends and public holidays.</p>"
           }
         },
         "accordion_UbbawR": {
@@ -72,7 +70,7 @@
           "type": "accordion",
           "settings": {
             "question": "Returns, Exchanges & Refund Policy",
-            "answer": "<p>Eligibility for Return/Exchange<br/>Items must be unused, unopened, and in their original packaging with all tags / seals intact. Returns or exchanges due to damage, defects, or incorrect items will be accepted within a certain window (e.g. 7‑30 days) after delivery.<br/><br/>Non‑returnable Items<br/>Products marked as “final sale”, perishable items, opened personal care or hygiene items, etc., may not be eligible for returns.<br/><br/>Return Initiation<br/>Customers must contact customer support, providing order details (order number, product, reason for return). Vitamart may issue a Return Merchandise Authorization (RMA) or similar reference.<br/><br/>Return Shipping Costs<br/>If the return is due to a manufacturing defect, wrong item, or damage, Vitamart covers return shipping. Otherwise, the customer may be responsible for return shipping and any customs clearance on returns. Refund Processing<br/>Once the return is received and inspected, refunds will be issued to the original payment method within a certain time frame (commonly 5‑14 business days). Exchanges will be processed similarly once returned items are verified.<br/><br/></p>"
+            "answer": "<p><strong>Eligibility for Return/Exchange</strong><br/>Items must be unused, unopened, and in their original packaging with all tags / seals intact. Returns or exchanges due to damage, defects, or incorrect items will be accepted within a certain window (e.g. 7‑30 days) after delivery.<br/><br/><strong>Non‑returnable Items</strong><br/>Products marked as “final sale”, perishable items, opened personal care or hygiene items, etc., may not be eligible for returns.<br/><br/><strong>Return Initiation<br/></strong>Customers must contact customer support, providing order details (order number, product, reason for return). Vitamart may issue a Return Merchandise Authorization (RMA) or similar reference.<br/><br/><strong>Return Shipping Costs</strong><br/>If the return is due to a manufacturing defect, wrong item, or damage, Vitamart covers return shipping. Otherwise, the customer may be responsible for return shipping and any customs clearance on returns. Refund Processing<br/>Once the return is received and inspected, refunds will be issued to the original payment method within a certain time frame (commonly 5‑14 business days). Exchanges will be processed similarly once returned items are verified.<br/><br/></p>"
           }
         },
         "accordion_yE8WJe": {
@@ -106,7 +104,9 @@
         "accordion_t84YFt"
       ],
       "name": "Accordion",
-      "settings": {}
+      "settings": {
+        "faq_number": "Still have questions ? You can reach us at +1 800 323 2323"
+      }
     }
   },
   "order": [
