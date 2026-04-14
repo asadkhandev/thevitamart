@@ -361,17 +361,13 @@
     width: 100%;
   }
 
-  .graph-section .graph-inner img {
-    display: block !important;
-  }
-
   .graph-text {
     width: 100%;
     text-align: center;
   }
 
   .graph {
-    display: none;
+    display: block;
   }
 
  .carousel {
