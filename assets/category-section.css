@@ -293,6 +293,10 @@
     .category-carousel {
         gap: 10px;
     }
+    .slick-slide {
+        max-width: 140px;
+        width: 100%;
+    }
     .category-box {
         max-width: 120px;
         width: 100%;
