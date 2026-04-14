@@ -134,7 +134,7 @@
 
     text-align: center;
 }
-.related-products .slick-dots {
+.slick-dots .related-products {
   display: none;
 }
 .slick-dots li
