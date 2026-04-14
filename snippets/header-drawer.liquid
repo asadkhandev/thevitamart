@@ -198,6 +198,7 @@
             </div>
             
             {%- if shop.customer_accounts_enabled -%}
+              {%- if customer -%}
               <a
                 href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
                 class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide"
@@ -226,6 +227,9 @@
                   endif
                 -%}
               </a>
+            {%- else -%}
+              <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" rel="nofollow">{{ 'customer.log_in' | t }}</a> / <a href="/account/register" rel="nofollow">Register</a>
+            {%- endif -%}
             {%- endif -%}
             {%- if localization.available_countries or localization.available_languages -%}
               <div class="menu-drawer__localization header-localization">
