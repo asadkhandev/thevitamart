@@ -203,6 +203,6 @@
     color: black;
 }
 
-.related-products .slick-dots {
+.related-products .collections-slider .slider-collection-1 ul {
   display: none;
 }
