@@ -148,6 +148,15 @@ document.addEventListener('DOMContentLoaded', function() {
       ]
     });
 
+    if (window.innerWidth <= 399) {
+  setTimeout(() => {
+    $carousel.slick('slickSetOption', {
+      centerMode: false,
+      centerPadding: '0px'
+    }, true);
+  }, 100);
+}
+
     // Simple button handlers
     if (prevBtn) {
       prevBtn.onclick = () => $carousel.slick('slickPrev');
