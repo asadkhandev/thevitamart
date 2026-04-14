@@ -309,7 +309,8 @@
     .category-section {
         padding: 13px 0px;
     }
-    .category-section .slick-slider {
+    .category-section .slick-slide {
+        max-width: 150px;
         width: 100%;
     }
     .category-section .container {
