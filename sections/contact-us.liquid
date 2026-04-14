@@ -94,48 +94,7 @@
 </div>
 
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const phoneInput = document.getElementById("ContactFormPhone");
 
-  if (!phoneInput) return;
-
-  // Allow only valid characters while typing
-  phoneInput.addEventListener("input", function (e) {
-    let value = e.target.value;
-
-    // Remove everything except digits, spaces, +, (), -
-    value = value.replace(/[^0-9+\-\s()]/g, "");
-
-    e.target.value = value;
-  });
-
-  // Validate on submit
-  const form = phoneInput.closest("form");
-
-  form.addEventListener("submit", function (e) {
-    let raw = phoneInput.value;
-
-    // Normalize: remove non-digits
-    let digits = raw.replace(/\D/g, "");
-
-    // Handle leading country code
-    if (digits.length === 11 && digits.startsWith("1")) {
-      digits = digits.substring(1);
-    }
-
-    // US number must be exactly 10 digits
-    const usPhoneRegex = /^[2-9]\d{2}[2-9]\d{2}\d{4}$/;
-
-    if (!usPhoneRegex.test(digits)) {
-      e.preventDefault();
-      alert("Please enter a valid US phone number (10 digits).");
-
-      phoneInput.focus();
-    }
-  });
-});
-</script>
 
 {% comment %} <a href="mailto:{{ section.settings.business_email }}" class="button-email">
   <div class="container">
