@@ -360,4 +360,12 @@
     .category-box p {
         font-size: 14px;
     }
+    .category-carousel .slick-slide {
+    display: block !important;
+    justify-content: unset !important;
+}
+
+.category-carousel .slick-list {
+    padding-left: 0 !important;
+}
 }
