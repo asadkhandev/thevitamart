@@ -94,7 +94,43 @@
 </div>
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const phoneInput = document.getElementById("ContactFormPhone");
+  const form = phoneInput?.closest("form");
 
+  if (!phoneInput) return;
+
+  // Allow only digits while typing
+  phoneInput.addEventListener("input", function (e) {
+    let value = e.target.value;
+
+    // Remove all non-digit characters
+    value = value.replace(/\D/g, "");
+
+    // Limit to 10 digits (US number)
+    value = value.substring(0, 10);
+
+    e.target.value = value;
+  });
+
+  // Validate on submit
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      const value = phoneInput.value.trim();
+
+      // US phone must be exactly 10 digits
+      const isValid = /^\d{10}$/.test(value);
+
+      if (!isValid) {
+        e.preventDefault();
+        alert("Please enter a valid US phone number (10 digits).");
+        phoneInput.focus();
+      }
+    });
+  }
+});
+</script>
 
 {% comment %} <a href="mailto:{{ section.settings.business_email }}" class="button-email">
   <div class="container">
