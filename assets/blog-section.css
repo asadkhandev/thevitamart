@@ -321,7 +321,7 @@
 
 @media (min-width: 325px) and (max-width: 1141px) {
     .main-blog .slick-next{
-    display: flex !important;
+        display: flex !important;
     }
 
     .main-blog .slick-prev{
@@ -376,19 +376,19 @@
         font-size: clamp(14px, 1.8vw, 16px);
     }
     .main-blog-text strong a {
-    font-size: clamp(14px, 1.8vw, 16px);
+        font-size: clamp(14px, 1.8vw, 16px);
     }
     .main-blog-text strong p {
-    font-size: clamp(14px, 1.8vw, 16px);
+        font-size: clamp(14px, 1.8vw, 16px);
     }
 
 
     .carousel-blog {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    border-radius: 10px;
-    background-color: #e9edd5;
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        border-radius: 10px;
+        background-color: #e9edd5;
     }
     .carousel-blog-image {
         max-width: none;
@@ -421,17 +421,17 @@
         font-size: 14px;
     }
     .prev-carousel-btn {
-    margin-left: 5px;
+        margin-left: 5px;
     }
 
     .next-carousel-btn {
-    margin-right: 5px;
+        margin-right: 5px;
     }
     .blog-carousel-section .slick-slide {
-    margin: 0 5px;
+        margin: 0 5px;
     }
     .blog-carousel-section .slick-list {
-    margin: 0 -5px;
+        margin: 0 -5px;
     }
 }
 
