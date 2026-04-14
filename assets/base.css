@@ -3856,7 +3856,7 @@ nav.header__inline-menu{
 }
 
 .related-products .slick-dots {
-  display: none;
+  display: none !important;
 }
 
 .slick-prev:before,
