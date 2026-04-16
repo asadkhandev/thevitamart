@@ -4062,3 +4062,7 @@ nav.header__inline-menu{
   border-radius: 0.5rem;
 }
 
+.blog-articles__article .card--standard>.card__content .card__information{
+  padding-left: 15px;
+  padding-right: 15px;
+}
